@@ -1,4 +1,4 @@
-site_name: Conteúdos de Aulaa
+site_name: Conteúdos de Aula
 site_url: https://thissyalmeida.github.io/materialAula-2026-Fatec/
 use_directory_urls: false
 
@@ -35,22 +35,11 @@ extra_css:
   - assets/stylesheets/style.css
 
 nav:
-  - Início: index.md
+  - ALP: index.md
 
-  - ALP:
-      - Visão Geral: ALP/index.md
+  - Lógica e Raciocínio::
       - Aula 1 - Lógica e Raciocínio: ALP/aula1-logica-raciocinio.md
+      - Exercícios: ALP/exercicios-logica-raciocinio.md
+  - Conceitos iniciais de Algoritmos::
       - Aula 2 - Formas de Representação de Algoritmos: ALP/aula2-formas-de-representacao-de-algoritmos.md
       - Aula 3 - Exercícios: ALP/aula3-exercicios.md
-
-  - ED:
-      - Visão Geral: ED/index.md
-      - Aula 1 - Introdução: ED/aula1-introducao.md
-
-  - MPC:
-      - Visão Geral: MPC/index.md
-      - Aula 1 - Introdução: MPC/aula1-introducao.md
-
-  - PLN:
-      - Visão Geral: PLN/index.md
-      - Aula 1 - Introdução: PLN/aula1-introducao.md
