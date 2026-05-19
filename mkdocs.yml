@@ -48,21 +48,19 @@ nav:
   - Linguagem de Programação:
       - Exercícios: ALP/linguagem-programacao.md
   - Linguagem C:
-      - Exercícios: ALP/exercicios-logica-raciocinio.md
       - Tipos de Dados, Variáveis e Operadores Lógicos:
-          - Exercícios: ALP/exercicios-logica-raciocinio.md
+          - Exercícios: ALP/tipos-variaveis-operadores.md
       - Estruturas de Controle Sequenciais:
-          - Exercícios: ALP/exercicios-logica-raciocinio.md
+          - Exercícios: ALP/estruturas-sequenciais.md
       - Estruturas Condicionais:
-          - Exercícios: ALP/exercicios-logica-raciocinio.md
+          - Exercícios: ALP/estruturas-condicionais.md
       - Estruturas de Repetição:
-          - Exercícios: ALP/exercicios-logica-raciocinio.md
+          - Exercícios: ALP/estruturas-repeticao.md
       - Funções e Procedimentos:
-          - Exercícios: ALP/exercicios-logica-raciocinio.md
+          - Exercícios: ALP/funcoes-procedimentos.md
       - Estruturas Homogêneas - Vetores e Matrizes:
-          - Exercícios: ALP/exercicios-logica-raciocinio.md
+          - Exercícios: ALP/vetores-matrizes.md
   - Linguagem Java:
-      - Exercícios: ALP/exercicios-logica-raciocinio.md
       - Tipos de Dados, Variáveis e Operadores Lógicos:
           - Exercícios: ALP/exercicios-logica-raciocinio.md
       - Estruturas de Controle Sequenciais:
