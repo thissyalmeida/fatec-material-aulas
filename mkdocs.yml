@@ -46,16 +46,13 @@ nav:
 
   - ALP - Algoritmos e Lógica de Programação:
     - Lógica e Raciocínio:
-        - Aula 1 - Lógica e Raciocínio: ALP/aula1-logica-raciocinio.md
+        - Aula 1: ALP/aula1-logica-raciocinio.md
         - Exemplos: ALP/.md
     - Conceitos iniciais de Algoritmos:
-        - Aula 2 - Formas de Representação de Algoritmos: ALP/aula2-formas-de-representacao-de-algoritmos.md
-        - Exemplos: ALP/.md
-    - Formas de Representação de Algoritmos:
-        - Aula 3: ALP/exercicios-logica-raciocinio.md
+        - Aula 2: ALP/aula2-formas-de-representacao-de-algoritmos.md
         - Exemplos: ALP/.md
     - Linguagem de Programação:
-        - Aula 4: ALP/linguagem-programacao.md
+        - Aula 3: ALP/linguagem-programacao.md
         - Exemplos: ALP/.md
     - Linguagem C:
         - Tipos de Dados, Variáveis e Operadores Lógicos:
