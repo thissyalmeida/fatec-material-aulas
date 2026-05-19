@@ -20,6 +20,13 @@ theme:
       toggle:
         icon: material/weather-sunny
         name: Modo claro
+  
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.highlight
+    - content.code.copy
 
 # EXTENSÕES IMPORTANTES
 markdown_extensions:
