@@ -8,29 +8,31 @@
       
       
       
-        <link rel="canonical" href="https://thissyalmeida.github.io/materialAula-2026-Fatec/index.html">
+        <link rel="canonical" href="https://thissyalmeida.github.io/materialAula-2026-Fatec/ALP/estruturas-condicionais.html">
       
       
+        <link rel="prev" href="estruturas-sequenciais.html">
       
-        <link rel="next" href="ALP/aula1-logica-raciocinio.html">
+      
+        <link rel="next" href="estruturas-repeticao.html">
       
       
         
       
       
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
     
       
-        <title>ALP - Algoritmos e Lógica de Programação</title>
+        <title>Exercícios - ALP - Algoritmos e Lógica de Programação</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -49,9 +51,9 @@
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/style.css">
+      <link rel="stylesheet" href="../assets/stylesheets/style.css">
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -76,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#alp-algoritmos-e-logica-de-programacao" class="md-skip">
+        <a href="#estruturas-condicionais" class="md-skip">
           Pular para conteúdo
         </a>
       
@@ -92,7 +94,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
-    <a href="index.html" title="ALP - Algoritmos e Lógica de Programação" class="md-header__button md-logo" aria-label="ALP - Algoritmos e Lógica de Programação" data-md-component="logo">
+    <a href="../index.html" title="ALP - Algoritmos e Lógica de Programação" class="md-header__button md-logo" aria-label="ALP - Algoritmos e Lógica de Programação" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -112,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Boas-vindas
+              Exercícios
             
           </span>
         </div>
@@ -216,7 +218,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navegação" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="index.html" title="ALP - Algoritmos e Lógica de Programação" class="md-nav__button md-logo" aria-label="ALP - Algoritmos e Lógica de Programação" data-md-component="logo">
+    <a href="../index.html" title="ALP - Algoritmos e Lógica de Programação" class="md-nav__button md-logo" aria-label="ALP - Algoritmos e Lógica de Programação" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -231,37 +233,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Boas-vindas
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="index.html" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../index.html" class="md-nav__link">
         
   
   
@@ -277,59 +252,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Índice">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Índice
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#conteudos" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        📌 Conteúdos:
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#objetivo" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🎯 Objetivo
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#ferramentas" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🛠️ Ferramentas
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -388,7 +310,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ALP/aula1-logica-raciocinio.html" class="md-nav__link">
+      <a href="aula1-logica-raciocinio.html" class="md-nav__link">
         
   
   
@@ -416,7 +338,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ALP/exercicios-logica-raciocinio.html" class="md-nav__link">
+      <a href="exercicios-logica-raciocinio.html" class="md-nav__link">
         
   
   
@@ -498,7 +420,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ALP/aula2-formas-de-representacao-de-algoritmos.html" class="md-nav__link">
+      <a href="aula2-formas-de-representacao-de-algoritmos.html" class="md-nav__link">
         
   
   
@@ -526,7 +448,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ALP/aula3-exercicios.html" class="md-nav__link">
+      <a href="aula3-exercicios.html" class="md-nav__link">
         
   
   
@@ -608,7 +530,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ALP/exercicios-logica-raciocinio.html" class="md-nav__link">
+      <a href="exercicios-logica-raciocinio.html" class="md-nav__link">
         
   
   
@@ -690,7 +612,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ALP/linguagem-programacao.html" class="md-nav__link">
+      <a href="linguagem-programacao.html" class="md-nav__link">
         
   
   
@@ -722,18 +644,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
         
           
           <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
@@ -754,7 +678,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             
@@ -819,7 +743,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ALP/tipos-variaveis-operadores.html" class="md-nav__link">
+      <a href="tipos-variaveis-operadores.html" class="md-nav__link">
         
   
   
@@ -902,7 +826,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ALP/estruturas-sequenciais.html" class="md-nav__link">
+      <a href="estruturas-sequenciais.html" class="md-nav__link">
         
   
   
@@ -935,18 +859,20 @@
                 
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_3" checked>
         
           
           <label class="md-nav__link" for="__nav_6_3" id="__nav_6_3_label" tabindex="0">
@@ -967,7 +893,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_6_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -982,10 +908,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="ALP/estruturas-condicionais.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exercícios
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="estruturas-condicionais.html" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1001,6 +954,103 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#o-que-sao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        O que são?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#estrutura-if" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Estrutura if
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#estrutura-if-else" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Estrutura if else
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#estrutura-else-if" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Estrutura else if
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#estrutura-switch" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Estrutura switch
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#aplicacoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Aplicações
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conclusão
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1068,7 +1118,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ALP/estruturas-repeticao.html" class="md-nav__link">
+      <a href="estruturas-repeticao.html" class="md-nav__link">
         
   
   
@@ -1151,7 +1201,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ALP/funcoes-procedimentos.html" class="md-nav__link">
+      <a href="funcoes-procedimentos.html" class="md-nav__link">
         
   
   
@@ -1234,7 +1284,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ALP/vetores-matrizes.html" class="md-nav__link">
+      <a href="vetores-matrizes.html" class="md-nav__link">
         
   
   
@@ -1371,7 +1421,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ALP/exercicios-logica-raciocinio.html" class="md-nav__link">
+      <a href="exercicios-logica-raciocinio.html" class="md-nav__link">
         
   
   
@@ -1454,7 +1504,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ALP/exercicios-logica-raciocinio.html" class="md-nav__link">
+      <a href="exercicios-logica-raciocinio.html" class="md-nav__link">
         
   
   
@@ -1537,7 +1587,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ALP/exercicios-logica-raciocinio.html" class="md-nav__link">
+      <a href="exercicios-logica-raciocinio.html" class="md-nav__link">
         
   
   
@@ -1620,7 +1670,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ALP/exercicios-logica-raciocinio.html" class="md-nav__link">
+      <a href="exercicios-logica-raciocinio.html" class="md-nav__link">
         
   
   
@@ -1703,7 +1753,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ALP/exercicios-logica-raciocinio.html" class="md-nav__link">
+      <a href="exercicios-logica-raciocinio.html" class="md-nav__link">
         
   
   
@@ -1786,7 +1836,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ALP/exercicios-logica-raciocinio.html" class="md-nav__link">
+      <a href="exercicios-logica-raciocinio.html" class="md-nav__link">
         
   
   
@@ -1876,7 +1926,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ALP/exercicios-logica-raciocinio.html" class="md-nav__link">
+      <a href="exercicios-logica-raciocinio.html" class="md-nav__link">
         
   
   
@@ -1951,7 +2001,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ALP/exercicios-logica-raciocinio.html" class="md-nav__link">
+      <a href="exercicios-logica-raciocinio.html" class="md-nav__link">
         
   
   
@@ -2034,7 +2084,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ALP/exercicios-logica-raciocinio.html" class="md-nav__link">
+      <a href="exercicios-logica-raciocinio.html" class="md-nav__link">
         
   
   
@@ -2117,7 +2167,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ALP/exercicios-logica-raciocinio.html" class="md-nav__link">
+      <a href="exercicios-logica-raciocinio.html" class="md-nav__link">
         
   
   
@@ -2200,7 +2250,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ALP/exercicios-logica-raciocinio.html" class="md-nav__link">
+      <a href="exercicios-logica-raciocinio.html" class="md-nav__link">
         
   
   
@@ -2283,7 +2333,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ALP/exercicios-logica-raciocinio.html" class="md-nav__link">
+      <a href="exercicios-logica-raciocinio.html" class="md-nav__link">
         
   
   
@@ -2366,7 +2416,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ALP/exercicios-logica-raciocinio.html" class="md-nav__link">
+      <a href="exercicios-logica-raciocinio.html" class="md-nav__link">
         
   
   
@@ -2456,7 +2506,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ALP/exercicios-logica-raciocinio.html" class="md-nav__link">
+      <a href="exercicios-logica-raciocinio.html" class="md-nav__link">
         
   
   
@@ -2531,7 +2581,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ALP/exercicios-logica-raciocinio.html" class="md-nav__link">
+      <a href="exercicios-logica-raciocinio.html" class="md-nav__link">
         
   
   
@@ -2614,7 +2664,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ALP/exercicios-logica-raciocinio.html" class="md-nav__link">
+      <a href="exercicios-logica-raciocinio.html" class="md-nav__link">
         
   
   
@@ -2697,7 +2747,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ALP/exercicios-logica-raciocinio.html" class="md-nav__link">
+      <a href="exercicios-logica-raciocinio.html" class="md-nav__link">
         
   
   
@@ -2780,7 +2830,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ALP/exercicios-logica-raciocinio.html" class="md-nav__link">
+      <a href="exercicios-logica-raciocinio.html" class="md-nav__link">
         
   
   
@@ -2863,7 +2913,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ALP/exercicios-logica-raciocinio.html" class="md-nav__link">
+      <a href="exercicios-logica-raciocinio.html" class="md-nav__link">
         
   
   
@@ -2946,7 +2996,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ALP/exercicios-logica-raciocinio.html" class="md-nav__link">
+      <a href="exercicios-logica-raciocinio.html" class="md-nav__link">
         
   
   
@@ -3036,7 +3086,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ALP/exercicios-logica-raciocinio.html" class="md-nav__link">
+      <a href="exercicios-logica-raciocinio.html" class="md-nav__link">
         
   
   
@@ -3111,7 +3161,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ALP/exercicios-logica-raciocinio.html" class="md-nav__link">
+      <a href="exercicios-logica-raciocinio.html" class="md-nav__link">
         
   
   
@@ -3194,7 +3244,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ALP/exercicios-logica-raciocinio.html" class="md-nav__link">
+      <a href="exercicios-logica-raciocinio.html" class="md-nav__link">
         
   
   
@@ -3277,7 +3327,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ALP/exercicios-logica-raciocinio.html" class="md-nav__link">
+      <a href="exercicios-logica-raciocinio.html" class="md-nav__link">
         
   
   
@@ -3360,7 +3410,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ALP/exercicios-logica-raciocinio.html" class="md-nav__link">
+      <a href="exercicios-logica-raciocinio.html" class="md-nav__link">
         
   
   
@@ -3443,7 +3493,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ALP/exercicios-logica-raciocinio.html" class="md-nav__link">
+      <a href="exercicios-logica-raciocinio.html" class="md-nav__link">
         
   
   
@@ -3526,7 +3576,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ALP/exercicios-logica-raciocinio.html" class="md-nav__link">
+      <a href="exercicios-logica-raciocinio.html" class="md-nav__link">
         
   
   
@@ -3589,10 +3639,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#conteudos" class="md-nav__link">
+  <a href="#o-que-sao" class="md-nav__link">
     <span class="md-ellipsis">
       
-        📌 Conteúdos:
+        O que são?
       
     </span>
   </a>
@@ -3600,10 +3650,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#objetivo" class="md-nav__link">
+  <a href="#estrutura-if" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🎯 Objetivo
+        Estrutura if
       
     </span>
   </a>
@@ -3611,10 +3661,54 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#ferramentas" class="md-nav__link">
+  <a href="#estrutura-if-else" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🛠️ Ferramentas
+        Estrutura if else
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#estrutura-else-if" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Estrutura else if
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#estrutura-switch" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Estrutura switch
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#aplicacoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Aplicações
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conclusão
       
     </span>
   </a>
@@ -3638,31 +3732,60 @@
 
 
 
-<h1 id="alp-algoritmos-e-logica-de-programacao">💻 ALP - Algoritmos e Lógica de Programação</h1>
-<p>Nesta disciplina você aprenderá a criar algoritmos e programas incríveis que podem resolver problemas reais. Vamos aprender a programar de forma divertida e interativa! 🚀</p>
-<h2 id="conteudos">📌 Conteúdos:</h2>
+<h1 id="estruturas-condicionais">Estruturas Condicionais</h1>
+<h2 id="o-que-sao">O que são?</h2>
+<p>As estruturas condicionais permitem que o programa tome decisões.</p>
+<hr />
+<h2 id="estrutura-if">Estrutura if</h2>
+<div class="highlight"><pre><span></span><code><span class="k">if</span><span class="p">(</span><span class="n">media</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mi">6</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Aprovado&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+<hr />
+<h2 id="estrutura-if-else">Estrutura if else</h2>
+<div class="highlight"><pre><span></span><code><span class="k">if</span><span class="p">(</span><span class="n">media</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mi">6</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Aprovado&quot;</span><span class="p">);</span>
+<span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Reprovado&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+<hr />
+<h2 id="estrutura-else-if">Estrutura else if</h2>
+<div class="highlight"><pre><span></span><code><span class="k">if</span><span class="p">(</span><span class="n">media</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mi">9</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Excelente&quot;</span><span class="p">);</span>
+<span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="p">(</span><span class="n">media</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mi">6</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Aprovado&quot;</span><span class="p">);</span>
+<span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Reprovado&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+<hr />
+<h2 id="estrutura-switch">Estrutura switch</h2>
+<div class="highlight"><pre><span></span><code><span class="k">switch</span><span class="p">(</span><span class="n">opcao</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+
+<span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="mi">1</span><span class="p">:</span>
+<span class="w">        </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Cadastrar&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="k">break</span><span class="p">;</span>
+
+<span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="mi">2</span><span class="p">:</span>
+<span class="w">        </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Excluir&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="k">break</span><span class="p">;</span>
+
+<span class="w">    </span><span class="k">default</span><span class="o">:</span>
+<span class="w">        </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Opcao invalida&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+<hr />
+<h2 id="aplicacoes">Aplicações</h2>
 <ul>
-<li>Lógica e raciocínio</li>
-<li>Formas de Representação de Algoritmos</li>
-<li>Tipos de Dados, Variáveis e Operadores Lógicos</li>
-<li>Estruturas de Controle Sequenciais</li>
-<li>Estruturas Condicionais</li>
-<li>Estruturas de Repetição</li>
-<li>Funções e Procedimentos</li>
-<li>Estruturas Homogêneas - Vetores e Matrizes</li>
+<li>validações;</li>
+<li>menus;</li>
+<li>sistemas de decisão;</li>
+<li>verificações lógicas.</li>
 </ul>
-<h2 id="objetivo">🎯 Objetivo</h2>
-<ol>
-<li>Entender o que são algoritmos e como eles funcionam.</li>
-<li>Construir algoritmos utilizando técnicas de programação estruturada e modular.</li>
-<li>Conhecer as principais estruturas utilizadas na programação.</li>
-<li>Aprender a utilizar ferramentas de versionamento e controle.</li>
-</ol>
-<h2 id="ferramentas">🛠️ Ferramentas</h2>
-<ul>
-<li><strong>VisualG:</strong> Para você criar e testar seus algoritmos de maneira simples.</li>
-<li><strong>CodeBlocks:</strong> Ferramenta utilizada para programar em C!</li>
-</ul>
+<hr />
+<h2 id="conclusao">Conclusão</h2>
+<p>As estruturas condicionais tornam os programas mais inteligentes e dinâmicos.</p>
 
 
 
@@ -3712,10 +3835,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": [], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": [], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
     
     
-      <script src="assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   </body>
