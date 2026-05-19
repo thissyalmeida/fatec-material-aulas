@@ -47,14 +47,16 @@ nav:
   - ALP - Algoritmos e Lógica de Programação:
     - Lógica e Raciocínio:
         - Aula 1 - Lógica e Raciocínio: ALP/aula1-logica-raciocinio.md
-        - Exercícios: ALP/exercicios-logica-raciocinio.md
+        - Exemplos: ALP/.md
     - Conceitos iniciais de Algoritmos:
         - Aula 2 - Formas de Representação de Algoritmos: ALP/aula2-formas-de-representacao-de-algoritmos.md
-        - Aula 3 - Exercícios: ALP/aula3-exercicios.md
+        - Exemplos: ALP/.md
     - Formas de Representação de Algoritmos:
-        - Exercícios: ALP/exercicios-logica-raciocinio.md
+        - Aula 3: ALP/exercicios-logica-raciocinio.md
+        - Exemplos: ALP/.md
     - Linguagem de Programação:
-        - Exercícios: ALP/linguagem-programacao.md
+        - Aula 4: ALP/linguagem-programacao.md
+        - Exemplos: ALP/.md
     - Linguagem C:
         - Tipos de Dados, Variáveis e Operadores Lógicos:
             - Exercícios: ALP/tipos-variaveis-operadores.md
@@ -123,6 +125,10 @@ nav:
             - Exercícios: ALP/exercicios-logica-raciocinio.md
         - Estruturas Homogêneas - Vetores e Matrizes:
             - Exercícios: ALP/exercicios-logica-raciocinio.md
-
+  - EST - Estrutura de Dados:
+    - Listas, Pilhas e Filas:
+        - Exercícios: ED/aula1-introducao.md
+    - Árvores e Grafos:
+        - Exercícios: ED/index.md
 
 
