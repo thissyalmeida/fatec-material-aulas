@@ -1,4 +1,4 @@
-site_name: Conteúdos de Aula
+site_name: ALP - Algoritmos e Lógica de Programação
 site_url: https://thissyalmeida.github.io/materialAula-2026-Fatec/
 use_directory_urls: false
 
@@ -35,7 +35,7 @@ extra_css:
   - assets/stylesheets/style.css
 
 nav:
-  - ALP: index.md
+  - Boas-vindas: index.md
 
   - Lógica e Raciocínio::
       - Aula 1 - Lógica e Raciocínio: ALP/aula1-logica-raciocinio.md
