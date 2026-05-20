@@ -83,7 +83,7 @@ border-radius:8px;
 
 </div>
 
-## TIPOS DE DADOS
+## TIPOS DE DADOS PRIMITIVOS
 
 Os tipos de dados definem quais valores uma variável pode armazenar. Na Linguagem C, os principais tipos são:
 
@@ -94,166 +94,7 @@ Os tipos de dados definem quais valores uma variável pode armazenar. Na Linguag
 | char | Caracteres |
 | double | Números reais com maior precisão |
 
----
-
-Estrutura Básica de um Programa em C
-
-Exemplo simples:
-
-#include <stdio.h>
-
-int main() {
-    printf("Olá, mundo!\n");
-    return 0;
-}
-Explicação
-#include <stdio.h> → biblioteca de entrada e saída
-main() → função principal do programa
-printf() → imprime texto na tela
-return 0; → indica que o programa terminou corretamente
-Variáveis em C
-
-As variáveis armazenam dados na memória.
-
-Exemplo:
-
-int idade = 20;
-float altura = 1.75;
-char letra = 'A';
-Tipos básicos
-Tipo	Descrição
-int	números inteiros
-float	números decimais
-char	caracteres
-double	números decimais com maior precisão
-Operadores
-Aritméticos
-+  -  *  /  %
-Relacionais
-==  !=  >  <  >=  <=
-Lógicos
-&&  ||  !
-Estruturas de Controle
-If/Else
-if (idade >= 18) {
-    printf("Maior de idade");
-} else {
-    printf("Menor de idade");
-}
-Laço for
-for(int i = 0; i < 5; i++) {
-    printf("%d\n", i);
-}
-Laço while
-while(x < 10) {
-    x++;
-}
-Funções
-
-Exemplo:
-
-int soma(int a, int b) {
-    return a + b;
-}
-
-Uso:
-
-int resultado = soma(5, 3);
-Ponteiros (conceito importante)
-
-Ponteiros armazenam endereços de memória.
-
-int x = 10;
-int *p = &x;
-&x → endereço de x
-*p → valor armazenado no endereço
-
-
-
-# Estrutura Básica de um Programa em C
-
-Exemplo simples:
-
-```c
-#include <stdio.h>
-
-int main() {
-    printf("Olá, mundo!\n");
-    return 0;
-}
-Explicação
-#include <stdio.h> → biblioteca de entrada e saída
-main() → função principal do programa
-printf() → imprime texto na tela
-return 0; → indica que o programa terminou corretamente
-Variáveis em C
-
-As variáveis armazenam dados na memória.
-
-Exemplo:
-
-int idade = 20;
-float altura = 1.75;
-char letra = 'A';
-Tipos básicos
-Tipo	Descrição
-int	números inteiros
-float	números decimais
-char	caracteres
-double	números decimais com maior precisão
-Operadores
-Aritméticos
-+  -  *  /  %
-Relacionais
-==  !=  >  <  >=  <=
-Lógicos
-&&  ||  !
-Estruturas de Controle
-If/Else
-if (idade >= 18) {
-    printf("Maior de idade");
-} else {
-    printf("Menor de idade");
-}
-Laço for
-for(int i = 0; i < 5; i++) {
-    printf("%d\n", i);
-}
-Laço while
-while(x < 10) {
-    x++;
-}
-Funções
-
-Exemplo:
-
-int soma(int a, int b) {
-    return a + b;
-}
-
-Uso:
-
-int resultado = soma(5, 3);
-Ponteiros (conceito importante)
-
-Ponteiros armazenam endereços de memória.
-
-int x = 10;
-int *p = &x;
-&x → endereço de x
-*p → valor armazenado no endereço
-
-
-
-LINGUAGEM C
-
-# Tipos de Dados, Variáveis e Operadores Lógicos
-
-## O que são Tipos de Dados?
-
-
-
-## Variáveis
+## VARIÁVEIS
 
 Variáveis são espaços reservados na memória para armazenar informações.
 
@@ -264,8 +105,6 @@ int idade = 20;
 float altura = 1.75;
 char letra = 'A';
 ```
-
----
 
 ## Regras para criação de variáveis
 
@@ -309,6 +148,86 @@ char letra = 'A';
 | \|\| | OU lógico |
 | ! | NÃO lógico |
 
+# Estrutura Básica de um Programa em C
+
+Exemplo simples:
+
+```c
+#include <stdio.h>
+
+int main() {
+    printf("Olá, mundo!\n");
+    return 0;
+}
+
+```
+
+Explicação
+#include <stdio.h> → biblioteca de entrada e saída
+main() → função principal do programa
+printf() → imprime texto na tela
+return 0; → indica que o programa terminou corretamente
+
+Estruturas de Controle
+If/Else
+if (idade >= 18) {
+    printf("Maior de idade");
+} else {
+    printf("Menor de idade");
+}
+Laço for
+for(int i = 0; i < 5; i++) {
+    printf("%d\n", i);
+}
+Laço while
+while(x < 10) {
+    x++;
+}
+Funções
+
+Exemplo:
+
+int soma(int a, int b) {
+    return a + b;
+}
+
+Uso:
+
+int resultado = soma(5, 3);
+
+
+
+Estruturas de Controle
+If/Else
+if (idade >= 18) {
+    printf("Maior de idade");
+} else {
+    printf("Menor de idade");
+}
+Laço for
+for(int i = 0; i < 5; i++) {
+    printf("%d\n", i);
+}
+Laço while
+while(x < 10) {
+    x++;
+}
+Funções
+
+Exemplo:
+
+int soma(int a, int b) {
+    return a + b;
+}
+
+Uso:
+
+int resultado = soma(5, 3);
+
+LINGUAGEM C
+
+
+
 ### Exemplo
 
 ```c
@@ -318,10 +237,6 @@ if(idade >= 18 && idade <= 60) {
 ```
 
 ---
-
-## Conclusão
-
-Os tipos de dados, variáveis e operadores são fundamentais para o desenvolvimento de algoritmos e programas em Linguagem C.
 
 # Estruturas de Controle Sequenciais
 
