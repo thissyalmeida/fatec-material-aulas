@@ -64,23 +64,25 @@ border-radius:8px;
 </center>
 </div>
 
+Para programar em C, você pode utilizar uma IDE (Integrated Development Environment ou Ambiente de Desenvolvimento Integrado). É um software usado por programadores que reúne editor de texto, compilador e ferramentas de teste para criar códigos de forma mais rápida e organizada. São exemplos de IDE's: Code::Blocks, Dev-C++ e Visual Studio Code. Caso não queira utilizar uma IDE, você pode somente instalar o compilador GCC e compilar o seu código no terminal da seguinte forma:
 
+<div style="
+background-color:#FFF5F5;
+border-left:6px solid #EF5552;
+padding:15px;
+margin:20px 0;
+border-radius:8px;
+">
 
-Você pode usar:
-
-Code::Blocks
-Dev-C++
-Visual Studio Code
-GCC (compilador)
-Compilando um Programa
+<strong>📦 Compilando um programa</strong>
 
 No terminal:
 
 gcc programa.c -o programa
 ./programa
-Conclusão
 
 
+</div>
 
 Estrutura Básica de um Programa em C
 
