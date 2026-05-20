@@ -849,10 +849,71 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#tipos-de-dados" class="md-nav__link">
+  <a href="#variaveis-e-seus-tipos-de-dados" class="md-nav__link">
     <span class="md-ellipsis">
       
-        TIPOS DE DADOS
+        VARIÁVEIS E SEUS TIPOS DE DADOS
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="VARIÁVEIS E SEUS TIPOS DE DADOS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exemplo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exemplo
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#regras-para-criacao-de-variaveis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Regras para criação de variáveis
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#operadores-aritmeticos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Operadores Aritméticos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#operadores-relacionais" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Operadores Relacionais
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#operadores-logicos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Operadores Lógicos
       
     </span>
   </a>
@@ -1645,10 +1706,71 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#tipos-de-dados" class="md-nav__link">
+  <a href="#variaveis-e-seus-tipos-de-dados" class="md-nav__link">
     <span class="md-ellipsis">
       
-        TIPOS DE DADOS
+        VARIÁVEIS E SEUS TIPOS DE DADOS
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="VARIÁVEIS E SEUS TIPOS DE DADOS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exemplo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exemplo
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#regras-para-criacao-de-variaveis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Regras para criação de variáveis
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#operadores-aritmeticos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Operadores Aritméticos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#operadores-relacionais" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Operadores Relacionais
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#operadores-logicos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Operadores Lógicos
       
     </span>
   </a>
@@ -1710,7 +1832,6 @@ border-radius:8px;
             <th>Vantagens</th>
             <th>Desvantagens</th>
         </tr>
-
         <tr>
             <td>
                 <ul>
@@ -1756,186 +1877,64 @@ border-radius:8px;
 
 </div>
 
-<h2 id="tipos-de-dados">TIPOS DE DADOS</h2>
-<p>Os tipos de dados definem quais valores uma variável pode armazenar. Na Linguagem C, os principais tipos são:</p>
-<table>
-<thead>
-<tr>
-<th>Tipo</th>
-<th>Descrição</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>int</td>
-<td>Números inteiros</td>
-</tr>
-<tr>
-<td>float</td>
-<td>Números reais</td>
-</tr>
-<tr>
-<td>char</td>
-<td>Caracteres</td>
-</tr>
-<tr>
-<td>double</td>
-<td>Números reais com maior precisão</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<p>Estrutura Básica de um Programa em C</p>
-<p>Exemplo simples:</p>
-<h1 id="include">include <stdio.h></h1>
-<p>int main() {
-    printf("Olá, mundo!\n");
-    return 0;
-}
-Explicação</p>
-<h1 id="include-biblioteca-de-entrada-e-saida">include <stdio.h> → biblioteca de entrada e saída</h1>
-<p>main() → função principal do programa
-printf() → imprime texto na tela
-return 0; → indica que o programa terminou corretamente
-Variáveis em C</p>
-<p>As variáveis armazenam dados na memória.</p>
-<p>Exemplo:</p>
-<p>int idade = 20;
-float altura = 1.75;
-char letra = 'A';
-Tipos básicos
-Tipo    Descrição
-int números inteiros
-float   números decimais
-char    caracteres
-double  números decimais com maior precisão
-Operadores
-Aritméticos
-+  -  *  /  %
-Relacionais
-==  !=  &gt;  &lt;  &gt;=  &lt;=
-Lógicos
-&amp;&amp;  ||  !
-Estruturas de Controle
-If/Else
-if (idade &gt;= 18) {
-    printf("Maior de idade");
-} else {
-    printf("Menor de idade");
-}
-Laço for
-for(int i = 0; i &lt; 5; i++) {
-    printf("%d\n", i);
-}
-Laço while
-while(x &lt; 10) {
-    x++;
-}
-Funções</p>
-<p>Exemplo:</p>
-<p>int soma(int a, int b) {
-    return a + b;
-}</p>
-<p>Uso:</p>
-<p>int resultado = soma(5, 3);
-Ponteiros (conceito importante)</p>
-<p>Ponteiros armazenam endereços de memória.</p>
-<p>int x = 10;
-int <em>p = &x;
-&amp;x → endereço de x
-</em>p → valor armazenado no endereço</p>
-<h1 id="estrutura-basica-de-um-programa-em-c">Estrutura Básica de um Programa em C</h1>
-<p>Exemplo simples:</p>
-<div class="highlight"><pre><span></span><code><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdio.h&gt;</span>
+<h2 id="variaveis-e-seus-tipos-de-dados">VARIÁVEIS E SEUS TIPOS DE DADOS</h2>
+<p>Variáveis são espaços reservados na memória para armazenar informações. Os tipos de dados definem quais valores uma variável pode armazenar. Na Linguagem C, os principais tipos são:</p>
+<div style="
+background-color:#FFF5F5;
+border-left:6px solid #EF5552;
+padding:15px;
+margin:20px 0;
+border-radius:8px;
+">
 
-<span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Olá, mundo!</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
-<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-<span class="n">Explicação</span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdio.h&gt;</span><span class="c1"> → biblioteca de entrada e saída</span>
-<span class="n">main</span><span class="p">()</span><span class="w"> </span><span class="err">→</span><span class="w"> </span><span class="n">função</span><span class="w"> </span><span class="n">principal</span><span class="w"> </span><span class="k">do</span><span class="w"> </span><span class="n">programa</span>
-<span class="n">printf</span><span class="p">()</span><span class="w"> </span><span class="err">→</span><span class="w"> </span><span class="n">imprime</span><span class="w"> </span><span class="n">texto</span><span class="w"> </span><span class="n">na</span><span class="w"> </span><span class="n">tela</span>
-<span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="err">→</span><span class="w"> </span><span class="n">indica</span><span class="w"> </span><span class="n">que</span><span class="w"> </span><span class="n">o</span><span class="w"> </span><span class="n">programa</span><span class="w"> </span><span class="n">terminou</span><span class="w"> </span><span class="n">corretamente</span>
-<span class="n">Variáveis</span><span class="w"> </span><span class="n">em</span><span class="w"> </span><span class="n">C</span>
+<strong>📦Tipos de dados primitivos</strong>
+<center>
+    <table border="1px solid">
+        <tr>
+            <th>Tipo de dados</th>
+            <th>Descrição</th>
+        </tr>
+        <tr>
+            <td>
+               int
+            </td>
+            <td>
+              Números inteiros
+            </td>
+        </tr>
+        <tr>
+            <td>
+               float
+            </td>
+            <td>
+              Números reais
+            </td>
+        </tr>
+        <tr>
+            <td>
+               char
+            </td>
+            <td>
+              Caracteres
+            </td>
+        </tr>
+        <tr>
+            <td>
+               double
+            </td>
+            <td>
+              Números reais com maior precisão
+            </td>
+        </tr>
+    </table>
+</center>
+</div>
 
-<span class="n">As</span><span class="w"> </span><span class="n">variáveis</span><span class="w"> </span><span class="n">armazenam</span><span class="w"> </span><span class="n">dados</span><span class="w"> </span><span class="n">na</span><span class="w"> </span><span class="n">memória</span><span class="p">.</span>
-
-<span class="nl">Exemplo</span><span class="p">:</span>
-
-<span class="kt">int</span><span class="w"> </span><span class="n">idade</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">20</span><span class="p">;</span>
-<span class="kt">float</span><span class="w"> </span><span class="n">altura</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1.75</span><span class="p">;</span>
-<span class="kt">char</span><span class="w"> </span><span class="n">letra</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sc">&#39;A&#39;</span><span class="p">;</span>
-<span class="n">Tipos</span><span class="w"> </span><span class="n">básicos</span>
-<span class="n">Tipo</span><span class="w">    </span><span class="n">Descrição</span>
-<span class="kt">int</span><span class="w"> </span><span class="n">números</span><span class="w"> </span><span class="n">inteiros</span>
-<span class="kt">float</span><span class="w">   </span><span class="n">números</span><span class="w"> </span><span class="n">decimais</span>
-<span class="kt">char</span><span class="w">    </span><span class="n">caracteres</span>
-<span class="kt">double</span><span class="w">  </span><span class="n">números</span><span class="w"> </span><span class="n">decimais</span><span class="w"> </span><span class="n">com</span><span class="w"> </span><span class="n">maior</span><span class="w"> </span><span class="n">precisão</span>
-<span class="n">Operadores</span>
-<span class="n">Aritméticos</span>
-<span class="o">+</span><span class="w">  </span><span class="o">-</span><span class="w">  </span><span class="o">*</span><span class="w">  </span><span class="o">/</span><span class="w">  </span><span class="o">%</span>
-<span class="n">Relacionais</span>
-<span class="o">==</span><span class="w">  </span><span class="o">!=</span><span class="w">  </span><span class="o">&gt;</span><span class="w">  </span><span class="o">&lt;</span><span class="w">  </span><span class="o">&gt;=</span><span class="w">  </span><span class="o">&lt;=</span>
-<span class="n">Lógicos</span>
-<span class="o">&amp;&amp;</span><span class="w">  </span><span class="o">||</span><span class="w">  </span><span class="o">!</span>
-<span class="n">Estruturas</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">Controle</span>
-<span class="n">If</span><span class="o">/</span><span class="n">Else</span>
-<span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">idade</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mi">18</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Maior de idade&quot;</span><span class="p">);</span>
-<span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Menor de idade&quot;</span><span class="p">);</span>
-<span class="p">}</span>
-<span class="n">Laço</span><span class="w"> </span><span class="k">for</span>
-<span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;%d</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">i</span><span class="p">);</span>
-<span class="p">}</span>
-<span class="n">Laço</span><span class="w"> </span><span class="k">while</span>
-<span class="k">while</span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">10</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="n">x</span><span class="o">++</span><span class="p">;</span>
-<span class="p">}</span>
-<span class="n">Funções</span>
-
-<span class="nl">Exemplo</span><span class="p">:</span>
-
-<span class="kt">int</span><span class="w"> </span><span class="n">soma</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">b</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">b</span><span class="p">;</span>
-<span class="p">}</span>
-
-<span class="nl">Uso</span><span class="p">:</span>
-
-<span class="kt">int</span><span class="w"> </span><span class="n">resultado</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">soma</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">);</span>
-<span class="n">Ponteiros</span><span class="w"> </span><span class="p">(</span><span class="n">conceito</span><span class="w"> </span><span class="n">importante</span><span class="p">)</span>
-
-<span class="n">Ponteiros</span><span class="w"> </span><span class="n">armazenam</span><span class="w"> </span><span class="n">endereços</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">memória</span><span class="p">.</span>
-
-<span class="kt">int</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span>
-<span class="kt">int</span><span class="w"> </span><span class="o">*</span><span class="n">p</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">&amp;</span><span class="n">x</span><span class="p">;</span>
-<span class="o">&amp;</span><span class="n">x</span><span class="w"> </span><span class="err">→</span><span class="w"> </span><span class="n">endereço</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">x</span>
-<span class="o">*</span><span class="n">p</span><span class="w"> </span><span class="err">→</span><span class="w"> </span><span class="n">valor</span><span class="w"> </span><span class="n">armazenado</span><span class="w"> </span><span class="n">no</span><span class="w"> </span><span class="n">endereço</span>
-
-
-
-<span class="n">LINGUAGEM</span><span class="w"> </span><span class="n">C</span>
-
-<span class="cp"># Tipos de Dados, Variáveis e Operadores Lógicos</span>
-
-<span class="cp">## O que são Tipos de Dados?</span>
-
-
-
-<span class="cp">## Variáveis</span>
-
-<span class="n">Variáveis</span><span class="w"> </span><span class="n">são</span><span class="w"> </span><span class="n">espaços</span><span class="w"> </span><span class="n">reservados</span><span class="w"> </span><span class="n">na</span><span class="w"> </span><span class="n">memória</span><span class="w"> </span><span class="n">para</span><span class="w"> </span><span class="n">armazenar</span><span class="w"> </span><span class="n">informações</span><span class="p">.</span>
-
-<span class="cp">### Exemplo</span>
-
-<span class="err">```</span><span class="n">c</span>
-<span class="kt">int</span><span class="w"> </span><span class="n">idade</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">20</span><span class="p">;</span>
+<h3 id="exemplo">Exemplo</h3>
+<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">idade</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">20</span><span class="p">;</span>
 <span class="kt">float</span><span class="w"> </span><span class="n">altura</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1.75</span><span class="p">;</span>
 <span class="kt">char</span><span class="w"> </span><span class="n">letra</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sc">&#39;A&#39;</span><span class="p">;</span>
 </code></pre></div>
-<hr />
 <h2 id="regras-para-criacao-de-variaveis">Regras para criação de variáveis</h2>
 <ul>
 <li>não iniciar com números;</li>
@@ -2035,14 +2034,71 @@ int <em>p = &x;
 </tr>
 </tbody>
 </table>
-<h3 id="exemplo">Exemplo</h3>
+<h1 id="estrutura-basica-de-um-programa-em-c">Estrutura Básica de um Programa em C</h1>
+<p>Exemplo simples:</p>
+<div class="highlight"><pre><span></span><code><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdio.h&gt;</span>
+
+<span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Olá, mundo!</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>Explicação</p>
+<h1 id="include-biblioteca-de-entrada-e-saida">include <stdio.h> → biblioteca de entrada e saída</h1>
+<p>main() → função principal do programa
+printf() → imprime texto na tela
+return 0; → indica que o programa terminou corretamente</p>
+<p>Estruturas de Controle
+If/Else
+if (idade &gt;= 18) {
+    printf("Maior de idade");
+} else {
+    printf("Menor de idade");
+}
+Laço for
+for(int i = 0; i &lt; 5; i++) {
+    printf("%d\n", i);
+}
+Laço while
+while(x &lt; 10) {
+    x++;
+}
+Funções</p>
+<p>Exemplo:</p>
+<p>int soma(int a, int b) {
+    return a + b;
+}</p>
+<p>Uso:</p>
+<p>int resultado = soma(5, 3);</p>
+<p>Estruturas de Controle
+If/Else
+if (idade &gt;= 18) {
+    printf("Maior de idade");
+} else {
+    printf("Menor de idade");
+}
+Laço for
+for(int i = 0; i &lt; 5; i++) {
+    printf("%d\n", i);
+}
+Laço while
+while(x &lt; 10) {
+    x++;
+}
+Funções</p>
+<p>Exemplo:</p>
+<p>int soma(int a, int b) {
+    return a + b;
+}</p>
+<p>Uso:</p>
+<p>int resultado = soma(5, 3);</p>
+<p>LINGUAGEM C</p>
+<h3 id="exemplo_1">Exemplo</h3>
 <div class="highlight"><pre><span></span><code><span class="k">if</span><span class="p">(</span><span class="n">idade</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mi">18</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">idade</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mi">60</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Faixa permitida&quot;</span><span class="p">);</span>
 <span class="p">}</span>
 </code></pre></div>
 <hr />
-<h2 id="conclusao">Conclusão</h2>
-<p>Os tipos de dados, variáveis e operadores são fundamentais para o desenvolvimento de algoritmos e programas em Linguagem C.</p>
 <h1 id="estruturas-de-controle-sequenciais">Estruturas de Controle Sequenciais</h1>
 <h2 id="o-que-sao">O que são?</h2>
 <p>As estruturas sequenciais executam comandos em sequência, linha após linha.</p>
@@ -2083,7 +2139,7 @@ int <em>p = &x;
 <li>base para programas mais complexos.</li>
 </ul>
 <hr />
-<h2 id="conclusao_1">Conclusão</h2>
+<h2 id="conclusao">Conclusão</h2>
 <p>As estruturas sequenciais representam a forma mais simples de controle de execução de um programa.</p>
 <h1 id="estruturas-condicionais">Estruturas Condicionais</h1>
 <h2 id="o-que-sao_1">O que são?</h2>
@@ -2137,8 +2193,6 @@ int <em>p = &x;
 <li>verificações lógicas.</li>
 </ul>
 <hr />
-<h2 id="conclusao_2">Conclusão</h2>
-<p>As estruturas condicionais tornam os programas mais inteligentes e dinâmicos.</p>
 <h1 id="estruturas-de-repeticao">Estruturas de Repetição</h1>
 <h2 id="o-que-sao_2">O que são?</h2>
 <p>As estruturas de repetição executam blocos de código várias vezes.</p>
@@ -2176,7 +2230,7 @@ int <em>p = &x;
 <li>validações.</li>
 </ul>
 <hr />
-<h2 id="conclusao_3">Conclusão</h2>
+<h2 id="conclusao_1">Conclusão</h2>
 <p>As estruturas de repetição automatizam tarefas repetitivas dentro dos programas.</p>
 <h1 id="funcoes-e-procedimentos">Funções e Procedimentos</h1>
 <h2 id="o-que-sao_3">O que são?</h2>
@@ -2211,7 +2265,7 @@ int <em>p = &x;
 <li>modularização.</li>
 </ul>
 <hr />
-<h2 id="conclusao_4">Conclusão</h2>
+<h2 id="conclusao_2">Conclusão</h2>
 <p>Funções e procedimentos tornam os programas mais organizados e profissionais.</p>
 <h1 id="estruturas-homogeneas-vetores-e-matrizes">Estruturas Homogêneas — Vetores e Matrizes</h1>
 <h2 id="vetores">Vetores</h2>
@@ -2259,7 +2313,7 @@ int <em>p = &x;
 <li>sistemas matemáticos.</li>
 </ul>
 <hr />
-<h2 id="conclusao_5">Conclusão</h2>
+<h2 id="conclusao_3">Conclusão</h2>
 <p>Vetores e matrizes são fundamentais para manipulação de grandes conjuntos de dados.</p>
 
 
