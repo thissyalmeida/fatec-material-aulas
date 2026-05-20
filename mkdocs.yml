@@ -1,4 +1,4 @@
-site_name: ALP - Algoritmos e Lógica de Programação
+site_name: Material Aula - 2026 - Fatec
 site_url: https://thissyalmeida.github.io/materialAula-2026-Fatec/
 use_directory_urls: false
 
@@ -46,82 +46,32 @@ nav:
 
   - ALP - Algoritmos e Lógica de Programação:
     - Lógica e Raciocínio:
-        - Aula 1: ALP/aula1-logica-raciocinio.md
+        - Lógica e Raciocínio: ALP/aula-01/logica-e-raciocinio.md
         - Exemplos: ALP/.md
     - Conceitos iniciais de Algoritmos:
-        - Aula 2: ALP/aula2-formas-de-representacao-de-algoritmos.md
-        - Exemplos: ALP/.md
+        - Formas de Representação de Algoritmos: ALP/aula-02/formas-de-representacao-de-algoritmos.md
+        - Exemplos: ALP/aula-02/exemplos-formas-de-representacao.md
     - Linguagem de Programação:
-        - Aula 3: ALP/linguagem-programacao.md
-        - Exemplos: ALP/.md
-    - Linguagem C:
-        - Tipos de Dados, Variáveis e Operadores Lógicos:
-            - Exercícios: ALP/tipos-variaveis-operadores.md
-        - Estruturas de Controle Sequenciais:
-            - Exercícios: ALP/estruturas-sequenciais.md
-        - Estruturas Condicionais:
-            - Exercícios: ALP/estruturas-condicionais.md
-        - Estruturas de Repetição:
-            - Exercícios: ALP/estruturas-repeticao.md
-        - Funções e Procedimentos:
-            - Exercícios: ALP/funcoes-procedimentos.md
-        - Estruturas Homogêneas - Vetores e Matrizes:
-            - Exercícios: ALP/vetores-matrizes.md
-    - Linguagem Java:
-        - Tipos de Dados, Variáveis e Operadores Lógicos:
-            - Exercícios: ALP/exercicios-logica-raciocinio.md
-        - Estruturas de Controle Sequenciais:
-            - Exercícios: ALP/exercicios-logica-raciocinio.md
-        - Estruturas Condicionais:
-            - Exercícios: ALP/exercicios-logica-raciocinio.md
-        - Estruturas de Repetição:
-            - Exercícios: ALP/exercicios-logica-raciocinio.md
-        - Funções e Procedimentos:
-            - Exercícios: ALP/exercicios-logica-raciocinio.md
-        - Estruturas Homogêneas - Vetores e Matrizes:
-            - Exercícios: ALP/exercicios-logica-raciocinio.md
-    - Linguagem Python:
-        - Exercícios: ALP/exercicios-logica-raciocinio.md
-        - Tipos de Dados, Variáveis e Operadores Lógicos:
-            - Exercícios: ALP/exercicios-logica-raciocinio.md
-        - Estruturas de Controle Sequenciais:
-            - Exercícios: ALP/exercicios-logica-raciocinio.md
-        - Estruturas Condicionais:
-            - Exercícios: ALP/exercicios-logica-raciocinio.md
-        - Estruturas de Repetição:
-            - Exercícios: ALP/exercicios-logica-raciocinio.md
-        - Funções e Procedimentos:
-            - Exercícios: ALP/exercicios-logica-raciocinio.md
-        - Estruturas Homogêneas - Vetores e Matrizes:
-            - Exercícios: ALP/exercicios-logica-raciocinio.md
-    - Linguagem JavaScript:
-        - Exercícios: ALP/exercicios-logica-raciocinio.md
-        - Tipos de Dados, Variáveis e Operadores Lógicos:
-            - Exercícios: ALP/exercicios-logica-raciocinio.md
-        - Estruturas de Controle Sequenciais:
-            - Exercícios: ALP/exercicios-logica-raciocinio.md
-        - Estruturas Condicionais:
-            - Exercícios: ALP/exercicios-logica-raciocinio.md
-        - Estruturas de Repetição:
-            - Exercícios: ALP/exercicios-logica-raciocinio.md
-        - Funções e Procedimentos:
-            - Exercícios: ALP/exercicios-logica-raciocinio.md
-        - Estruturas Homogêneas - Vetores e Matrizes:
-            - Exercícios: ALP/exercicios-logica-raciocinio.md
-    - Linguagem Kotlin:
-        - Exercícios: ALP/exercicios-logica-raciocinio.md
-        - Tipos de Dados, Variáveis e Operadores Lógicos:
-            - Exercícios: ALP/exercicios-logica-raciocinio.md
-        - Estruturas de Controle Sequenciais:
-            - Exercícios: ALP/exercicios-logica-raciocinio.md
-        - Estruturas Condicionais:
-            - Exercícios: ALP/exercicios-logica-raciocinio.md
-        - Estruturas de Repetição:
-            - Exercícios: ALP/exercicios-logica-raciocinio.md
-        - Funções e Procedimentos:
-            - Exercícios: ALP/exercicios-logica-raciocinio.md
-        - Estruturas Homogêneas - Vetores e Matrizes:
-            - Exercícios: ALP/exercicios-logica-raciocinio.md
+        - Linguagem de Programação: ALP/aula-03/linguagem-de-programacao.md
+        - Exemplos: ALP/aula-03/.md
+        
+    - Linguagens:
+        - C:
+            - Conteudo: ALP/C/conteudo-c.md
+            - Exemplos: ALP/C/exemplos-c.md
+        - Java:
+            - Conteudo: ALP/Java/conteudo-java.md
+            - Exemplos: ALP/Java/exemplos-java.md
+        - JavaScript:
+            - Conteudo: ALP/JavaScript/conteudo-javascript.md
+            - Exemplos: ALP/JavaScript/exemplos-javascript.md
+        - Kotlin:
+            - Conteudo: ALP/Kotlin/conteudo-kotlin.md
+            - Exemplos: ALP/Kotlin/exemplos-kotlin.md
+        - Python:
+            - Conteudo: ALP/Python/conteudo-python.md
+            - Exemplos: ALP/Python/exemplos-python.md
+        
   - EST - Estrutura de Dados:
     - Listas, Pilhas e Filas:
         - Exercícios: ED/aula1-introducao.md
