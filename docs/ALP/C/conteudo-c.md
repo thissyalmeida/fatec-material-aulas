@@ -37,7 +37,6 @@ border-radius:8px;
             <th>Vantagens</th>
             <th>Desvantagens</th>
         </tr>
-
         <tr>
             <td>
                 <ul>
@@ -83,20 +82,60 @@ border-radius:8px;
 
 </div>
 
-## TIPOS DE DADOS PRIMITIVOS
+## VARIÁVEIS E SEUS TIPOS DE DADOS
 
-Os tipos de dados definem quais valores uma variável pode armazenar. Na Linguagem C, os principais tipos são:
+Variáveis são espaços reservados na memória para armazenar informações. Os tipos de dados definem quais valores uma variável pode armazenar. Na Linguagem C, os principais tipos são:
 
-| Tipo | Descrição |
-|---|---|
-| int | Números inteiros |
-| float | Números reais |
-| char | Caracteres |
-| double | Números reais com maior precisão |
+<div style="
+background-color:#FFF5F5;
+border-left:6px solid #EF5552;
+padding:15px;
+margin:20px 0;
+border-radius:8px;
+">
 
-## VARIÁVEIS
-
-Variáveis são espaços reservados na memória para armazenar informações.
+<strong>📦Tipos de dados primitivos</strong>
+<center>
+    <table border="1px solid">
+        <tr>
+            <th>Tipo de dados</th>
+            <th>Descrição</th>
+        </tr>
+        <tr>
+            <td>
+               int
+            </td>
+            <td>
+              Números inteiros
+            </td>
+        </tr>
+        <tr>
+            <td>
+               float
+            </td>
+            <td>
+              Números reais
+            </td>
+        </tr>
+        <tr>
+            <td>
+               char
+            </td>
+            <td>
+              Caracteres
+            </td>
+        </tr>
+        <tr>
+            <td>
+               double
+            </td>
+            <td>
+              Números reais com maior precisão
+            </td>
+        </tr>
+    </table>
+</center>
+</div>
 
 ### Exemplo
 
