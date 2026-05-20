@@ -83,6 +83,19 @@ border-radius:8px;
 
 </div>
 
+## TIPOS DE DADOS
+
+Os tipos de dados definem quais valores uma variável pode armazenar. Na Linguagem C, os principais tipos são:
+
+| Tipo | Descrição |
+|---|---|
+| int | Números inteiros |
+| float | Números reais |
+| char | Caracteres |
+| double | Números reais com maior precisão |
+
+---
+
 Estrutura Básica de um Programa em C
 
 Exemplo simples:
@@ -156,23 +169,6 @@ int *p = &x;
 *p → valor armazenado no endereço
 
 
-transformar esse conteúdo em um arquivo md
-# Introdução à Linguagem C
-
-A linguagem **C** é uma das linguagens de programação mais importantes da história da computação. Ela foi criada por Dennis Ritchie na década de 1970 nos Bell Labs.
-
-## Características da Linguagem C
-- Linguagem de baixo e médio nível
-- Muito rápida e eficiente
-- Amplamente usada em:
-  - Sistemas operacionais
-  - Jogos
-  - Sistemas embarcados
-  - Compiladores
-
-O sistema operacional Unix foi desenvolvido principalmente em C.
-
----
 
 # Estrutura Básica de um Programa em C
 
@@ -246,34 +242,8 @@ int x = 10;
 int *p = &x;
 &x → endereço de x
 *p → valor armazenado no endereço
-Vantagens da Linguagem C
-Alto desempenho
-Controle de memória
-Base para várias linguagens:
-C++
-Java
-C#
-Desvantagens
-Gerenciamento manual de memória
-Menos segura que linguagens modernas
-Sintaxe pode ser difícil para iniciantes
-Onde Programar em C
 
-Você pode usar:
 
-Code::Blocks
-Dev-C++
-Visual Studio Code
-GCC (compilador)
-Compilando um Programa
-
-No terminal:
-
-gcc programa.c -o programa
-./programa
-Conclusão
-
-A linguagem C é fundamental para aprender programação e entender como os computadores funcionam internamente. Ela continua sendo muito utilizada no desenvolvimento de sistemas e aplicações de alto desempenho.
 
 LINGUAGEM C
 
@@ -281,18 +251,7 @@ LINGUAGEM C
 
 ## O que são Tipos de Dados?
 
-Os tipos de dados definem quais valores uma variável pode armazenar.
 
-Na Linguagem C, os principais tipos são:
-
-| Tipo | Descrição |
-|---|---|
-| int | Números inteiros |
-| float | Números reais |
-| char | Caracteres |
-| double | Números reais com maior precisão |
-
----
 
 ## Variáveis
 
