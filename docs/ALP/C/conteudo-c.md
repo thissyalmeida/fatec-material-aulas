@@ -135,7 +135,7 @@ border-radius:8px;
 </center>
 </div>
 
-### Exemplo
+Com base no conceito de variáveis e nos tipos de dados estudados, a seguir são apresentados exemplos de declaração e inicialização de variáveis na linguagem C:
 
 ```c
 int idade = 20;
@@ -143,16 +143,13 @@ float altura = 1.75;
 char letra = 'A';
 ```
 
-## Regras para criação de variáveis
+Ao criar uma variável, é importante seguir algumas regras básicas: o nome não deve iniciar com números, não pode conter espaços nem caracteres especiais e deve ser escolhido de forma significativa, facilitando a compreensão do código.
 
-- não iniciar com números;
-- não utilizar espaços;
-- não utilizar caracteres especiais;
-- utilizar nomes significativos.
+## OPERADORES
 
----
+Os operadores em uma linguagem de programação são símbolos utilizados para realizar operações com valores e variáveis. Eles permitem executar cálculos, comparações e tomar decisões dentro do programa.
 
-## Operadores Aritméticos
+### OPERADORES ARITMÉTICOS
 
 | Operador | Função |
 |---|---|
