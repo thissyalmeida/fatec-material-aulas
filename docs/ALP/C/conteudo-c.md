@@ -1,6 +1,6 @@
 # LINGUAGEM C
 
-A linguagem C é uma das linguagens de programação mais importantes da história da computação. Ela foi criada por Dennis Ritchie na década de 1970 nos Bell Labs. Ela possui algumas características principais:
+<p align="justify">A linguagem C é uma das linguagens de programação mais importantes da história da computação. Ela foi criada por Dennis Ritchie na década de 1970 nos Bell Labs. Ela possui algumas características principais:</p>
 
 Características da Linguagem C
 Linguagem de baixo e médio nível
