@@ -1,3 +1,237 @@
+Introdução à Linguagem C
+
+A linguagem C é uma das linguagens de programação mais importantes da história da computação. Ela foi criada por Dennis Ritchie na década de 1970 nos Bell Labs.
+
+Características da Linguagem C
+Linguagem de baixo e médio nível
+Muito rápida e eficiente
+Amplamente usada em:
+Sistemas operacionais
+Jogos
+Sistemas embarcados
+Compiladores
+
+O sistema operacional Unix foi desenvolvido principalmente em C.
+
+Estrutura Básica de um Programa em C
+
+Exemplo simples:
+
+#include <stdio.h>
+
+int main() {
+    printf("Olá, mundo!\n");
+    return 0;
+}
+Explicação
+#include <stdio.h> → biblioteca de entrada e saída
+main() → função principal do programa
+printf() → imprime texto na tela
+return 0; → indica que o programa terminou corretamente
+Variáveis em C
+
+As variáveis armazenam dados na memória.
+
+Exemplo:
+
+int idade = 20;
+float altura = 1.75;
+char letra = 'A';
+Tipos básicos
+Tipo	Descrição
+int	números inteiros
+float	números decimais
+char	caracteres
+double	números decimais com maior precisão
+Operadores
+Aritméticos
++  -  *  /  %
+Relacionais
+==  !=  >  <  >=  <=
+Lógicos
+&&  ||  !
+Estruturas de Controle
+If/Else
+if (idade >= 18) {
+    printf("Maior de idade");
+} else {
+    printf("Menor de idade");
+}
+Laço for
+for(int i = 0; i < 5; i++) {
+    printf("%d\n", i);
+}
+Laço while
+while(x < 10) {
+    x++;
+}
+Funções
+
+Exemplo:
+
+int soma(int a, int b) {
+    return a + b;
+}
+
+Uso:
+
+int resultado = soma(5, 3);
+Ponteiros (conceito importante)
+
+Ponteiros armazenam endereços de memória.
+
+int x = 10;
+int *p = &x;
+&x → endereço de x
+*p → valor armazenado no endereço
+Vantagens da Linguagem C
+Alto desempenho
+Controle de memória
+Base para várias linguagens:
+C++
+Java
+C#
+Desvantagens
+Gerenciamento manual de memória
+Menos segura que linguagens modernas
+Sintaxe pode ser difícil para iniciantes
+Onde Programar em C
+
+Você pode usar:
+
+Code::Blocks
+Dev-C++
+Visual Studio Code
+GCC (compilador)
+Compilando um Programa
+
+No terminal:
+
+gcc programa.c -o programa
+./programa
+Conclusão
+
+A linguagem C é fundamental para aprender programação e entender como os computadores funcionam internamente. Ela continua sendo muito utilizada no desenvolvimento de sistemas e aplicações de alto desempenho.
+
+transformar esse conteúdo em um arquivo md
+# Introdução à Linguagem C
+
+A linguagem **C** é uma das linguagens de programação mais importantes da história da computação. Ela foi criada por Dennis Ritchie na década de 1970 nos Bell Labs.
+
+## Características da Linguagem C
+- Linguagem de baixo e médio nível
+- Muito rápida e eficiente
+- Amplamente usada em:
+  - Sistemas operacionais
+  - Jogos
+  - Sistemas embarcados
+  - Compiladores
+
+O sistema operacional Unix foi desenvolvido principalmente em C.
+
+---
+
+# Estrutura Básica de um Programa em C
+
+Exemplo simples:
+
+```c
+#include <stdio.h>
+
+int main() {
+    printf("Olá, mundo!\n");
+    return 0;
+}
+Explicação
+#include <stdio.h> → biblioteca de entrada e saída
+main() → função principal do programa
+printf() → imprime texto na tela
+return 0; → indica que o programa terminou corretamente
+Variáveis em C
+
+As variáveis armazenam dados na memória.
+
+Exemplo:
+
+int idade = 20;
+float altura = 1.75;
+char letra = 'A';
+Tipos básicos
+Tipo	Descrição
+int	números inteiros
+float	números decimais
+char	caracteres
+double	números decimais com maior precisão
+Operadores
+Aritméticos
++  -  *  /  %
+Relacionais
+==  !=  >  <  >=  <=
+Lógicos
+&&  ||  !
+Estruturas de Controle
+If/Else
+if (idade >= 18) {
+    printf("Maior de idade");
+} else {
+    printf("Menor de idade");
+}
+Laço for
+for(int i = 0; i < 5; i++) {
+    printf("%d\n", i);
+}
+Laço while
+while(x < 10) {
+    x++;
+}
+Funções
+
+Exemplo:
+
+int soma(int a, int b) {
+    return a + b;
+}
+
+Uso:
+
+int resultado = soma(5, 3);
+Ponteiros (conceito importante)
+
+Ponteiros armazenam endereços de memória.
+
+int x = 10;
+int *p = &x;
+&x → endereço de x
+*p → valor armazenado no endereço
+Vantagens da Linguagem C
+Alto desempenho
+Controle de memória
+Base para várias linguagens:
+C++
+Java
+C#
+Desvantagens
+Gerenciamento manual de memória
+Menos segura que linguagens modernas
+Sintaxe pode ser difícil para iniciantes
+Onde Programar em C
+
+Você pode usar:
+
+Code::Blocks
+Dev-C++
+Visual Studio Code
+GCC (compilador)
+Compilando um Programa
+
+No terminal:
+
+gcc programa.c -o programa
+./programa
+Conclusão
+
+A linguagem C é fundamental para aprender programação e entender como os computadores funcionam internamente. Ela continua sendo muito utilizada no desenvolvimento de sistemas e aplicações de alto desempenho.
+
 LINGUAGEM C
 
 # Tipos de Dados, Variáveis e Operadores Lógicos
