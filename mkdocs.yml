@@ -54,8 +54,6 @@ nav:
     - Linguagem de Programação:
         - Linguagem de Programação: ALP/aula-03/linguagem-de-programacao.md
         - Exemplos: ALP/aula-03/.md
-        
-    - Linguagens:
         - C:
             - Conteudo: ALP/C/conteudo-c.md
             - Exemplos: ALP/C/exemplos-c.md
