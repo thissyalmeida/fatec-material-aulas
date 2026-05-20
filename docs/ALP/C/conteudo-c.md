@@ -159,9 +159,7 @@ Os operadores em uma linguagem de programação são símbolos utilizados para r
 | / | Divisão |
 | % | Resto da divisão |
 
----
-
-## Operadores Relacionais
+### OPERADORES RELACIONAIS
 
 | Operador | Significado |
 |---|---|
@@ -172,9 +170,7 @@ Os operadores em uma linguagem de programação são símbolos utilizados para r
 | >= | Maior ou igual |
 | <= | Menor ou igual |
 
----
-
-## Operadores Lógicos
+### OPERADORES LÓGICOS
 
 | Operador | Função |
 |---|---|
@@ -257,8 +253,6 @@ int soma(int a, int b) {
 Uso:
 
 int resultado = soma(5, 3);
-
-LINGUAGEM C
 
 
 
