@@ -32,7 +32,7 @@ border-radius:8px;
 
 <strong>📦 Vantagens e desvantagens da Linguagem C</strong>
 
-    <table>
+    <table border="1px solid">
         <tr>
             <th>Vantagens</th>
             <th>Desvantagens</th>
@@ -40,8 +40,6 @@ border-radius:8px;
 
         <tr>
             <td>
-                <h2>Vantagens da Linguagem C</h2>
-
                 <ul>
                     <li>Alto desempenho</li>
                     <li>Controle de memória</li>
@@ -54,10 +52,7 @@ border-radius:8px;
                     </li>
                 </ul>
             </td>
-
             <td>
-                <h2>Desvantagens</h2>
-
                 <ul>
                     <li>Gerenciamento manual de memória</li>
                     <li>Menos segura que linguagens modernas</li>
