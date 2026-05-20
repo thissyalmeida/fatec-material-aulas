@@ -20,7 +20,72 @@ border-radius:8px;
 
 </div>
 
-O sistema operacional Unix foi desenvolvido principalmente em C.
+<p align="justify"> A linguagem C é fundamental para aprender programação e entender como os computadores funcionam internamente. Ela continua sendo muito utilizada no desenvolvimento de sistemas e aplicações de alto desempenho. No quadro abaixo é possível visualizar as principais vantagens e desvantagens:</p>
+
+<div style="
+background-color:#FFF5F5;
+border-left:6px solid #EF5552;
+padding:15px;
+margin:20px 0;
+border-radius:8px;
+">
+
+<strong>📦 Vantagens e desvantagens da Linguagem C</strong>
+
+    <table>
+        <tr>
+            <th>Vantagens</th>
+            <th>Desvantagens</th>
+        </tr>
+
+        <tr>
+            <td>
+                <h2>Vantagens da Linguagem C</h2>
+
+                <ul>
+                    <li>Alto desempenho</li>
+                    <li>Controle de memória</li>
+                    <li>Base para várias linguagens:
+                        <ul>
+                            <li>C++</li>
+                            <li>Java</li>
+                            <li>C#</li>
+                        </ul>
+                    </li>
+                </ul>
+            </td>
+
+            <td>
+                <h2>Desvantagens</h2>
+
+                <ul>
+                    <li>Gerenciamento manual de memória</li>
+                    <li>Menos segura que linguagens modernas</li>
+                    <li>Sintaxe pode ser difícil para iniciantes</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+
+</div>
+
+
+
+Você pode usar:
+
+Code::Blocks
+Dev-C++
+Visual Studio Code
+GCC (compilador)
+Compilando um Programa
+
+No terminal:
+
+gcc programa.c -o programa
+./programa
+Conclusão
+
+
 
 Estrutura Básica de um Programa em C
 
@@ -93,34 +158,7 @@ int x = 10;
 int *p = &x;
 &x → endereço de x
 *p → valor armazenado no endereço
-Vantagens da Linguagem C
-Alto desempenho
-Controle de memória
-Base para várias linguagens:
-C++
-Java
-C#
-Desvantagens
-Gerenciamento manual de memória
-Menos segura que linguagens modernas
-Sintaxe pode ser difícil para iniciantes
-Onde Programar em C
 
-Você pode usar:
-
-Code::Blocks
-Dev-C++
-Visual Studio Code
-GCC (compilador)
-Compilando um Programa
-
-No terminal:
-
-gcc programa.c -o programa
-./programa
-Conclusão
-
-A linguagem C é fundamental para aprender programação e entender como os computadores funcionam internamente. Ela continua sendo muito utilizada no desenvolvimento de sistemas e aplicações de alto desempenho.
 
 transformar esse conteúdo em um arquivo md
 # Introdução à Linguagem C
