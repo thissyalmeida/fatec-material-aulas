@@ -372,10 +372,6 @@ switch(opcao) {
 
 ---
 
-## Conclusão
-
-As estruturas condicionais tornam os programas mais inteligentes e dinâmicos.
-
 # Estruturas de Repetição
 
 ## O que são?
