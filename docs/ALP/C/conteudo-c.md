@@ -31,7 +31,7 @@ border-radius:8px;
 ">
 
 <strong>📦 Vantagens e desvantagens da Linguagem C</strong>
-
+<center>
     <table border="1px solid">
         <tr>
             <th>Vantagens</th>
@@ -61,7 +61,7 @@ border-radius:8px;
             </td>
         </tr>
     </table>
-
+</center>
 </div>
 
 
