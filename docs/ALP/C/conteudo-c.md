@@ -2,14 +2,23 @@
 
 <p align="justify">A linguagem C é uma das linguagens de programação mais importantes da história da computação. Ela foi criada por Dennis Ritchie na década de 1970 nos Bell Labs. Ela possui algumas características principais:</p>
 
-Características da Linguagem C
-Linguagem de baixo e médio nível
-Muito rápida e eficiente
-Amplamente usada em:
-Sistemas operacionais
-Jogos
-Sistemas embarcados
-Compiladores
+<div style="
+background-color:#FFF5F5;
+border-left:6px solid #EF5552;
+padding:15px;
+margin:20px 0;
+border-radius:8px;
+">
+
+<strong>📦 Características da Linguagem C</strong>
+
+<ul>
+<li>Linguagem de baixo e médio nível</li>
+<li>Muito rápida e eficiente</li>
+<li>Amplamente usada em: Sistemas operacionais,Jogos,Sistemas embarcados,Compiladores</li>
+</ul>
+
+</div>
 
 O sistema operacional Unix foi desenvolvido principalmente em C.
 
