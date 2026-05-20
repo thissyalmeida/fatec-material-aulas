@@ -798,6 +798,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Conteudo
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="conteudo-c.html" class="md-nav__link md-nav__link--active">
         
   
@@ -814,6 +832,36 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#tipos-de-dados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TIPOS DE DADOS
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1590,6 +1638,25 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#tipos-de-dados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TIPOS DE DADOS
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1689,6 +1756,35 @@ border-radius:8px;
 
 </div>
 
+<h2 id="tipos-de-dados">TIPOS DE DADOS</h2>
+<p>Os tipos de dados definem quais valores uma variável pode armazenar. Na Linguagem C, os principais tipos são:</p>
+<table>
+<thead>
+<tr>
+<th>Tipo</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>int</td>
+<td>Números inteiros</td>
+</tr>
+<tr>
+<td>float</td>
+<td>Números reais</td>
+</tr>
+<tr>
+<td>char</td>
+<td>Caracteres</td>
+</tr>
+<tr>
+<td>double</td>
+<td>Números reais com maior precisão</td>
+</tr>
+</tbody>
+</table>
+<hr />
 <p>Estrutura Básica de um Programa em C</p>
 <p>Exemplo simples:</p>
 <h1 id="include">include <stdio.h></h1>
@@ -1748,21 +1844,6 @@ Ponteiros (conceito importante)</p>
 int <em>p = &x;
 &amp;x → endereço de x
 </em>p → valor armazenado no endereço</p>
-<p>transformar esse conteúdo em um arquivo md</p>
-<h1 id="introducao-a-linguagem-c">Introdução à Linguagem C</h1>
-<p>A linguagem <strong>C</strong> é uma das linguagens de programação mais importantes da história da computação. Ela foi criada por Dennis Ritchie na década de 1970 nos Bell Labs.</p>
-<h2 id="caracteristicas-da-linguagem-c">Características da Linguagem C</h2>
-<ul>
-<li>Linguagem de baixo e médio nível</li>
-<li>Muito rápida e eficiente</li>
-<li>Amplamente usada em:</li>
-<li>Sistemas operacionais</li>
-<li>Jogos</li>
-<li>Sistemas embarcados</li>
-<li>Compiladores</li>
-</ul>
-<p>O sistema operacional Unix foi desenvolvido principalmente em C.</p>
-<hr />
 <h1 id="estrutura-basica-de-um-programa-em-c">Estrutura Básica de um Programa em C</h1>
 <p>Exemplo simples:</p>
 <div class="highlight"><pre><span></span><code><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdio.h&gt;</span>
@@ -1832,34 +1913,8 @@ int <em>p = &x;
 <span class="kt">int</span><span class="w"> </span><span class="o">*</span><span class="n">p</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">&amp;</span><span class="n">x</span><span class="p">;</span>
 <span class="o">&amp;</span><span class="n">x</span><span class="w"> </span><span class="err">→</span><span class="w"> </span><span class="n">endereço</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">x</span>
 <span class="o">*</span><span class="n">p</span><span class="w"> </span><span class="err">→</span><span class="w"> </span><span class="n">valor</span><span class="w"> </span><span class="n">armazenado</span><span class="w"> </span><span class="n">no</span><span class="w"> </span><span class="n">endereço</span>
-<span class="n">Vantagens</span><span class="w"> </span><span class="n">da</span><span class="w"> </span><span class="n">Linguagem</span><span class="w"> </span><span class="n">C</span>
-<span class="n">Alto</span><span class="w"> </span><span class="n">desempenho</span>
-<span class="n">Controle</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">memória</span>
-<span class="n">Base</span><span class="w"> </span><span class="n">para</span><span class="w"> </span><span class="n">várias</span><span class="w"> </span><span class="n">linguagens</span><span class="o">:</span>
-<span class="n">C</span><span class="o">++</span>
-<span class="n">Java</span>
-<span class="n">C</span><span class="err">#</span>
-<span class="n">Desvantagens</span>
-<span class="n">Gerenciamento</span><span class="w"> </span><span class="n">manual</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">memória</span>
-<span class="n">Menos</span><span class="w"> </span><span class="n">segura</span><span class="w"> </span><span class="n">que</span><span class="w"> </span><span class="n">linguagens</span><span class="w"> </span><span class="n">modernas</span>
-<span class="n">Sintaxe</span><span class="w"> </span><span class="n">pode</span><span class="w"> </span><span class="n">ser</span><span class="w"> </span><span class="n">difícil</span><span class="w"> </span><span class="n">para</span><span class="w"> </span><span class="n">iniciantes</span>
-<span class="n">Onde</span><span class="w"> </span><span class="n">Programar</span><span class="w"> </span><span class="n">em</span><span class="w"> </span><span class="n">C</span>
 
-<span class="n">Você</span><span class="w"> </span><span class="n">pode</span><span class="w"> </span><span class="n">usar</span><span class="o">:</span>
 
-<span class="n">Code</span><span class="o">::</span><span class="n">Blocks</span>
-<span class="n">Dev</span><span class="o">-</span><span class="n">C</span><span class="o">++</span>
-<span class="n">Visual</span><span class="w"> </span><span class="n">Studio</span><span class="w"> </span><span class="n">Code</span>
-<span class="n">GCC</span><span class="w"> </span><span class="p">(</span><span class="n">compilador</span><span class="p">)</span>
-<span class="n">Compilando</span><span class="w"> </span><span class="n">um</span><span class="w"> </span><span class="n">Programa</span>
-
-<span class="n">No</span><span class="w"> </span><span class="n">terminal</span><span class="o">:</span>
-
-<span class="n">gcc</span><span class="w"> </span><span class="n">programa</span><span class="p">.</span><span class="n">c</span><span class="w"> </span><span class="o">-</span><span class="n">o</span><span class="w"> </span><span class="n">programa</span>
-<span class="p">.</span><span class="o">/</span><span class="n">programa</span>
-<span class="n">Conclusão</span>
-
-<span class="n">A</span><span class="w"> </span><span class="n">linguagem</span><span class="w"> </span><span class="n">C</span><span class="w"> </span><span class="n">é</span><span class="w"> </span><span class="n">fundamental</span><span class="w"> </span><span class="n">para</span><span class="w"> </span><span class="n">aprender</span><span class="w"> </span><span class="n">programação</span><span class="w"> </span><span class="n">e</span><span class="w"> </span><span class="n">entender</span><span class="w"> </span><span class="n">como</span><span class="w"> </span><span class="n">os</span><span class="w"> </span><span class="n">computadores</span><span class="w"> </span><span class="n">funcionam</span><span class="w"> </span><span class="n">internamente</span><span class="p">.</span><span class="w"> </span><span class="n">Ela</span><span class="w"> </span><span class="n">continua</span><span class="w"> </span><span class="n">sendo</span><span class="w"> </span><span class="n">muito</span><span class="w"> </span><span class="n">utilizada</span><span class="w"> </span><span class="n">no</span><span class="w"> </span><span class="n">desenvolvimento</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">sistemas</span><span class="w"> </span><span class="n">e</span><span class="w"> </span><span class="n">aplicações</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">alto</span><span class="w"> </span><span class="n">desempenho</span><span class="p">.</span>
 
 <span class="n">LINGUAGEM</span><span class="w"> </span><span class="n">C</span>
 
@@ -1867,18 +1922,7 @@ int <em>p = &x;
 
 <span class="cp">## O que são Tipos de Dados?</span>
 
-<span class="n">Os</span><span class="w"> </span><span class="n">tipos</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">dados</span><span class="w"> </span><span class="n">definem</span><span class="w"> </span><span class="n">quais</span><span class="w"> </span><span class="n">valores</span><span class="w"> </span><span class="n">uma</span><span class="w"> </span><span class="n">variável</span><span class="w"> </span><span class="n">pode</span><span class="w"> </span><span class="n">armazenar</span><span class="p">.</span>
 
-<span class="n">Na</span><span class="w"> </span><span class="n">Linguagem</span><span class="w"> </span><span class="n">C</span><span class="p">,</span><span class="w"> </span><span class="n">os</span><span class="w"> </span><span class="n">principais</span><span class="w"> </span><span class="n">tipos</span><span class="w"> </span><span class="n">são</span><span class="o">:</span>
-
-<span class="o">|</span><span class="w"> </span><span class="n">Tipo</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">Descrição</span><span class="w"> </span><span class="o">|</span>
-<span class="o">|---|---|</span>
-<span class="o">|</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">Números</span><span class="w"> </span><span class="n">inteiros</span><span class="w"> </span><span class="o">|</span>
-<span class="o">|</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">Números</span><span class="w"> </span><span class="n">reais</span><span class="w"> </span><span class="o">|</span>
-<span class="o">|</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">Caracteres</span><span class="w"> </span><span class="o">|</span>
-<span class="o">|</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">Números</span><span class="w"> </span><span class="n">reais</span><span class="w"> </span><span class="n">com</span><span class="w"> </span><span class="n">maior</span><span class="w"> </span><span class="n">precisão</span><span class="w"> </span><span class="o">|</span>
-
-<span class="o">---</span>
 
 <span class="cp">## Variáveis</span>
 
