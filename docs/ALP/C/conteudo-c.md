@@ -161,13 +161,40 @@ char letra = 'A';
 | / | Divisão |
 | % | Resto da divisão |
 
+<div style="
+background-color:#FFF5F5;
+border-left:6px solid #EF5552;
+padding:15px;
+margin:20px 0;
+border-radius:8px;
+">
+
+<center>
+    <table border="1px solid">
+        <tr>
+            <th>Operador</th>
+            <th>Função</th>
+            <th>Sintaxe</th>
+            <th>Exemplo</th>
+            <th>Resultado</th>
+        </tr>
+        <tr>
+            <td>+</td>
+            <td>Adição</td>
+            <td>a+b</td>
+            <td>3+2</td>
+            <td>5</td>
+        </tr>
+    </table>
+</center>
+</div>
+
 Operadores Aritméticos na Linguagem C
 
 
 
 Principais Operadores Aritméticos
 Operador	Função	Exemplo
-+	Adição	a + b
 -	Subtração	a - b
 *	Multiplicação	a * b
 /	Divisão	a / b

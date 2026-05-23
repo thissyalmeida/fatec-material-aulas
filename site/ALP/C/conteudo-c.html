@@ -2879,7 +2879,8 @@ border-radius:8px;
 </div>
 
 <h2 id="variaveis-e-seus-tipos-de-dados">VARIÁVEIS E SEUS TIPOS DE DADOS</h2>
-<p>Variáveis são espaços reservados na memória para armazenar informações. Os tipos de dados definem quais valores uma variável pode armazenar. Na Linguagem C, os principais tipos são:</p>
+<p align="justify">Variáveis são espaços reservados na memória para armazenar informações. Os tipos de dados definem quais valores uma variável pode armazenar. Na Linguagem C, os principais tipos são:</p>
+
 <div style="
 background-color:#FFF5F5;
 border-left:6px solid #EF5552;
@@ -2930,15 +2931,20 @@ border-radius:8px;
 </center>
 </div>
 
-<p>Com base no conceito de variáveis e nos tipos de dados estudados, a seguir são apresentados exemplos de declaração e inicialização de variáveis na linguagem C:</p>
+<p align="justify">Com base no conceito de variáveis e nos tipos de dados estudados, a seguir são apresentados exemplos de declaração e inicialização de variáveis na linguagem C:</p>
+
 <div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">idade</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">20</span><span class="p">;</span>
 <span class="kt">float</span><span class="w"> </span><span class="n">altura</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1.75</span><span class="p">;</span>
 <span class="kt">char</span><span class="w"> </span><span class="n">letra</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sc">&#39;A&#39;</span><span class="p">;</span>
 </code></pre></div>
-<p>Ao criar uma variável, é importante seguir algumas regras básicas: o nome não deve iniciar com números, não pode conter espaços nem caracteres especiais e deve ser escolhido de forma significativa, facilitando a compreensão do código.</p>
+<p align="justify">Ao criar uma variável, é importante seguir algumas regras básicas: o nome não deve iniciar com números, não pode conter espaços nem caracteres especiais e deve ser escolhido de forma significativa, facilitando a compreensão do código.</p>
+
 <h2 id="operadores">OPERADORES</h2>
-<p>Os operadores em uma linguagem de programação são símbolos utilizados para realizar operações com valores e variáveis. Eles permitem executar cálculos, comparações e tomar decisões dentro do programa.</p>
+<p align="justify">Os operadores em uma linguagem de programação são símbolos utilizados para realizar operações com valores e variáveis. Eles permitem executar cálculos, comparações e tomar decisões dentro do programa.</p>
+
 <h3 id="operadores-aritmeticos">OPERADORES ARITMÉTICOS</h3>
+<p align="justify">Os operadores aritméticos são utilizados para realizar cálculos matemáticos em programas. Eles permitem executar operações como adição, subtração, multiplicação e divisão entre valores e variáveis.</p>
+
 <table>
 <thead>
 <tr>
@@ -2969,6 +2975,64 @@ border-radius:8px;
 </tr>
 </tbody>
 </table>
+<p>Operadores Aritméticos na Linguagem C</p>
+<p>Principais Operadores Aritméticos
+Operador    Função  Exemplo
++   Adição  a + b
+-   Subtração   a - b
+*   Multiplicação   a * b
+/   Divisão a / b
+%   Resto da divisão    a % b
+Exemplos em C
+Adição
+int soma = 10 + 5;
+printf("%d", soma);</p>
+<p>Resultado:</p>
+<p>15
+Subtração
+int resultado = 20 - 8;
+printf("%d", resultado);</p>
+<p>Resultado:</p>
+<p>12
+Multiplicação
+int mult = 4 * 3;
+printf("%d", mult);</p>
+<p>Resultado:</p>
+<p>12
+Divisão
+int divisao = 10 / 2;
+printf("%d", divisao);</p>
+<p>Resultado:</p>
+<p>5
+Resto da Divisão (%)</p>
+<p>O operador % retorna o resto de uma divisão inteira.</p>
+<p>int resto = 10 % 3;
+printf("%d", resto);</p>
+<p>Resultado:</p>
+<p>1
+Operadores de Incremento e Decremento
+Incremento (++)</p>
+<p>Aumenta o valor da variável em 1.</p>
+<p>int x = 5;
+x++;</p>
+<p>Resultado:</p>
+<p>x = 6
+Decremento (--)</p>
+<p>Diminui o valor da variável em 1.</p>
+<p>int x = 5;
+x--;</p>
+<p>Resultado:</p>
+<p>x = 4
+Observação Importante</p>
+<p>Em divisões entre números inteiros, a linguagem C retorna apenas a parte inteira do resultado.</p>
+<p>Exemplo:</p>
+<p>int resultado = 5 / 2;
+printf("%d", resultado);</p>
+<p>Resultado:</p>
+<p>2</p>
+<p>Para obter valores decimais, utilize float ou double.</p>
+<p>Conclusão</p>
+<p>Os operadores aritméticos são fundamentais na programação, pois permitem realizar cálculos e manipular valores dentro do programa, sendo amplamente utilizados em sistemas, jogos, aplicativos e algoritmos matemáticos.</p>
 <h3 id="operadores-relacionais">OPERADORES RELACIONAIS</h3>
 <table>
 <thead>
@@ -3004,6 +3068,38 @@ border-radius:8px;
 </tr>
 </tbody>
 </table>
+<p>Operadores Relacionais</p>
+<p>Os operadores relacionais são usados para comparar valores.</p>
+<p>O resultado de uma comparação será:</p>
+<p>verdadeiro (true)
+falso (false)
+Principais operadores relacionais
+Operador    Significado Exemplo
+==  Igual   x == y
+!=  Diferente   x != y</p>
+<blockquote>
+<p>Maior que   x &gt; y
+&lt;   Menor que   x &lt; y
+=  Maior ou igual  x &gt;= y
+&lt;=  Menor ou igual  x &lt;= y
+Exemplos
+Igualdade (==)
+if (senha == 1234) {
+    printf("Acesso permitido");
+}
+Diferente (!=)
+if (x != 0) {
+    printf("Valor válido");
+}
+Maior e menor
+if (idade &gt;= 18) {
+    printf("Maior de idade");
+}
+Resumindo
+Operadores relacionais → fazem comparações.
+Operadores lógicos → combinam condições.
+Eles são essenciais para a tomada de decisão em programas.</p>
+</blockquote>
 <h3 id="operadores-logicos">OPERADORES LÓGICOS</h3>
 <table>
 <thead>
@@ -3027,6 +3123,33 @@ border-radius:8px;
 </tr>
 </tbody>
 </table>
+<p>Operadores Lógicos</p>
+<p>Os operadores lógicos são usados para combinar ou inverter condições. Eles geralmente são utilizados em estruturas condicionais como if, while e for.</p>
+<p>Principais operadores lógicos em C
+Operador    Significado Exemplo
+&amp;&amp;  E (AND) idade &gt;= 18 &amp;&amp; idade &lt;= 60
+<code></code>
+!   NÃO (NOT)   !(x &gt; 10)
+Exemplos
+Operador AND (&amp;&amp;)</p>
+<p>Retorna verdadeiro somente se todas as condições forem verdadeiras.</p>
+<p>int idade = 20;</p>
+<p>if (idade &gt;= 18 &amp;&amp; idade &lt;= 60) {
+    printf("Idade permitida");
+}
+Operador OR (||)</p>
+<p>Retorna verdadeiro se pelo menos uma condição for verdadeira.</p>
+<p>int nota = 5;
+int frequencia = 80;</p>
+<p>if (nota &gt;= 7 || frequencia &gt;= 75) {
+    printf("Aluno aprovado");
+}
+Operador NOT (!)</p>
+<p>Inverte o valor lógico da condição.</p>
+<p>int x = 10;</p>
+<p>if (!(x &lt; 5)) {
+    printf("Condição verdadeira");
+}</p>
 <h1 id="estrutura-basica-de-um-programa-em-c">Estrutura Básica de um Programa em C</h1>
 <p>Exemplo simples:</p>
 <div class="highlight"><pre><span></span><code><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdio.h&gt;</span>
