@@ -153,14 +153,6 @@ char letra = 'A';
 
 <p align="justify">Os operadores aritméticos são utilizados para realizar cálculos matemáticos em programas. Eles permitem executar operações como adição, subtração, multiplicação e divisão entre valores e variáveis.</p>
 
-| Operador | Função |
-|---|---|
-| + | Soma |
-| - | Subtração |
-| * | Multiplicação |
-| / | Divisão |
-| % | Resto da divisão |
-
 <div style="
 background-color:#FFF5F5;
 border-left:6px solid #EF5552;
@@ -192,6 +184,27 @@ border-radius:8px;
             <td>20-8</td>
             <td>12</td>
         </tr>
+        <tr>
+            <td>*</td>
+            <td>Multiplicação</td>
+            <td>a*b</td>
+            <td>4*6</td>
+            <td>24</td>
+        </tr>
+        <tr>
+            <td>/</td>
+            <td>Divisão</td>
+            <td>a/b</td>
+            <td>10/2</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>%</td>
+            <td>Resto</td>
+            <td>a%b</td>
+            <td>10%2</td>
+            <td>0</td>
+        </tr>
     </table>
 </center>
 </div>
@@ -200,36 +213,7 @@ Operadores Aritméticos na Linguagem C
 
 
 
-Principais Operadores Aritméticos
-Operador	Função	Exemplo
-*	Multiplicação	a * b
-/	Divisão	a / b
-%	Resto da divisão	a % b
 
-Multiplicação
-int mult = 4 * 3;
-printf("%d", mult);
-
-Resultado:
-
-12
-Divisão
-int divisao = 10 / 2;
-printf("%d", divisao);
-
-Resultado:
-
-5
-Resto da Divisão (%)
-
-O operador % retorna o resto de uma divisão inteira.
-
-int resto = 10 % 3;
-printf("%d", resto);
-
-Resultado:
-
-1
 Operadores de Incremento e Decremento
 Incremento (++)
 
