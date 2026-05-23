@@ -185,6 +185,13 @@ border-radius:8px;
             <td>3+2</td>
             <td>5</td>
         </tr>
+        <tr>
+            <td>-</td>
+            <td>Subtração</td>
+            <td>a-b</td>
+            <td>20-8</td>
+            <td>12</td>
+        </tr>
     </table>
 </center>
 </div>
@@ -195,25 +202,10 @@ Operadores Aritméticos na Linguagem C
 
 Principais Operadores Aritméticos
 Operador	Função	Exemplo
--	Subtração	a - b
 *	Multiplicação	a * b
 /	Divisão	a / b
 %	Resto da divisão	a % b
-Exemplos em C
-Adição
-int soma = 10 + 5;
-printf("%d", soma);
 
-Resultado:
-
-15
-Subtração
-int resultado = 20 - 8;
-printf("%d", resultado);
-
-Resultado:
-
-12
 Multiplicação
 int mult = 4 * 3;
 printf("%d", mult);
