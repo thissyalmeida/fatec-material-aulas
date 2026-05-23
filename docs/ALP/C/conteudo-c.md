@@ -694,13 +694,28 @@ for(int linha = 0; linha < 3; linha++) {
 
 ### VETORES
 
-Um vetor é uma estrutura de dados unidimensional que permite armazenar vários elementos do mesmo tipo em posições consecutivas de memória.
+<p align="justify">Um vetor é uma estrutura de dados unidimensional que permite armazenar vários elementos do mesmo tipo em posições consecutivas de memória. Cada posição do vetor é identificada por um índice, que sempre inicia em 0. No exemplo abaixo, o vetor possui 5 posições e em cada posição é armazenado um único valor.</p>
 
-Cada posição do vetor é identificada por um índice, que sempre inicia em 0.
 
-Representação
-Índice	0	1	2	3	4
-Valor	10	20	30	40	50
+<div style="
+background-color:#FFF5F5;
+border-left:6px solid #EF5552;
+padding:15px;
+margin:20px 0;
+border-radius:8px;
+">
+
+<center>
+    <table border="1px solid">
+        <tr>
+            <td>Índice</td><td>0</td><td>1</td><td>2</td><td>3</td><td>4</td>
+        </tr>
+        <tr>
+            <td>Valor</td><td>10</td><td>20</td><td>30</td><td>40</td><td>50</td>
+        </tr>
+    </table>
+</center>
+</div>
 
 Neste exemplo:
 
@@ -910,23 +925,3 @@ Organização	Lista de elementos	Linhas e colunas
 Acesso	vetor[i]	matriz[i][j]
 Estrutura de repetição	1 laço	2 laços aninhados
 Aplicações	Notas, idades, vendas	Tabelas, mapas, assentos, planilhas
-Boas Práticas
-
-✔ Utilize nomes significativos para os vetores e matrizes.
-
-✔ Evite acessar posições inexistentes.
-
-✔ Utilize constantes para definir tamanhos quando possível.
-
-✔ Utilize estruturas de repetição para percorrer os elementos.
-
-✔ Sempre valide os dados informados pelo usuário.
-
-Resumo
-Vetor: estrutura homogênea unidimensional utilizada para armazenar vários dados do mesmo tipo.
-Matriz: estrutura homogênea bidimensional organizada em linhas e colunas.
-Os índices em C sempre começam em 0.
-Vetores utilizam um índice (vetor[i]).
-Matrizes utilizam dois índices (matriz[i][j]).
-Estruturas de repetição são amplamente utilizadas para percorrer vetores e matrizes.
-São fundamentais para o desenvolvimento de programas que manipulam grandes quantidades de dados de forma organizada e eficiente.
