@@ -209,33 +209,24 @@ border-radius:8px;
 </center>
 </div>
 
-Operadores Aritméticos na Linguagem C
+<p align="justify">Além dos operadores apresentados na tabela, é comum na programação de computadores, a utilização dos operadores de incremento e decremento. O operador de incremento é representado por símbolos de '+', ou seja, '++'. Ele tem como finalidade aumentar o valor da variável em 1 unidade. Segue um exemplo da utilização desse operador:</p>
 
-
-
-
-Operadores de Incremento e Decremento
-Incremento (++)
-
-Aumenta o valor da variável em 1.
-
+```c
 int x = 5;
 x++;
+printf("%d",x);
+```
 
-Resultado:
+<p align="justify">No código acima, a variável x é inicializada com o valor 5. Em seguida, o operador de incremento (++) é aplicado à variável, adicionando 1 ao seu valor atual. Dessa forma, x passa a armazenar o valor 6, que é exibido na tela pela função printf(). O operador de decremento, por sua vez, diminui o valor da variável em 1 unidade. Segue um exemplo da utilização desse operador:</p>
 
-x = 6
-Decremento (--)
-
-Diminui o valor da variável em 1.
-
+```c
 int x = 5;
 x--;
+printf("%d",x);
+```
+<p align="justify">Para o exemplo acima, a variável x é inicializada com o valor 5. Em seguida, o operador de decremento (--) é aplicado a variável, subtraindo 1 ao seu valor atual. Dessa forma, x passa a armazenar o valor 4, que é exibido na tela pela função printf().</p>
 
-Resultado:
 
-x = 4
-Observação Importante
 
 Em divisões entre números inteiros, a linguagem C retorna apenas a parte inteira do resultado.
 
@@ -250,11 +241,9 @@ Resultado:
 
 Para obter valores decimais, utilize float ou double.
 
-Conclusão
-
-Os operadores aritméticos são fundamentais na programação, pois permitem realizar cálculos e manipular valores dentro do programa, sendo amplamente utilizados em sistemas, jogos, aplicativos e algoritmos matemáticos.
-
 ### OPERADORES RELACIONAIS
+
+Os operadores relacionais são usados para comparar valores.
 
 | Operador | Significado |
 |---|---|
@@ -264,10 +253,6 @@ Os operadores aritméticos são fundamentais na programação, pois permitem rea
 | < | Menor |
 | >= | Maior ou igual |
 | <= | Menor ou igual |
-
-Operadores Relacionais
-
-Os operadores relacionais são usados para comparar valores.
 
 O resultado de uma comparação será:
 
