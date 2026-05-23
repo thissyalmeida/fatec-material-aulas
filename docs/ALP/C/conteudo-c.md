@@ -83,7 +83,7 @@ border-radius:8px;
 
 ## VARIÁVEIS E SEUS TIPOS DE DADOS
 
-Variáveis são espaços reservados na memória para armazenar informações. Os tipos de dados definem quais valores uma variável pode armazenar. Na Linguagem C, os principais tipos são:
+<p align="justify">Variáveis são espaços reservados na memória para armazenar informações. Os tipos de dados definem quais valores uma variável pode armazenar. Na Linguagem C, os principais tipos são:</p>
 
 <div style="
 background-color:#FFF5F5;
@@ -135,7 +135,7 @@ border-radius:8px;
 </center>
 </div>
 
-Com base no conceito de variáveis e nos tipos de dados estudados, a seguir são apresentados exemplos de declaração e inicialização de variáveis na linguagem C:
+<p align="justify">Com base no conceito de variáveis e nos tipos de dados estudados, a seguir são apresentados exemplos de declaração e inicialização de variáveis na linguagem C:</p>
 
 ```c
 int idade = 20;
@@ -143,13 +143,15 @@ float altura = 1.75;
 char letra = 'A';
 ```
 
-Ao criar uma variável, é importante seguir algumas regras básicas: o nome não deve iniciar com números, não pode conter espaços nem caracteres especiais e deve ser escolhido de forma significativa, facilitando a compreensão do código.
+<p align="justify">Ao criar uma variável, é importante seguir algumas regras básicas: o nome não deve iniciar com números, não pode conter espaços nem caracteres especiais e deve ser escolhido de forma significativa, facilitando a compreensão do código.</p>
 
 ## OPERADORES
 
-Os operadores em uma linguagem de programação são símbolos utilizados para realizar operações com valores e variáveis. Eles permitem executar cálculos, comparações e tomar decisões dentro do programa.
+<p align="justify">Os operadores em uma linguagem de programação são símbolos utilizados para realizar operações com valores e variáveis. Eles permitem executar cálculos, comparações e tomar decisões dentro do programa.</p>
 
 ### OPERADORES ARITMÉTICOS
+
+<p align="justify">Os operadores aritméticos são utilizados para realizar cálculos matemáticos em programas. Eles permitem executar operações como adição, subtração, multiplicação e divisão entre valores e variáveis.</p>
 
 | Operador | Função |
 |---|---|
@@ -158,6 +160,96 @@ Os operadores em uma linguagem de programação são símbolos utilizados para r
 | * | Multiplicação |
 | / | Divisão |
 | % | Resto da divisão |
+
+Operadores Aritméticos na Linguagem C
+
+
+
+Principais Operadores Aritméticos
+Operador	Função	Exemplo
++	Adição	a + b
+-	Subtração	a - b
+*	Multiplicação	a * b
+/	Divisão	a / b
+%	Resto da divisão	a % b
+Exemplos em C
+Adição
+int soma = 10 + 5;
+printf("%d", soma);
+
+Resultado:
+
+15
+Subtração
+int resultado = 20 - 8;
+printf("%d", resultado);
+
+Resultado:
+
+12
+Multiplicação
+int mult = 4 * 3;
+printf("%d", mult);
+
+Resultado:
+
+12
+Divisão
+int divisao = 10 / 2;
+printf("%d", divisao);
+
+Resultado:
+
+5
+Resto da Divisão (%)
+
+O operador % retorna o resto de uma divisão inteira.
+
+int resto = 10 % 3;
+printf("%d", resto);
+
+Resultado:
+
+1
+Operadores de Incremento e Decremento
+Incremento (++)
+
+Aumenta o valor da variável em 1.
+
+int x = 5;
+x++;
+
+Resultado:
+
+x = 6
+Decremento (--)
+
+Diminui o valor da variável em 1.
+
+int x = 5;
+x--;
+
+Resultado:
+
+x = 4
+Observação Importante
+
+Em divisões entre números inteiros, a linguagem C retorna apenas a parte inteira do resultado.
+
+Exemplo:
+
+int resultado = 5 / 2;
+printf("%d", resultado);
+
+Resultado:
+
+2
+
+Para obter valores decimais, utilize float ou double.
+
+Conclusão
+
+Os operadores aritméticos são fundamentais na programação, pois permitem realizar cálculos e manipular valores dentro do programa, sendo amplamente utilizados em sistemas, jogos, aplicativos e algoritmos matemáticos.
 
 ### OPERADORES RELACIONAIS
 
@@ -170,6 +262,40 @@ Os operadores em uma linguagem de programação são símbolos utilizados para r
 | >= | Maior ou igual |
 | <= | Menor ou igual |
 
+Operadores Relacionais
+
+Os operadores relacionais são usados para comparar valores.
+
+O resultado de uma comparação será:
+
+verdadeiro (true)
+falso (false)
+Principais operadores relacionais
+Operador	Significado	Exemplo
+==	Igual	x == y
+!=	Diferente	x != y
+>	Maior que	x > y
+<	Menor que	x < y
+>=	Maior ou igual	x >= y
+<=	Menor ou igual	x <= y
+Exemplos
+Igualdade (==)
+if (senha == 1234) {
+    printf("Acesso permitido");
+}
+Diferente (!=)
+if (x != 0) {
+    printf("Valor válido");
+}
+Maior e menor
+if (idade >= 18) {
+    printf("Maior de idade");
+}
+Resumindo
+Operadores relacionais → fazem comparações.
+Operadores lógicos → combinam condições.
+Eles são essenciais para a tomada de decisão em programas.
+
 ### OPERADORES LÓGICOS
 
 | Operador | Função |
@@ -177,6 +303,45 @@ Os operadores em uma linguagem de programação são símbolos utilizados para r
 | && | E lógico |
 | \|\| | OU lógico |
 | ! | NÃO lógico |
+
+Operadores Lógicos
+
+Os operadores lógicos são usados para combinar ou inverter condições. Eles geralmente são utilizados em estruturas condicionais como if, while e for.
+
+Principais operadores lógicos em C
+Operador	Significado	Exemplo
+&&	E (AND)	idade >= 18 && idade <= 60
+`		`
+!	NÃO (NOT)	!(x > 10)
+Exemplos
+Operador AND (&&)
+
+Retorna verdadeiro somente se todas as condições forem verdadeiras.
+
+int idade = 20;
+
+if (idade >= 18 && idade <= 60) {
+    printf("Idade permitida");
+}
+Operador OR (||)
+
+Retorna verdadeiro se pelo menos uma condição for verdadeira.
+
+int nota = 5;
+int frequencia = 80;
+
+if (nota >= 7 || frequencia >= 75) {
+    printf("Aluno aprovado");
+}
+Operador NOT (!)
+
+Inverte o valor lógico da condição.
+
+int x = 10;
+
+if (!(x < 5)) {
+    printf("Condição verdadeira");
+}
 
 # Estrutura Básica de um Programa em C
 
