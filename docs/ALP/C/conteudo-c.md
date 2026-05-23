@@ -226,21 +226,6 @@ printf("%d",x);
 ```
 <p align="justify">Para o exemplo acima, a variável x é inicializada com o valor 5. Em seguida, o operador de decremento (--) é aplicado a variável, subtraindo 1 ao seu valor atual. Dessa forma, x passa a armazenar o valor 4, que é exibido na tela pela função printf().</p>
 
-
-
-Em divisões entre números inteiros, a linguagem C retorna apenas a parte inteira do resultado.
-
-Exemplo:
-
-int resultado = 5 / 2;
-printf("%d", resultado);
-
-Resultado:
-
-2
-
-Para obter valores decimais, utilize float ou double.
-
 ### OPERADORES RELACIONAIS
 
 Os operadores relacionais são usados para comparar valores.
@@ -279,12 +264,10 @@ Maior e menor
 if (idade >= 18) {
     printf("Maior de idade");
 }
-Resumindo
-Operadores relacionais → fazem comparações.
-Operadores lógicos → combinam condições.
-Eles são essenciais para a tomada de decisão em programas.
 
 ### OPERADORES LÓGICOS
+
+Os operadores lógicos são usados para combinar ou inverter condições. Eles geralmente são utilizados em estruturas condicionais como if, while e for.
 
 | Operador | Função |
 |---|---|
@@ -292,9 +275,6 @@ Eles são essenciais para a tomada de decisão em programas.
 | \|\| | OU lógico |
 | ! | NÃO lógico |
 
-Operadores Lógicos
-
-Os operadores lógicos são usados para combinar ou inverter condições. Eles geralmente são utilizados em estruturas condicionais como if, while e for.
 
 Principais operadores lógicos em C
 Operador	Significado	Exemplo
@@ -417,15 +397,11 @@ if(idade >= 18 && idade <= 60) {
 }
 ```
 
----
-
 # Estruturas de Controle Sequenciais
 
 ## O que são?
 
 As estruturas sequenciais executam comandos em sequência, linha após linha.
-
----
 
 ## Entrada e Saída de Dados
 
@@ -440,8 +416,6 @@ scanf("%d", &idade);
 ```c
 printf("Idade: %d", idade);
 ```
-
----
 
 ## Exemplo Completo
 
@@ -466,27 +440,15 @@ int main() {
 }
 ```
 
----
-
 ## Características
 
 - execução linear;
 - comandos executados em ordem;
 - base para programas mais complexos.
 
----
-
-## Conclusão
-
-As estruturas sequenciais representam a forma mais simples de controle de execução de um programa.
-
 # Estruturas Condicionais
 
-## O que são?
-
 As estruturas condicionais permitem que o programa tome decisões.
-
----
 
 ## Estrutura if
 
@@ -672,15 +634,11 @@ Funções e procedimentos tornam os programas mais organizados e profissionais.
 
 Vetores armazenam múltiplos valores do mesmo tipo.
 
----
-
 ## Exemplo de Vetor
 
 ```c
 int numeros[5];
 ```
-
----
 
 ## Atribuindo Valores
 
@@ -688,8 +646,6 @@ int numeros[5];
 numeros[0] = 10;
 numeros[1] = 20;
 ```
-
----
 
 ## Percorrendo Vetores
 
@@ -699,21 +655,15 @@ for(int i = 0; i < 5; i++) {
 }
 ```
 
----
-
 ## Matrizes
 
 Matrizes são estruturas bidimensionais.
-
----
 
 ## Exemplo de Matriz
 
 ```c
 int matriz[3][3];
 ```
-
----
 
 ## Percorrendo Matrizes
 
@@ -729,8 +679,6 @@ for(int linha = 0; linha < 3; linha++) {
 }
 ```
 
----
-
 ## Aplicações
 
 - armazenamento de dados;
@@ -738,8 +686,247 @@ for(int linha = 0; linha < 3; linha++) {
 - jogos;
 - sistemas matemáticos.
 
----
-
 ## Conclusão
 
-Vetores e matrizes são fundamentais para manipulação de grandes conjuntos de dados.
+## ESTRUTURAS HOMOGÊNEAS - VETORES E MATRIZES
+
+<p align="justify">Estruturas homogêneas são estruturas de dados capazes de armazenar vários valores do mesmo tipo utilizando um único nome de variável. Em Linguagem C, as principais estruturas homogêneas são os vetores e as matrizes. Essas estruturas facilitam o armazenamento e a manipulação de grandes quantidades de dados, evitando a criação de diversas variáveis individuais.</p>
+
+### VETORES
+
+Um vetor é uma estrutura de dados unidimensional que permite armazenar vários elementos do mesmo tipo em posições consecutivas de memória.
+
+Cada posição do vetor é identificada por um índice, que sempre inicia em 0.
+
+Representação
+Índice	0	1	2	3	4
+Valor	10	20	30	40	50
+
+Neste exemplo:
+
+vetor[0] contém o valor 10;
+vetor[1] contém o valor 20;
+vetor[2] contém o valor 30;
+vetor[3] contém o valor 40;
+vetor[4] contém o valor 50.
+Declaração de Vetores
+Sintaxe
+tipo nome_do_vetor[tamanho];
+Exemplo
+int notas[5];
+
+Nesse exemplo:
+
+O vetor chama-se notas;
+Pode armazenar 5 valores inteiros;
+As posições vão de 0 até 4.
+Inicialização de Vetores
+Inicializando com valores
+int notas[5] = {8, 7, 10, 9, 6};
+Inicialização automática
+int numeros[] = {10, 20, 30, 40};
+
+O compilador calcula automaticamente o tamanho do vetor.
+
+Acessando Elementos
+#include <stdio.h>
+
+int main() {
+
+    int notas[3] = {7, 8, 9};
+
+    printf("%d\n", notas[0]);
+    printf("%d\n", notas[1]);
+    printf("%d\n", notas[2]);
+
+    return 0;
+}
+Saída
+7
+8
+9
+Inserindo Dados em um Vetor
+#include <stdio.h>
+
+int main() {
+
+    int idade[3];
+
+    printf("Digite a primeira idade: ");
+    scanf("%d", &idade[0]);
+
+    printf("Digite a segunda idade: ");
+    scanf("%d", &idade[1]);
+
+    printf("Digite a terceira idade: ");
+    scanf("%d", &idade[2]);
+
+    return 0;
+}
+Percorrendo Vetores com Estrutura de Repetição
+#include <stdio.h>
+
+int main() {
+
+    int numeros[5] = {10, 20, 30, 40, 50};
+
+    for(int i = 0; i < 5; i++) {
+        printf("%d\n", numeros[i]);
+    }
+
+    return 0;
+}
+Situação-Problema
+
+Uma escola deseja armazenar as notas de 30 alunos para calcular posteriormente a média da turma. Criar um vetor é mais eficiente do que declarar 30 variáveis diferentes.
+
+float notas[30];
+Matrizes
+Conceito
+
+Uma matriz é uma estrutura homogênea bidimensional, organizada em linhas e colunas.
+
+Pode ser visualizada como uma tabela.
+
+Representação
+	Coluna 0	Coluna 1	Coluna 2
+Linha 0	10	20	30
+Linha 1	40	50	60
+Linha 2	70	80	90
+
+Para acessar um elemento da matriz utilizamos:
+
+matriz[linha][coluna]
+
+Exemplo:
+
+matriz[1][2]
+
+Resultado:
+
+60
+Declaração de Matrizes
+Sintaxe
+tipo nome_da_matriz[linhas][colunas];
+Exemplo
+int notas[5][4];
+
+Nesse exemplo:
+
+5 linhas;
+4 colunas;
+Total de 20 posições.
+Inicialização de Matrizes
+int matriz[2][3] = {
+    {10, 20, 30},
+    {40, 50, 60}
+};
+
+Representação:
+
+	0	1	2
+0	10	20	30
+1	40	50	60
+Acessando Elementos da Matriz
+#include <stdio.h>
+
+int main() {
+
+    int matriz[2][3] = {
+        {10, 20, 30},
+        {40, 50, 60}
+    };
+
+    printf("%d\n", matriz[0][1]);
+    printf("%d\n", matriz[1][2]);
+
+    return 0;
+}
+Saída
+20
+60
+Inserindo Dados em uma Matriz
+#include <stdio.h>
+
+int main() {
+
+    int matriz[2][2];
+
+    for(int i = 0; i < 2; i++) {
+
+        for(int j = 0; j < 2; j++) {
+
+            printf("Digite um valor: ");
+            scanf("%d", &matriz[i][j]);
+
+        }
+
+    }
+
+    return 0;
+}
+Exibindo os Valores da Matriz
+#include <stdio.h>
+
+int main() {
+
+    int matriz[2][2] = {
+        {10, 20},
+        {30, 40}
+    };
+
+    for(int i = 0; i < 2; i++) {
+
+        for(int j = 0; j < 2; j++) {
+
+            printf("%d ", matriz[i][j]);
+
+        }
+
+        printf("\n");
+
+    }
+
+    return 0;
+}
+Saída
+10 20
+30 40
+Situação-Problema
+
+Um hotel deseja armazenar a ocupação dos quartos em um andar. Cada linha representa um corredor e cada coluna representa um quarto.
+
+int ocupacao[5][10];
+
+Onde:
+
+5 corredores;
+10 quartos por corredor;
+Cada posição pode armazenar informações como ocupado (1) ou livre (0).
+Diferenças entre Vetores e Matrizes
+Característica	Vetor	Matriz
+Dimensão	1 dimensão	2 dimensões
+Organização	Lista de elementos	Linhas e colunas
+Acesso	vetor[i]	matriz[i][j]
+Estrutura de repetição	1 laço	2 laços aninhados
+Aplicações	Notas, idades, vendas	Tabelas, mapas, assentos, planilhas
+Boas Práticas
+
+✔ Utilize nomes significativos para os vetores e matrizes.
+
+✔ Evite acessar posições inexistentes.
+
+✔ Utilize constantes para definir tamanhos quando possível.
+
+✔ Utilize estruturas de repetição para percorrer os elementos.
+
+✔ Sempre valide os dados informados pelo usuário.
+
+Resumo
+Vetor: estrutura homogênea unidimensional utilizada para armazenar vários dados do mesmo tipo.
+Matriz: estrutura homogênea bidimensional organizada em linhas e colunas.
+Os índices em C sempre começam em 0.
+Vetores utilizam um índice (vetor[i]).
+Matrizes utilizam dois índices (matriz[i][j]).
+Estruturas de repetição são amplamente utilizadas para percorrer vetores e matrizes.
+São fundamentais para o desenvolvimento de programas que manipulam grandes quantidades de dados de forma organizada e eficiente.
