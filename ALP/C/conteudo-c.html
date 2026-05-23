@@ -3001,21 +3001,20 @@ border-radius:8px;
 </center>
 </div>
 
-<p>Operadores Aritméticos na Linguagem C</p>
-<p>Operadores de Incremento e Decremento
-Incremento (++)</p>
-<p>Aumenta o valor da variável em 1.</p>
-<p>int x = 5;
-x++;</p>
-<p>Resultado:</p>
-<p>x = 6
-Decremento (--)</p>
-<p>Diminui o valor da variável em 1.</p>
-<p>int x = 5;
-x--;</p>
-<p>Resultado:</p>
-<p>x = 4
-Observação Importante</p>
+<p align="justify">Além dos operadores apresentados na tabela, é comum na programação de computadores, a utilização dos operadores de incremento e decremento. O operador de incremento é representado por símbolos de '+', ou seja, '++'. Ele tem como finalidade aumentar o valor da variável em 1 unidade. Segue um exemplo da utilização desse operador:</p>
+
+<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span>
+<span class="n">x</span><span class="o">++</span><span class="p">;</span>
+<span class="n">printf</span><span class="p">(</span><span class="s">&quot;%d&quot;</span><span class="p">,</span><span class="n">x</span><span class="p">);</span>
+</code></pre></div>
+<p align="justify">No código acima, a variável x é inicializada com o valor 5. Em seguida, o operador de incremento (++) é aplicado à variável, adicionando 1 ao seu valor atual. Dessa forma, x passa a armazenar o valor 6, que é exibido na tela pela função printf(). O operador de decremento, por sua vez, diminui o valor da variável em 1 unidade. Segue um exemplo da utilização desse operador:</p>
+
+<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span>
+<span class="n">x</span><span class="o">--</span><span class="p">;</span>
+<span class="n">printf</span><span class="p">(</span><span class="s">&quot;%d&quot;</span><span class="p">,</span><span class="n">x</span><span class="p">);</span>
+</code></pre></div>
+<p align="justify">Para o exemplo acima, a variável x é inicializada com o valor 5. Em seguida, o operador de decremento (--) é aplicado a variável, subtraindo 1 ao seu valor atual. Dessa forma, x passa a armazenar o valor 4, que é exibido na tela pela função printf().</p>
+
 <p>Em divisões entre números inteiros, a linguagem C retorna apenas a parte inteira do resultado.</p>
 <p>Exemplo:</p>
 <p>int resultado = 5 / 2;
@@ -3023,9 +3022,8 @@ printf("%d", resultado);</p>
 <p>Resultado:</p>
 <p>2</p>
 <p>Para obter valores decimais, utilize float ou double.</p>
-<p>Conclusão</p>
-<p>Os operadores aritméticos são fundamentais na programação, pois permitem realizar cálculos e manipular valores dentro do programa, sendo amplamente utilizados em sistemas, jogos, aplicativos e algoritmos matemáticos.</p>
 <h3 id="operadores-relacionais">OPERADORES RELACIONAIS</h3>
+<p>Os operadores relacionais são usados para comparar valores.</p>
 <table>
 <thead>
 <tr>
@@ -3060,8 +3058,6 @@ printf("%d", resultado);</p>
 </tr>
 </tbody>
 </table>
-<p>Operadores Relacionais</p>
-<p>Os operadores relacionais são usados para comparar valores.</p>
 <p>O resultado de uma comparação será:</p>
 <p>verdadeiro (true)
 falso (false)
