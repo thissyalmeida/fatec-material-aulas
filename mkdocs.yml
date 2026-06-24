@@ -1,5 +1,5 @@
 site_name: Material Aula - 2026 - Fatec
-site_url: https://thissyalmeida.github.io/materialAula-2026-Fatec/
+site_url: https://thissyalmeida.github.io/fatec-material-aulas/
 use_directory_urls: false
 
 theme:
@@ -45,6 +45,8 @@ nav:
   - Boas-vindas: index.md
 
   - ALP - Algoritmos e Lógica de Programação:
+    - Introdução:
+        - Intro: ALP/aula-00/index.md
     - Lógica e Raciocínio:
         - Lógica e Raciocínio: ALP/aula-01/logica-e-raciocinio.md
         - Exemplos: ALP/.md
