@@ -85,3 +85,54 @@
   .alp-hero .md-button { display: block; text-align: center; }
   .md-typeset table:not([class]) { font-size: .8rem; }
 }
+
+
+/* Ajustes da página inicial da apostila de ALP */
+
+/* Aproveita melhor a largura disponível */
+.md-content:has(.alp-hero) {
+  max-width: 100%;
+}
+
+.md-content:has(.alp-hero) .md-content__inner {
+  max-width: 1100px;
+  margin-inline: auto;
+}
+
+/* Melhora a leitura dos títulos */
+.md-typeset h1 {
+  color: var(--md-default-fg-color);
+  font-weight: 800;
+  letter-spacing: -0.035em;
+}
+
+/* Banner com largura fluida */
+.alp-hero {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Evita que o conteúdo do banner fique muito estreito */
+.alp-hero > p {
+  max-width: 70ch;
+}
+
+/* Cartões organizados em uma grade responsiva */
+.md-typeset .grid.cards {
+  gap: 1rem;
+}
+
+.md-typeset .grid.cards > ul > li {
+  min-width: 0;
+}
+
+/* Ajustes para telas menores */
+@media screen and (max-width: 768px) {
+  .md-content:has(.alp-hero) .md-content__inner {
+    margin-inline: 0;
+  }
+
+  .alp-hero {
+    padding: 1.5rem;
+  }
+}
