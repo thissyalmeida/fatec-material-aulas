@@ -1,0 +1,4076 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://thissyalmeida.github.io/fatec-material-aulas/ALP/apostila/capitulos/03-variaveis-tipos-operadores.html">
+      
+      
+        <link rel="prev" href="02-algoritmos-pseudocodigo-fluxogramas.html">
+      
+      
+        <link rel="next" href="../../aula-01/logica-e-raciocinio.html">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Capítulo 3 — Variáveis, Tipos de Dados e Operadores - Material Aula - 2026 - Fatec</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/style.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="red" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#capitulo-3-variaveis-tipos-de-dados-e-operadores" class="md-skip">
+          Pular para conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href="../../../index.html" title="Material Aula - 2026 - Fatec" class="md-header__button md-logo" aria-label="Material Aula - 2026 - Fatec" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Material Aula - 2026 - Fatec
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Capítulo 3 — Variáveis, Tipos de Dados e Operadores
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="red" data-md-color-accent="indigo"  aria-label="Modo escuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Modo escuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="red" data-md-color-accent="indigo"  aria-label="Modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando busca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Abas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../index.html" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Boas-vindas
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../index.html" class="md-tabs__link">
+          
+  
+  
+  ALP - Algoritmos e Lógica de Programação
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../ED/aula1-introducao.html" class="md-tabs__link">
+          
+  
+  
+  EST - Estrutura de Dados
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../index.html" title="Material Aula - 2026 - Fatec" class="md-nav__button md-logo" aria-label="Material Aula - 2026 - Fatec" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Material Aula - 2026 - Fatec
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Boas-vindas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ALP - Algoritmos e Lógica de Programação
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    ALP - Algoritmos e Lógica de Programação
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Apostila de ALP
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Apostila de ALP
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Apresentação
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="01-introducao-computacao.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 1 — Introdução
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="02-algoritmos-pseudocodigo-fluxogramas.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 2 — Algoritmos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 3 — Variáveis, Tipos de Dados e Operadores
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="03-variaveis-tipos-operadores.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 3 — Variáveis, Tipos de Dados e Operadores
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#31-por-que-precisamos-de-variaveis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 Por que precisamos de variáveis?
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.1 Por que precisamos de variáveis?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objetivos-de-aprendizagem" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Objetivos de aprendizagem
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#32-variaveis-nome-tipo-e-valor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 Variáveis: nome, tipo e valor
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.2 Variáveis: nome, tipo e valor">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#321-identificadores" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2.1 Identificadores
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#33-declaracao-inicializacao-e-atribuicao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 Declaração, inicialização e atribuição
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.3 Declaração, inicialização e atribuição">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#331-o-simbolo-de-atribuicao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3.1 O símbolo de atribuição
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#34-constantes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4 Constantes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#35-tipos-de-dados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.5 Tipos de dados
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.5 Tipos de dados">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#351-inteiros" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.5.1 Inteiros
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#352-numeros-reais" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.5.2 Números reais
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#353-caracteres-e-textos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.5.3 Caracteres e textos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#354-valores-logicos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.5.4 Valores lógicos
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#36-operadores-aritmeticos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.6 Operadores aritméticos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.6 Operadores aritméticos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#361-divisao-inteira-e-divisao-real" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.6.1 Divisão inteira e divisão real
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#362-operador-de-resto" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.6.2 Operador de resto %
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#363-incremento-e-decremento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.6.3 Incremento e decremento
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#37-operadores-relacionais" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.7 Operadores relacionais
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#38-operadores-logicos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.8 Operadores lógicos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.8 Operadores lógicos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#381-tabela-verdade-do-e" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.8.1 Tabela-verdade do E (&amp;&amp;)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#382-tabela-verdade-do-ou" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.8.2 Tabela-verdade do OU (||)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#383-tabela-verdade-do-nao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.8.3 Tabela-verdade do NÃO (!)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#384-curto-circuito" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.8.4 Curto-circuito
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#39-precedencia-e-uso-de-parenteses" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.9 Precedência e uso de parênteses
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#310-expressoes-e-atribuicoes-exemplo-completo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.10 Expressões e atribuições: exemplo completo
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.10 Expressões e atribuições: exemplo completo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exemplo-1-media-de-duas-avaliacoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exemplo 1 — Média de duas avaliações
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Exemplo 1 — Média de duas avaliações">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#passo-1-identificar-os-dados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Passo 1 — Identificar os dados
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#passo-2-pseudocodigo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Passo 2 — Pseudocódigo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#passo-3-implementacao-em-c" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Passo 3 — Implementação em C
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#teste-de-mesa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Teste de mesa
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exemplo-2-conversao-de-minutos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exemplo 2 — Conversão de minutos
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#311-variaveis-e-operadores-em-portugolvisualg-e-c" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.11 Variáveis e operadores em Portugol/VisualG e C
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#312-erros-comuns-e-como-evita-los" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.12 Erros comuns e como evitá-los
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.12 Erros comuns e como evitá-los">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#erro-1-confundir-atribuicao-com-comparacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Erro 1 — Confundir atribuição com comparação
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#erro-2-esquecer-a-inicializacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Erro 2 — Esquecer a inicialização
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#erro-3-esperar-uma-divisao-real-com-dois-inteiros" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Erro 3 — Esperar uma divisão real com dois inteiros
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#erro-4-usar-aspas-incorretas-para-texto" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Erro 4 — Usar aspas incorretas para texto
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#erro-5-escrever-uma-condicao-logica-sem-pensar-no-objetivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Erro 5 — Escrever uma condição lógica sem pensar no objetivo
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#313-pratica-guiada" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.13 Prática guiada
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.13 Prática guiada">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#desafio-calculo-de-compra" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Desafio — Cálculo de compra
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#teste-de-mesa-do-desafio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Teste de mesa do desafio
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#314-exercicios" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.14 Exercícios
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.14 Exercícios">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nivel-1-compreensao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Nível 1 — Compreensão
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nivel-2-aplicacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Nível 2 — Aplicação
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nivel-3-analise-e-programacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Nível 3 — Análise e programação
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#315-gabarito-comentado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.15 Gabarito comentado
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#316-resumo-visual" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.16 Resumo visual
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#317-glossario" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.17 Glossário
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#referencias-para-consulta" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Referências para consulta
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introdução
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Introdução
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../aula-00/index.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Intro
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lógica e Raciocínio
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Lógica e Raciocínio
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../aula-01/logica-e-raciocinio.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lógica e Raciocínio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Conceitos iniciais de Algoritmos
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Conceitos iniciais de Algoritmos
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../aula-02/formas-de-representacao-de-algoritmos.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Formas de Representação de Algoritmos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../aula-02/exemplos-formas-de-representacao.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exemplos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Linguagem de Programação
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Linguagem de Programação
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../aula-03/linguagem-de-programacao.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Linguagem de Programação
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_5_2" id="__nav_2_5_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    C
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_5_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_5_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    C
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../C/conteudo-c.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Conteudo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../C/exemplos-c.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exemplos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_5_3" id="__nav_2_5_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Java
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_5_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_5_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Java
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Java/conteudo-java.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Conteudo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Java/exemplos-java.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exemplos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_5_4" id="__nav_2_5_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    JavaScript
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_5_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_5_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    JavaScript
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../JavaScript/conteudo-javascript.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Conteudo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../JavaScript/exemplos-javascript.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exemplos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_5_5" id="__nav_2_5_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Kotlin
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_5_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_5_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Kotlin
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Kotlin/conteudo-kotlin.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Conteudo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Kotlin/exemplos-kotlin.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exemplos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_5_6" id="__nav_2_5_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Python
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_5_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_5_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Python
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Python/conteudo-python.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Conteudo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Python/exemplos-python.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exemplos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    EST - Estrutura de Dados
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    EST - Estrutura de Dados
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Listas, Pilhas e Filas
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Listas, Pilhas e Filas
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ED/aula1-introducao.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exercícios
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Árvores e Grafos
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Árvores e Grafos
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ED/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exercícios
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#31-por-que-precisamos-de-variaveis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 Por que precisamos de variáveis?
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.1 Por que precisamos de variáveis?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objetivos-de-aprendizagem" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Objetivos de aprendizagem
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#32-variaveis-nome-tipo-e-valor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 Variáveis: nome, tipo e valor
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.2 Variáveis: nome, tipo e valor">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#321-identificadores" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2.1 Identificadores
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#33-declaracao-inicializacao-e-atribuicao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 Declaração, inicialização e atribuição
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.3 Declaração, inicialização e atribuição">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#331-o-simbolo-de-atribuicao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3.1 O símbolo de atribuição
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#34-constantes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4 Constantes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#35-tipos-de-dados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.5 Tipos de dados
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.5 Tipos de dados">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#351-inteiros" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.5.1 Inteiros
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#352-numeros-reais" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.5.2 Números reais
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#353-caracteres-e-textos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.5.3 Caracteres e textos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#354-valores-logicos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.5.4 Valores lógicos
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#36-operadores-aritmeticos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.6 Operadores aritméticos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.6 Operadores aritméticos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#361-divisao-inteira-e-divisao-real" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.6.1 Divisão inteira e divisão real
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#362-operador-de-resto" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.6.2 Operador de resto %
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#363-incremento-e-decremento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.6.3 Incremento e decremento
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#37-operadores-relacionais" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.7 Operadores relacionais
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#38-operadores-logicos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.8 Operadores lógicos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.8 Operadores lógicos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#381-tabela-verdade-do-e" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.8.1 Tabela-verdade do E (&amp;&amp;)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#382-tabela-verdade-do-ou" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.8.2 Tabela-verdade do OU (||)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#383-tabela-verdade-do-nao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.8.3 Tabela-verdade do NÃO (!)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#384-curto-circuito" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.8.4 Curto-circuito
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#39-precedencia-e-uso-de-parenteses" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.9 Precedência e uso de parênteses
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#310-expressoes-e-atribuicoes-exemplo-completo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.10 Expressões e atribuições: exemplo completo
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.10 Expressões e atribuições: exemplo completo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exemplo-1-media-de-duas-avaliacoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exemplo 1 — Média de duas avaliações
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Exemplo 1 — Média de duas avaliações">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#passo-1-identificar-os-dados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Passo 1 — Identificar os dados
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#passo-2-pseudocodigo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Passo 2 — Pseudocódigo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#passo-3-implementacao-em-c" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Passo 3 — Implementação em C
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#teste-de-mesa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Teste de mesa
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exemplo-2-conversao-de-minutos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exemplo 2 — Conversão de minutos
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#311-variaveis-e-operadores-em-portugolvisualg-e-c" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.11 Variáveis e operadores em Portugol/VisualG e C
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#312-erros-comuns-e-como-evita-los" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.12 Erros comuns e como evitá-los
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.12 Erros comuns e como evitá-los">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#erro-1-confundir-atribuicao-com-comparacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Erro 1 — Confundir atribuição com comparação
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#erro-2-esquecer-a-inicializacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Erro 2 — Esquecer a inicialização
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#erro-3-esperar-uma-divisao-real-com-dois-inteiros" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Erro 3 — Esperar uma divisão real com dois inteiros
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#erro-4-usar-aspas-incorretas-para-texto" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Erro 4 — Usar aspas incorretas para texto
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#erro-5-escrever-uma-condicao-logica-sem-pensar-no-objetivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Erro 5 — Escrever uma condição lógica sem pensar no objetivo
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#313-pratica-guiada" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.13 Prática guiada
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.13 Prática guiada">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#desafio-calculo-de-compra" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Desafio — Cálculo de compra
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#teste-de-mesa-do-desafio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Teste de mesa do desafio
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#314-exercicios" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.14 Exercícios
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.14 Exercícios">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nivel-1-compreensao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Nível 1 — Compreensão
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nivel-2-aplicacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Nível 2 — Aplicação
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nivel-3-analise-e-programacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Nível 3 — Análise e programação
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#315-gabarito-comentado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.15 Gabarito comentado
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#316-resumo-visual" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.16 Resumo visual
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#317-glossario" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.17 Glossário
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#referencias-para-consulta" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Referências para consulta
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="capitulo-3-variaveis-tipos-de-dados-e-operadores">Capítulo 3 — Variáveis, Tipos de Dados e Operadores</h1>
+<blockquote>
+<p><strong>Unidade curricular:</strong> Algoritmos e Lógica de Programação<br />
+<strong>Curso:</strong> Desenvolvimento de Software Multiplataforma (DSM)<br />
+<strong>Objetivo do capítulo:</strong> compreender como os programas representam informações, armazenam valores e realizam operações para produzir resultados.</p>
+</blockquote>
+<hr />
+<h2 id="31-por-que-precisamos-de-variaveis">3.1 Por que precisamos de variáveis?</h2>
+<p>Imagine um programa que calcula a média de um estudante. Para realizar esse cálculo, ele precisa guardar as notas informadas, somá-las e dividir o resultado pela quantidade de avaliações. Também pode precisar armazenar o nome do estudante e a média calculada.</p>
+<p>Essas informações precisam permanecer disponíveis durante a execução do programa. Para isso, utilizamos <strong>variáveis</strong>.</p>
+<p>Uma variável é um espaço lógico de armazenamento identificado por um nome, associado a um tipo de dado e a um valor que pode ser utilizado ou alterado durante a execução.</p>
+<pre class="mermaid"><code>flowchart TD
+    A["Entrada de dados"] --&gt; B["Armazenamento em variáveis"]
+    B --&gt; C["Processamento com operadores"]
+    C --&gt; D["Resultado"]</code></pre>
+<h3 id="objetivos-de-aprendizagem">Objetivos de aprendizagem</h3>
+<p>Ao final deste capítulo, você deverá ser capaz de:</p>
+<ul>
+<li>explicar a função das variáveis e das constantes;</li>
+<li>distinguir declaração, inicialização e atribuição;</li>
+<li>escolher tipos de dados adequados;</li>
+<li>utilizar operadores aritméticos, relacionais e lógicos;</li>
+<li>interpretar expressões e sua precedência;</li>
+<li>acompanhar a alteração de valores por meio de uma tabela de teste;</li>
+<li>implementar expressões equivalentes em Portugol/VisualG e em C.</li>
+</ul>
+<h2 id="32-variaveis-nome-tipo-e-valor">3.2 Variáveis: nome, tipo e valor</h2>
+<p>Considere a variável <code>idade</code>, que armazena o valor <code>20</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Elemento</th>
+<th>Exemplo</th>
+<th>Significado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Nome</td>
+<td><code>idade</code></td>
+<td>Identificador usado no programa</td>
+</tr>
+<tr>
+<td>Tipo</td>
+<td>inteiro</td>
+<td>Categoria de valor que pode ser armazenado</td>
+</tr>
+<tr>
+<td>Valor</td>
+<td><code>20</code></td>
+<td>Conteúdo atual da variável</td>
+</tr>
+</tbody>
+</table>
+<p>O valor de uma variável pode mudar ao longo do programa. Por exemplo, depois de executar uma atribuição, <code>idade</code> pode passar de <code>20</code> para <code>21</code>.</p>
+<h3 id="321-identificadores">3.2.1 Identificadores</h3>
+<p>Os identificadores são os nomes utilizados para representar variáveis, constantes, funções e outros elementos do código.</p>
+<p>Boas práticas para nomear variáveis:</p>
+<ul>
+<li>escolha nomes que indiquem o significado dos dados, como <code>quantidadeProdutos</code>;</li>
+<li>evite nomes vagos, como <code>x</code>, <code>a</code> ou <code>valor1</code>, quando um nome mais claro for possível;</li>
+<li>não utilize espaços nos identificadores;</li>
+<li>comece com uma letra ou sublinhado, respeitando as regras da linguagem;</li>
+<li>não use palavras reservadas da linguagem;</li>
+<li>mantenha um padrão de escrita consistente.</li>
+</ul>
+<p>Exemplos de nomes descritivos:</p>
+<div class="language-c highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kt">int</span><span class="w"> </span><span class="n">idade</span><span class="p">;</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="kt">int</span><span class="w"> </span><span class="n">quantidadeAlunos</span><span class="p">;</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="kt">float</span><span class="w"> </span><span class="n">mediaFinal</span><span class="p">;</span>
+</span></code></pre></div>
+<p>As regras exatas de nomes variam entre linguagens. Em C, por exemplo, <code>mediaFinal</code> e <code>MediaFinal</code> são identificadores diferentes, pois a linguagem diferencia letras maiúsculas e minúsculas.</p>
+<h2 id="33-declaracao-inicializacao-e-atribuicao">3.3 Declaração, inicialização e atribuição</h2>
+<p>Esses termos estão relacionados, mas não significam a mesma coisa.</p>
+<ul>
+<li><strong>Declaração:</strong> informa ao compilador que uma variável existe e qual é seu tipo.</li>
+<li><strong>Inicialização:</strong> fornece o primeiro valor à variável.</li>
+<li><strong>Atribuição:</strong> coloca um valor em uma variável, substituindo o valor anterior, quando houver.</li>
+</ul>
+<p>Exemplo em C:</p>
+<div class="language-c highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kt">int</span><span class="w"> </span><span class="n">idade</span><span class="p">;</span><span class="w">       </span><span class="c1">// declaração</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="n">idade</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">18</span><span class="p">;</span><span class="w">      </span><span class="c1">// atribuição de um valor</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="n">idade</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">19</span><span class="p">;</span><span class="w">      </span><span class="c1">// nova atribuição: o valor anterior é substituído</span>
+</span></code></pre></div>
+<p>Declaração e inicialização podem ocorrer juntas:</p>
+<div class="language-c highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kt">int</span><span class="w"> </span><span class="n">idade</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">18</span><span class="p">;</span>
+</span></code></pre></div>
+<p>Em C, uma variável local automática que não foi inicializada não deve ser lida como se tivesse um valor conhecido. Inicialize as variáveis antes de utilizá-las.</p>
+<h3 id="331-o-simbolo-de-atribuicao">3.3.1 O símbolo de atribuição</h3>
+<p>Em C, o operador <code>=</code> representa <strong>atribuição</strong>, e não igualdade matemática.</p>
+<div class="language-c highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">idade</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">20</span><span class="p">;</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="n">idade</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">idade</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+</span></code></pre></div>
+<p>Na segunda linha, o programa calcula o valor atual de <code>idade</code> mais <code>1</code> e armazena o resultado novamente em <code>idade</code>. Se antes a variável valia <code>20</code>, depois da instrução valerá <code>21</code>.</p>
+<p>Esse comportamento é diferente de uma equação algébrica. Em matemática, <code>x = x + 1</code> não descreve uma igualdade verdadeira para um número comum; em programação, descreve uma atualização do conteúdo da variável.</p>
+<h2 id="34-constantes">3.4 Constantes</h2>
+<p>Uma constante representa um valor que não deve ser alterado durante o trecho do programa em que é utilizado. Ela ajuda a evitar números repetidos e torna o código mais legível.</p>
+<p>Em C, a palavra-chave <code>const</code> permite declarar um objeto cujo valor não pode ser modificado por meio desse identificador após a inicialização:</p>
+<div class="language-c highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="k">const</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">PI</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">3.14159f</span><span class="p">;</span>
+</span></code></pre></div>
+<p>Se o programa tentar atribuir outro valor a <code>PI</code>, o compilador deverá apontar uma violação de constância.</p>
+<p>Uma constante nomeada também documenta o propósito do valor:</p>
+<div class="language-c highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">DIAS_DA_SEMANA</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">7</span><span class="p">;</span>
+</span></code></pre></div>
+<p>Use constantes para valores conceituais que não devem ser alterados, como limites definidos pelo problema, taxas fixas ou quantidades de referência.</p>
+<h2 id="35-tipos-de-dados">3.5 Tipos de dados</h2>
+<p>O tipo de dado define a categoria de valores que uma variável pode representar e influencia as operações que podem ser realizadas com ela.</p>
+<table>
+<thead>
+<tr>
+<th>Categoria</th>
+<th>Uso comum</th>
+<th>Exemplo em C</th>
+<th>Exemplos de valores</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Inteiro</td>
+<td>Contagens e quantidades sem parte fracionária</td>
+<td><code>int</code></td>
+<td><code>0</code>, <code>18</code>, <code>-7</code></td>
+</tr>
+<tr>
+<td>Real aproximado</td>
+<td>Medidas e valores com parte fracionária</td>
+<td><code>float</code>, <code>double</code></td>
+<td><code>7.5</code>, <code>-2.25</code></td>
+</tr>
+<tr>
+<td>Caractere</td>
+<td>Um caractere</td>
+<td><code>char</code></td>
+<td><code>'A'</code>, <code>'z'</code>, <code>'7'</code></td>
+</tr>
+<tr>
+<td>Texto</td>
+<td>Sequência de caracteres</td>
+<td>vetor de <code>char</code></td>
+<td><code>"Maria"</code></td>
+</tr>
+<tr>
+<td>Lógico</td>
+<td>Condição verdadeira ou falsa</td>
+<td><code>bool</code> com <code>&lt;stdbool.h&gt;</code> em C padrão até C17</td>
+<td><code>true</code>, <code>false</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="351-inteiros">3.5.1 Inteiros</h3>
+<p>O tipo <code>int</code> é utilizado para números inteiros dentro do intervalo permitido pela implementação.</p>
+<div class="language-c highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="kt">int</span><span class="w"> </span><span class="n">quantidade</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">12</span><span class="p">;</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="kt">int</span><span class="w"> </span><span class="n">saldoDePontos</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">-3</span><span class="p">;</span>
+</span></code></pre></div>
+<p>Não use um tipo inteiro quando o problema exigir preservar uma parte fracionária. Se uma divisão resultar em <code>2.5</code>, armazená-la em uma variável inteira não preservará essa fração.</p>
+<h3 id="352-numeros-reais">3.5.2 Números reais</h3>
+<p>Em C, <code>float</code> e <code>double</code> representam números de ponto flutuante. <code>double</code> geralmente oferece maior precisão do que <code>float</code>.</p>
+<div class="language-c highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="kt">float</span><span class="w"> </span><span class="n">altura</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1.68f</span><span class="p">;</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="kt">double</span><span class="w"> </span><span class="n">distancia</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1234.56789</span><span class="p">;</span>
+</span></code></pre></div>
+<p>Números de ponto flutuante são representações aproximadas. Por isso, em cálculos que exigem precisão rigorosa, como certas aplicações financeiras ou científicas, é necessário avaliar cuidadosamente a representação numérica e os métodos de cálculo.</p>
+<h3 id="353-caracteres-e-textos">3.5.3 Caracteres e textos</h3>
+<p>Em C, <code>char</code> é usado para armazenar um caractere, como <code>'A'</code>. Literais de caractere são escritos entre aspas simples.</p>
+<div class="language-c highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="kt">char</span><span class="w"> </span><span class="n">turma</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sc">'B'</span><span class="p">;</span>
+</span></code></pre></div>
+<p>Textos são sequências de caracteres. Em C, uma forma introdutória de armazená-los é utilizar um vetor de <code>char</code>:</p>
+<div class="language-c highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="kt">char</span><span class="w"> </span><span class="n">nome</span><span class="p">[]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"Ana"</span><span class="p">;</span>
+</span></code></pre></div>
+<p>Literais de texto são escritos entre aspas duplas. Observe a diferença:</p>
+<div class="language-c highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="kt">char</span><span class="w"> </span><span class="n">letra</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sc">'A'</span><span class="p">;</span><span class="w">   </span><span class="c1">// um caractere</span>
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="kt">char</span><span class="w"> </span><span class="n">nome</span><span class="p">[]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"Ana"</span><span class="p">;</span><span class="w"> </span><span class="c1">// uma sequência de caracteres</span>
+</span></code></pre></div>
+<h3 id="354-valores-logicos">3.5.4 Valores lógicos</h3>
+<p>Uma expressão lógica representa uma condição que pode ser verdadeira ou falsa.</p>
+<p>Em C, pode-se utilizar <code>bool</code>, <code>true</code> e <code>false</code> incluindo a biblioteca padrão:</p>
+<div class="language-c highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdbool.h&gt;</span>
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>
+</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="kt">bool</span><span class="w"> </span><span class="n">aprovado</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">true</span><span class="p">;</span>
+</span></code></pre></div>
+<p>Em versões anteriores a C23, <code>bool</code>, <code>true</code> e <code>false</code> são disponibilizados por <code>&lt;stdbool.h&gt;</code>. O tipo lógico é especialmente útil em condições e estruturas de decisão, estudadas em capítulos posteriores.</p>
+<h2 id="36-operadores-aritmeticos">3.6 Operadores aritméticos</h2>
+<p>Os operadores aritméticos permitem realizar cálculos.</p>
+<table>
+<thead>
+<tr>
+<th>Operador</th>
+<th>Operação</th>
+<th>Exemplo</th>
+<th style="text-align: right;">Resultado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>+</code></td>
+<td>Adição</td>
+<td><code>8 + 3</code></td>
+<td style="text-align: right;">11</td>
+</tr>
+<tr>
+<td><code>-</code></td>
+<td>Subtração</td>
+<td><code>8 - 3</code></td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr>
+<td><code>*</code></td>
+<td>Multiplicação</td>
+<td><code>8 * 3</code></td>
+<td style="text-align: right;">24</td>
+</tr>
+<tr>
+<td><code>/</code></td>
+<td>Divisão</td>
+<td><code>8 / 3</code> com operandos inteiros em C</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td><code>%</code></td>
+<td>Resto da divisão inteira</td>
+<td><code>8 % 3</code></td>
+<td style="text-align: right;">2</td>
+</tr>
+</tbody>
+</table>
+<h3 id="361-divisao-inteira-e-divisao-real">3.6.1 Divisão inteira e divisão real</h3>
+<p>Em C, quando os dois operandos de <code>/</code> são inteiros, o resultado também é inteiro, com a parte fracionária descartada em uma divisão comum entre valores positivos.</p>
+<div class="language-c highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="kt">int</span><span class="w"> </span><span class="n">resultado1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">7</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span><span class="w">       </span><span class="c1">// resultado1 vale 3</span>
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="kt">double</span><span class="w"> </span><span class="n">resultado2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">7.0</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span><span class="w">  </span><span class="c1">// resultado2 vale 3.5</span>
+</span></code></pre></div>
+<p>Atenção: atribuir o resultado de uma divisão inteira a uma variável <code>double</code> não recupera a parte fracionária que já foi descartada.</p>
+<div class="language-c highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="kt">double</span><span class="w"> </span><span class="n">resultado</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">7</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span><span class="w"> </span><span class="c1">// resultado vale 3.0, não 3.5</span>
+</span></code></pre></div>
+<p>Para obter a fração, pelo menos um dos operandos deve participar da operação como valor de ponto flutuante, por exemplo <code>7.0 / 2</code>.</p>
+<h3 id="362-operador-de-resto">3.6.2 Operador de resto <code>%</code></h3>
+<p>O operador <code>%</code> calcula o resto de uma divisão inteira. Ele é útil para verificar divisibilidade, identificar números pares e ímpares e separar componentes de valores.</p>
+<div class="language-c highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="kt">int</span><span class="w"> </span><span class="n">resto</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">17</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span><span class="w"> </span><span class="c1">// resto vale 2</span>
+</span></code></pre></div>
+<p>Para verificar se um inteiro é par, uma condição comum é:</p>
+<div class="language-c highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="n">numero</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">0</span>
+</span></code></pre></div>
+<p>Se o resto da divisão por <code>2</code> for zero, o número é divisível por <code>2</code>.</p>
+<h3 id="363-incremento-e-decremento">3.6.3 Incremento e decremento</h3>
+<p>Em C, <code>++</code> incrementa uma variável em uma unidade e <code>--</code> a decrementa em uma unidade.</p>
+<div class="language-c highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="kt">int</span><span class="w"> </span><span class="n">contador</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">4</span><span class="p">;</span>
+</span><span id="__span-16-2"><a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a><span class="n">contador</span><span class="o">++</span><span class="p">;</span><span class="w"> </span><span class="c1">// agora vale 5</span>
+</span><span id="__span-16-3"><a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a><span class="n">contador</span><span class="o">--</span><span class="p">;</span><span class="w"> </span><span class="c1">// agora vale 4</span>
+</span></code></pre></div>
+<p>As formas pré-incremento (<code>++contador</code>) e pós-incremento (<code>contador++</code>) diferem quando a expressão resultante é utilizada em uma expressão maior. No início, prefira usá-las em instruções isoladas para tornar a leitura mais simples.</p>
+<h2 id="37-operadores-relacionais">3.7 Operadores relacionais</h2>
+<p>Operadores relacionais comparam valores e produzem um resultado lógico.</p>
+<table>
+<thead>
+<tr>
+<th>Operador em C</th>
+<th>Significado</th>
+<th>Exemplo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>==</code></td>
+<td>Igual a</td>
+<td><code>idade == 18</code></td>
+</tr>
+<tr>
+<td><code>!=</code></td>
+<td>Diferente de</td>
+<td><code>idade != 18</code></td>
+</tr>
+<tr>
+<td><code>&gt;</code></td>
+<td>Maior que</td>
+<td><code>nota &gt; 7</code></td>
+</tr>
+<tr>
+<td><code>&lt;</code></td>
+<td>Menor que</td>
+<td><code>temperatura &lt; 15</code></td>
+</tr>
+<tr>
+<td><code>&gt;=</code></td>
+<td>Maior ou igual a</td>
+<td><code>frequencia &gt;= 75</code></td>
+</tr>
+<tr>
+<td><code>&lt;=</code></td>
+<td>Menor ou igual a</td>
+<td><code>saldo &lt;= 100</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Não confunda <code>=</code> com <code>==</code>.</strong></p>
+<ul>
+<li><code>idade = 18</code> atribui o valor <code>18</code> à variável.</li>
+<li><code>idade == 18</code> compara o valor atual de <code>idade</code> com <code>18</code>.</li>
+</ul>
+<p>Exemplo:</p>
+<div class="language-c highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="kt">int</span><span class="w"> </span><span class="n">idade</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">20</span><span class="p">;</span>
+</span><span id="__span-17-2"><a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a><span class="kt">bool</span><span class="w"> </span><span class="n">maiorDeIdade</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">idade</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mi">18</span><span class="p">;</span>
+</span></code></pre></div>
+<p>Com <code>&lt;stdbool.h&gt;</code> incluído, <code>maiorDeIdade</code> recebe <code>true</code>.</p>
+<h2 id="38-operadores-logicos">3.8 Operadores lógicos</h2>
+<p>Os operadores lógicos combinam ou invertem condições.</p>
+<table>
+<thead>
+<tr>
+<th>Operador em C</th>
+<th>Nome</th>
+<th>Interpretação</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>&amp;&amp;</code></td>
+<td>E lógico</td>
+<td>Verdadeiro quando as duas condições são verdadeiras</td>
+</tr>
+<tr>
+<td><code>||</code></td>
+<td>OU lógico</td>
+<td>Verdadeiro quando pelo menos uma condição é verdadeira</td>
+</tr>
+<tr>
+<td><code>!</code></td>
+<td>NÃO lógico</td>
+<td>Inverte o valor lógico</td>
+</tr>
+</tbody>
+</table>
+<h3 id="381-tabela-verdade-do-e">3.8.1 Tabela-verdade do E (<code>&amp;&amp;</code>)</h3>
+<table>
+<thead>
+<tr>
+<th>A</th>
+<th>B</th>
+<th>A <code>&amp;&amp;</code> B</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Falso</td>
+<td>Falso</td>
+<td>Falso</td>
+</tr>
+<tr>
+<td>Falso</td>
+<td>Verdadeiro</td>
+<td>Falso</td>
+</tr>
+<tr>
+<td>Verdadeiro</td>
+<td>Falso</td>
+<td>Falso</td>
+</tr>
+<tr>
+<td>Verdadeiro</td>
+<td>Verdadeiro</td>
+<td>Verdadeiro</td>
+</tr>
+</tbody>
+</table>
+<p>O resultado de <code>A &amp;&amp; B</code> só é verdadeiro quando ambas as condições são verdadeiras.</p>
+<h3 id="382-tabela-verdade-do-ou">3.8.2 Tabela-verdade do OU (<code>||</code>)</h3>
+<table>
+<thead>
+<tr>
+<th>A</th>
+<th>B</th>
+<th>A <code>||</code> B</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Falso</td>
+<td>Falso</td>
+<td>Falso</td>
+</tr>
+<tr>
+<td>Falso</td>
+<td>Verdadeiro</td>
+<td>Verdadeiro</td>
+</tr>
+<tr>
+<td>Verdadeiro</td>
+<td>Falso</td>
+<td>Verdadeiro</td>
+</tr>
+<tr>
+<td>Verdadeiro</td>
+<td>Verdadeiro</td>
+<td>Verdadeiro</td>
+</tr>
+</tbody>
+</table>
+<p>O resultado de <code>A || B</code> é verdadeiro quando ao menos uma das condições é verdadeira.</p>
+<h3 id="383-tabela-verdade-do-nao">3.8.3 Tabela-verdade do NÃO (<code>!</code>)</h3>
+<table>
+<thead>
+<tr>
+<th>A</th>
+<th><code>!A</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Falso</td>
+<td>Verdadeiro</td>
+</tr>
+<tr>
+<td>Verdadeiro</td>
+<td>Falso</td>
+</tr>
+</tbody>
+</table>
+<p>Exemplo de uso combinado:</p>
+<div class="language-c highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="kt">bool</span><span class="w"> </span><span class="n">temIngresso</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">true</span><span class="p">;</span>
+</span><span id="__span-18-2"><a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a><span class="kt">bool</span><span class="w"> </span><span class="n">documentoValido</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">false</span><span class="p">;</span>
+</span><span id="__span-18-3"><a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a>
+</span><span id="__span-18-4"><a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a><span class="kt">bool</span><span class="w"> </span><span class="n">podeEntrar</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">temIngresso</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">documentoValido</span><span class="p">;</span>
+</span></code></pre></div>
+<p>Nesse caso, <code>podeEntrar</code> recebe <code>false</code>, pois as duas condições não são verdadeiras.</p>
+<h3 id="384-curto-circuito">3.8.4 Curto-circuito</h3>
+<p>Em C, <code>&amp;&amp;</code> e <code>||</code> usam avaliação de curto-circuito. No operador <code>&amp;&amp;</code>, se a primeira condição for falsa, a segunda não precisa ser avaliada. No operador <code>||</code>, se a primeira condição for verdadeira, a segunda não precisa ser avaliada.</p>
+<p>Esse comportamento pode evitar operações desnecessárias, mas expressões devem ser escritas com cuidado para não depender de efeitos colaterais confusos.</p>
+<h2 id="39-precedencia-e-uso-de-parenteses">3.9 Precedência e uso de parênteses</h2>
+<p>Quando uma expressão contém vários operadores, a linguagem segue regras de precedência e associatividade para determinar a ordem de avaliação.</p>
+<p>Considere:</p>
+<div class="language-c highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="kt">int</span><span class="w"> </span><span class="n">resultado</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">3</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">4</span><span class="p">;</span>
+</span></code></pre></div>
+<p>A multiplicação é realizada antes da adição, então <code>resultado</code> vale <code>14</code>.</p>
+<p>Com parênteses:</p>
+<div class="language-c highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="kt">int</span><span class="w"> </span><span class="n">resultado</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="mi">2</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">3</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">4</span><span class="p">;</span>
+</span></code></pre></div>
+<p>A expressão entre parênteses é avaliada primeiro, então <code>resultado</code> vale <code>20</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Prioridade geral</th>
+<th>Operadores comuns</th>
+<th>Exemplo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Maior, neste conjunto</td>
+<td>Parênteses na expressão</td>
+<td><code>(2 + 3) * 4</code></td>
+</tr>
+<tr>
+<td>Multiplicação/divisão/resto</td>
+<td><code>*</code>, <code>/</code>, <code>%</code></td>
+<td><code>12 / 3 * 2</code></td>
+</tr>
+<tr>
+<td>Adição/subtração</td>
+<td><code>+</code>, <code>-</code></td>
+<td><code>10 - 4 + 1</code></td>
+</tr>
+<tr>
+<td>Comparação relacional</td>
+<td><code>&lt;</code>, <code>&lt;=</code>, <code>&gt;</code>, <code>&gt;=</code></td>
+<td><code>idade &gt;= 18</code></td>
+</tr>
+<tr>
+<td>Igualdade</td>
+<td><code>==</code>, <code>!=</code></td>
+<td><code>nota != 0</code></td>
+</tr>
+<tr>
+<td>E lógico</td>
+<td><code>&amp;&amp;</code></td>
+<td><code>a &gt; 0 &amp;&amp; b &gt; 0</code></td>
+</tr>
+<tr>
+<td>OU lógico</td>
+<td><code>||</code></td>
+<td><code>a &gt; 0 || b &gt; 0</code></td>
+</tr>
+<tr>
+<td>Atribuição</td>
+<td><code>=</code></td>
+<td><code>media = soma / 2.0</code></td>
+</tr>
+</tbody>
+</table>
+<p>A tabela apresenta uma visão introdutória, não a lista completa da precedência em C. Ao escrever expressões longas, use parênteses para deixar a intenção explícita e reduzir ambiguidades de leitura.</p>
+<h2 id="310-expressoes-e-atribuicoes-exemplo-completo">3.10 Expressões e atribuições: exemplo completo</h2>
+<p>Uma expressão combina valores, variáveis e operadores para calcular um resultado.</p>
+<h3 id="exemplo-1-media-de-duas-avaliacoes">Exemplo 1 — Média de duas avaliações</h3>
+<p><strong>Problema:</strong> receber duas notas, calcular a média aritmética e exibir o resultado.</p>
+<h4 id="passo-1-identificar-os-dados">Passo 1 — Identificar os dados</h4>
+<ul>
+<li>Entradas: <code>nota1</code> e <code>nota2</code>.</li>
+<li>Processamento: somar as notas e dividir por <code>2</code>.</li>
+<li>Saída: <code>media</code>.</li>
+</ul>
+<h4 id="passo-2-pseudocodigo">Passo 2 — Pseudocódigo</h4>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a>INÍCIO
+</span><span id="__span-21-2"><a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a>    LEIA nota1
+</span><span id="__span-21-3"><a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a>    LEIA nota2
+</span><span id="__span-21-4"><a id="__codelineno-21-4" name="__codelineno-21-4" href="#__codelineno-21-4"></a>    media ← (nota1 + nota2) / 2
+</span><span id="__span-21-5"><a id="__codelineno-21-5" name="__codelineno-21-5" href="#__codelineno-21-5"></a>    ESCREVA media
+</span><span id="__span-21-6"><a id="__codelineno-21-6" name="__codelineno-21-6" href="#__codelineno-21-6"></a>FIM
+</span></code></pre></div>
+<h4 id="passo-3-implementacao-em-c">Passo 3 — Implementação em C</h4>
+<div class="language-c highlight"><pre><span></span><code><span id="__span-22-1"><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdio.h&gt;</span>
+</span><span id="__span-22-2"><a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a>
+</span><span id="__span-22-3"><a id="__codelineno-22-3" name="__codelineno-22-3" href="#__codelineno-22-3"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-22-4"><a id="__codelineno-22-4" name="__codelineno-22-4" href="#__codelineno-22-4"></a><span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">nota1</span><span class="p">,</span><span class="w"> </span><span class="n">nota2</span><span class="p">,</span><span class="w"> </span><span class="n">media</span><span class="p">;</span>
+</span><span id="__span-22-5"><a id="__codelineno-22-5" name="__codelineno-22-5" href="#__codelineno-22-5"></a>
+</span><span id="__span-22-6"><a id="__codelineno-22-6" name="__codelineno-22-6" href="#__codelineno-22-6"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">"Digite a primeira nota: "</span><span class="p">);</span>
+</span><span id="__span-22-7"><a id="__codelineno-22-7" name="__codelineno-22-7" href="#__codelineno-22-7"></a><span class="w">    </span><span class="n">scanf</span><span class="p">(</span><span class="s">"%lf"</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">nota1</span><span class="p">);</span>
+</span><span id="__span-22-8"><a id="__codelineno-22-8" name="__codelineno-22-8" href="#__codelineno-22-8"></a>
+</span><span id="__span-22-9"><a id="__codelineno-22-9" name="__codelineno-22-9" href="#__codelineno-22-9"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">"Digite a segunda nota: "</span><span class="p">);</span>
+</span><span id="__span-22-10"><a id="__codelineno-22-10" name="__codelineno-22-10" href="#__codelineno-22-10"></a><span class="w">    </span><span class="n">scanf</span><span class="p">(</span><span class="s">"%lf"</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">nota2</span><span class="p">);</span>
+</span><span id="__span-22-11"><a id="__codelineno-22-11" name="__codelineno-22-11" href="#__codelineno-22-11"></a>
+</span><span id="__span-22-12"><a id="__codelineno-22-12" name="__codelineno-22-12" href="#__codelineno-22-12"></a><span class="w">    </span><span class="n">media</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">nota1</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">nota2</span><span class="p">)</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mf">2.0</span><span class="p">;</span>
+</span><span id="__span-22-13"><a id="__codelineno-22-13" name="__codelineno-22-13" href="#__codelineno-22-13"></a>
+</span><span id="__span-22-14"><a id="__codelineno-22-14" name="__codelineno-22-14" href="#__codelineno-22-14"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">"Media: %.2f</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="w"> </span><span class="n">media</span><span class="p">);</span>
+</span><span id="__span-22-15"><a id="__codelineno-22-15" name="__codelineno-22-15" href="#__codelineno-22-15"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+</span><span id="__span-22-16"><a id="__codelineno-22-16" name="__codelineno-22-16" href="#__codelineno-22-16"></a><span class="p">}</span>
+</span></code></pre></div>
+<p>O especificador <code>%lf</code> é usado com <code>scanf</code> para ler um valor do tipo <code>double</code>. Em <code>printf</code>, <code>%f</code> é utilizado para imprimir um valor de ponto flutuante do tipo promovido; <code>%.2f</code> mostra duas casas decimais.</p>
+<h4 id="teste-de-mesa">Teste de mesa</h4>
+<table>
+<thead>
+<tr>
+<th>Etapa</th>
+<th style="text-align: right;"><code>nota1</code></th>
+<th style="text-align: right;"><code>nota2</code></th>
+<th>Expressão/ação</th>
+<th style="text-align: right;"><code>media</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td style="text-align: right;">7.0</td>
+<td style="text-align: right;">—</td>
+<td>Leitura da primeira nota</td>
+<td style="text-align: right;">—</td>
+</tr>
+<tr>
+<td>2</td>
+<td style="text-align: right;">7.0</td>
+<td style="text-align: right;">8.0</td>
+<td>Leitura da segunda nota</td>
+<td style="text-align: right;">—</td>
+</tr>
+<tr>
+<td>3</td>
+<td style="text-align: right;">7.0</td>
+<td style="text-align: right;">8.0</td>
+<td><code>(7.0 + 8.0) / 2.0</code></td>
+<td style="text-align: right;">7.5</td>
+</tr>
+<tr>
+<td>4</td>
+<td style="text-align: right;">7.0</td>
+<td style="text-align: right;">8.0</td>
+<td>Exibição com duas casas</td>
+<td style="text-align: right;">7.50</td>
+</tr>
+</tbody>
+</table>
+<h3 id="exemplo-2-conversao-de-minutos">Exemplo 2 — Conversão de minutos</h3>
+<p><strong>Problema:</strong> dado um número inteiro de minutos, calcular quantas horas completas ele contém e quantos minutos sobram.</p>
+<p>Se a entrada for <code>135</code>, o programa deve calcular <code>2</code> horas e <code>15</code> minutos.</p>
+<div class="language-c highlight"><pre><span></span><code><span id="__span-23-1"><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdio.h&gt;</span>
+</span><span id="__span-23-2"><a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a>
+</span><span id="__span-23-3"><a id="__codelineno-23-3" name="__codelineno-23-3" href="#__codelineno-23-3"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-23-4"><a id="__codelineno-23-4" name="__codelineno-23-4" href="#__codelineno-23-4"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">totalMinutos</span><span class="p">;</span>
+</span><span id="__span-23-5"><a id="__codelineno-23-5" name="__codelineno-23-5" href="#__codelineno-23-5"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">horas</span><span class="p">;</span>
+</span><span id="__span-23-6"><a id="__codelineno-23-6" name="__codelineno-23-6" href="#__codelineno-23-6"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">minutosRestantes</span><span class="p">;</span>
+</span><span id="__span-23-7"><a id="__codelineno-23-7" name="__codelineno-23-7" href="#__codelineno-23-7"></a>
+</span><span id="__span-23-8"><a id="__codelineno-23-8" name="__codelineno-23-8" href="#__codelineno-23-8"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">"Digite o total de minutos: "</span><span class="p">);</span>
+</span><span id="__span-23-9"><a id="__codelineno-23-9" name="__codelineno-23-9" href="#__codelineno-23-9"></a><span class="w">    </span><span class="n">scanf</span><span class="p">(</span><span class="s">"%d"</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">totalMinutos</span><span class="p">);</span>
+</span><span id="__span-23-10"><a id="__codelineno-23-10" name="__codelineno-23-10" href="#__codelineno-23-10"></a>
+</span><span id="__span-23-11"><a id="__codelineno-23-11" name="__codelineno-23-11" href="#__codelineno-23-11"></a><span class="w">    </span><span class="n">horas</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">totalMinutos</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">60</span><span class="p">;</span>
+</span><span id="__span-23-12"><a id="__codelineno-23-12" name="__codelineno-23-12" href="#__codelineno-23-12"></a><span class="w">    </span><span class="n">minutosRestantes</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">totalMinutos</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="mi">60</span><span class="p">;</span>
+</span><span id="__span-23-13"><a id="__codelineno-23-13" name="__codelineno-23-13" href="#__codelineno-23-13"></a>
+</span><span id="__span-23-14"><a id="__codelineno-23-14" name="__codelineno-23-14" href="#__codelineno-23-14"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">"Horas: %d</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="w"> </span><span class="n">horas</span><span class="p">);</span>
+</span><span id="__span-23-15"><a id="__codelineno-23-15" name="__codelineno-23-15" href="#__codelineno-23-15"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">"Minutos restantes: %d</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="w"> </span><span class="n">minutosRestantes</span><span class="p">);</span>
+</span><span id="__span-23-16"><a id="__codelineno-23-16" name="__codelineno-23-16" href="#__codelineno-23-16"></a>
+</span><span id="__span-23-17"><a id="__codelineno-23-17" name="__codelineno-23-17" href="#__codelineno-23-17"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+</span><span id="__span-23-18"><a id="__codelineno-23-18" name="__codelineno-23-18" href="#__codelineno-23-18"></a><span class="p">}</span>
+</span></code></pre></div>
+<p>O operador <code>/</code> realiza a divisão inteira e <code>%</code> calcula o resto. Para a entrada <code>135</code>, <code>135 / 60</code> resulta em <code>2</code>, enquanto <code>135 % 60</code> resulta em <code>15</code>.</p>
+<h2 id="311-variaveis-e-operadores-em-portugolvisualg-e-c">3.11 Variáveis e operadores em Portugol/VisualG e C</h2>
+<p>A notação pode mudar entre pseudocódigo e linguagem de programação. O raciocínio deve permanecer equivalente.</p>
+<table>
+<thead>
+<tr>
+<th>Conceito</th>
+<th>Pseudocódigo/VisualG (notação comum)</th>
+<th>C</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Atribuição</td>
+<td><code>idade &lt;- 18</code></td>
+<td><code>idade = 18;</code></td>
+</tr>
+<tr>
+<td>Igualdade em condição</td>
+<td><code>idade = 18</code> em notação VisualG</td>
+<td><code>idade == 18</code></td>
+</tr>
+<tr>
+<td>Diferente</td>
+<td><code>&lt;&gt;</code> em notação VisualG</td>
+<td><code>!=</code></td>
+</tr>
+<tr>
+<td>E lógico</td>
+<td><code>e</code></td>
+<td><code>&amp;&amp;</code></td>
+</tr>
+<tr>
+<td>OU lógico</td>
+<td><code>ou</code></td>
+<td><code>||</code></td>
+</tr>
+<tr>
+<td>NÃO lógico</td>
+<td><code>nao</code></td>
+<td><code>!</code></td>
+</tr>
+<tr>
+<td>Resto</td>
+<td><code>mod</code> em notação comum de Portugol</td>
+<td><code>%</code></td>
+</tr>
+<tr>
+<td>Declaração de inteiro</td>
+<td><code>idade: inteiro</code></td>
+<td><code>int idade;</code></td>
+</tr>
+<tr>
+<td>Declaração de real</td>
+<td><code>nota: real</code></td>
+<td><code>double nota;</code></td>
+</tr>
+</tbody>
+</table>
+<p>A sintaxe exata pode variar conforme a versão do VisualG ou o ambiente de Portugol adotado. Verifique os exemplos da ferramenta utilizada na disciplina.</p>
+<h2 id="312-erros-comuns-e-como-evita-los">3.12 Erros comuns e como evitá-los</h2>
+<h3 id="erro-1-confundir-atribuicao-com-comparacao">Erro 1 — Confundir atribuição com comparação</h3>
+<div class="language-c highlight"><pre><span></span><code><span id="__span-24-1"><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">idade</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">18</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-24-2"><a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a><span class="w">    </span><span class="cm">/* ... */</span>
+</span><span id="__span-24-3"><a id="__codelineno-24-3" name="__codelineno-24-3" href="#__codelineno-24-3"></a><span class="p">}</span>
+</span></code></pre></div>
+<p>Essa expressão atribui <code>18</code> a <code>idade</code>; não testa se a idade é igual a <code>18</code>. Para comparar, use <code>idade == 18</code>.</p>
+<h3 id="erro-2-esquecer-a-inicializacao">Erro 2 — Esquecer a inicialização</h3>
+<div class="language-c highlight"><pre><span></span><code><span id="__span-25-1"><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a><span class="kt">int</span><span class="w"> </span><span class="n">total</span><span class="p">;</span>
+</span><span id="__span-25-2"><a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a><span class="n">total</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">total</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span>
+</span></code></pre></div>
+<p>O valor inicial de <code>total</code> não foi definido. Uma forma correta é:</p>
+<div class="language-c highlight"><pre><span></span><code><span id="__span-26-1"><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a><span class="kt">int</span><span class="w"> </span><span class="n">total</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+</span><span id="__span-26-2"><a id="__codelineno-26-2" name="__codelineno-26-2" href="#__codelineno-26-2"></a><span class="n">total</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">total</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span>
+</span></code></pre></div>
+<h3 id="erro-3-esperar-uma-divisao-real-com-dois-inteiros">Erro 3 — Esperar uma divisão real com dois inteiros</h3>
+<div class="language-c highlight"><pre><span></span><code><span id="__span-27-1"><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a><span class="kt">double</span><span class="w"> </span><span class="n">media</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="mi">7</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">8</span><span class="p">)</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span>
+</span></code></pre></div>
+<p>Como todos os operandos da divisão são inteiros, a operação é feita como divisão inteira. Nesse exemplo o resultado é <code>7.0</code>, que por coincidência também é a média exata; para um caso como <code>(7 + 8) / 2</code>, o valor seria 7.5 matematicamente, mas a divisão inteira produz 7. Use <code>2.0</code> para garantir uma divisão em ponto flutuante.</p>
+<p>Forma recomendada:</p>
+<div class="language-c highlight"><pre><span></span><code><span id="__span-28-1"><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a><span class="kt">double</span><span class="w"> </span><span class="n">media</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="mi">7</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">8</span><span class="p">)</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mf">2.0</span><span class="p">;</span>
+</span></code></pre></div>
+<h3 id="erro-4-usar-aspas-incorretas-para-texto">Erro 4 — Usar aspas incorretas para texto</h3>
+<div class="language-c highlight"><pre><span></span><code><span id="__span-29-1"><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a><span class="kt">char</span><span class="w"> </span><span class="n">inicial</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"A"</span><span class="p">;</span><span class="w"> </span><span class="c1">// incorreto para um único char</span>
+</span></code></pre></div>
+<p>Para um único caractere, use aspas simples:</p>
+<div class="language-c highlight"><pre><span></span><code><span id="__span-30-1"><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a><span class="kt">char</span><span class="w"> </span><span class="n">inicial</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sc">'A'</span><span class="p">;</span>
+</span></code></pre></div>
+<p>Para um texto, utilize aspas duplas:</p>
+<div class="language-c highlight"><pre><span></span><code><span id="__span-31-1"><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a><span class="kt">char</span><span class="w"> </span><span class="n">nome</span><span class="p">[]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"Ana"</span><span class="p">;</span>
+</span></code></pre></div>
+<h3 id="erro-5-escrever-uma-condicao-logica-sem-pensar-no-objetivo">Erro 5 — Escrever uma condição lógica sem pensar no objetivo</h3>
+<p>Antes de usar <code>&amp;&amp;</code> ou <code>||</code>, pergunte: <strong>todas</strong> as condições precisam ser verdadeiras ou basta <strong>uma</strong> delas?</p>
+<ul>
+<li>“Pode entrar se tiver ingresso <strong>e</strong> documento válido”: <code>temIngresso &amp;&amp; documentoValido</code>.</li>
+<li>“Recebe alerta se a temperatura for baixa <strong>ou</strong> a pressão for alta”: <code>temperaturaBaixa || pressaoAlta</code>.</li>
+</ul>
+<h2 id="313-pratica-guiada">3.13 Prática guiada</h2>
+<h3 id="desafio-calculo-de-compra">Desafio — Cálculo de compra</h3>
+<p>Uma loja precisa calcular o total de uma compra. O programa deve receber a quantidade de unidades e o preço unitário, calcular o subtotal e aplicar um desconto de 10% quando o subtotal for igual ou superior a R$ 200,00.</p>
+<p><strong>Entradas:</strong> quantidade e preço unitário.<br />
+<strong>Processamento:</strong> subtotal = quantidade × preço unitário; se subtotal for pelo menos 200, desconto = subtotal × 0,10; total = subtotal − desconto.<br />
+<strong>Saída:</strong> subtotal, desconto e total.</p>
+<p>Uma primeira versão, usando os conceitos deste capítulo:</p>
+<div class="language-c highlight"><pre><span></span><code><span id="__span-32-1"><a id="__codelineno-32-1" name="__codelineno-32-1" href="#__codelineno-32-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdio.h&gt;</span>
+</span><span id="__span-32-2"><a id="__codelineno-32-2" name="__codelineno-32-2" href="#__codelineno-32-2"></a>
+</span><span id="__span-32-3"><a id="__codelineno-32-3" name="__codelineno-32-3" href="#__codelineno-32-3"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-32-4"><a id="__codelineno-32-4" name="__codelineno-32-4" href="#__codelineno-32-4"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">quantidade</span><span class="p">;</span>
+</span><span id="__span-32-5"><a id="__codelineno-32-5" name="__codelineno-32-5" href="#__codelineno-32-5"></a><span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">precoUnitario</span><span class="p">;</span>
+</span><span id="__span-32-6"><a id="__codelineno-32-6" name="__codelineno-32-6" href="#__codelineno-32-6"></a><span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">subtotal</span><span class="p">;</span>
+</span><span id="__span-32-7"><a id="__codelineno-32-7" name="__codelineno-32-7" href="#__codelineno-32-7"></a><span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">desconto</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.0</span><span class="p">;</span>
+</span><span id="__span-32-8"><a id="__codelineno-32-8" name="__codelineno-32-8" href="#__codelineno-32-8"></a><span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">total</span><span class="p">;</span>
+</span><span id="__span-32-9"><a id="__codelineno-32-9" name="__codelineno-32-9" href="#__codelineno-32-9"></a>
+</span><span id="__span-32-10"><a id="__codelineno-32-10" name="__codelineno-32-10" href="#__codelineno-32-10"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">"Quantidade de unidades: "</span><span class="p">);</span>
+</span><span id="__span-32-11"><a id="__codelineno-32-11" name="__codelineno-32-11" href="#__codelineno-32-11"></a><span class="w">    </span><span class="n">scanf</span><span class="p">(</span><span class="s">"%d"</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">quantidade</span><span class="p">);</span>
+</span><span id="__span-32-12"><a id="__codelineno-32-12" name="__codelineno-32-12" href="#__codelineno-32-12"></a>
+</span><span id="__span-32-13"><a id="__codelineno-32-13" name="__codelineno-32-13" href="#__codelineno-32-13"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">"Preco unitario: "</span><span class="p">);</span>
+</span><span id="__span-32-14"><a id="__codelineno-32-14" name="__codelineno-32-14" href="#__codelineno-32-14"></a><span class="w">    </span><span class="n">scanf</span><span class="p">(</span><span class="s">"%lf"</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">precoUnitario</span><span class="p">);</span>
+</span><span id="__span-32-15"><a id="__codelineno-32-15" name="__codelineno-32-15" href="#__codelineno-32-15"></a>
+</span><span id="__span-32-16"><a id="__codelineno-32-16" name="__codelineno-32-16" href="#__codelineno-32-16"></a><span class="w">    </span><span class="n">subtotal</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">quantidade</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">precoUnitario</span><span class="p">;</span>
+</span><span id="__span-32-17"><a id="__codelineno-32-17" name="__codelineno-32-17" href="#__codelineno-32-17"></a>
+</span><span id="__span-32-18"><a id="__codelineno-32-18" name="__codelineno-32-18" href="#__codelineno-32-18"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">subtotal</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mf">200.0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-32-19"><a id="__codelineno-32-19" name="__codelineno-32-19" href="#__codelineno-32-19"></a><span class="w">        </span><span class="n">desconto</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">subtotal</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mf">0.10</span><span class="p">;</span>
+</span><span id="__span-32-20"><a id="__codelineno-32-20" name="__codelineno-32-20" href="#__codelineno-32-20"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-32-21"><a id="__codelineno-32-21" name="__codelineno-32-21" href="#__codelineno-32-21"></a>
+</span><span id="__span-32-22"><a id="__codelineno-32-22" name="__codelineno-32-22" href="#__codelineno-32-22"></a><span class="w">    </span><span class="n">total</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">subtotal</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">desconto</span><span class="p">;</span>
+</span><span id="__span-32-23"><a id="__codelineno-32-23" name="__codelineno-32-23" href="#__codelineno-32-23"></a>
+</span><span id="__span-32-24"><a id="__codelineno-32-24" name="__codelineno-32-24" href="#__codelineno-32-24"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">"Subtotal: R$ %.2f</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="w"> </span><span class="n">subtotal</span><span class="p">);</span>
+</span><span id="__span-32-25"><a id="__codelineno-32-25" name="__codelineno-32-25" href="#__codelineno-32-25"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">"Desconto: R$ %.2f</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="w"> </span><span class="n">desconto</span><span class="p">);</span>
+</span><span id="__span-32-26"><a id="__codelineno-32-26" name="__codelineno-32-26" href="#__codelineno-32-26"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">"Total: R$ %.2f</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="w"> </span><span class="n">total</span><span class="p">);</span>
+</span><span id="__span-32-27"><a id="__codelineno-32-27" name="__codelineno-32-27" href="#__codelineno-32-27"></a>
+</span><span id="__span-32-28"><a id="__codelineno-32-28" name="__codelineno-32-28" href="#__codelineno-32-28"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+</span><span id="__span-32-29"><a id="__codelineno-32-29" name="__codelineno-32-29" href="#__codelineno-32-29"></a><span class="p">}</span>
+</span></code></pre></div>
+<p>Esse exemplo antecipa a estrutura condicional <code>if</code>, que será estudada com mais profundidade no capítulo dedicado às decisões. Para esta atividade, concentre-se nas variáveis, nos tipos, nas expressões aritméticas e na comparação <code>subtotal &gt;= 200.0</code>.</p>
+<h3 id="teste-de-mesa-do-desafio">Teste de mesa do desafio</h3>
+<p>Considere <code>quantidade = 4</code> e <code>precoUnitario = 60.00</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Etapa</th>
+<th style="text-align: right;">Quantidade</th>
+<th style="text-align: right;">Preço unitário</th>
+<th style="text-align: right;">Subtotal</th>
+<th style="text-align: right;">Desconto</th>
+<th style="text-align: right;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">60,00</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">0,00</td>
+<td style="text-align: right;">—</td>
+</tr>
+<tr>
+<td>2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">60,00</td>
+<td style="text-align: right;">240,00</td>
+<td style="text-align: right;">0,00</td>
+<td style="text-align: right;">—</td>
+</tr>
+<tr>
+<td>3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">60,00</td>
+<td style="text-align: right;">240,00</td>
+<td style="text-align: right;">24,00</td>
+<td style="text-align: right;">—</td>
+</tr>
+<tr>
+<td>4</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">60,00</td>
+<td style="text-align: right;">240,00</td>
+<td style="text-align: right;">24,00</td>
+<td style="text-align: right;">216,00</td>
+</tr>
+</tbody>
+</table>
+<h2 id="314-exercicios">3.14 Exercícios</h2>
+<p>Resolva os exercícios primeiro sem executar o código. Depois, utilize papel, tabela de teste e compilador para conferir o raciocínio.</p>
+<h3 id="nivel-1-compreensao">Nível 1 — Compreensão</h3>
+<ol>
+<li>Explique, com suas palavras, o que é uma variável e apresente três exemplos de informações que poderiam ser armazenadas em um programa acadêmico.</li>
+<li>Diferencie declaração, inicialização e atribuição. Escreva um pequeno exemplo em C para cada conceito.</li>
+<li>Classifique os dados a seguir como mais adequados a <code>int</code>, <code>double</code>, <code>char</code> ou vetor de <code>char</code>: quantidade de livros, altura de uma pessoa, inicial do sobrenome e nome completo.</li>
+<li>Explique a diferença entre <code>=</code> e <code>==</code> em C.</li>
+<li>Qual é a finalidade de uma constante? Apresente uma situação em que o uso de <code>const</code> torna o programa mais claro.</li>
+<li>Indique o resultado das expressões: <code>9 + 4</code>, <code>9 - 4</code>, <code>9 * 4</code>, <code>9 / 4</code> e <code>9 % 4</code>, considerando operandos inteiros em C.</li>
+<li>Explique a diferença entre <code>'M'</code> e <code>"M"</code> em C.</li>
+</ol>
+<h3 id="nivel-2-aplicacao">Nível 2 — Aplicação</h3>
+<ol>
+<li>Declare em C variáveis adequadas para armazenar matrícula numérica, média final, letra da turma e nome de um estudante.</li>
+<li>Escreva um programa em C que leia dois números reais e exiba a soma, a subtração, a multiplicação e a divisão. Antes de dividir, explique como evitar a divisão por zero.</li>
+<li>Leia o preço de um produto e a quantidade comprada. Calcule e exiba o valor total.</li>
+<li>Leia uma quantidade de segundos e converta-a em minutos completos e segundos restantes.</li>
+<li>Leia um número inteiro e calcule o resto de sua divisão por <code>2</code>. Explique como esse resultado ajuda a identificar um número par.</li>
+<li>Determine o resultado das expressões abaixo e justifique a precedência utilizada:<ul>
+<li><code>4 + 5 * 2</code></li>
+<li><code>(4 + 5) * 2</code></li>
+<li><code>20 / 5 + 3</code></li>
+<li><code>20 / (5 + 3)</code></li>
+</ul>
+</li>
+<li>Considere <code>a = 8</code> e <code>b = 3</code>. Determine os resultados de <code>a &gt; b</code>, <code>a == b</code>, <code>a != b</code>, <code>a &lt;= b</code> e <code>a % b == 2</code>.</li>
+<li>Monte a tabela-verdade de <code>A &amp;&amp; B</code> e <code>A || B</code>, explicando em quais situações cada expressão é verdadeira.</li>
+<li>Escreva uma expressão lógica para verificar se uma nota está entre <code>0</code> e <code>10</code>, inclusive.</li>
+<li>Escreva uma expressão lógica para verificar se uma pessoa pode participar de uma atividade que exige idade mínima de 16 anos e autorização assinada.</li>
+</ol>
+<h3 id="nivel-3-analise-e-programacao">Nível 3 — Análise e programação</h3>
+<ol>
+<li>
+<p>Faça o teste de mesa para o trecho abaixo e informe os valores finais de <code>x</code> e <code>y</code>:</p>
+<div class="language-c highlight"><pre><span></span><code><span id="__span-33-1"><a id="__codelineno-33-1" name="__codelineno-33-1" href="#__codelineno-33-1"></a><span class="kt">int</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span>
+</span><span id="__span-33-2"><a id="__codelineno-33-2" name="__codelineno-33-2" href="#__codelineno-33-2"></a><span class="kt">int</span><span class="w"> </span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span>
+</span><span id="__span-33-3"><a id="__codelineno-33-3" name="__codelineno-33-3" href="#__codelineno-33-3"></a><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">y</span><span class="p">;</span>
+</span><span id="__span-33-4"><a id="__codelineno-33-4" name="__codelineno-33-4" href="#__codelineno-33-4"></a><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span>
+</span><span id="__span-33-5"><a id="__codelineno-33-5" name="__codelineno-33-5" href="#__codelineno-33-5"></a><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+</span></code></pre></div>
+</li>
+<li>
+<p>Um programa declara <code>int a = 5; int b = 2; double resultado = a / b;</code>. Qual valor será armazenado em <code>resultado</code>? Corrija a expressão para obter <code>2.5</code>.</p>
+</li>
+<li>Desenvolva um programa que leia três notas reais e calcule a média aritmética com duas casas decimais.</li>
+<li>Desenvolva um programa que leia um valor em reais e calcule o valor com acréscimo de 8%.</li>
+<li>Desenvolva um programa que receba o total de minutos de uma duração e exiba horas completas e minutos restantes.</li>
+<li>Um sistema permite desconto de 15% se o total da compra for superior a R$ 300,00 <strong>e</strong> o cliente possuir cadastro ativo. Escreva a expressão lógica que representa a regra e explique seus operadores.</li>
+<li>Escreva um programa que leia dois números inteiros e informe o quociente inteiro e o resto da divisão. Considere como o programa deve lidar com divisor igual a zero.</li>
+<li>Analise a expressão <code>nota &gt;= 7 &amp;&amp; frequencia &gt;= 75</code>. Explique seu significado em linguagem natural e dê um exemplo de valores que tornam a expressão verdadeira e outro que a tornam falsa.</li>
+</ol>
+<h2 id="315-gabarito-comentado">3.15 Gabarito comentado</h2>
+<p>O gabarito apresenta respostas de referência. Em questões discursivas, respostas equivalentes e tecnicamente corretas também podem ser aceitas.</p>
+<ol>
+<li>Variável é um identificador associado a um tipo e a um valor usado pelo programa. Exemplos: nome, nota e quantidade de faltas.</li>
+<li>Declaração: <code>int idade;</code>. Inicialização: <code>int idade = 18;</code>. Atribuição posterior: <code>idade = 19;</code>.</li>
+<li>Quantidade de livros: <code>int</code>; altura: <code>double</code>; inicial: <code>char</code>; nome completo: vetor de <code>char</code>, por exemplo <code>char nome[] = "Ana Silva";</code>.</li>
+<li><code>=</code> atribui um valor; <code>==</code> compara dois valores.</li>
+<li>Constantes nomeadas representam valores que não devem ser alterados. Exemplo: <code>const int DIAS_DA_SEMANA = 7;</code>.</li>
+<li><code>9 + 4 = 13</code>; <code>9 - 4 = 5</code>; <code>9 * 4 = 36</code>; <code>9 / 4 = 2</code>; <code>9 % 4 = 1</code>.</li>
+<li><code>'M'</code> é um literal de caractere; <code>"M"</code> é um literal de texto (uma sequência que inclui o caractere e o terminador nulo em C).</li>
+<li>Uma resposta possível: <code>int matricula; double mediaFinal; char turma; char nome[100];</code>. Em aplicações reais, o tipo e o tamanho devem considerar as regras de identificação e o tamanho máximo dos dados.</li>
+<li>Use <code>double a, b;</code>, leia ambos com <code>%lf</code>, exiba as operações e teste <code>b != 0.0</code> antes da divisão.</li>
+<li>Leia <code>double preco; int quantidade;</code> e calcule <code>total = preco * quantidade;</code>.</li>
+<li><code>minutos = segundos / 60;</code> e <code>restantes = segundos % 60;</code>, supondo entrada não negativa.</li>
+<li>Se <code>numero % 2 == 0</code>, o número é divisível por 2 e é par.</li>
+<li><code>4 + 5 * 2 = 14</code>; <code>(4 + 5) * 2 = 18</code>; <code>20 / 5 + 3 = 7</code>; <code>20 / (5 + 3) = 2</code> em divisão inteira.</li>
+<li><code>a &gt; b</code>: verdadeiro; <code>a == b</code>: falso; <code>a != b</code>: verdadeiro; <code>a &lt;= b</code>: falso; <code>a % b == 2</code>: verdadeiro.</li>
+<li><code>&amp;&amp;</code> só é verdadeiro se A e B forem verdadeiros; <code>||</code> é verdadeiro se ao menos um deles for verdadeiro. As tabelas completas estão na seção 3.8.</li>
+<li><code>nota &gt;= 0 &amp;&amp; nota &lt;= 10</code>.</li>
+<li><code>idade &gt;= 16 &amp;&amp; possuiAutorizacao</code>, considerando <code>possuiAutorizacao</code> como valor lógico.</li>
+<li>Inicialmente <code>x=5</code>, <code>y=2</code>; após <code>x=x+y</code>, <code>x=7</code>; após <code>y=x*2</code>, <code>y=14</code>; após <code>x=x-1</code>, <code>x=6</code>. Valores finais: <code>x=6</code>, <code>y=14</code>.</li>
+<li><code>a / b</code> é divisão inteira e resulta em <code>2</code>, armazenado como <code>2.0</code>. Para obter <code>2.5</code>, use <code>double resultado = (double)a / b;</code> ou <code>double resultado = a / 2.0;</code>.</li>
+<li>Leia três <code>double</code> e calcule <code>media = (nota1 + nota2 + nota3) / 3.0;</code>, exibindo com <code>%.2f</code>.</li>
+<li><code>valorFinal = valor * 1.08;</code>.</li>
+<li><code>horas = totalMinutos / 60;</code> e <code>minutosRestantes = totalMinutos % 60;</code>.</li>
+<li><code>total &gt; 300.0 &amp;&amp; cadastroAtivo</code>. A conjunção exige que ambas as condições sejam verdadeiras.</li>
+<li>Antes de calcular <code>a / b</code> e <code>a % b</code>, verifique se <code>b != 0</code>. Se for zero, informe que a divisão não pode ser realizada.</li>
+<li>A expressão significa “a nota é pelo menos 7 e a frequência é pelo menos 75”. Verdadeira, por exemplo, com <code>nota=8</code> e <code>frequencia=80</code>; falsa com <code>nota=8</code> e <code>frequencia=60</code>.</li>
+</ol>
+<h2 id="316-resumo-visual">3.16 Resumo visual</h2>
+<pre class="mermaid"><code>flowchart TD
+    A["Dados no programa"] --&gt; B["Variáveis e constantes"]
+    B --&gt; C["Tipos de dados"]
+    C --&gt; D["Expressões"]
+    D --&gt; E["Operadores aritméticos"]
+    D --&gt; F["Operadores relacionais"]
+    D --&gt; G["Operadores lógicos"]
+    E --&gt; H["Resultado calculado"]
+    F --&gt; I["Condição verdadeira ou falsa"]
+    G --&gt; I</code></pre>
+<ul>
+<li><strong>Variáveis</strong> armazenam valores que podem mudar durante a execução.</li>
+<li><strong>Constantes</strong> representam valores que não devem ser alterados.</li>
+<li><strong>Tipos</strong> ajudam a definir quais valores podem ser representados e quais operações fazem sentido.</li>
+<li><strong>Operadores aritméticos</strong> realizam cálculos.</li>
+<li><strong>Operadores relacionais</strong> comparam valores.</li>
+<li><strong>Operadores lógicos</strong> combinam condições.</li>
+<li><strong>Parênteses</strong> tornam a intenção das expressões mais clara.</li>
+<li><strong>Teste de mesa</strong> ajuda a acompanhar as mudanças de estado das variáveis.</li>
+</ul>
+<h2 id="317-glossario">3.17 Glossário</h2>
+<table>
+<thead>
+<tr>
+<th>Termo</th>
+<th>Definição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Atribuição</td>
+<td>Operação que associa um valor a uma variável</td>
+</tr>
+<tr>
+<td>Constante</td>
+<td>Identificador usado para representar um valor que não deve ser alterado</td>
+</tr>
+<tr>
+<td>Expressão</td>
+<td>Combinação de valores, variáveis e operadores que produz um resultado</td>
+</tr>
+<tr>
+<td>Identificador</td>
+<td>Nome usado para referenciar um elemento do programa</td>
+</tr>
+<tr>
+<td>Inicialização</td>
+<td>Definição do primeiro valor de uma variável</td>
+</tr>
+<tr>
+<td>Operador</td>
+<td>Símbolo ou palavra que representa uma operação</td>
+</tr>
+<tr>
+<td>Precedência</td>
+<td>Regra que determina quais operadores são avaliados primeiro</td>
+</tr>
+<tr>
+<td>Tipo de dado</td>
+<td>Categoria que determina a natureza dos valores representados</td>
+</tr>
+<tr>
+<td>Variável</td>
+<td>Identificador associado a um valor que pode mudar durante a execução</td>
+</tr>
+</tbody>
+</table>
+<h2 id="referencias-para-consulta">Referências para consulta</h2>
+<ul>
+<li>KERNIGHAN, Brian W.; RITCHIE, Dennis M. <strong>The C Programming Language</strong>. 2. ed. Englewood Cliffs: Prentice Hall, 1988.</li>
+<li>ISO/IEC. <strong>ISO/IEC 9899: Programming Languages — C</strong>. Norma da linguagem C.</li>
+<li>Documentação de referência da linguagem C: <a href="https://en.cppreference.com/w/c">cppreference.com — C language</a>.</li>
+<li>Documentação e material de apoio do VisualG utilizado na disciplina.</li>
+</ul>
+<hr />
+<p><strong>Sugestão de integração ao MkDocs:</strong> salve este arquivo como <code>docs/ALP/apostila/03-variaveis-tipos-operadores.md</code> e acrescente ao grupo <code>Apostila de ALP</code> no <code>nav</code> do <code>mkdocs.yml</code>:</p>
+<div class="language-yaml highlight"><pre><span></span><code><span id="__span-34-1"><a id="__codelineno-34-1" name="__codelineno-34-1" href="#__codelineno-34-1"></a><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Apostila de ALP</span><span class="p">:</span>
+</span><span id="__span-34-2"><a id="__codelineno-34-2" name="__codelineno-34-2" href="#__codelineno-34-2"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Apresentação</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ALP/apostila/index.md</span>
+</span><span id="__span-34-3"><a id="__codelineno-34-3" name="__codelineno-34-3" href="#__codelineno-34-3"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Capítulo 3 — Variáveis, Tipos de Dados e Operadores</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ALP/apostila/03-variaveis-tipos-operadores.md</span>
+</span></code></pre></div>
+<p>Se o Capítulo 2 já estiver no <code>nav</code>, mantenha-o e insira o Capítulo 3 na sequência correta.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Voltar para o topo
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "search.highlight", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="https://unpkg.com/mermaid@11/dist/mermaid.min.js"></script>
+      
+        <script src="../../../javascripts/mermaid-init.js"></script>
+      
+    
+  </body>
+</html>
