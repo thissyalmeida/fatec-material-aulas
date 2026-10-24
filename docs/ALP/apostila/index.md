@@ -19,5 +19,6 @@ Os capítulos serão disponibilizados progressivamente e seguirão uma estrutura
 ## Capítulos disponíveis
 
 - [Capítulo 1 — Introdução à computação e à resolução de problemas](01-introducao-computacao.md)
+- [Capítulo 2 - Formas de representação de algoritmos](02-algoritmos-fluxogramas.md)
 
 > **Orientação:** avance na ordem proposta. Os conceitos iniciais serão retomados e aprofundados nos capítulos seguintes.
