@@ -51,8 +51,6 @@ extra_javascript:
   - javascripts/mermaid-init.js
 
 nav:
-  - Boas-vindas: index.md
-
   - ALP - Algoritmos e Lógica de Programação:
 # Trecho sugerido para adicionar à seção `nav` do mkdocs.yml
 # Ajuste a indentação conforme a estrutura já existente do seu portal.
