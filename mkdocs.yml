@@ -57,6 +57,7 @@ nav:
     - Apostila de ALP:
         - Apresentação: ALP/apostila/index.md
         - Capítulo 1 — Introdução: ALP/apostila/capitulos/01-introducao-computacao.md
+        - Capítulo 2 — Algoritmos: ALP/apostila/capitulos/02-algoritmos-pseudocodigo-fluxogramas.md
     - Introdução:
         - Intro: ALP/aula-00/index.md
     - Lógica e Raciocínio:
