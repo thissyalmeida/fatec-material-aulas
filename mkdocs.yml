@@ -93,8 +93,8 @@ nav:
          #   - Conteudo: ALP/Python/conteudo-python.md
           #  - Exemplos: ALP/Python/exemplos-python.md
 
-  - EST - Estrutura de Dados:
-    - Listas, Pilhas e Filas:
-        - Exercícios: ED/aula1-introducao.md
-    - Árvores e Grafos:
-        - Exercícios: ED/index.md
+  #- EST - Estrutura de Dados:
+   # - Listas, Pilhas e Filas:
+    #    - Exercícios: ED/aula1-introducao.md
+    #- Árvores e Grafos:
+     #   - Exercícios: ED/index.md
