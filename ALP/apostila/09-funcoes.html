@@ -8,27 +8,31 @@
       
       
       
-        <link rel="canonical" href="https://thissyalmeida.github.io/fatec-material-aulas/ALP/apostila/capitulos/02-algoritmos-fluxogramas.html">
+        <link rel="canonical" href="https://thissyalmeida.github.io/fatec-material-aulas/ALP/apostila/09-funcoes.html">
       
       
+        <link rel="prev" href="08-controle-em-c.html">
+      
+      
+        <link rel="next" href="10-vetores-matrizes.html">
       
       
         
       
       
-      <link rel="icon" href="../../../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
-        <title>2. Algoritmos e Fluxogramas - Material Aula - 2026 - Fatec</title>
+        <title>9. Funções - Material Aula - 2026 - Fatec</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.ec1eaa64.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -47,9 +51,9 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/style.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/style.css">
     
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -74,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#2-algoritmos-e-fluxogramas" class="md-skip">
+        <a href="#9-funcoes-e-modularizacao" class="md-skip">
           Pular para conteúdo
         </a>
       
@@ -88,7 +92,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
-    <a href="../../../index.html" title="Material Aula - 2026 - Fatec" class="md-header__button md-logo" aria-label="Material Aula - 2026 - Fatec" data-md-component="logo">
+    <a href="../../index.html" title="Material Aula - 2026 - Fatec" class="md-header__button md-logo" aria-label="Material Aula - 2026 - Fatec" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -108,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              2. Algoritmos e Fluxogramas
+              9. Funções
             
           </span>
         </div>
@@ -207,7 +211,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../index.html" class="md-tabs__link">
+      <a href="../../index.html" class="md-tabs__link">
         
   
   
@@ -224,6 +228,8 @@
   
   
   
+    
+  
   
     
     
@@ -231,11 +237,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../index.html" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="index.html" class="md-tabs__link">
           
   
   
@@ -265,7 +273,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../ED/aula1-introducao.html" class="md-tabs__link">
+        <a href="../../ED/aula1-introducao.html" class="md-tabs__link">
           
   
   
@@ -302,7 +310,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegação" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../../index.html" title="Material Aula - 2026 - Fatec" class="md-nav__button md-logo" aria-label="Material Aula - 2026 - Fatec" data-md-component="logo">
+    <a href="../../index.html" title="Material Aula - 2026 - Fatec" class="md-nav__button md-logo" aria-label="Material Aula - 2026 - Fatec" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -320,7 +328,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../index.html" class="md-nav__link">
+      <a href="../../index.html" class="md-nav__link">
         
   
   
@@ -344,26 +352,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   
@@ -381,7 +394,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -396,26 +409,31 @@
                 
   
   
+    
   
   
+  
     
     
     
     
       
       
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
         
           
-          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="">
             
   
   
@@ -433,7 +451,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_1">
             <span class="md-nav__icon md-icon"></span>
             
@@ -451,7 +469,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../index.html" class="md-nav__link">
+      <a href="index.html" class="md-nav__link">
         
   
   
@@ -479,7 +497,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../01-introducao-computacao.md" class="md-nav__link">
+      <a href="01-introducao-computacao.html" class="md-nav__link">
         
   
   
@@ -507,7 +525,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../02-algoritmos-fluxogramas.md" class="md-nav__link">
+      <a href="02-algoritmos-fluxogramas.html" class="md-nav__link">
         
   
   
@@ -535,7 +553,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../03-variaveis-operadores.md" class="md-nav__link">
+      <a href="03-variaveis-operadores.html" class="md-nav__link">
         
   
   
@@ -563,7 +581,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../04-estrutura-sequencial.md" class="md-nav__link">
+      <a href="04-estrutura-sequencial.html" class="md-nav__link">
         
   
   
@@ -591,7 +609,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../05-estruturas-condicionais.md" class="md-nav__link">
+      <a href="05-estruturas-condicionais.html" class="md-nav__link">
         
   
   
@@ -619,7 +637,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../06-estruturas-repeticao.md" class="md-nav__link">
+      <a href="06-estruturas-repeticao.html" class="md-nav__link">
         
   
   
@@ -647,7 +665,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../07-introducao-c.md" class="md-nav__link">
+      <a href="07-introducao-c.html" class="md-nav__link">
         
   
   
@@ -675,7 +693,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../08-controle-em-c.md" class="md-nav__link">
+      <a href="08-controle-em-c.html" class="md-nav__link">
         
   
   
@@ -700,10 +718,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../09-funcoes.md" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    9. Funções
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="09-funcoes.html" class="md-nav__link md-nav__link--active">
         
   
   
@@ -719,6 +764,169 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#abertura" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Abertura
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#objetivos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Objetivos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#91-conceitos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.1 Conceitos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#92-funcao-com-retorno" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.2 Função com retorno
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#93-funcao-void" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.3 Função void
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#94-programa-modular" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.4 Programa modular
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#95-escopo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.5 Escopo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#96-alterar-valores-do-chamador" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.6 Alterar valores do chamador
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#erros-comuns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Erros comuns
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pratica-guiada" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prática guiada
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercicios" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercícios
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gabarito-comentado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gabarito comentado
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resumo-e-referencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resumo e referências
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -731,7 +939,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../10-vetores-matrizes.md" class="md-nav__link">
+      <a href="10-vetores-matrizes.html" class="md-nav__link">
         
   
   
@@ -759,7 +967,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../11-memoria-binario.md" class="md-nav__link">
+      <a href="11-memoria-binario.html" class="md-nav__link">
         
   
   
@@ -787,7 +995,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../12-testes-estilo-git.md" class="md-nav__link">
+      <a href="12-testes-estilo-git.html" class="md-nav__link">
         
   
   
@@ -934,7 +1142,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../ED/aula1-introducao.html" class="md-nav__link">
+      <a href="../../ED/aula1-introducao.html" class="md-nav__link">
         
   
   
@@ -1022,7 +1230,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../ED/index.html" class="md-nav__link">
+      <a href="../../ED/index.html" class="md-nav__link">
         
   
   
@@ -1107,10 +1315,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#21-propriedades-desejaveis" class="md-nav__link">
+  <a href="#91-conceitos" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2.1 Propriedades desejáveis
+        9.1 Conceitos
       
     </span>
   </a>
@@ -1118,10 +1326,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#22-representacoes" class="md-nav__link">
+  <a href="#92-funcao-com-retorno" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2.2 Representações
+        9.2 Função com retorno
       
     </span>
   </a>
@@ -1129,10 +1337,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#23-entrada-processamento-e-saida" class="md-nav__link">
+  <a href="#93-funcao-void" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2.3 Entrada, processamento e saída
+        9.3 Função void
       
     </span>
   </a>
@@ -1140,10 +1348,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#24-fluxogramas" class="md-nav__link">
+  <a href="#94-programa-modular" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2.4 Fluxogramas
+        9.4 Programa modular
       
     </span>
   </a>
@@ -1151,10 +1359,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#25-teste-de-mesa" class="md-nav__link">
+  <a href="#95-escopo" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2.5 Teste de mesa
+        9.5 Escopo
       
     </span>
   </a>
@@ -1162,21 +1370,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#26-estrategia-para-resolver-problemas" class="md-nav__link">
+  <a href="#96-alterar-valores-do-chamador" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2.6 Estratégia para resolver problemas
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#exemplo-resolvido" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Exemplo resolvido
+        9.6 Alterar valores do chamador
       
     </span>
   </a>
@@ -1228,21 +1425,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#resumo" class="md-nav__link">
+  <a href="#resumo-e-referencias" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Resumo
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#glossario-e-referencias" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Glossário e referências
+        Resumo e referências
       
     </span>
   </a>
@@ -1266,185 +1452,123 @@
 
 
 
-<h1 id="2-algoritmos-e-fluxogramas">2. Algoritmos e Fluxogramas</h1>
+<h1 id="9-funcoes-e-modularizacao">9. Funções e Modularização</h1>
 <h2 id="abertura">Abertura</h2>
-<p>Um algoritmo é um plano de solução. Ele deve ser claro o suficiente para que outra pessoa consiga seguir seus passos e verificar o resultado.</p>
+<p>À medida que o programa cresce, concentrar toda a lógica em <code>main()</code> dificulta leitura, testes e manutenção. Funções permitem dividir o problema em unidades com responsabilidades claras.</p>
 <h2 id="objetivos">Objetivos</h2>
 <ul>
-<li>definir algoritmo e suas propriedades;</li>
-<li>representar soluções em linguagem natural, pseudocódigo e fluxograma;</li>
-<li>identificar entrada, processamento e saída;</li>
-<li>simular um algoritmo com teste de mesa.</li>
+<li>declarar, definir e chamar funções;</li>
+<li>diferenciar parâmetros e argumentos;</li>
+<li>utilizar retorno e <code>void</code>;</li>
+<li>compreender escopo e protótipos;</li>
+<li>passar valores e, em situações específicas, endereços.</li>
 </ul>
-<h2 id="21-propriedades-desejaveis">2.1 Propriedades desejáveis</h2>
-<p>Um algoritmo deve ter passos precisos, sequência lógica, término para as entradas previstas e resultados coerentes. A solução também deve considerar restrições e casos especiais.</p>
-<h2 id="22-representacoes">2.2 Representações</h2>
-<table>
-<thead>
-<tr>
-<th>Representação</th>
-<th>Vantagem</th>
-<th>Limitação</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Linguagem natural</td>
-<td>Fácil de ler</td>
-<td>Pode ser ambígua</td>
-</tr>
-<tr>
-<td>Pseudocódigo</td>
-<td>Estruturado e independente de linguagem</td>
-<td>Convenções podem variar</td>
-</tr>
-<tr>
-<td>Fluxograma</td>
-<td>Evidencia o fluxo</td>
-<td>Diagramas grandes ficam difíceis de manter</td>
-</tr>
-<tr>
-<td>Código</td>
-<td>Pode ser compilado/executado</td>
-<td>Depende da sintaxe da linguagem</td>
-</tr>
-</tbody>
-</table>
-<h2 id="23-entrada-processamento-e-saida">2.3 Entrada, processamento e saída</h2>
-<p>Exemplo: calcular a média de duas notas.</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Leia nota1
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>Leia nota2
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>media &lt;- (nota1 + nota2) / 2
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>Escreva media
+<h2 id="91-conceitos">9.1 Conceitos</h2>
+<ul>
+<li><strong>Declaração/protótipo:</strong> informa ao compilador nome, retorno e parâmetros.</li>
+<li><strong>Definição:</strong> contém o corpo da função.</li>
+<li><strong>Chamada:</strong> solicita a execução.</li>
+<li><strong>Parâmetro:</strong> variável declarada na função.</li>
+<li><strong>Argumento:</strong> valor fornecido na chamada.</li>
+</ul>
+<h2 id="92-funcao-com-retorno">9.2 Função com retorno</h2>
+<div class="language-c highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kt">double</span><span class="w"> </span><span class="nf">calcularMedia</span><span class="p">(</span><span class="kt">double</span><span class="w"> </span><span class="n">n1</span><span class="p">,</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">n2</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">(</span><span class="n">n1</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">n2</span><span class="p">)</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mf">2.0</span><span class="p">;</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="p">}</span>
 </span></code></pre></div>
-<h2 id="24-fluxogramas">2.4 Fluxogramas</h2>
-<p>Símbolos usuais: oval para início/fim, paralelogramo para entrada/saída, retângulo para processamento, losango para decisão e setas para direção do fluxo.</p>
-<pre class="mermaid"><code>flowchart TD
-    A([Início]) --&gt; B[/Ler nota1 e nota2/]
-    B --&gt; C[media = (nota1 + nota2) / 2]
-    C --&gt; D[/Exibir media/]
-    D --&gt; E([Fim])</code></pre>
-<h2 id="25-teste-de-mesa">2.5 Teste de mesa</h2>
-<table>
-<thead>
-<tr>
-<th>Passo</th>
-<th style="text-align: right;">nota1</th>
-<th style="text-align: right;">nota2</th>
-<th style="text-align: right;">media</th>
-<th>Ação</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1</td>
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">—</td>
-<td style="text-align: right;">—</td>
-<td>Ler nota1</td>
-</tr>
-<tr>
-<td>2</td>
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">8</td>
-<td style="text-align: right;">—</td>
-<td>Ler nota2</td>
-</tr>
-<tr>
-<td>3</td>
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">8</td>
-<td style="text-align: right;">7</td>
-<td>Calcular</td>
-</tr>
-<tr>
-<td>4</td>
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">8</td>
-<td style="text-align: right;">7</td>
-<td>Exibir 7</td>
-</tr>
-</tbody>
-</table>
-<h2 id="26-estrategia-para-resolver-problemas">2.6 Estratégia para resolver problemas</h2>
-<ol>
-<li>Leia o enunciado e destaque verbos e dados.</li>
-<li>Determine entradas, saídas e restrições.</li>
-<li>Escreva os passos em ordem.</li>
-<li>Simule com dados pequenos.</li>
-<li>Teste casos comuns e limites.</li>
-<li>Só então traduza para uma linguagem.</li>
-</ol>
-<h2 id="exemplo-resolvido">Exemplo resolvido</h2>
-<p>Problema: calcular o total de uma compra de três produtos com preços informados.</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>Início
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>  Leia p1, p2, p3
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>  total &lt;- p1 + p2 + p3
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>  Escreva total
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>Fim
+<p>Chamada: <code>media = calcularMedia(8.0, 6.0);</code>.</p>
+<h2 id="93-funcao-void">9.3 Função <code>void</code></h2>
+<p>Uma função <code>void</code> não retorna um valor ao chamador:</p>
+<div class="language-c highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kt">void</span><span class="w"> </span><span class="nf">mostrarLinha</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">"----------------</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="p">}</span>
 </span></code></pre></div>
-<p>Teste: para 10, 12 e 8, o total esperado é 30.</p>
+<h2 id="94-programa-modular">9.4 Programa modular</h2>
+<div class="language-c highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdio.h&gt;</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="kt">double</span><span class="w"> </span><span class="nf">calcularMedia</span><span class="p">(</span><span class="kt">double</span><span class="w"> </span><span class="n">n1</span><span class="p">,</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">n2</span><span class="p">);</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">media</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">calcularMedia</span><span class="p">(</span><span class="mf">8.0</span><span class="p">,</span><span class="w"> </span><span class="mf">6.0</span><span class="p">);</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">"Media: %.2f</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="w"> </span><span class="n">media</span><span class="p">);</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="p">}</span>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="kt">double</span><span class="w"> </span><span class="nf">calcularMedia</span><span class="p">(</span><span class="kt">double</span><span class="w"> </span><span class="n">n1</span><span class="p">,</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">n2</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">(</span><span class="n">n1</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">n2</span><span class="p">)</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mf">2.0</span><span class="p">;</span>
+</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="p">}</span>
+</span></code></pre></div>
+<h2 id="95-escopo">9.5 Escopo</h2>
+<p>Variáveis locais são acessíveis no bloco em que foram declaradas. Evite variáveis globais desnecessárias: elas aumentam o acoplamento e tornam o comportamento mais difícil de acompanhar.</p>
+<h2 id="96-alterar-valores-do-chamador">9.6 Alterar valores do chamador</h2>
+<p>Em C, argumentos são passados por valor. Para que uma função altere uma variável do chamador, pode-se passar seu endereço por meio de um ponteiro. O capítulo deve ser acompanhado de explicação de ponteiros antes de usar esse recurso em programas maiores.</p>
+<div class="language-c highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kt">void</span><span class="w"> </span><span class="nf">duplicar</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="o">*</span><span class="n">valor</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">valor</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="nb">NULL</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">        </span><span class="o">*</span><span class="n">valor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">*</span><span class="n">valor</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="p">}</span>
+</span></code></pre></div>
+<p>Uso: <code>duplicar(&amp;numero);</code>. <code>&amp;numero</code> fornece o endereço; <code>*valor</code> acessa o objeto apontado. O ponteiro deve ser válido ou <code>NULL</code>.</p>
 <h2 id="erros-comuns">Erros comuns</h2>
 <ul>
-<li>omitir uma entrada necessária;</li>
-<li>usar uma variável antes de atribuir valor;</li>
-<li>inverter a ordem das operações;</li>
-<li>esquecer de mostrar o resultado;</li>
-<li>desenhar setas sem indicar o fluxo claramente.</li>
+<li>chamar função sem declaração visível;</li>
+<li>declarar retorno diferente do valor retornado;</li>
+<li>esquecer <code>return</code> em função que deve produzir resultado;</li>
+<li>confundir parâmetro e argumento;</li>
+<li>depender de variável global sem necessidade;</li>
+<li>desreferenciar ponteiro inválido.</li>
 </ul>
 <h2 id="pratica-guiada">Prática guiada</h2>
-<p>Desenvolva o algoritmo para converter minutos em horas e minutos restantes. Por exemplo, 135 minutos devem resultar em 2 horas e 15 minutos.</p>
+<p>Crie funções para somar, subtrair, multiplicar e dividir dois números. A função de divisão deve sinalizar divisor zero por uma estratégia explícita, como retornar um indicador de sucesso e preencher um parâmetro de saída.</p>
 <h2 id="exercicios">Exercícios</h2>
 <ol>
-<li>Defina algoritmo com suas palavras.</li>
-<li>Cite três propriedades de um bom algoritmo.</li>
-<li>Diferencie pseudocódigo e código-fonte.</li>
-<li>Desenhe um fluxograma que leia um nome e o exiba.</li>
-<li>Escreva um algoritmo para somar dois números.</li>
-<li>Escreva um algoritmo para calcular a área de um triângulo.</li>
-<li>Identifique entrada, processamento e saída de um conversor de moeda.</li>
-<li>Faça o teste de mesa de <code>x &lt;- 4; y &lt;- 3; z &lt;- x * y + 2</code>.</li>
-<li>Descreva o fluxo de um algoritmo que calcula a média de três notas.</li>
-<li>Crie um algoritmo para converter quilômetros em metros.</li>
-<li>Represente em pseudocódigo o cálculo do perímetro de um retângulo.</li>
-<li>Explique por que um fluxograma precisa de setas.</li>
-<li>Crie um algoritmo que leia idade e exiba a idade no próximo ano.</li>
-<li>Faça teste de mesa para <code>a &lt;- 10; b &lt;- a - 4; a &lt;- b * 2</code>.</li>
-<li>Escreva os passos de uma rotina de autenticação sem entrar em detalhes de segurança.</li>
-<li>Planeje um algoritmo para calcular o preço com imposto percentual.</li>
-<li>Identifique ambiguidades em “adicione alguns valores e mostre o resultado”.</li>
-<li>Crie entradas de teste para um cálculo de média.</li>
-<li>Compare duas representações para o mesmo algoritmo.</li>
-<li>Escolha um problema cotidiano e entregue pseudocódigo e fluxograma.</li>
+<li>O que é modularização?</li>
+<li>Diferencie protótipo e definição.</li>
+<li>Diferencie parâmetro e argumento.</li>
+<li>Escreva função que retorna o quadrado de um inteiro.</li>
+<li>Escreva função que retorna o maior de dois inteiros.</li>
+<li>Crie função <code>void</code> que exibe uma mensagem.</li>
+<li>Escreva função que converte Celsius para Fahrenheit.</li>
+<li>Explique o propósito de <code>return</code>.</li>
+<li>O que é uma variável local?</li>
+<li>Por que funções pequenas facilitam testes?</li>
+<li>Crie função que calcule a média de três notas.</li>
+<li>Crie função que informe se um inteiro é par.</li>
+<li>Escreva protótipo para uma função que recebe dois <code>double</code> e retorna <code>double</code>.</li>
+<li>Identifique o erro em uma função <code>int</code> sem retorno em todos os caminhos.</li>
+<li>Reorganize um programa monolítico em três funções.</li>
+<li>Explique passagem por valor em C.</li>
+<li>Para que servem <code>&amp;</code> e <code>*</code> em uma chamada com ponteiro?</li>
+<li>Crie função que valide uma nota entre 0 e 10.</li>
+<li>Projete funções para um conversor de unidades.</li>
+<li>Teste uma função com valores comuns, limites e casos inválidos.</li>
 </ol>
 <h2 id="gabarito-comentado">Gabarito comentado</h2>
 <ol>
-<li>Sequência finita de passos para resolver uma tarefa.</li>
-<li>Clareza, precisão, término e resultado coerente.</li>
-<li>Pseudocódigo é uma representação estruturada; código segue uma linguagem formal.</li>
-<li>Início → ler nome → exibir nome → fim.</li>
-<li>Ler A e B; soma ← A+B; exibir soma.</li>
-<li>Ler base e altura; área ← base*altura/2; exibir área.</li>
-<li>Entrada: valor e taxa; processamento: conversão; saída: valor convertido.</li>
-<li><code>z = 4*3+2 = 14</code>.</li>
-<li>Ler três notas, somar, dividir por três, exibir.</li>
-<li>Ler km; metros ← km*1000; exibir metros.</li>
-<li><code>perimetro &lt;- 2 * (base + altura)</code>.</li>
-<li>Para mostrar a ordem e a direção de execução.</li>
-<li>Ler idade; próxima ← idade+1; exibir próxima.</li>
-<li>Inicialmente a=10; b=6; depois a=12.</li>
-<li>Solicitar credenciais, validar conforme as regras, informar resultado; em sistemas reais, seguir práticas seguras.</li>
-<li>total ← preço + preço*taxa/100.</li>
-<li>“Alguns” não define quantidade nem formato de saída.</li>
-<li>Valores iguais, valores distintos, limites e entradas inválidas.</li>
-<li>Resposta deve comparar clareza, concisão e facilidade de execução.</li>
-<li>Avaliar coerência e completude.</li>
+<li>Dividir um sistema em componentes menores e coesos.</li>
+<li>Protótipo anuncia a interface; definição implementa o corpo.</li>
+<li>Parâmetro é declarado; argumento é fornecido na chamada.</li>
+<li><code>int quadrado(int x) { return x*x; }</code>.</li>
+<li>Comparar os valores e retornar o maior.</li>
+<li><code>void mensagem(void) { printf("Ola\n"); }</code>.</li>
+<li><code>return c * 9.0/5.0 + 32.0;</code>.</li>
+<li>Encerra a função e, quando aplicável, devolve valor.</li>
+<li>Existe dentro do escopo em que foi declarada.</li>
+<li>Entradas e resultados podem ser testados isoladamente.</li>
+<li>Somar notas e dividir por <code>3.0</code>.</li>
+<li>Retornar <code>x%2==0</code>.</li>
+<li><code>double calcular(double a, double b);</code>.</li>
+<li>Algum caminho não devolve o tipo esperado.</li>
+<li>Separar entrada, cálculo e apresentação, por exemplo.</li>
+<li>A função recebe uma cópia do valor.</li>
+<li><code>&amp;</code> obtém endereço; <code>*</code> declara/dereferencia ponteiro conforme o contexto.</li>
+<li>Retornar verdadeiro se <code>nota&gt;=0 &amp;&amp; nota&lt;=10</code>.</li>
+<li>Separar conversão, validação e exibição.</li>
+<li>Usar testes normais, limites e valores que violem as regras.</li>
 </ol>
-<h2 id="resumo">Resumo</h2>
-<p><strong>Compreender → modelar → representar → simular → implementar → testar.</strong></p>
-<h2 id="glossario-e-referencias">Glossário e referências</h2>
-<p><strong>Pseudocódigo:</strong> representação estruturada. <strong>Fluxograma:</strong> representação gráfica do fluxo. <strong>Teste de mesa:</strong> execução manual simulada.</p>
-<p>Referências: Cormen et al., <em>Introduction to Algorithms</em>; materiais da disciplina de Algoritmos e Lógica de Programação.</p>
+<h2 id="resumo-e-referencias">Resumo e referências</h2>
+<p>Funções organizam o programa por responsabilidade, reduzem repetição e favorecem testes.</p>
+<p>Referência: cppreference.com, declarações e funções em C.</p>
 
 
 
@@ -1500,14 +1624,14 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "search.highlight", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
       
         <script src="https://unpkg.com/mermaid@11/dist/mermaid.min.js"></script>
       
-        <script src="../../../javascripts/mermaid-init.js"></script>
+        <script src="../../javascripts/mermaid-init.js"></script>
       
     
   </body>
