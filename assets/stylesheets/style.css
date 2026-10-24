@@ -1,6 +1,124 @@
+/* =========================================================
+   PORTAL ACADÊMICO — identidade visual complementar
+   Paleta inspirada no Centro Paula Souza: vermelho, preto,
+   branco e cinza. Mantém o estilo Material para MkDocs.
+   ========================================================= */
+
+:root {
+  --cps-red: #EF5552;
+  --cps-red-dark: #c93636;
+  --cps-black: #202124;
+  --cps-gray: #5f6368;
+  --cps-light-gray: #f3f4f6;
+  --cps-border: #e1e3e6;
+}
+
+/* Imagens: mantém o comportamento do CSS original */
 .md-content img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 20px auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Hierarquia dos títulos */
+.md-content h1 {
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  border-bottom: 3px solid var(--cps-red);
+  padding-bottom: 0.35em;
+}
+
+.md-content h2 {
+  margin-top: 1.8em;
+  padding-bottom: 0.25em;
+  border-bottom: 1px solid var(--cps-border);
+}
+
+.md-content h3 {
+  font-weight: 700;
+}
+
+/* Links do conteúdo */
+.md-content a {
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+}
+
+.md-content a:hover {
+  color: var(--cps-red-dark);
+}
+
+/* Blocos de código */
+.md-typeset pre {
+  border: 1px solid var(--cps-border);
+  border-left: 4px solid var(--cps-red);
+  border-radius: 8px;
+}
+
+.md-typeset code {
+  border-radius: 4px;
+}
+
+/* Tabelas legíveis */
+.md-typeset table:not([class]) {
+  display: table;
+  width: 100%;
+  border: 1px solid var(--cps-border);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.md-typeset table:not([class]) th {
+  background: var(--cps-light-gray);
+  font-weight: 700;
+}
+
+/* Caixas de aviso, dica e atenção do Material */
+.md-typeset .admonition,
+.md-typeset details {
+  border-radius: 8px;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.05);
+}
+
+.md-typeset .admonition.note,
+.md-typeset .admonition.tip,
+.md-typeset .admonition.example {
+  border-color: var(--cps-red);
+}
+
+.md-typeset .admonition.note > .admonition-title,
+.md-typeset .admonition.tip > .admonition-title,
+.md-typeset .admonition.example > .admonition-title {
+  border-color: var(--cps-red);
+}
+
+/* Citações e observações */
+.md-typeset blockquote {
+  border-left-color: var(--cps-red);
+  color: var(--cps-gray);
+}
+
+/* Navegação: reforço sutil da cor principal */
+.md-tabs__link--active,
+.md-nav__link--active {
+  font-weight: 700;
+}
+
+/* Ajustes para telas menores */
+@media screen and (max-width: 600px) {
+  .md-content h1 {
+    font-size: 1.7em;
+  }
+
+  .md-content img {
+    margin: 14px auto;
+  }
+
+  .md-typeset table:not([class]) {
     display: block;
-    margin: 20px auto;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    overflow-x: auto;
+  }
 }

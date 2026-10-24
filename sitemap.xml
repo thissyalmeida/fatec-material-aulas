@@ -2,86 +2,94 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://thissyalmeida.github.io/fatec-material-aulas/index.html</loc>
-         <lastmod>2026-06-24</lastmod>
+         <lastmod>2026-10-24</lastmod>
     </url>
     <url>
          <loc>https://thissyalmeida.github.io/fatec-material-aulas/ALP/C/conteudo-c.html</loc>
-         <lastmod>2026-06-24</lastmod>
+         <lastmod>2026-10-24</lastmod>
     </url>
     <url>
          <loc>https://thissyalmeida.github.io/fatec-material-aulas/ALP/C/exemplos-c.html</loc>
-         <lastmod>2026-06-24</lastmod>
+         <lastmod>2026-10-24</lastmod>
     </url>
     <url>
          <loc>https://thissyalmeida.github.io/fatec-material-aulas/ALP/Java/conteudo-java.html</loc>
-         <lastmod>2026-06-24</lastmod>
+         <lastmod>2026-10-24</lastmod>
     </url>
     <url>
          <loc>https://thissyalmeida.github.io/fatec-material-aulas/ALP/Java/exemplos-java.html</loc>
-         <lastmod>2026-06-24</lastmod>
+         <lastmod>2026-10-24</lastmod>
     </url>
     <url>
          <loc>https://thissyalmeida.github.io/fatec-material-aulas/ALP/Javascript/conteudo-javascript.html</loc>
-         <lastmod>2026-06-24</lastmod>
+         <lastmod>2026-10-24</lastmod>
     </url>
     <url>
          <loc>https://thissyalmeida.github.io/fatec-material-aulas/ALP/Javascript/exemplos-javascript.html</loc>
-         <lastmod>2026-06-24</lastmod>
+         <lastmod>2026-10-24</lastmod>
     </url>
     <url>
          <loc>https://thissyalmeida.github.io/fatec-material-aulas/ALP/Kotlin/conteudo-kotlin.html</loc>
-         <lastmod>2026-06-24</lastmod>
+         <lastmod>2026-10-24</lastmod>
     </url>
     <url>
          <loc>https://thissyalmeida.github.io/fatec-material-aulas/ALP/Kotlin/exemplos-kotlin.html</loc>
-         <lastmod>2026-06-24</lastmod>
+         <lastmod>2026-10-24</lastmod>
     </url>
     <url>
          <loc>https://thissyalmeida.github.io/fatec-material-aulas/ALP/Python/conteudo-python.html</loc>
-         <lastmod>2026-06-24</lastmod>
+         <lastmod>2026-10-24</lastmod>
     </url>
     <url>
          <loc>https://thissyalmeida.github.io/fatec-material-aulas/ALP/Python/exemplos-python.html</loc>
-         <lastmod>2026-06-24</lastmod>
+         <lastmod>2026-10-24</lastmod>
+    </url>
+    <url>
+         <loc>https://thissyalmeida.github.io/fatec-material-aulas/ALP/apostila/index.html</loc>
+         <lastmod>2026-10-24</lastmod>
+    </url>
+    <url>
+         <loc>https://thissyalmeida.github.io/fatec-material-aulas/ALP/apostila/capitulos/01-introducao-computacao.html</loc>
+         <lastmod>2026-10-24</lastmod>
     </url>
     <url>
          <loc>https://thissyalmeida.github.io/fatec-material-aulas/ALP/aula-01/logica-e-raciocinio.html</loc>
-         <lastmod>2026-06-24</lastmod>
+         <lastmod>2026-10-24</lastmod>
     </url>
     <url>
          <loc>https://thissyalmeida.github.io/fatec-material-aulas/ALP/aula-02/exemplos-formas-de-representacao.html</loc>
-         <lastmod>2026-06-24</lastmod>
+         <lastmod>2026-10-24</lastmod>
     </url>
     <url>
          <loc>https://thissyalmeida.github.io/fatec-material-aulas/ALP/aula-02/formas-de-representacao-de-algoritmos.html</loc>
-         <lastmod>2026-06-24</lastmod>
+         <lastmod>2026-10-24</lastmod>
     </url>
     <url>
          <loc>https://thissyalmeida.github.io/fatec-material-aulas/ALP/aula-03/linguagem-de-programacao.html</loc>
-         <lastmod>2026-06-24</lastmod>
+         <lastmod>2026-10-24</lastmod>
     </url>
     <url>
          <loc>https://thissyalmeida.github.io/fatec-material-aulas/ED/index.html</loc>
-         <lastmod>2026-06-24</lastmod>
+         <lastmod>2026-10-24</lastmod>
     </url>
     <url>
          <loc>https://thissyalmeida.github.io/fatec-material-aulas/ED/aula1-introducao.html</loc>
-         <lastmod>2026-06-24</lastmod>
+         <lastmod>2026-10-24</lastmod>
     </url>
     <url>
          <loc>https://thissyalmeida.github.io/fatec-material-aulas/MPC/index.html</loc>
-         <lastmod>2026-06-24</lastmod>
+         <lastmod>2026-10-24</lastmod>
     </url>
     <url>
          <loc>https://thissyalmeida.github.io/fatec-material-aulas/MPC/aula1-introducao.html</loc>
-         <lastmod>2026-06-24</lastmod>
+         <lastmod>2026-10-24</lastmod>
     </url>
     <url>
          <loc>https://thissyalmeida.github.io/fatec-material-aulas/PLN/index.html</loc>
-         <lastmod>2026-06-24</lastmod>
+         <lastmod>2026-10-24</lastmod>
     </url>
     <url>
          <loc>https://thissyalmeida.github.io/fatec-material-aulas/PLN/aula1-introducao.html</loc>
-         <lastmod>2026-06-24</lastmod>
+         <lastmod>2026-10-24</lastmod>
     </url>
 </urlset>
