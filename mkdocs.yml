@@ -20,15 +20,13 @@ theme:
       toggle:
         icon: material/weather-sunny
         name: Modo claro
-  
+
   features:
     - navigation.tabs
     - navigation.sections
     - navigation.top
     - search.highlight
     - content.code.copy
-
-# EXTENSÕES IMPORTANTES
 
 markdown_extensions:
   - attr_list
@@ -39,14 +37,8 @@ markdown_extensions:
       anchor_linenums: true
       line_spans: __span
       pygments_lang_class: true
-  - pymdownx.superfences:
-      custom_fences:
-        - name: mermaid
-          class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.superfences
 
-
-# CSS PERSONALIZADO
 extra_css:
   - assets/stylesheets/style.css
 
@@ -54,11 +46,14 @@ nav:
   - Boas-vindas: index.md
 
   - ALP - Algoritmos e Lógica de Programação:
+    - Apostila de ALP:
+        - Apresentação: ALP/apostila/index.md
     - Introdução:
         - Intro: ALP/aula-00/index.md
     - Lógica e Raciocínio:
         - Lógica e Raciocínio: ALP/aula-01/logica-e-raciocinio.md
-        - Exemplos: ALP/.md
+        # O item "Exemplos: ALP/.md" do arquivo original foi omitido
+        # porque o caminho aparenta estar incompleto. Reinsira-o após corrigir o destino.
     - Conceitos iniciais de Algoritmos:
         - Formas de Representação de Algoritmos: ALP/aula-02/formas-de-representacao-de-algoritmos.md
         - Exemplos: ALP/aula-02/exemplos-formas-de-representacao.md
@@ -79,11 +74,9 @@ nav:
         - Python:
             - Conteudo: ALP/Python/conteudo-python.md
             - Exemplos: ALP/Python/exemplos-python.md
-        
+
   - EST - Estrutura de Dados:
     - Listas, Pilhas e Filas:
         - Exercícios: ED/aula1-introducao.md
     - Árvores e Grafos:
         - Exercícios: ED/index.md
-
-

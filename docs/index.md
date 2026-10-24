@@ -37,11 +37,9 @@ A disciplina está organizada em etapas progressivas. Cada conteúdo contribui p
 ## 🛠️ Ferramentas utilizadas
 
 - **VisualG:** ambiente para escrever, executar e testar algoritmos em pseudocódigo.
-- **Ambiente de desenvolvimento em C:** ferramenta utilizada para implementar e executar programas em linguagem C. Utilize a indicada nas orientações da aula, como Dev-C++ ou Code::Blocks.
+- **Ambiente de desenvolvimento em C:** ferramenta indicada nas orientações de cada aula, como Dev-C++ ou Code::Blocks.
 
 ## 📚 Como estudar com este material
-
-Para aproveitar melhor a apostila:
 
 - Leia a explicação conceitual antes de analisar os exemplos.
 - Acompanhe a resolução dos exemplos passo a passo.
@@ -50,7 +48,7 @@ Para aproveitar melhor a apostila:
 - Execute os programas e experimente modificar os valores de entrada.
 - Quando encontrar um erro, investigue a causa e tente corrigi-lo.
 
-**Dica:** programar é uma habilidade construída com prática. Errar, testar, analisar e corrigir fazem parte do processo de aprendizagem.
+> **Dica:** programar é uma habilidade construída com prática. Errar, testar, analisar e corrigir fazem parte do processo de aprendizagem.
 
 ---
 
