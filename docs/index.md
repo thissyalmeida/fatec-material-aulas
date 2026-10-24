@@ -56,4 +56,4 @@ A disciplina está organizada em etapas progressivas. Cada conteúdo contribui p
 
 Acesse as aulas e os materiais disponíveis no menu de navegação. Inicie pelos fundamentos da lógica de programação e avance no seu ritmo, consolidando cada etapa antes de seguir para a próxima.
 
-Bons estudos!
+Bons estudos!!!
