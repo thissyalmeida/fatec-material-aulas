@@ -37,10 +37,18 @@ markdown_extensions:
       anchor_linenums: true
       line_spans: __span
       pygments_lang_class: true
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
 
 extra_css:
   - assets/stylesheets/style.css
+
+extra_javascript:
+  - https://unpkg.com/mermaid@11/dist/mermaid.min.js
+  - javascripts/mermaid-init.js
 
 nav:
   - Boas-vindas: index.md
@@ -48,6 +56,7 @@ nav:
   - ALP - Algoritmos e Lógica de Programação:
     - Apostila de ALP:
         - Apresentação: ALP/apostila/index.md
+        - Capítulo 1 — Introdução: ALP/apostila/capitulos/01-introducao-computacao.md
     - Introdução:
         - Intro: ALP/aula-00/index.md
     - Lógica e Raciocínio:
