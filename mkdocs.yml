@@ -62,32 +62,30 @@ nav:
         - Capítulo 4 — Entrada, Processamento e Saída de Dados: ALP/apostila/capitulos/04-entrada-processamento-saida.md
         - Capítulo 5 — Estruturas Condicionais: ALP/apostila/05-estruturas-condicionais.md
         - Capítulo 6 — Estruturas de repetição: ALP/apostila/06-estruturas-de-repeticao.md
-    - Introdução:
-        - Intro: ALP/aula-00/index.md
-    - Lógica e Raciocínio:
-        - Lógica e Raciocínio: ALP/aula-01/logica-e-raciocinio.md
-        # O item "Exemplos: ALP/.md" do arquivo original foi omitido
-        # porque o caminho aparenta estar incompleto. Reinsira-o após corrigir o destino.
-    - Conceitos iniciais de Algoritmos:
-        - Formas de Representação de Algoritmos: ALP/aula-02/formas-de-representacao-de-algoritmos.md
-        - Exemplos: ALP/aula-02/exemplos-formas-de-representacao.md
-    - Linguagem de Programação:
-        - Linguagem de Programação: ALP/aula-03/linguagem-de-programacao.md
-        - C:
-            - Conteudo: ALP/C/conteudo-c.md
-            - Exemplos: ALP/C/exemplos-c.md
-        - Java:
-            - Conteudo: ALP/Java/conteudo-java.md
-            - Exemplos: ALP/Java/exemplos-java.md
-        - JavaScript:
-            - Conteudo: ALP/JavaScript/conteudo-javascript.md
-            - Exemplos: ALP/JavaScript/exemplos-javascript.md
-        - Kotlin:
-            - Conteudo: ALP/Kotlin/conteudo-kotlin.md
-            - Exemplos: ALP/Kotlin/exemplos-kotlin.md
-        - Python:
-            - Conteudo: ALP/Python/conteudo-python.md
-            - Exemplos: ALP/Python/exemplos-python.md
+    #- Introdução:
+     #   - Intro: ALP/aula-00/index.md
+    #- Lógica e Raciocínio:
+     #   - Lógica e Raciocínio: ALP/aula-01/logica-e-raciocinio.md
+    #- Conceitos iniciais de Algoritmos:
+     #   - Formas de Representação de Algoritmos: ALP/aula-02/formas-de-representacao-de-algoritmos.md
+      #  - Exemplos: ALP/aula-02/exemplos-formas-de-representacao.md
+    #- Linguagem de Programação:
+     #   - Linguagem de Programação: ALP/aula-03/linguagem-de-programacao.md
+      #  - C:
+       #     - Conteudo: ALP/C/conteudo-c.md
+        #    - Exemplos: ALP/C/exemplos-c.md
+        #- Java:
+         #   - Conteudo: ALP/Java/conteudo-java.md
+          #  - Exemplos: ALP/Java/exemplos-java.md
+        #- JavaScript:
+         #   - Conteudo: ALP/JavaScript/conteudo-javascript.md
+          #  - Exemplos: ALP/JavaScript/exemplos-javascript.md
+        #- Kotlin:
+         #   - Conteudo: ALP/Kotlin/conteudo-kotlin.md
+          #  - Exemplos: ALP/Kotlin/exemplos-kotlin.md
+        #- Python:
+         #   - Conteudo: ALP/Python/conteudo-python.md
+          #  - Exemplos: ALP/Python/exemplos-python.md
 
   - EST - Estrutura de Dados:
     - Listas, Pilhas e Filas:
