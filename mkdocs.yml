@@ -29,13 +29,22 @@ theme:
     - content.code.copy
 
 # EXTENSÕES IMPORTANTES
+
 markdown_extensions:
   - attr_list
   - tables
   - admonition
-  - pymdownx.superfences
-  - pymdownx.highlight
   - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
 
 # CSS PERSONALIZADO
 extra_css:
