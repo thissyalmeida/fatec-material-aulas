@@ -1,59 +1,55 @@
-# 💻 Algoritmos e Lógica de Programação
+# Apostila de Algoritmos e Lógica de Programação
 
-Bem-vindo(a) ao espaço de aprendizagem de **Algoritmos e Lógica de Programação (ALP)**!
+**Desenvolvimento de Software Multiplataforma — FATEC**
 
-Nesta disciplina, você aprenderá a analisar problemas, organizar ideias e desenvolver algoritmos capazes de produzir soluções computacionais. Ao longo das aulas, construiremos uma base sólida de lógica de programação, começando pela representação de algoritmos e avançando gradualmente para a implementação de programas em linguagem C.
+Esta apostila apresenta, de forma progressiva, os fundamentos necessários para compreender problemas computacionais, construir algoritmos e implementar soluções em linguagem C. A proposta combina explicações conceituais, exemplos comentados, pseudocódigo, fluxogramas, testes de mesa e exercícios com gabarito.
 
-O objetivo é compreender não apenas *como programar*, mas também **como pensar para resolver problemas**.
+> **Como estudar:** leia a situação-problema, tente prever o resultado antes de executar o código e registre suas dúvidas. Programar envolve formular hipóteses, testar, observar erros e aprimorar a solução.
 
----
+## Objetivos de aprendizagem
 
-## 🎯 Objetivos de aprendizagem
+Ao concluir o material, espera-se que você consiga:
 
-Ao longo da disciplina, você será capaz de:
+- compreender os componentes básicos de um sistema computacional;
+- decompor problemas em entrada, processamento e saída;
+- representar algoritmos com pseudocódigo e fluxogramas;
+- utilizar variáveis, tipos de dados, operadores e estruturas de controle;
+- implementar programas em C com funções, vetores e matrizes;
+- compreender representações binárias e noções de memória;
+- testar algoritmos, depurar erros e utilizar práticas iniciais de controle de versão com Git.
 
-1. Compreender o conceito de algoritmo e sua aplicação na resolução de problemas.
-2. Representar soluções por meio de diferentes técnicas de descrição de algoritmos.
-3. Utilizar tipos de dados, variáveis, operadores e estruturas de controle.
-4. Desenvolver algoritmos com estruturas sequenciais, condicionais e de repetição.
-5. Modularizar soluções utilizando funções e procedimentos.
-6. Trabalhar com estruturas homogêneas, como vetores e matrizes.
-7. Aplicar boas práticas de organização, teste e documentação de código.
-8. Conhecer os fundamentos do versionamento e do controle de código-fonte.
+## Percurso da apostila
 
-## 🧭 Trilha de aprendizagem
+| Capítulo | Tema | Pergunta orientadora |
+|---|---|---|
+| 1 | Introdução à computação | Como um computador transforma dados em resultados? |
+| 2 | Algoritmos e fluxogramas | Como descrever uma solução antes de programar? |
+| 3 | Variáveis e operadores | Como representar e manipular informações? |
+| 4 | Estrutura sequencial | Como executar instruções em uma ordem definida? |
+| 5 | Estruturas condicionais | Como tomar decisões em um algoritmo? |
+| 6 | Estruturas de repetição | Como repetir tarefas sem duplicar código? |
+| 7 | Introdução à linguagem C | Como transformar algoritmos em programas C? |
+| 8 | Controle em C | Como combinar decisões e repetições em C? |
+| 9 | Funções | Como dividir um programa em partes reutilizáveis? |
+| 10 | Vetores e matrizes | Como armazenar coleções de dados? |
+| 11 | Memória e binário | Como os dados são representados e armazenados? |
+| 12 | Testes, estilo e Git | Como verificar, organizar e evoluir um programa? |
 
-A disciplina está organizada em etapas progressivas. Cada conteúdo contribui para a construção das habilidades necessárias à etapa seguinte.
+## Convenções usadas
 
-1. **Lógica e raciocínio computacional** — decomposição de problemas, identificação de padrões e construção de soluções.
-2. **Representação de algoritmos** — descrição narrativa, pseudocódigo e fluxogramas.
-3. **Fundamentos da programação** — variáveis, tipos de dados, operadores e entrada e saída.
-4. **Estruturas de controle** — sequência, decisão e repetição.
-5. **Modularização** — funções, procedimentos e organização do programa.
-6. **Estruturas homogêneas** — vetores e matrizes.
-7. **Implementação em C** — tradução dos algoritmos para uma linguagem de programação.
-8. **Testes e versionamento** — verificação de resultados, depuração e controle de versões.
+- **Pseudocódigo:** representação independente de uma linguagem específica.
+- **Código C:** exemplos voltados ao padrão C99 ou posterior, salvo indicação.
+- **Teste de mesa:** simulação manual, passo a passo, dos valores das variáveis.
+- **Gabarito:** sugestões de resposta; soluções alternativas corretas também podem ser aceitas.
 
-## 🛠️ Ferramentas utilizadas
+## Ambiente de estudo
 
-- **VisualG:** ambiente para escrever, executar e testar algoritmos em pseudocódigo.
-- **Ambiente de desenvolvimento em C:** ferramenta indicada nas orientações de cada aula, como Dev-C++ ou Code::Blocks.
+É possível praticar com um compilador C instalado localmente ou em um ambiente de desenvolvimento disponibilizado pela disciplina. Ao compilar, leia as mensagens do compilador e trate avisos como oportunidades de melhoria.
 
-## 📚 Como estudar com este material
+## Identidade visual e diagramas
 
-- Leia a explicação conceitual antes de analisar os exemplos.
-- Acompanhe a resolução dos exemplos passo a passo.
-- Faça os testes de mesa para compreender a execução dos algoritmos.
-- Resolva os exercícios antes de consultar o gabarito comentado.
-- Execute os programas e experimente modificar os valores de entrada.
-- Quando encontrar um erro, investigue a causa e tente corrigi-lo.
+Os capítulos utilizam títulos, tabelas, blocos de atenção e diagramas Mermaid compatíveis com MkDocs Material, desde que a extensão Mermaid esteja habilitada na configuração do portal.
 
-> **Dica:** programar é uma habilidade construída com prática. Errar, testar, analisar e corrigir fazem parte do processo de aprendizagem.
+## Navegação
 
----
-
-## 🚀 Vamos começar?
-
-Acesse as aulas e os materiais disponíveis no menu de navegação. Inicie pelos fundamentos da lógica de programação e avance no seu ritmo, consolidando cada etapa antes de seguir para a próxima.
-
-Bons estudos!!!
+Adicione os arquivos desta apostila à pasta `docs/ALP/apostila/` e configure a seção `nav` do `mkdocs.yml` para apontar para `ALP/apostila/index.md` e os capítulos na ordem apresentada.
