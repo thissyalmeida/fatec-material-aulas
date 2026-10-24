@@ -619,17 +619,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#objetivos" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Objetivos
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#81-condicionais" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -685,43 +674,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#erros-comuns" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Erros comuns
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#pratica-guiada" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Prática guiada
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#exercicios" class="md-nav__link">
     <span class="md-ellipsis">
       
         Exercícios
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#gabarito-comentado" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Gabarito comentado
       
     </span>
   </a>
@@ -905,17 +861,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#objetivos" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Objetivos
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#81-condicionais" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -971,43 +916,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#erros-comuns" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Erros comuns
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#pratica-guiada" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Prática guiada
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#exercicios" class="md-nav__link">
     <span class="md-ellipsis">
       
         Exercícios
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#gabarito-comentado" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Gabarito comentado
       
     </span>
   </a>
@@ -1045,13 +957,15 @@
 <h1 id="8-controle-em-c-condicoes-e-lacos">8. Controle em C: Condições e Laços</h1>
 <h2 id="abertura">Abertura</h2>
 <p>As estruturas condicionais e de repetição permitem que um programa C tome decisões e processe conjuntos de dados. Este capítulo conecta as ideias dos capítulos anteriores à sintaxe da linguagem.</p>
-<h2 id="objetivos">Objetivos</h2>
+<div class="admonition abstract">
+<p class="admonition-title">Objetivos de aprendizagem</p>
 <ul>
 <li>implementar <code>if</code>, <code>else if</code>, <code>else</code> e <code>switch</code>;</li>
 <li>usar <code>while</code>, <code>do-while</code> e <code>for</code>;</li>
 <li>combinar condições e laços;</li>
 <li>validar entradas e testar limites.</li>
 </ul>
+</div>
 <h2 id="81-condicionais">8.1 Condicionais</h2>
 <div class="language-c highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">idade</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mi">18</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">"Maior de idade</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
@@ -1108,7 +1022,8 @@
 </span></code></pre></div>
 <h2 id="85-tabela-de-rastreamento">8.5 Tabela de rastreamento</h2>
 <p>Para <code>for (i=1; i&lt;=3; i++)</code>, o corpo executa com <code>i</code> igual a 1, 2 e 3. Depois da atualização para 4, a condição é falsa e o laço termina.</p>
-<h2 id="erros-comuns">Erros comuns</h2>
+<div class="admonition warning">
+<p class="admonition-title">Erros comuns: atenção a estes pontos</p>
 <ul>
 <li>esquecer atualização do contador;</li>
 <li>colocar <code>;</code> após <code>if (...)</code>;</li>
@@ -1117,8 +1032,11 @@
 <li>aceitar entrada inválida sem verificar retorno de <code>scanf</code>;</li>
 <li>construir condições impossíveis, como <code>x &lt; 0 &amp;&amp; x &gt; 10</code>.</li>
 </ul>
-<h2 id="pratica-guiada">Prática guiada</h2>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Prática guiada</p>
 <p>Implemente um menu de calculadora com opções de soma, subtração, multiplicação e divisão. O programa deve repetir o menu até a opção sair e impedir divisão por zero.</p>
+</div>
 <h2 id="exercicios">Exercícios</h2>
 <ol>
 <li>Escreva <code>if/else</code> para classificar um número como par ou ímpar.</li>
@@ -1142,7 +1060,8 @@
 <li>Explique a diferença entre <code>while</code> e <code>do-while</code>.</li>
 <li>Desenvolva um programa que leia números até zero e some somente os positivos.</li>
 </ol>
-<h2 id="gabarito-comentado">Gabarito comentado</h2>
+<div class="admonition success">
+<p class="admonition-title">Gabarito comentado</p>
 <ol>
 <li><code>if (n%2==0)</code> par; senão ímpar.</li>
 <li>Organizar faixas sem lacunas ou sobreposições.</li>
@@ -1165,6 +1084,7 @@
 <li><code>while</code> testa antes; <code>do-while</code> executa pelo menos uma vez.</li>
 <li>Somar apenas quando valor&gt;0 e encerrar ao ler zero.</li>
 </ol>
+</div>
 <h2 id="resumo-e-referencias">Resumo e referências</h2>
 <p>As estruturas de controle definem <strong>qual caminho</strong> executar e <strong>quantas vezes</strong> executar um bloco. Teste cada caminho e cada limite.</p>
 <p>Referência: cppreference.com, declarações de seleção e iteração em C.</p>

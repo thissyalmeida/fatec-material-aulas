@@ -675,17 +675,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#objetivos" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Objetivos
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#101-vetores-em-c" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -752,43 +741,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#erros-comuns" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Erros comuns
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#pratica-guiada" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Prática guiada
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#exercicios" class="md-nav__link">
     <span class="md-ellipsis">
       
         Exercícios
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#gabarito-comentado" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Gabarito comentado
       
     </span>
   </a>
@@ -916,17 +872,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#objetivos" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Objetivos
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#101-vetores-em-c" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -993,43 +938,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#erros-comuns" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Erros comuns
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#pratica-guiada" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Prática guiada
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#exercicios" class="md-nav__link">
     <span class="md-ellipsis">
       
         Exercícios
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#gabarito-comentado" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Gabarito comentado
       
     </span>
   </a>
@@ -1067,7 +979,8 @@
 <h1 id="10-vetores-e-matrizes">10. Vetores e Matrizes</h1>
 <h2 id="abertura">Abertura</h2>
 <p>Quando precisamos armazenar várias notas, preços ou medições, criar uma variável separada para cada valor não é prático. Vetores e matrizes organizam coleções de elementos do mesmo tipo.</p>
-<h2 id="objetivos">Objetivos</h2>
+<div class="admonition abstract">
+<p class="admonition-title">Objetivos de aprendizagem</p>
 <ul>
 <li>declarar e acessar vetores;</li>
 <li>percorrer elementos com laços;</li>
@@ -1075,6 +988,7 @@
 <li>compreender matrizes e laços aninhados;</li>
 <li>evitar acessos fora dos limites.</li>
 </ul>
+</div>
 <h2 id="101-vetores-em-c">10.1 Vetores em C</h2>
 <div class="language-c highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kt">int</span><span class="w"> </span><span class="n">valores</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="mi">4</span><span class="p">,</span><span class="w"> </span><span class="mi">7</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">9</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">};</span>
 </span></code></pre></div>
@@ -1119,7 +1033,8 @@
 </span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>linha 0      1         2         3
 </span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>linha 1      4         5         6
 </span></code></pre></div>
-<h2 id="erros-comuns">Erros comuns</h2>
+<div class="admonition warning">
+<p class="admonition-title">Erros comuns: atenção a estes pontos</p>
 <ul>
 <li>começar o índice em 1 em C;</li>
 <li>usar <code>i &lt;= tamanho</code> em vez de <code>i &lt; tamanho</code>;</li>
@@ -1128,8 +1043,11 @@
 <li>confundir número de linhas com número de colunas;</li>
 <li>calcular média dividindo por zero elementos.</li>
 </ul>
-<h2 id="pratica-guiada">Prática guiada</h2>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Prática guiada</p>
 <p>Leia cinco notas, armazene-as em um vetor, calcule a média e conte quantas notas estão acima da média. Teste notas iguais e notas distintas.</p>
+</div>
 <h2 id="exercicios">Exercícios</h2>
 <ol>
 <li>O que é um vetor?</li>
@@ -1153,7 +1071,8 @@
 <li>Planeje uma análise de notas com média, maior, menor e aprovados.</li>
 <li>Crie um programa que registre vendas diárias e calcule total e média.</li>
 </ol>
-<h2 id="gabarito-comentado">Gabarito comentado</h2>
+<div class="admonition success">
+<p class="admonition-title">Gabarito comentado</p>
 <ol>
 <li>Coleção indexada de elementos do mesmo tipo.</li>
 <li>O primeiro elemento ocupa o índice 0 por convenção da linguagem.</li>
@@ -1176,6 +1095,7 @@
 <li>Armazenar notas, calcular estatísticas e classificar segundo regra definida.</li>
 <li>Acumular vendas e dividir pela quantidade de dias registrada.</li>
 </ol>
+</div>
 <h2 id="resumo-e-referencias">Resumo e referências</h2>
 <p>Vetores usam um índice; matrizes usam dois. Laços permitem percorrer as coleções de forma sistemática.</p>
 <p>Referência: cppreference.com, arrays em C.</p>
