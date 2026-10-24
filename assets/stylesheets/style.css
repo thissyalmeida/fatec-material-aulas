@@ -35,39 +35,82 @@
 .md-typeset .admonition.tip > .admonition-title { background-color: rgba(13,148,136,.10); }
 .md-typeset .admonition.success { border-left-color: #16a34a; }
 .md-typeset .admonition.success > .admonition-title { background-color: rgba(22,163,74,.10); }
+
+/* Banner da apostila — identidade visual preta e vermelha */
 .alp-hero {
   position: relative;
-  margin: .5rem 0 1.5rem;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0.5rem 0 1.5rem;
   padding: clamp(1.5rem, 5vw, 3.5rem);
-  border-radius: 1.1rem;
-  border: 1px solid var(--alp-border);
   overflow: hidden;
-  background: linear-gradient(120deg, var(--alp-soft), var(--alp-panel) 68%);
+  border: 1px solid #3a3a3a;
+  border-top: 5px solid #EF5552;
+  border-radius: 1rem;
+  background: #202020;
+  color: #ffffff;
 }
-.alp-hero:before {
+
+/* Elemento decorativo */
+.alp-hero::before {
   content: "";
   position: absolute;
   width: 9rem;
   height: 9rem;
   right: -2rem;
   top: -2.5rem;
-  border: 1.3rem solid rgba(239,85,82,.12);
+  border: 1.2rem solid rgba(239, 85, 82, 0.20);
   border-radius: 50%;
   pointer-events: none;
 }
+
+/* Identificação do curso */
 .alp-hero .alp-eyebrow {
   display: inline-block;
-  margin-bottom: .8rem;
-  color: var(--alp-red);
-  font-size: .75rem;
+  margin-bottom: 0.8rem;
+  color: #EF5552;
+  font-size: 0.75rem;
   font-weight: 800;
-  letter-spacing: .11em;
+  letter-spacing: 0.11em;
   text-transform: uppercase;
 }
-.alp-hero h1 { max-width: 14ch; margin: 0 0 .8rem; font-size: clamp(2rem, 5vw, 3.2rem); line-height: 1.08; }
-.alp-hero p { max-width: 62ch; font-size: 1.05rem; }
-.alp-hero .md-button { margin: .45rem .35rem .1rem 0; }
-.alp-hero .md-button--primary { background: var(--alp-red); border-color: var(--alp-red); color: #fff; }
+
+/* Título e texto */
+.alp-hero h1 {
+  max-width: 14ch;
+  margin: 0 0 0.8rem;
+  color: #ffffff;
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  font-weight: 800;
+  line-height: 1.08;
+}
+
+.alp-hero p {
+  max-width: 62ch;
+  color: #eeeeee;
+  font-size: 1.05rem;
+}
+
+/* Botões */
+.alp-hero .md-button {
+  margin: 0.45rem 0.35rem 0.1rem 0;
+}
+
+.alp-hero .md-button--primary {
+  background: #EF5552;
+  border-color: #EF5552;
+  color: #ffffff;
+}
+
+.alp-hero .md-button:not(.md-button--primary) {
+  border-color: #EF5552;
+  color: #EF5552;
+}
+
+.alp-hero .md-button:hover {
+  filter: brightness(1.08);
+}
+
 .alp-feature-grid { margin: 1.5rem 0 2rem; }
 .md-typeset .grid.cards > ul > li, .md-typeset .grid.cards > ol > li {
   border: 1px solid var(--alp-border);
