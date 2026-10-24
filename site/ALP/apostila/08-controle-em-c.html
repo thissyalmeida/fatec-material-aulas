@@ -8,27 +8,31 @@
       
       
       
-        <link rel="canonical" href="https://thissyalmeida.github.io/fatec-material-aulas/ALP/apostila/capitulos/08-controle-em-c.html">
+        <link rel="canonical" href="https://thissyalmeida.github.io/fatec-material-aulas/ALP/apostila/08-controle-em-c.html">
       
       
+        <link rel="prev" href="07-introducao-c.html">
+      
+      
+        <link rel="next" href="09-funcoes.html">
       
       
         
       
       
-      <link rel="icon" href="../../../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
-        <title>8. Controle em C: Condições e Laços - Material Aula - 2026 - Fatec</title>
+        <title>8. Controle em C - Material Aula - 2026 - Fatec</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.ec1eaa64.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -47,9 +51,9 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/style.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/style.css">
     
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -88,7 +92,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
-    <a href="../../../index.html" title="Material Aula - 2026 - Fatec" class="md-header__button md-logo" aria-label="Material Aula - 2026 - Fatec" data-md-component="logo">
+    <a href="../../index.html" title="Material Aula - 2026 - Fatec" class="md-header__button md-logo" aria-label="Material Aula - 2026 - Fatec" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -108,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              8. Controle em C: Condições e Laços
+              8. Controle em C
             
           </span>
         </div>
@@ -207,7 +211,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../index.html" class="md-tabs__link">
+      <a href="../../index.html" class="md-tabs__link">
         
   
   
@@ -224,6 +228,8 @@
   
   
   
+    
+  
   
     
     
@@ -231,11 +237,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../index.html" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="index.html" class="md-tabs__link">
           
   
   
@@ -265,7 +273,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../ED/aula1-introducao.html" class="md-tabs__link">
+        <a href="../../ED/aula1-introducao.html" class="md-tabs__link">
           
   
   
@@ -302,7 +310,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegação" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../../index.html" title="Material Aula - 2026 - Fatec" class="md-nav__button md-logo" aria-label="Material Aula - 2026 - Fatec" data-md-component="logo">
+    <a href="../../index.html" title="Material Aula - 2026 - Fatec" class="md-nav__button md-logo" aria-label="Material Aula - 2026 - Fatec" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -320,7 +328,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../index.html" class="md-nav__link">
+      <a href="../../index.html" class="md-nav__link">
         
   
   
@@ -344,26 +352,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   
@@ -381,7 +394,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -396,26 +409,31 @@
                 
   
   
+    
   
   
+  
     
     
     
     
       
       
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
         
           
-          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="">
             
   
   
@@ -433,7 +451,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_1">
             <span class="md-nav__icon md-icon"></span>
             
@@ -451,7 +469,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../index.html" class="md-nav__link">
+      <a href="index.html" class="md-nav__link">
         
   
   
@@ -479,7 +497,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../01-introducao-computacao.md" class="md-nav__link">
+      <a href="01-introducao-computacao.html" class="md-nav__link">
         
   
   
@@ -507,7 +525,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../02-algoritmos-fluxogramas.md" class="md-nav__link">
+      <a href="02-algoritmos-fluxogramas.html" class="md-nav__link">
         
   
   
@@ -535,7 +553,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../03-variaveis-operadores.md" class="md-nav__link">
+      <a href="03-variaveis-operadores.html" class="md-nav__link">
         
   
   
@@ -563,7 +581,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../04-estrutura-sequencial.md" class="md-nav__link">
+      <a href="04-estrutura-sequencial.html" class="md-nav__link">
         
   
   
@@ -591,7 +609,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../05-estruturas-condicionais.md" class="md-nav__link">
+      <a href="05-estruturas-condicionais.html" class="md-nav__link">
         
   
   
@@ -619,7 +637,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../06-estruturas-repeticao.md" class="md-nav__link">
+      <a href="06-estruturas-repeticao.html" class="md-nav__link">
         
   
   
@@ -647,7 +665,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../07-introducao-c.md" class="md-nav__link">
+      <a href="07-introducao-c.html" class="md-nav__link">
         
   
   
@@ -672,10 +690,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../08-controle-em-c.md" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    8. Controle em C
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="08-controle-em-c.html" class="md-nav__link md-nav__link--active">
         
   
   
@@ -691,6 +736,158 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#abertura" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Abertura
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#objetivos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Objetivos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#81-condicionais" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1 Condicionais
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#82-switch" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2 switch
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#83-lacos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3 Laços
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#84-combinacao-de-estruturas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.4 Combinação de estruturas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#85-tabela-de-rastreamento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.5 Tabela de rastreamento
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#erros-comuns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Erros comuns
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pratica-guiada" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prática guiada
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercicios" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercícios
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gabarito-comentado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gabarito comentado
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resumo-e-referencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resumo e referências
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -703,7 +900,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../09-funcoes.md" class="md-nav__link">
+      <a href="09-funcoes.html" class="md-nav__link">
         
   
   
@@ -731,7 +928,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../10-vetores-matrizes.md" class="md-nav__link">
+      <a href="10-vetores-matrizes.html" class="md-nav__link">
         
   
   
@@ -759,7 +956,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../11-memoria-binario.md" class="md-nav__link">
+      <a href="11-memoria-binario.html" class="md-nav__link">
         
   
   
@@ -787,7 +984,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../12-testes-estilo-git.md" class="md-nav__link">
+      <a href="12-testes-estilo-git.html" class="md-nav__link">
         
   
   
@@ -934,7 +1131,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../ED/aula1-introducao.html" class="md-nav__link">
+      <a href="../../ED/aula1-introducao.html" class="md-nav__link">
         
   
   
@@ -1022,7 +1219,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../ED/index.html" class="md-nav__link">
+      <a href="../../ED/index.html" class="md-nav__link">
         
   
   
@@ -1414,14 +1611,14 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "search.highlight", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
       
         <script src="https://unpkg.com/mermaid@11/dist/mermaid.min.js"></script>
       
-        <script src="../../../javascripts/mermaid-init.js"></script>
+        <script src="../../javascripts/mermaid-init.js"></script>
       
     
   </body>

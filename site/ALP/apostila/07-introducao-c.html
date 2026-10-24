@@ -8,27 +8,31 @@
       
       
       
-        <link rel="canonical" href="https://thissyalmeida.github.io/fatec-material-aulas/ALP/apostila/capitulos/11-memoria-binario.html">
+        <link rel="canonical" href="https://thissyalmeida.github.io/fatec-material-aulas/ALP/apostila/07-introducao-c.html">
       
       
+        <link rel="prev" href="06-estruturas-repeticao.html">
+      
+      
+        <link rel="next" href="08-controle-em-c.html">
       
       
         
       
       
-      <link rel="icon" href="../../../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
-        <title>11. Memória e Sistema Binário - Material Aula - 2026 - Fatec</title>
+        <title>7. Introdução à Linguagem C - Material Aula - 2026 - Fatec</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.ec1eaa64.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -47,9 +51,9 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/style.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/style.css">
     
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -74,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#11-memoria-e-sistema-binario" class="md-skip">
+        <a href="#7-introducao-a-linguagem-c" class="md-skip">
           Pular para conteúdo
         </a>
       
@@ -88,7 +92,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
-    <a href="../../../index.html" title="Material Aula - 2026 - Fatec" class="md-header__button md-logo" aria-label="Material Aula - 2026 - Fatec" data-md-component="logo">
+    <a href="../../index.html" title="Material Aula - 2026 - Fatec" class="md-header__button md-logo" aria-label="Material Aula - 2026 - Fatec" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -108,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              11. Memória e Sistema Binário
+              7. Introdução à Linguagem C
             
           </span>
         </div>
@@ -207,7 +211,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../index.html" class="md-tabs__link">
+      <a href="../../index.html" class="md-tabs__link">
         
   
   
@@ -224,6 +228,8 @@
   
   
   
+    
+  
   
     
     
@@ -231,11 +237,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../index.html" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="index.html" class="md-tabs__link">
           
   
   
@@ -265,7 +273,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../ED/aula1-introducao.html" class="md-tabs__link">
+        <a href="../../ED/aula1-introducao.html" class="md-tabs__link">
           
   
   
@@ -302,7 +310,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegação" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../../index.html" title="Material Aula - 2026 - Fatec" class="md-nav__button md-logo" aria-label="Material Aula - 2026 - Fatec" data-md-component="logo">
+    <a href="../../index.html" title="Material Aula - 2026 - Fatec" class="md-nav__button md-logo" aria-label="Material Aula - 2026 - Fatec" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -320,7 +328,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../index.html" class="md-nav__link">
+      <a href="../../index.html" class="md-nav__link">
         
   
   
@@ -344,26 +352,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   
@@ -381,7 +394,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -396,26 +409,31 @@
                 
   
   
+    
   
   
+  
     
     
     
     
       
       
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
         
           
-          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="">
             
   
   
@@ -433,7 +451,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_1">
             <span class="md-nav__icon md-icon"></span>
             
@@ -451,7 +469,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../index.html" class="md-nav__link">
+      <a href="index.html" class="md-nav__link">
         
   
   
@@ -479,7 +497,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../01-introducao-computacao.md" class="md-nav__link">
+      <a href="01-introducao-computacao.html" class="md-nav__link">
         
   
   
@@ -507,7 +525,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../02-algoritmos-fluxogramas.md" class="md-nav__link">
+      <a href="02-algoritmos-fluxogramas.html" class="md-nav__link">
         
   
   
@@ -535,7 +553,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../03-variaveis-operadores.md" class="md-nav__link">
+      <a href="03-variaveis-operadores.html" class="md-nav__link">
         
   
   
@@ -563,7 +581,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../04-estrutura-sequencial.md" class="md-nav__link">
+      <a href="04-estrutura-sequencial.html" class="md-nav__link">
         
   
   
@@ -591,7 +609,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../05-estruturas-condicionais.md" class="md-nav__link">
+      <a href="05-estruturas-condicionais.html" class="md-nav__link">
         
   
   
@@ -619,7 +637,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../06-estruturas-repeticao.md" class="md-nav__link">
+      <a href="06-estruturas-repeticao.html" class="md-nav__link">
         
   
   
@@ -644,10 +662,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../07-introducao-c.md" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7. Introdução à Linguagem C
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="07-introducao-c.html" class="md-nav__link md-nav__link--active">
         
   
   
@@ -663,6 +708,169 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#abertura" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Abertura
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#objetivos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Objetivos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#71-estrutura-minima" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.1 Estrutura mínima
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#72-compilar-e-executar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.2 Compilar e executar
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#73-sintaxe-e-comentarios" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.3 Sintaxe e comentários
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#74-identificadores-e-boas-praticas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.4 Identificadores e boas práticas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#75-primeiro-programa-com-calculo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.5 Primeiro programa com cálculo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#76-tipos-e-formatos-introdutorios" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.6 Tipos e formatos introdutórios
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#erros-comuns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Erros comuns
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pratica-guiada" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prática guiada
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercicios" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercícios
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gabarito-comentado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gabarito comentado
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resumo-e-referencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resumo e referências
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -675,7 +883,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../08-controle-em-c.md" class="md-nav__link">
+      <a href="08-controle-em-c.html" class="md-nav__link">
         
   
   
@@ -703,7 +911,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../09-funcoes.md" class="md-nav__link">
+      <a href="09-funcoes.html" class="md-nav__link">
         
   
   
@@ -731,7 +939,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../10-vetores-matrizes.md" class="md-nav__link">
+      <a href="10-vetores-matrizes.html" class="md-nav__link">
         
   
   
@@ -759,7 +967,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../11-memoria-binario.md" class="md-nav__link">
+      <a href="11-memoria-binario.html" class="md-nav__link">
         
   
   
@@ -787,7 +995,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../12-testes-estilo-git.md" class="md-nav__link">
+      <a href="12-testes-estilo-git.html" class="md-nav__link">
         
   
   
@@ -934,7 +1142,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../ED/aula1-introducao.html" class="md-nav__link">
+      <a href="../../ED/aula1-introducao.html" class="md-nav__link">
         
   
   
@@ -1022,7 +1230,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../ED/index.html" class="md-nav__link">
+      <a href="../../ED/index.html" class="md-nav__link">
         
   
   
@@ -1107,10 +1315,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#111-bit-e-byte" class="md-nav__link">
+  <a href="#71-estrutura-minima" class="md-nav__link">
     <span class="md-ellipsis">
       
-        11.1 Bit e byte
+        7.1 Estrutura mínima
       
     </span>
   </a>
@@ -1118,10 +1326,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#112-conversao-decimal-para-binario" class="md-nav__link">
+  <a href="#72-compilar-e-executar" class="md-nav__link">
     <span class="md-ellipsis">
       
-        11.2 Conversão decimal para binário
+        7.2 Compilar e executar
       
     </span>
   </a>
@@ -1129,10 +1337,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#113-binario-para-decimal" class="md-nav__link">
+  <a href="#73-sintaxe-e-comentarios" class="md-nav__link">
     <span class="md-ellipsis">
       
-        11.3 Binário para decimal
+        7.3 Sintaxe e comentários
       
     </span>
   </a>
@@ -1140,10 +1348,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#114-hexadecimal" class="md-nav__link">
+  <a href="#74-identificadores-e-boas-praticas" class="md-nav__link">
     <span class="md-ellipsis">
       
-        11.4 Hexadecimal
+        7.4 Identificadores e boas práticas
       
     </span>
   </a>
@@ -1151,10 +1359,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#115-memoria-e-variaveis" class="md-nav__link">
+  <a href="#75-primeiro-programa-com-calculo" class="md-nav__link">
     <span class="md-ellipsis">
       
-        11.5 Memória e variáveis
+        7.5 Primeiro programa com cálculo
       
     </span>
   </a>
@@ -1162,10 +1370,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#116-limites-e-representacao" class="md-nav__link">
+  <a href="#76-tipos-e-formatos-introdutorios" class="md-nav__link">
     <span class="md-ellipsis">
       
-        11.6 Limites e representação
+        7.6 Tipos e formatos introdutórios
       
     </span>
   </a>
@@ -1244,132 +1452,153 @@
 
 
 
-<h1 id="11-memoria-e-sistema-binario">11. Memória e Sistema Binário</h1>
+<h1 id="7-introducao-a-linguagem-c">7. Introdução à Linguagem C</h1>
 <h2 id="abertura">Abertura</h2>
-<p>Computadores representam informações por estados físicos que podem ser modelados como bits. Compreender binário, bytes, endereços e representação de dados ajuda a entender limites de tipos, ponteiros e erros de memória.</p>
+<p>Até aqui, algoritmos foram descritos independentemente de uma linguagem. Agora, vamos implementar essas ideias em C, uma linguagem compilada, estruturada e amplamente utilizada em sistemas e ensino de programação.</p>
 <h2 id="objetivos">Objetivos</h2>
 <ul>
-<li>converter números inteiros positivos entre decimal e binário;</li>
-<li>reconhecer bit, byte e sistema hexadecimal;</li>
-<li>compreender memória e endereçamento em nível introdutório;</li>
-<li>relacionar tipos de dados a representações e limites;</li>
-<li>reconhecer riscos de acesso indevido à memória.</li>
+<li>reconhecer a estrutura de um programa C;</li>
+<li>compilar e executar um arquivo-fonte;</li>
+<li>usar <code>main</code>, bibliotecas, instruções e comentários;</li>
+<li>compreender erros de compilação e mensagens básicas.</li>
 </ul>
-<h2 id="111-bit-e-byte">11.1 Bit e byte</h2>
+<h2 id="71-estrutura-minima">7.1 Estrutura mínima</h2>
+<div class="language-c highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdio.h&gt;</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">"Ola, mundo!</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="p">}</span>
+</span></code></pre></div>
 <ul>
-<li><strong>Bit:</strong> unidade binária, com dois estados representados como 0 e 1.</li>
-<li><strong>Byte:</strong> unidade de armazenamento composta, nas plataformas C modernas comuns, por 8 bits; formalmente, C define byte como unidade de armazenamento de <code>sizeof(char)</code>, e <code>CHAR_BIT</code> informa quantos bits possui.</li>
-<li><strong>Endereço:</strong> identificador usado para localizar um objeto na memória durante a execução.</li>
+<li><code>#include &lt;stdio.h&gt;</code> disponibiliza declarações de entrada e saída padrão.</li>
+<li><code>main</code> é o ponto de entrada convencional do programa.</li>
+<li><code>{}</code> delimitam um bloco.</li>
+<li><code>printf</code> exibe texto.</li>
+<li><code>;</code> encerra uma instrução.</li>
+<li><code>return 0</code> indica término bem-sucedido ao ambiente.</li>
 </ul>
-<h2 id="112-conversao-decimal-para-binario">11.2 Conversão decimal para binário</h2>
-<p>Divida repetidamente o número por 2 e anote os restos. Leia os restos de baixo para cima.</p>
-<p>Exemplo: 13 decimal.</p>
+<h2 id="72-compilar-e-executar">7.2 Compilar e executar</h2>
+<p>Salve o arquivo como <code>ola.c</code>. Em um ambiente com GCC instalado, um comando comum é:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>gcc<span class="w"> </span>-std<span class="o">=</span>c11<span class="w"> </span>-Wall<span class="w"> </span>-Wextra<span class="w"> </span>-pedantic<span class="w"> </span>ola.c<span class="w"> </span>-o<span class="w"> </span>ola
+</span></code></pre></div>
+<p>Em Windows, o nome do executável pode ser <code>ola.exe</code>. Os comandos dependem do compilador e do terminal configurados.</p>
+<h2 id="73-sintaxe-e-comentarios">7.3 Sintaxe e comentários</h2>
+<div class="language-c highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1">// Comentário de uma linha</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="cm">/*</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="cm">   Comentário de várias linhas.</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="cm">*/</span>
+</span></code></pre></div>
+<p>C diferencia letras maiúsculas e minúsculas: <code>total</code>, <code>Total</code> e <code>TOTAL</code> são identificadores distintos.</p>
+<h2 id="74-identificadores-e-boas-praticas">7.4 Identificadores e boas práticas</h2>
+<p>Use nomes significativos, como <code>quantidade</code>, <code>mediaFinal</code> ou <code>preco_unitario</code>. Evite nomes sem significado e palavras reservadas. Uma variável deve ser declarada com tipo antes de ser usada.</p>
+<h2 id="75-primeiro-programa-com-calculo">7.5 Primeiro programa com cálculo</h2>
+<div class="language-c highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdio.h&gt;</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">7</span><span class="p">;</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">soma</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">b</span><span class="p">;</span>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">"Soma = %d</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="w"> </span><span class="n">soma</span><span class="p">);</span>
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="p">}</span>
+</span></code></pre></div>
+<p>O especificador <code>%d</code> é usado para exibir um <code>int</code>.</p>
+<h2 id="76-tipos-e-formatos-introdutorios">7.6 Tipos e formatos introdutórios</h2>
 <table>
 <thead>
 <tr>
-<th>Divisão</th>
-<th style="text-align: right;">Quociente</th>
-<th style="text-align: right;">Resto</th>
+<th>Tipo</th>
+<th><code>printf</code> comum</th>
+<th><code>scanf</code> comum</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>13 / 2</td>
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">1</td>
+<td><code>int</code></td>
+<td><code>%d</code></td>
+<td><code>%d</code> com <code>&amp;variavel</code></td>
 </tr>
 <tr>
-<td>6 / 2</td>
-<td style="text-align: right;">3</td>
-<td style="text-align: right;">0</td>
+<td><code>float</code></td>
+<td><code>%f</code></td>
+<td><code>%f</code> com <code>&amp;variavel</code></td>
 </tr>
 <tr>
-<td>3 / 2</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">1</td>
+<td><code>double</code></td>
+<td><code>%f</code></td>
+<td><code>%lf</code> com <code>&amp;variavel</code></td>
 </tr>
 <tr>
-<td>1 / 2</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">1</td>
+<td><code>char</code></td>
+<td><code>%c</code></td>
+<td><code>%c</code> com <code>&amp;variavel</code></td>
 </tr>
 </tbody>
 </table>
-<p>Logo, (13_{10}=1101_2).</p>
-<h2 id="113-binario-para-decimal">11.3 Binário para decimal</h2>
-<p>Cada posição representa uma potência de 2:</p>
-<p>(1101_2 = 1\times 2^3 + 1\times 2^2 + 0\times 2^1 + 1\times 2^0 = 13).</p>
-<h2 id="114-hexadecimal">11.4 Hexadecimal</h2>
-<p>O sistema hexadecimal usa os símbolos 0–9 e A–F. Um dígito hexadecimal representa quatro bits, então dois dígitos hexadecimais correspondem a oito bits. É uma forma compacta de escrever sequências binárias.</p>
-<h2 id="115-memoria-e-variaveis">11.5 Memória e variáveis</h2>
-<p>Uma variável em C possui tipo, tamanho e tempo de vida. O endereço pode ser obtido com <code>&amp;</code> para objetos apropriados. Ponteiros armazenam endereços, mas devem apontar para objetos válidos antes de serem dereferenciados.</p>
-<div class="language-c highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kt">int</span><span class="w"> </span><span class="n">idade</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">20</span><span class="p">;</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="kt">int</span><span class="w"> </span><span class="o">*</span><span class="n">p</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">&amp;</span><span class="n">idade</span><span class="p">;</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="n">printf</span><span class="p">(</span><span class="s">"%d</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="w"> </span><span class="o">*</span><span class="n">p</span><span class="p">);</span><span class="w">  </span><span class="c1">// lê o valor de idade por meio de p</span>
-</span></code></pre></div>
-<p>O exemplo pressupõe que <code>p</code> aponta para <code>idade</code>, que continua existindo durante o uso.</p>
-<h2 id="116-limites-e-representacao">11.6 Limites e representação</h2>
-<p>Tipos inteiros têm limites definidos pela implementação e pelo tipo escolhido. Consulte <code>&lt;limits.h&gt;</code> e use tipos de tamanho apropriado quando a tarefa exigir. Não assuma que <code>int</code> possui sempre o mesmo tamanho em todas as plataformas.</p>
+<p>A tabela é introdutória: conversões, arrays de caracteres e leitura de linhas exigem cuidados adicionais.</p>
 <h2 id="erros-comuns">Erros comuns</h2>
 <ul>
-<li>ler bits da direita para a esquerda ao converter binário para decimal;</li>
-<li>confundir bit com byte;</li>
-<li>presumir tamanho fixo de todos os tipos;</li>
-<li>usar ponteiro não inicializado;</li>
-<li>acessar memória depois que o objeto deixou de existir;</li>
-<li>escrever fora dos limites de um vetor.</li>
+<li>esquecer <code>;</code>;</li>
+<li>omitir <code>#include &lt;stdio.h&gt;</code> ao usar funções de entrada/saída;</li>
+<li>escrever <code>Printf</code> com maiúscula;</li>
+<li>usar especificador incompatível com o tipo;</li>
+<li>tentar executar código sem compilar;</li>
+<li>ignorar avisos do compilador.</li>
 </ul>
 <h2 id="pratica-guiada">Prática guiada</h2>
-<p>Converta 18 e 27 para binário e confirme os resultados convertendo-os de volta para decimal. Depois, explique em suas palavras o que significa o ponteiro <code>p</code> no exemplo.</p>
+<p>Crie um programa que exiba seu nome, curso e uma mensagem. Depois, acrescente duas variáveis inteiras e mostre sua soma.</p>
 <h2 id="exercicios">Exercícios</h2>
 <ol>
-<li>Defina bit.</li>
-<li>Explique a diferença entre bit e byte.</li>
-<li>Converta 5 para binário.</li>
-<li>Converta 12 para binário.</li>
-<li>Converta 19 para binário.</li>
-<li>Converta <code>1010₂</code> para decimal.</li>
-<li>Converta <code>1111₂</code> para decimal.</li>
-<li>Converta <code>10000₂</code> para decimal.</li>
-<li>Explique por que hexadecimal é útil.</li>
-<li>Quantos bits há em dois bytes de 8 bits?</li>
-<li>Identifique as potências de 2 em <code>1011₂</code>.</li>
-<li>Explique o que é endereço de memória.</li>
-<li>Qual o papel do operador <code>&amp;</code> no exemplo C?</li>
-<li>O que significa <code>*p</code> quando <code>p</code> é um ponteiro válido?</li>
-<li>Por que não se deve dereferenciar ponteiro não inicializado?</li>
-<li>Explique o risco de escrever além de um vetor.</li>
-<li>Pesquise os limites de <code>int</code> no compilador usado e documente como consultou.</li>
-<li>Represente o decimal 31 em binário e hexadecimal.</li>
-<li>Explique por que o tamanho de um tipo deve ser verificado quando importa.</li>
-<li>Descreva duas práticas para reduzir erros de memória em C.</li>
+<li>Qual é a função de <code>main</code>?</li>
+<li>Para que serve <code>#include &lt;stdio.h&gt;</code>?</li>
+<li>Por que uma instrução geralmente termina com <code>;</code>?</li>
+<li>Escreva o programa “Olá, mundo!”.</li>
+<li>Declare duas variáveis inteiras e calcule a soma.</li>
+<li>Qual formato exibe um <code>int</code> com <code>printf</code>?</li>
+<li>Diferencie erro de sintaxe e erro lógico.</li>
+<li>O que significa diferenciar maiúsculas de minúsculas?</li>
+<li>Corrija um programa que omite <code>;</code> após <code>printf</code>.</li>
+<li>Escreva comentários para explicar três linhas de código.</li>
+<li>Declare uma variável <code>double</code> para armazenar uma média.</li>
+<li>Escreva programa que exiba um número e seu dobro.</li>
+<li>Explique o papel de <code>return 0</code>.</li>
+<li>Sugira nomes melhores para <code>x</code>, <code>y</code> e <code>z</code> em um cálculo de preço.</li>
+<li>Compile um programa com <code>-Wall -Wextra</code> e interprete um aviso.</li>
+<li>Escreva programa que calcule a área de um quadrado.</li>
+<li>Explique por que <code>printf("%d", valorDouble)</code> é incorreto.</li>
+<li>Crie um programa com três instruções sequenciais.</li>
+<li>Diferencie código-fonte e executável.</li>
+<li>Documente os passos para compilar e executar seu primeiro programa.</li>
 </ol>
 <h2 id="gabarito-comentado">Gabarito comentado</h2>
 <ol>
-<li>Unidade binária representada por 0 ou 1.</li>
-<li>Byte é uma unidade de armazenamento composta por bits; em plataformas comuns, 8 bits.</li>
-<li><code>101₂</code>.</li>
-<li><code>1100₂</code>.</li>
-<li><code>10011₂</code>.</li>
-<li>10.</li>
-<li>15.</li>
-<li>16.</li>
-<li>É compacto e cada dígito corresponde a quatro bits.</li>
-<li>16 bits.</li>
-<li><code>1×8 + 0×4 + 1×2 + 1×1 = 11</code>.</li>
-<li>Identificador/localizador de um objeto na memória durante a execução.</li>
-<li>Obtém o endereço de <code>idade</code>.</li>
-<li>Acessa o objeto apontado por <code>p</code>.</li>
-<li>O endereço pode ser inválido; o comportamento é indefinido.</li>
-<li>Pode corromper dados e causar comportamento indefinido.</li>
-<li>Depende da plataforma; consultar <code>INT_MIN</code> e <code>INT_MAX</code> em <code>&lt;limits.h&gt;</code>.</li>
-<li><code>11111₂</code>, <code>1F₁₆</code>.</li>
-<li>Tipos e plataformas podem diferir em tamanho e limites.</li>
-<li>Inicializar ponteiros, validar índices, respeitar o tempo de vida dos objetos e usar avisos do compilador.</li>
+<li>Ponto de entrada convencional da execução.</li>
+<li>Inclui declarações da biblioteca padrão de entrada/saída.</li>
+<li>Para delimitar o fim da instrução.</li>
+<li>Código mínimo apresentado neste capítulo.</li>
+<li><code>int a=...; int b=...; printf("%d", a+b);</code>.</li>
+<li><code>%d</code>.</li>
+<li>Sintaxe viola regras da linguagem; lógica produz resultado errado apesar de compilar.</li>
+<li><code>nota</code> e <code>Nota</code> são nomes diferentes.</li>
+<li>Inserir <code>;</code> no fim da instrução.</li>
+<li>Comentários devem esclarecer intenção, não repetir o óbvio.</li>
+<li><code>double media;</code>.</li>
+<li>Ler ou definir número, calcular dobro e exibir ambos.</li>
+<li>Indica o status de encerramento ao ambiente.</li>
+<li><code>precoUnitario</code>, <code>quantidade</code>, <code>valorTotal</code>.</li>
+<li>Avisos indicam possíveis problemas e devem ser analisados.</li>
+<li><code>area = lado * lado</code>.</li>
+<li>O especificador não corresponde ao tipo esperado.</li>
+<li>Instruções completas em ordem.</li>
+<li>Fonte é texto C; executável é artefato gerado pelo processo de compilação/linkedição.</li>
+<li>Salvar, compilar, corrigir mensagens e executar.</li>
 </ol>
 <h2 id="resumo-e-referencias">Resumo e referências</h2>
-<p>Binário representa valores por potências de dois; memória armazena objetos e ponteiros permitem referenciar endereços válidos.</p>
-<p>Referências: ISO C; cppreference.com; documentação do compilador utilizado.</p>
+<p><strong>Fonte C → compilador → executável → execução e testes.</strong></p>
+<p>Referências: ISO C (padrões C11/C17); cppreference.com; documentação do compilador utilizado.</p>
 
 
 
@@ -1425,14 +1654,14 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "search.highlight", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
       
         <script src="https://unpkg.com/mermaid@11/dist/mermaid.min.js"></script>
       
-        <script src="../../../javascripts/mermaid-init.js"></script>
+        <script src="../../javascripts/mermaid-init.js"></script>
       
     
   </body>

@@ -8,27 +8,31 @@
       
       
       
-        <link rel="canonical" href="https://thissyalmeida.github.io/fatec-material-aulas/ALP/apostila/capitulos/12-testes-estilo-git.html">
+        <link rel="canonical" href="https://thissyalmeida.github.io/fatec-material-aulas/ALP/apostila/06-estruturas-repeticao.html">
       
       
+        <link rel="prev" href="05-estruturas-condicionais.html">
+      
+      
+        <link rel="next" href="07-introducao-c.html">
       
       
         
       
       
-      <link rel="icon" href="../../../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
-        <title>12. Testes, Estilo de Código e Git - Material Aula - 2026 - Fatec</title>
+        <title>6. Estruturas de Repetição - Material Aula - 2026 - Fatec</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.ec1eaa64.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -47,9 +51,9 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/style.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/style.css">
     
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -74,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#12-testes-estilo-de-codigo-e-git" class="md-skip">
+        <a href="#6-estruturas-de-repeticao" class="md-skip">
           Pular para conteúdo
         </a>
       
@@ -88,7 +92,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
-    <a href="../../../index.html" title="Material Aula - 2026 - Fatec" class="md-header__button md-logo" aria-label="Material Aula - 2026 - Fatec" data-md-component="logo">
+    <a href="../../index.html" title="Material Aula - 2026 - Fatec" class="md-header__button md-logo" aria-label="Material Aula - 2026 - Fatec" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -108,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              12. Testes, Estilo de Código e Git
+              6. Estruturas de Repetição
             
           </span>
         </div>
@@ -207,7 +211,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../index.html" class="md-tabs__link">
+      <a href="../../index.html" class="md-tabs__link">
         
   
   
@@ -224,6 +228,8 @@
   
   
   
+    
+  
   
     
     
@@ -231,11 +237,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../index.html" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="index.html" class="md-tabs__link">
           
   
   
@@ -265,7 +273,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../ED/aula1-introducao.html" class="md-tabs__link">
+        <a href="../../ED/aula1-introducao.html" class="md-tabs__link">
           
   
   
@@ -302,7 +310,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegação" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../../index.html" title="Material Aula - 2026 - Fatec" class="md-nav__button md-logo" aria-label="Material Aula - 2026 - Fatec" data-md-component="logo">
+    <a href="../../index.html" title="Material Aula - 2026 - Fatec" class="md-nav__button md-logo" aria-label="Material Aula - 2026 - Fatec" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -320,7 +328,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../index.html" class="md-nav__link">
+      <a href="../../index.html" class="md-nav__link">
         
   
   
@@ -344,26 +352,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   
@@ -381,7 +394,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -396,26 +409,31 @@
                 
   
   
+    
   
   
+  
     
     
     
     
       
       
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
         
           
-          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="">
             
   
   
@@ -433,7 +451,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_1">
             <span class="md-nav__icon md-icon"></span>
             
@@ -451,7 +469,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../index.html" class="md-nav__link">
+      <a href="index.html" class="md-nav__link">
         
   
   
@@ -479,7 +497,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../01-introducao-computacao.md" class="md-nav__link">
+      <a href="01-introducao-computacao.html" class="md-nav__link">
         
   
   
@@ -507,7 +525,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../02-algoritmos-fluxogramas.md" class="md-nav__link">
+      <a href="02-algoritmos-fluxogramas.html" class="md-nav__link">
         
   
   
@@ -535,7 +553,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../03-variaveis-operadores.md" class="md-nav__link">
+      <a href="03-variaveis-operadores.html" class="md-nav__link">
         
   
   
@@ -563,7 +581,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../04-estrutura-sequencial.md" class="md-nav__link">
+      <a href="04-estrutura-sequencial.html" class="md-nav__link">
         
   
   
@@ -591,7 +609,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../05-estruturas-condicionais.md" class="md-nav__link">
+      <a href="05-estruturas-condicionais.html" class="md-nav__link">
         
   
   
@@ -616,10 +634,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../06-estruturas-repeticao.md" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6. Estruturas de Repetição
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="06-estruturas-repeticao.html" class="md-nav__link md-nav__link--active">
         
   
   
@@ -635,6 +680,180 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#abertura" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Abertura
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#objetivos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Objetivos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#61-while" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1 while
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#62-do-while" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2 do-while
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#63-for" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.3 for
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#64-contador-e-acumulador" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.4 Contador e acumulador
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#65-fluxograma" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.5 Fluxograma
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exemplo-resolvido-media-de-n-notas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exemplo resolvido: média de N notas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#erros-comuns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Erros comuns
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pratica-guiada" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prática guiada
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercicios" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercícios
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gabarito-comentado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gabarito comentado
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resumo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resumo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#glossario-e-referencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Glossário e referências
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -647,7 +866,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../07-introducao-c.md" class="md-nav__link">
+      <a href="07-introducao-c.html" class="md-nav__link">
         
   
   
@@ -675,7 +894,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../08-controle-em-c.md" class="md-nav__link">
+      <a href="08-controle-em-c.html" class="md-nav__link">
         
   
   
@@ -703,7 +922,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../09-funcoes.md" class="md-nav__link">
+      <a href="09-funcoes.html" class="md-nav__link">
         
   
   
@@ -731,7 +950,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../10-vetores-matrizes.md" class="md-nav__link">
+      <a href="10-vetores-matrizes.html" class="md-nav__link">
         
   
   
@@ -759,7 +978,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../11-memoria-binario.md" class="md-nav__link">
+      <a href="11-memoria-binario.html" class="md-nav__link">
         
   
   
@@ -787,7 +1006,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../12-testes-estilo-git.md" class="md-nav__link">
+      <a href="12-testes-estilo-git.html" class="md-nav__link">
         
   
   
@@ -934,7 +1153,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../ED/aula1-introducao.html" class="md-nav__link">
+      <a href="../../ED/aula1-introducao.html" class="md-nav__link">
         
   
   
@@ -1022,7 +1241,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../ED/index.html" class="md-nav__link">
+      <a href="../../ED/index.html" class="md-nav__link">
         
   
   
@@ -1107,10 +1326,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#121-estrategia-de-testes" class="md-nav__link">
+  <a href="#61-while" class="md-nav__link">
     <span class="md-ellipsis">
       
-        12.1 Estratégia de testes
+        6.1 while
       
     </span>
   </a>
@@ -1118,10 +1337,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#122-teste-de-mesa-e-depuracao" class="md-nav__link">
+  <a href="#62-do-while" class="md-nav__link">
     <span class="md-ellipsis">
       
-        12.2 Teste de mesa e depuração
+        6.2 do-while
       
     </span>
   </a>
@@ -1129,10 +1348,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#123-estilo-de-codigo" class="md-nav__link">
+  <a href="#63-for" class="md-nav__link">
     <span class="md-ellipsis">
       
-        12.3 Estilo de código
+        6.3 for
       
     </span>
   </a>
@@ -1140,10 +1359,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#124-git-conceitos-basicos" class="md-nav__link">
+  <a href="#64-contador-e-acumulador" class="md-nav__link">
     <span class="md-ellipsis">
       
-        12.4 Git: conceitos básicos
+        6.4 Contador e acumulador
       
     </span>
   </a>
@@ -1151,10 +1370,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#125-fluxo-basico" class="md-nav__link">
+  <a href="#65-fluxograma" class="md-nav__link">
     <span class="md-ellipsis">
       
-        12.5 Fluxo básico
+        6.5 Fluxograma
       
     </span>
   </a>
@@ -1162,10 +1381,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#126-mensagens-e-colaboracao" class="md-nav__link">
+  <a href="#exemplo-resolvido-media-de-n-notas" class="md-nav__link">
     <span class="md-ellipsis">
       
-        12.6 Mensagens e colaboração
+        Exemplo resolvido: média de N notas
       
     </span>
   </a>
@@ -1217,10 +1436,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#checklist-final" class="md-nav__link">
+  <a href="#resumo" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Checklist final
+        Resumo
       
     </span>
   </a>
@@ -1255,169 +1474,162 @@
 
 
 
-<h1 id="12-testes-estilo-de-codigo-e-git">12. Testes, Estilo de Código e Git</h1>
+<h1 id="6-estruturas-de-repeticao">6. Estruturas de Repetição</h1>
 <h2 id="abertura">Abertura</h2>
-<p>Um programa não está pronto apenas porque compila. É necessário verificar resultados, testar limites, organizar o código e manter um histórico das alterações para poder colaborar e recuperar versões anteriores.</p>
+<p>Repetir uma operação manualmente em código torna o programa longo e propenso a erros. Laços permitem executar um bloco enquanto uma condição for satisfeita ou por uma quantidade controlada de vezes.</p>
 <h2 id="objetivos">Objetivos</h2>
 <ul>
-<li>distinguir testes de sintaxe, execução e lógica;</li>
-<li>planejar casos de teste, incluindo limites e entradas inválidas;</li>
-<li>depurar com método;</li>
-<li>aplicar estilo consistente;</li>
-<li>compreender repositório, commit, branch, push e pull.</li>
+<li>distinguir repetição controlada por condição e por contador;</li>
+<li>utilizar <code>while</code>, <code>do-while</code> e <code>for</code>;</li>
+<li>trabalhar com contadores e acumuladores;</li>
+<li>evitar laços infinitos e erros de limite.</li>
 </ul>
-<h2 id="121-estrategia-de-testes">12.1 Estratégia de testes</h2>
-<p>Para cada requisito, defina entradas e resultado esperado antes de executar o programa.</p>
+<h2 id="61-while">6.1 <code>while</code></h2>
+<p>A condição é verificada antes de cada execução. Se for falsa inicialmente, o bloco pode não executar nenhuma vez.</p>
+<div class="language-c highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kt">int</span><span class="w"> </span><span class="n">contador</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">contador</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mi">5</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">"%d</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="w"> </span><span class="n">contador</span><span class="p">);</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">    </span><span class="n">contador</span><span class="o">++</span><span class="p">;</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="p">}</span>
+</span></code></pre></div>
+<h2 id="62-do-while">6.2 <code>do-while</code></h2>
+<p>O bloco executa pelo menos uma vez, pois a condição é verificada no final.</p>
+<div class="language-c highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kt">int</span><span class="w"> </span><span class="n">opcao</span><span class="p">;</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="k">do</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">"1 - Continuar; 0 - Sair: "</span><span class="p">);</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">scanf</span><span class="p">(</span><span class="s">"%d"</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">opcao</span><span class="p">)</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">        </span><span class="n">printf</span><span class="p">(</span><span class="s">"Entrada invalida.</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="p">}</span><span class="w"> </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">opcao</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">opcao</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span>
+</span></code></pre></div>
+<h2 id="63-for">6.3 <code>for</code></h2>
+<p>É conveniente quando inicialização, condição e atualização podem ser organizadas em uma única linha.</p>
+<div class="language-c highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">"%d</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="w"> </span><span class="n">i</span><span class="p">);</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="p">}</span>
+</span></code></pre></div>
+<h2 id="64-contador-e-acumulador">6.4 Contador e acumulador</h2>
+<ul>
+<li><strong>Contador:</strong> registra quantas vezes algo ocorreu.</li>
+<li><strong>Acumulador:</strong> soma ou combina valores ao longo das iterações.</li>
+</ul>
+<p>Exemplo de soma de 1 a 5:</p>
 <table>
 <thead>
 <tr>
-<th>Tipo de teste</th>
-<th>Exemplo para uma média</th>
+<th style="text-align: right;">Iteração</th>
+<th style="text-align: right;">i</th>
+<th style="text-align: right;">soma antes</th>
+<th style="text-align: right;">soma depois</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Caso comum</td>
-<td>Notas 6 e 8 → média 7</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
 </tr>
 <tr>
-<td>Limite</td>
-<td>Nota mínima e máxima permitidas</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">3</td>
 </tr>
 <tr>
-<td>Caso inválido</td>
-<td>Texto quando se espera número</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">6</td>
 </tr>
 <tr>
-<td>Caso especial</td>
-<td>Quantidade de notas igual a zero</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">10</td>
 </tr>
 <tr>
-<td>Regressão</td>
-<td>Repetir testes após alterar o código</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">15</td>
 </tr>
 </tbody>
 </table>
-<h2 id="122-teste-de-mesa-e-depuracao">12.2 Teste de mesa e depuração</h2>
-<p>O teste de mesa simula a execução manual. A depuração observa a execução real, por exemplo, com pontos de interrupção, inspeção de variáveis e execução passo a passo. Em ambos os casos, formule uma hipótese e procure evidências.</p>
-<h2 id="123-estilo-de-codigo">12.3 Estilo de código</h2>
-<ul>
-<li>use nomes que expliquem a finalidade;</li>
-<li>mantenha indentação consistente;</li>
-<li>divida responsabilidades em funções;</li>
-<li>evite duplicação desnecessária;</li>
-<li>comente decisões ou regras não óbvias;</li>
-<li>remova código morto;</li>
-<li>compile com avisos habilitados.</li>
-</ul>
-<p>Exemplo:</p>
-<div class="language-c highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kt">double</span><span class="w"> </span><span class="nf">calcularMedia</span><span class="p">(</span><span class="kt">double</span><span class="w"> </span><span class="n">soma</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">quantidade</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">quantidade</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="mf">0.0</span><span class="p">;</span><span class="w"> </span><span class="c1">// Alternativa didática; outra interface pode sinalizar erro.</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">soma</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">quantidade</span><span class="p">;</span>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="p">}</span>
-</span></code></pre></div>
-<p>Em um sistema real, retornar <code>0.0</code> pode confundir “média zero” com erro. Uma interface melhor pode retornar um indicador de sucesso e colocar o resultado em um parâmetro de saída.</p>
-<h2 id="124-git-conceitos-basicos">12.4 Git: conceitos básicos</h2>
-<ul>
-<li><strong>Repositório:</strong> histórico e arquivos controlados pelo Git.</li>
-<li><strong>Working tree:</strong> arquivos de trabalho.</li>
-<li><strong>Stage/index:</strong> conjunto preparado para o próximo commit.</li>
-<li><strong>Commit:</strong> registro de um conjunto de alterações.</li>
-<li><strong>Branch:</strong> linha independente de desenvolvimento.</li>
-<li><strong>Push:</strong> envia commits para um repositório remoto.</li>
-<li><strong>Pull:</strong> integra alterações do remoto ao ambiente local.</li>
-</ul>
-<h2 id="125-fluxo-basico">12.5 Fluxo básico</h2>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>git<span class="w"> </span>status
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>git<span class="w"> </span>add<span class="w"> </span>arquivo.c
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">"Implementa cálculo da média"</span>
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>git<span class="w"> </span>push
-</span></code></pre></div>
-<p>Antes do commit, revise o que foi preparado com <code>git diff --staged</code>. O comando <code>git status</code> ajuda a compreender o estado do repositório.</p>
-<pre class="mermaid"><code>flowchart LR
-    A[Editar arquivos] --&gt; B[Revisar diff]
-    B --&gt; C[git add]
-    C --&gt; D[git commit]
-    D --&gt; E[git push]</code></pre>
-<h2 id="126-mensagens-e-colaboracao">12.6 Mensagens e colaboração</h2>
-<p>Mensagens de commit devem descrever a mudança: <code>Corrige limite do vetor</code> é mais útil que <code>alterações</code>. Faça commits pequenos e coerentes. Não inclua senhas, chaves ou dados pessoais no repositório.</p>
+<h2 id="65-fluxograma">6.5 Fluxograma</h2>
+<pre class="mermaid"><code>flowchart TD
+    A([Início]) --&gt; B[soma = 0; i = 1]
+    B --&gt; C{i &lt;= 5?}
+    C -- Sim --&gt; D[soma = soma + i]
+    D --&gt; E[i = i + 1]
+    E --&gt; C
+    C -- Não --&gt; F[/Exibir soma/]
+    F --&gt; G([Fim])</code></pre>
+<h2 id="exemplo-resolvido-media-de-n-notas">Exemplo resolvido: média de N notas</h2>
+<p>Leia a quantidade <code>n</code>, valide que seja positiva, acumule as notas em um laço e divida a soma por <code>n</code>. A média só pode ser calculada depois de todas as notas serem lidas.</p>
 <h2 id="erros-comuns">Erros comuns</h2>
 <ul>
-<li>testar apenas um caso;</li>
-<li>mudar o código sem repetir testes relacionados;</li>
-<li>fazer commit sem revisar alterações;</li>
-<li>acreditar que <code>git add</code> já cria um commit;</li>
-<li>esquecer de enviar commits ao remoto;</li>
-<li>incluir arquivos temporários ou segredos;</li>
-<li>usar Git sem entender em qual branch está trabalhando.</li>
+<li>esquecer de atualizar o contador;</li>
+<li>usar <code>&lt;</code> quando o enunciado exige incluir o limite;</li>
+<li>iniciar o acumulador com valor diferente de zero sem justificativa;</li>
+<li>dividir por zero quando <code>n</code> não é válido;</li>
+<li>alterar a variável de controle em mais de um lugar;</li>
+<li>confundir <code>i++</code> com <code>soma++</code>.</li>
 </ul>
 <h2 id="pratica-guiada">Prática guiada</h2>
-<p>Escolha um programa anterior, crie um conjunto de pelo menos seis testes, registre resultados esperados e observados, corrija um defeito e execute novamente os testes. Em seguida, registre as alterações em um repositório Git.</p>
+<p>Leia números até que o usuário informe zero e calcule a soma dos números diferentes de zero. Defina se o zero final faz parte da soma (não faz) e teste entrada inicial zero.</p>
 <h2 id="exercicios">Exercícios</h2>
 <ol>
-<li>Diferencie compilação e teste.</li>
-<li>Explique teste de mesa.</li>
-<li>Proponha quatro casos de teste para uma calculadora.</li>
-<li>Por que testar limites?</li>
-<li>O que é regressão?</li>
-<li>Cite três práticas de estilo de código.</li>
-<li>Reescreva a mensagem de commit <code>mudanças</code>.</li>
-<li>O que <code>git status</code> informa?</li>
-<li>Qual a diferença entre <code>git add</code> e <code>git commit</code>?</li>
-<li>Para que serve <code>git push</code>?</li>
-<li>Para que serve <code>git pull</code>?</li>
-<li>O que é uma branch?</li>
-<li>Explique por que não se deve armazenar senhas no repositório.</li>
-<li>Planeje testes para um programa que calcula média.</li>
-<li>Crie um caso de teste para vetor vazio ou quantidade inválida.</li>
-<li>Descreva um procedimento de depuração para resultado incorreto.</li>
-<li>Explique a utilidade de commits pequenos.</li>
-<li>Escreva a sequência básica para adicionar e enviar um arquivo.</li>
-<li>Compare resultado esperado e observado em um teste.</li>
-<li>Faça um plano de qualidade para um projeto simples em C com testes, estilo e Git.</li>
+<li>Qual a diferença entre <code>while</code> e <code>do-while</code>?</li>
+<li>Quando <code>for</code> é uma boa escolha?</li>
+<li>Imprima números de 1 a 10.</li>
+<li>Imprima números pares de 2 a 20.</li>
+<li>Calcule a soma de 1 a 100.</li>
+<li>Calcule o produto dos inteiros de 1 a 5.</li>
+<li>Conte quantos valores positivos existem entre 10 entradas.</li>
+<li>Leia 5 notas e calcule a média.</li>
+<li>Leia valores até zero e conte quantos foram informados antes dele.</li>
+<li>Imprima a tabuada de um número.</li>
+<li>Faça teste de mesa para <code>i=1; soma=0; enquanto i&lt;=3: soma+=i; i++</code>.</li>
+<li>Explique como surge um laço infinito.</li>
+<li>Corrija um laço que nunca incrementa seu contador.</li>
+<li>Exiba contagem regressiva de 10 até 0.</li>
+<li>Calcule a média de N valores com validação de N.</li>
+<li>Encontre o maior de 8 valores.</li>
+<li>Conte números divisíveis por 3 entre 1 e 100.</li>
+<li>Compare <code>for</code> e <code>while</code> para percorrer 10 posições.</li>
+<li>Crie um menu que continue até a opção sair.</li>
+<li>Desenvolva um algoritmo que calcule a soma de números pares até N.</li>
 </ol>
 <h2 id="gabarito-comentado">Gabarito comentado</h2>
 <ol>
-<li>Compilação verifica tradução/sintaxe e outros diagnósticos; testes verificam comportamento.</li>
-<li>Simulação manual das instruções e variáveis.</li>
-<li>Operação normal, limite, divisão por zero e operador inválido.</li>
-<li>Erros frequentemente aparecem nas fronteiras dos intervalos.</li>
-<li>Reexecutar testes após mudanças para detectar defeitos introduzidos.</li>
-<li>Nomes significativos, indentação, funções coesas, comentários úteis.</li>
-<li>Ex.: <code>Valida entrada de notas</code>.</li>
-<li>Estado dos arquivos e relação com o repositório.</li>
-<li><code>add</code> prepara; <code>commit</code> grava no histórico local.</li>
-<li>Envia commits locais ao remoto.</li>
-<li>Busca e integra mudanças remotas conforme a configuração.</li>
-<li>Linha de desenvolvimento separada.</li>
-<li>O histórico pode preservar segredos mesmo após apagar o arquivo.</li>
-<li>Notas típicas, limites, valores inválidos e quantidade zero.</li>
-<li>Verificar que o programa rejeita a quantidade inválida sem dividir por zero.</li>
-<li>Reproduzir, isolar a etapa, inspecionar valores, formular hipótese e testar correção.</li>
-<li>Facilitam revisão, entendimento e reversão.</li>
-<li><code>git status</code>, <code>git add</code>, <code>git commit</code>, <code>git push</code>.</li>
-<li>A diferença revela se o comportamento atende ao requisito.</li>
-<li>Definir requisitos, casos de teste, estilo, revisão, commits e repetição dos testes.</li>
+<li><code>while</code> testa antes; <code>do-while</code> testa depois e executa pelo menos uma vez.</li>
+<li>Quando o número de iterações ou a atualização é conhecida.</li>
+<li><code>for (int i=1; i&lt;=10; i++)</code>.</li>
+<li><code>for (int i=2; i&lt;=20; i+=2)</code>.</li>
+<li>5050.</li>
+<li>120.</li>
+<li>Inicializar contador em zero e incrementá-lo quando valor&gt;0.</li>
+<li>Somar as cinco notas e dividir por cinco.</li>
+<li>Incrementar contador apenas para valores diferentes de zero.</li>
+<li>Multiplicar o número por 1 a 10.</li>
+<li>Soma final 6.</li>
+<li>A condição permanece verdadeira porque o estado não avança para encerrá-la.</li>
+<li>Atualizar o contador em cada iteração.</li>
+<li>Iniciar em 10 e decrementar até 0, inclusive.</li>
+<li>Validar <code>n&gt;0</code>, somar n valores e dividir por n.</li>
+<li>Inicializar maior com o primeiro valor lido e comparar os demais.</li>
+<li>Existem 33 múltiplos positivos de 3 até 100.</li>
+<li>Ambos podem funcionar; <code>for</code> costuma tornar o controle mais compacto.</li>
+<li>Repetir leitura e processamento enquanto opção != sair.</li>
+<li>Somar <code>i</code> quando <code>i%2==0</code>, percorrendo o intervalo definido.</li>
 </ol>
-<h2 id="checklist-final">Checklist final</h2>
-<ul>
-<li>[ ] O programa compila sem erros.</li>
-<li>[ ] Avisos do compilador foram analisados.</li>
-<li>[ ] Casos comuns, limites e entradas inválidas foram testados.</li>
-<li>[ ] Nomes e indentação estão consistentes.</li>
-<li>[ ] Não há senhas ou dados sensíveis versionados.</li>
-<li>[ ] O diff foi revisado antes do commit.</li>
-<li>[ ] Os commits têm mensagens claras.</li>
-<li>[ ] As alterações necessárias foram enviadas ao remoto.</li>
-</ul>
+<h2 id="resumo">Resumo</h2>
+<p>Todo laço precisa de <strong>inicialização</strong>, <strong>condição de continuidade</strong> e <strong>atualização</strong>.</p>
 <h2 id="glossario-e-referencias">Glossário e referências</h2>
-<p><strong>Teste:</strong> verificação de comportamento. <strong>Depuração:</strong> investigação de defeitos. <strong>Commit:</strong> registro no histórico. <strong>Branch:</strong> linha de desenvolvimento. <strong>Repositório remoto:</strong> cópia acessível por rede.</p>
-<p>Referências:
-- Documentação oficial do Git: https://git-scm.com/doc
-- cppreference.com, linguagem C.
-- Materiais e orientações de avaliação da disciplina.</p>
+<p><strong>Iteração:</strong> execução de uma repetição. <strong>Contador:</strong> acompanha ocorrências. <strong>Acumulador:</strong> reúne valores.</p>
+<p>Referência: cppreference.com, estruturas de controle em C.</p>
 
 
 
@@ -1473,14 +1685,14 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "search.highlight", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
       
         <script src="https://unpkg.com/mermaid@11/dist/mermaid.min.js"></script>
       
-        <script src="../../../javascripts/mermaid-init.js"></script>
+        <script src="../../javascripts/mermaid-init.js"></script>
       
     
   </body>

@@ -8,27 +8,31 @@
       
       
       
-        <link rel="canonical" href="https://thissyalmeida.github.io/fatec-material-aulas/ALP/apostila/capitulos/10-vetores-matrizes.html">
+        <link rel="canonical" href="https://thissyalmeida.github.io/fatec-material-aulas/ALP/apostila/11-memoria-binario.html">
       
       
+        <link rel="prev" href="10-vetores-matrizes.html">
+      
+      
+        <link rel="next" href="12-testes-estilo-git.html">
       
       
         
       
       
-      <link rel="icon" href="../../../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
-        <title>10. Vetores e Matrizes - Material Aula - 2026 - Fatec</title>
+        <title>11. Memória e Binário - Material Aula - 2026 - Fatec</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.ec1eaa64.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -47,9 +51,9 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/style.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/style.css">
     
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -74,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#10-vetores-e-matrizes" class="md-skip">
+        <a href="#11-memoria-e-sistema-binario" class="md-skip">
           Pular para conteúdo
         </a>
       
@@ -88,7 +92,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
-    <a href="../../../index.html" title="Material Aula - 2026 - Fatec" class="md-header__button md-logo" aria-label="Material Aula - 2026 - Fatec" data-md-component="logo">
+    <a href="../../index.html" title="Material Aula - 2026 - Fatec" class="md-header__button md-logo" aria-label="Material Aula - 2026 - Fatec" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -108,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              10. Vetores e Matrizes
+              11. Memória e Binário
             
           </span>
         </div>
@@ -207,7 +211,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../index.html" class="md-tabs__link">
+      <a href="../../index.html" class="md-tabs__link">
         
   
   
@@ -224,6 +228,8 @@
   
   
   
+    
+  
   
     
     
@@ -231,11 +237,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../index.html" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="index.html" class="md-tabs__link">
           
   
   
@@ -265,7 +273,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../ED/aula1-introducao.html" class="md-tabs__link">
+        <a href="../../ED/aula1-introducao.html" class="md-tabs__link">
           
   
   
@@ -302,7 +310,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegação" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../../index.html" title="Material Aula - 2026 - Fatec" class="md-nav__button md-logo" aria-label="Material Aula - 2026 - Fatec" data-md-component="logo">
+    <a href="../../index.html" title="Material Aula - 2026 - Fatec" class="md-nav__button md-logo" aria-label="Material Aula - 2026 - Fatec" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -320,7 +328,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../index.html" class="md-nav__link">
+      <a href="../../index.html" class="md-nav__link">
         
   
   
@@ -344,26 +352,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   
@@ -381,7 +394,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -396,26 +409,31 @@
                 
   
   
+    
   
   
+  
     
     
     
     
       
       
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
         
           
-          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="">
             
   
   
@@ -433,7 +451,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_1">
             <span class="md-nav__icon md-icon"></span>
             
@@ -451,7 +469,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../index.html" class="md-nav__link">
+      <a href="index.html" class="md-nav__link">
         
   
   
@@ -479,7 +497,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../01-introducao-computacao.md" class="md-nav__link">
+      <a href="01-introducao-computacao.html" class="md-nav__link">
         
   
   
@@ -507,7 +525,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../02-algoritmos-fluxogramas.md" class="md-nav__link">
+      <a href="02-algoritmos-fluxogramas.html" class="md-nav__link">
         
   
   
@@ -535,7 +553,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../03-variaveis-operadores.md" class="md-nav__link">
+      <a href="03-variaveis-operadores.html" class="md-nav__link">
         
   
   
@@ -563,7 +581,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../04-estrutura-sequencial.md" class="md-nav__link">
+      <a href="04-estrutura-sequencial.html" class="md-nav__link">
         
   
   
@@ -591,7 +609,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../05-estruturas-condicionais.md" class="md-nav__link">
+      <a href="05-estruturas-condicionais.html" class="md-nav__link">
         
   
   
@@ -619,7 +637,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../06-estruturas-repeticao.md" class="md-nav__link">
+      <a href="06-estruturas-repeticao.html" class="md-nav__link">
         
   
   
@@ -647,7 +665,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../07-introducao-c.md" class="md-nav__link">
+      <a href="07-introducao-c.html" class="md-nav__link">
         
   
   
@@ -675,7 +693,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../08-controle-em-c.md" class="md-nav__link">
+      <a href="08-controle-em-c.html" class="md-nav__link">
         
   
   
@@ -703,7 +721,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../09-funcoes.md" class="md-nav__link">
+      <a href="09-funcoes.html" class="md-nav__link">
         
   
   
@@ -731,7 +749,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../10-vetores-matrizes.md" class="md-nav__link">
+      <a href="10-vetores-matrizes.html" class="md-nav__link">
         
   
   
@@ -756,10 +774,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../11-memoria-binario.md" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    11. Memória e Binário
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="11-memoria-binario.html" class="md-nav__link md-nav__link--active">
         
   
   
@@ -775,6 +820,169 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#abertura" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Abertura
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#objetivos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Objetivos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#111-bit-e-byte" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.1 Bit e byte
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#112-conversao-decimal-para-binario" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.2 Conversão decimal para binário
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#113-binario-para-decimal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.3 Binário para decimal
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#114-hexadecimal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.4 Hexadecimal
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#115-memoria-e-variaveis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.5 Memória e variáveis
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#116-limites-e-representacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.6 Limites e representação
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#erros-comuns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Erros comuns
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pratica-guiada" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prática guiada
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercicios" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercícios
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gabarito-comentado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gabarito comentado
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resumo-e-referencias" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resumo e referências
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -787,7 +995,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../12-testes-estilo-git.md" class="md-nav__link">
+      <a href="12-testes-estilo-git.html" class="md-nav__link">
         
   
   
@@ -934,7 +1142,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../ED/aula1-introducao.html" class="md-nav__link">
+      <a href="../../ED/aula1-introducao.html" class="md-nav__link">
         
   
   
@@ -1022,7 +1230,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../ED/index.html" class="md-nav__link">
+      <a href="../../ED/index.html" class="md-nav__link">
         
   
   
@@ -1107,10 +1315,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#101-vetores-em-c" class="md-nav__link">
+  <a href="#111-bit-e-byte" class="md-nav__link">
     <span class="md-ellipsis">
       
-        10.1 Vetores em C
+        11.1 Bit e byte
       
     </span>
   </a>
@@ -1118,10 +1326,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#102-percorrer-um-vetor" class="md-nav__link">
+  <a href="#112-conversao-decimal-para-binario" class="md-nav__link">
     <span class="md-ellipsis">
       
-        10.2 Percorrer um vetor
+        11.2 Conversão decimal para binário
       
     </span>
   </a>
@@ -1129,10 +1337,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#103-soma-e-media" class="md-nav__link">
+  <a href="#113-binario-para-decimal" class="md-nav__link">
     <span class="md-ellipsis">
       
-        10.3 Soma e média
+        11.3 Binário para decimal
       
     </span>
   </a>
@@ -1140,10 +1348,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#104-busca-e-extremos" class="md-nav__link">
+  <a href="#114-hexadecimal" class="md-nav__link">
     <span class="md-ellipsis">
       
-        10.4 Busca e extremos
+        11.4 Hexadecimal
       
     </span>
   </a>
@@ -1151,10 +1359,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#105-matrizes" class="md-nav__link">
+  <a href="#115-memoria-e-variaveis" class="md-nav__link">
     <span class="md-ellipsis">
       
-        10.5 Matrizes
+        11.5 Memória e variáveis
       
     </span>
   </a>
@@ -1162,10 +1370,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#diagrama-de-indices" class="md-nav__link">
+  <a href="#116-limites-e-representacao" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Diagrama de índices
+        11.6 Limites e representação
       
     </span>
   </a>
@@ -1244,121 +1452,132 @@
 
 
 
-<h1 id="10-vetores-e-matrizes">10. Vetores e Matrizes</h1>
+<h1 id="11-memoria-e-sistema-binario">11. Memória e Sistema Binário</h1>
 <h2 id="abertura">Abertura</h2>
-<p>Quando precisamos armazenar várias notas, preços ou medições, criar uma variável separada para cada valor não é prático. Vetores e matrizes organizam coleções de elementos do mesmo tipo.</p>
+<p>Computadores representam informações por estados físicos que podem ser modelados como bits. Compreender binário, bytes, endereços e representação de dados ajuda a entender limites de tipos, ponteiros e erros de memória.</p>
 <h2 id="objetivos">Objetivos</h2>
 <ul>
-<li>declarar e acessar vetores;</li>
-<li>percorrer elementos com laços;</li>
-<li>calcular soma, média, mínimo, máximo e realizar busca;</li>
-<li>compreender matrizes e laços aninhados;</li>
-<li>evitar acessos fora dos limites.</li>
+<li>converter números inteiros positivos entre decimal e binário;</li>
+<li>reconhecer bit, byte e sistema hexadecimal;</li>
+<li>compreender memória e endereçamento em nível introdutório;</li>
+<li>relacionar tipos de dados a representações e limites;</li>
+<li>reconhecer riscos de acesso indevido à memória.</li>
 </ul>
-<h2 id="101-vetores-em-c">10.1 Vetores em C</h2>
-<div class="language-c highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kt">int</span><span class="w"> </span><span class="n">valores</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="mi">4</span><span class="p">,</span><span class="w"> </span><span class="mi">7</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">9</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">};</span>
+<h2 id="111-bit-e-byte">11.1 Bit e byte</h2>
+<ul>
+<li><strong>Bit:</strong> unidade binária, com dois estados representados como 0 e 1.</li>
+<li><strong>Byte:</strong> unidade de armazenamento composta, nas plataformas C modernas comuns, por 8 bits; formalmente, C define byte como unidade de armazenamento de <code>sizeof(char)</code>, e <code>CHAR_BIT</code> informa quantos bits possui.</li>
+<li><strong>Endereço:</strong> identificador usado para localizar um objeto na memória durante a execução.</li>
+</ul>
+<h2 id="112-conversao-decimal-para-binario">11.2 Conversão decimal para binário</h2>
+<p>Divida repetidamente o número por 2 e anote os restos. Leia os restos de baixo para cima.</p>
+<p>Exemplo: 13 decimal.</p>
+<table>
+<thead>
+<tr>
+<th>Divisão</th>
+<th style="text-align: right;">Quociente</th>
+<th style="text-align: right;">Resto</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>13 / 2</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td>6 / 2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td>3 / 2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td>1 / 2</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+</tr>
+</tbody>
+</table>
+<p>Logo, (13_{10}=1101_2).</p>
+<h2 id="113-binario-para-decimal">11.3 Binário para decimal</h2>
+<p>Cada posição representa uma potência de 2:</p>
+<p>(1101_2 = 1\times 2^3 + 1\times 2^2 + 0\times 2^1 + 1\times 2^0 = 13).</p>
+<h2 id="114-hexadecimal">11.4 Hexadecimal</h2>
+<p>O sistema hexadecimal usa os símbolos 0–9 e A–F. Um dígito hexadecimal representa quatro bits, então dois dígitos hexadecimais correspondem a oito bits. É uma forma compacta de escrever sequências binárias.</p>
+<h2 id="115-memoria-e-variaveis">11.5 Memória e variáveis</h2>
+<p>Uma variável em C possui tipo, tamanho e tempo de vida. O endereço pode ser obtido com <code>&amp;</code> para objetos apropriados. Ponteiros armazenam endereços, mas devem apontar para objetos válidos antes de serem dereferenciados.</p>
+<div class="language-c highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kt">int</span><span class="w"> </span><span class="n">idade</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">20</span><span class="p">;</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="kt">int</span><span class="w"> </span><span class="o">*</span><span class="n">p</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">&amp;</span><span class="n">idade</span><span class="p">;</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="n">printf</span><span class="p">(</span><span class="s">"%d</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="w"> </span><span class="o">*</span><span class="n">p</span><span class="p">);</span><span class="w">  </span><span class="c1">// lê o valor de idade por meio de p</span>
 </span></code></pre></div>
-<p>Os índices começam em zero: <code>valores[0]</code> é o primeiro elemento e <code>valores[4]</code> é o último. Acessar <code>valores[5]</code> ultrapassa o limite e causa comportamento indefinido.</p>
-<h2 id="102-percorrer-um-vetor">10.2 Percorrer um vetor</h2>
-<div class="language-c highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">"%d</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="w"> </span><span class="n">valores</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span>
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="p">}</span>
-</span></code></pre></div>
-<p>A condição <code>i &lt; 5</code> é apropriada porque os índices válidos vão de 0 a 4.</p>
-<h2 id="103-soma-e-media">10.3 Soma e média</h2>
-<div class="language-c highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kt">int</span><span class="w"> </span><span class="n">soma</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">    </span><span class="n">soma</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">valores</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="p">}</span>
-</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="kt">double</span><span class="w"> </span><span class="n">media</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">soma</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mf">5.0</span><span class="p">;</span>
-</span></code></pre></div>
-<p>Inicialize o acumulador e use divisor real quando a média puder ter casas decimais.</p>
-<h2 id="104-busca-e-extremos">10.4 Busca e extremos</h2>
-<p>Para encontrar o maior elemento, inicialize <code>maior</code> com o primeiro elemento e compare os restantes. Essa estratégia funciona também quando todos os valores são negativos.</p>
-<h2 id="105-matrizes">10.5 Matrizes</h2>
-<p>Uma matriz bidimensional pode representar linhas e colunas:</p>
-<div class="language-c highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kt">int</span><span class="w"> </span><span class="n">matriz</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">3</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">    </span><span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">},</span>
-</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">    </span><span class="p">{</span><span class="mi">4</span><span class="p">,</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w"> </span><span class="mi">6</span><span class="p">}</span>
-</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="p">};</span>
-</span></code></pre></div>
-<p>Percorra linhas e colunas com dois laços:</p>
-<div class="language-c highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">3</span><span class="p">;</span><span class="w"> </span><span class="n">j</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">        </span><span class="n">printf</span><span class="p">(</span><span class="s">"%d "</span><span class="p">,</span><span class="w"> </span><span class="n">matriz</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]);</span>
-</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
-</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="p">}</span>
-</span></code></pre></div>
-<h2 id="diagrama-de-indices">Diagrama de índices</h2>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>Vetor:   [4] [7] [2] [9] [1]
-</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>Índice:   0   1   2   3   4
-</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>
-</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>Matriz:
-</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>          coluna 0  coluna 1  coluna 2
-</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>linha 0      1         2         3
-</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>linha 1      4         5         6
-</span></code></pre></div>
+<p>O exemplo pressupõe que <code>p</code> aponta para <code>idade</code>, que continua existindo durante o uso.</p>
+<h2 id="116-limites-e-representacao">11.6 Limites e representação</h2>
+<p>Tipos inteiros têm limites definidos pela implementação e pelo tipo escolhido. Consulte <code>&lt;limits.h&gt;</code> e use tipos de tamanho apropriado quando a tarefa exigir. Não assuma que <code>int</code> possui sempre o mesmo tamanho em todas as plataformas.</p>
 <h2 id="erros-comuns">Erros comuns</h2>
 <ul>
-<li>começar o índice em 1 em C;</li>
-<li>usar <code>i &lt;= tamanho</code> em vez de <code>i &lt; tamanho</code>;</li>
-<li>esquecer de inicializar soma;</li>
-<li>acessar posição sem valor inicializado;</li>
-<li>confundir número de linhas com número de colunas;</li>
-<li>calcular média dividindo por zero elementos.</li>
+<li>ler bits da direita para a esquerda ao converter binário para decimal;</li>
+<li>confundir bit com byte;</li>
+<li>presumir tamanho fixo de todos os tipos;</li>
+<li>usar ponteiro não inicializado;</li>
+<li>acessar memória depois que o objeto deixou de existir;</li>
+<li>escrever fora dos limites de um vetor.</li>
 </ul>
 <h2 id="pratica-guiada">Prática guiada</h2>
-<p>Leia cinco notas, armazene-as em um vetor, calcule a média e conte quantas notas estão acima da média. Teste notas iguais e notas distintas.</p>
+<p>Converta 18 e 27 para binário e confirme os resultados convertendo-os de volta para decimal. Depois, explique em suas palavras o que significa o ponteiro <code>p</code> no exemplo.</p>
 <h2 id="exercicios">Exercícios</h2>
 <ol>
-<li>O que é um vetor?</li>
-<li>Por que índices de vetor em C começam em zero?</li>
-<li>Declare vetor de 10 inteiros.</li>
-<li>Leia cinco números e exiba-os em ordem.</li>
-<li>Calcule soma de um vetor com N elementos.</li>
-<li>Calcule média de seis notas.</li>
-<li>Encontre maior e menor elemento.</li>
-<li>Conte valores negativos.</li>
-<li>Busque um valor e informe se foi encontrado.</li>
-<li>Inverta a ordem de exibição de um vetor.</li>
-<li>Explique o risco de acessar índice igual ao tamanho.</li>
-<li>Some os elementos de duas matrizes 2×2.</li>
-<li>Exiba uma matriz 3×3.</li>
-<li>Calcule a soma de cada linha de uma matriz.</li>
-<li>Calcule a soma da diagonal principal de uma matriz quadrada.</li>
-<li>Conte quantos valores de uma matriz são pares.</li>
-<li>Compare dois vetores elemento a elemento.</li>
-<li>Identifique o erro em <code>for (i=0; i&lt;=10; i++)</code> para vetor de 10 posições.</li>
-<li>Planeje uma análise de notas com média, maior, menor e aprovados.</li>
-<li>Crie um programa que registre vendas diárias e calcule total e média.</li>
+<li>Defina bit.</li>
+<li>Explique a diferença entre bit e byte.</li>
+<li>Converta 5 para binário.</li>
+<li>Converta 12 para binário.</li>
+<li>Converta 19 para binário.</li>
+<li>Converta <code>1010₂</code> para decimal.</li>
+<li>Converta <code>1111₂</code> para decimal.</li>
+<li>Converta <code>10000₂</code> para decimal.</li>
+<li>Explique por que hexadecimal é útil.</li>
+<li>Quantos bits há em dois bytes de 8 bits?</li>
+<li>Identifique as potências de 2 em <code>1011₂</code>.</li>
+<li>Explique o que é endereço de memória.</li>
+<li>Qual o papel do operador <code>&amp;</code> no exemplo C?</li>
+<li>O que significa <code>*p</code> quando <code>p</code> é um ponteiro válido?</li>
+<li>Por que não se deve dereferenciar ponteiro não inicializado?</li>
+<li>Explique o risco de escrever além de um vetor.</li>
+<li>Pesquise os limites de <code>int</code> no compilador usado e documente como consultou.</li>
+<li>Represente o decimal 31 em binário e hexadecimal.</li>
+<li>Explique por que o tamanho de um tipo deve ser verificado quando importa.</li>
+<li>Descreva duas práticas para reduzir erros de memória em C.</li>
 </ol>
 <h2 id="gabarito-comentado">Gabarito comentado</h2>
 <ol>
-<li>Coleção indexada de elementos do mesmo tipo.</li>
-<li>O primeiro elemento ocupa o índice 0 por convenção da linguagem.</li>
-<li><code>int dados[10];</code>.</li>
-<li>Usar laço de leitura e outro de exibição ou um único laço.</li>
-<li>Inicializar soma em zero e acumular todos os elementos.</li>
-<li>Somar seis notas e dividir por <code>6.0</code>.</li>
-<li>Inicializar ambos com o primeiro elemento e percorrer o restante.</li>
-<li>Incrementar contador quando elemento&lt;0.</li>
-<li>Percorrer até encontrar; indicar ausência se terminar sem correspondência.</li>
-<li>Percorrer de <code>N-1</code> até <code>0</code>.</li>
-<li>Acesso fora dos limites tem comportamento indefinido.</li>
-<li>Somar elementos correspondentes em cada posição.</li>
-<li>Dois laços, um para linhas e outro para colunas.</li>
-<li>Reiniciar soma para cada linha.</li>
-<li>Somar <code>matriz[i][i]</code>.</li>
-<li>Verificar <code>matriz[i][j] % 2 == 0</code>.</li>
-<li>Comparar elementos nas mesmas posições e definir regra para tamanhos.</li>
-<li>Índices válidos são 0 a 9; usar <code>i&lt;10</code>.</li>
-<li>Armazenar notas, calcular estatísticas e classificar segundo regra definida.</li>
-<li>Acumular vendas e dividir pela quantidade de dias registrada.</li>
+<li>Unidade binária representada por 0 ou 1.</li>
+<li>Byte é uma unidade de armazenamento composta por bits; em plataformas comuns, 8 bits.</li>
+<li><code>101₂</code>.</li>
+<li><code>1100₂</code>.</li>
+<li><code>10011₂</code>.</li>
+<li>10.</li>
+<li>15.</li>
+<li>16.</li>
+<li>É compacto e cada dígito corresponde a quatro bits.</li>
+<li>16 bits.</li>
+<li><code>1×8 + 0×4 + 1×2 + 1×1 = 11</code>.</li>
+<li>Identificador/localizador de um objeto na memória durante a execução.</li>
+<li>Obtém o endereço de <code>idade</code>.</li>
+<li>Acessa o objeto apontado por <code>p</code>.</li>
+<li>O endereço pode ser inválido; o comportamento é indefinido.</li>
+<li>Pode corromper dados e causar comportamento indefinido.</li>
+<li>Depende da plataforma; consultar <code>INT_MIN</code> e <code>INT_MAX</code> em <code>&lt;limits.h&gt;</code>.</li>
+<li><code>11111₂</code>, <code>1F₁₆</code>.</li>
+<li>Tipos e plataformas podem diferir em tamanho e limites.</li>
+<li>Inicializar ponteiros, validar índices, respeitar o tempo de vida dos objetos e usar avisos do compilador.</li>
 </ol>
 <h2 id="resumo-e-referencias">Resumo e referências</h2>
-<p>Vetores usam um índice; matrizes usam dois. Laços permitem percorrer as coleções de forma sistemática.</p>
-<p>Referência: cppreference.com, arrays em C.</p>
+<p>Binário representa valores por potências de dois; memória armazena objetos e ponteiros permitem referenciar endereços válidos.</p>
+<p>Referências: ISO C; cppreference.com; documentação do compilador utilizado.</p>
 
 
 
@@ -1414,14 +1633,14 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "search.highlight", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
       
         <script src="https://unpkg.com/mermaid@11/dist/mermaid.min.js"></script>
       
-        <script src="../../../javascripts/mermaid-init.js"></script>
+        <script src="../../javascripts/mermaid-init.js"></script>
       
     
   </body>
