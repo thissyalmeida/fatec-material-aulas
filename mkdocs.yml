@@ -51,23 +51,20 @@ extra_javascript:
   - javascripts/mermaid-init.js
 
 nav:
-  - ALP - Algoritmos e Lógica de Programação:
-# Trecho sugerido para adicionar à seção `nav` do mkdocs.yml
-# Ajuste a indentação conforme a estrutura já existente do seu portal.
-    - Apostila de ALP:
-      - Página inicial: ALP/apostila/index.md
-      - 1. Introdução à Computação: ALP/apostila/01-introducao-computacao.md
-      - 2. Algoritmos e Fluxogramas: ALP/apostila/02-algoritmos-fluxogramas.md
-      - 3. Variáveis e Operadores: ALP/apostila/03-variaveis-operadores.md
-      - 4. Estrutura Sequencial: ALP/apostila/04-estrutura-sequencial.md
-      - 5. Estruturas Condicionais: ALP/apostila/05-estruturas-condicionais.md
-      - 6. Estruturas de Repetição: ALP/apostila/06-estruturas-repeticao.md
-      - 7. Introdução à Linguagem C: ALP/apostila/07-introducao-c.md
-      - 8. Controle em C: ALP/apostila/08-controle-em-c.md
-      - 9. Funções: ALP/apostila/09-funcoes.md
-      - 10. Vetores e Matrizes: ALP/apostila/10-vetores-matrizes.md
-      - 11. Memória e Binário: ALP/apostila/11-memoria-binario.md
-      - 12. Testes, Estilo e Git: ALP/apostila/12-testes-estilo-git.md
+  - Apostila de ALP:
+    - Página inicial: ALP/apostila/index.md
+    - 1. Introdução à Computação: ALP/apostila/01-introducao-computacao.md
+    - 2. Algoritmos e Fluxogramas: ALP/apostila/02-algoritmos-fluxogramas.md
+    - 3. Variáveis e Operadores: ALP/apostila/03-variaveis-operadores.md
+    - 4. Estrutura Sequencial: ALP/apostila/04-estrutura-sequencial.md
+    - 5. Estruturas Condicionais: ALP/apostila/05-estruturas-condicionais.md
+    - 6. Estruturas de Repetição: ALP/apostila/06-estruturas-repeticao.md
+    - 7. Introdução à Linguagem C: ALP/apostila/07-introducao-c.md
+    - 8. Controle em C: ALP/apostila/08-controle-em-c.md
+    - 9. Funções: ALP/apostila/09-funcoes.md
+    - 10. Vetores e Matrizes: ALP/apostila/10-vetores-matrizes.md
+    - 11. Memória e Binário: ALP/apostila/11-memoria-binario.md
+    - 12. Testes, Estilo e Git: ALP/apostila/12-testes-estilo-git.md
     #- Introdução:
      #   - Intro: ALP/aula-00/index.md
     #- Lógica e Raciocínio:
