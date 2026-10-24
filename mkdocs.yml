@@ -1,4 +1,4 @@
-site_name: Material Aula - 2026 - Fatec
+site_name: Apostila - Algoritmos e Linguagem de Programação
 site_url: https://thissyalmeida.github.io/fatec-material-aulas/
 use_directory_urls: false
 
@@ -65,33 +65,3 @@ nav:
     - 10. Vetores e Matrizes: ALP/apostila/10-vetores-matrizes.md
     - 11. Memória e Binário: ALP/apostila/11-memoria-binario.md
     - 12. Testes, Estilo e Git: ALP/apostila/12-testes-estilo-git.md
-    #- Introdução:
-     #   - Intro: ALP/aula-00/index.md
-    #- Lógica e Raciocínio:
-     #   - Lógica e Raciocínio: ALP/aula-01/logica-e-raciocinio.md
-    #- Conceitos iniciais de Algoritmos:
-     #   - Formas de Representação de Algoritmos: ALP/aula-02/formas-de-representacao-de-algoritmos.md
-      #  - Exemplos: ALP/aula-02/exemplos-formas-de-representacao.md
-    #- Linguagem de Programação:
-     #   - Linguagem de Programação: ALP/aula-03/linguagem-de-programacao.md
-      #  - C:
-       #     - Conteudo: ALP/C/conteudo-c.md
-        #    - Exemplos: ALP/C/exemplos-c.md
-        #- Java:
-         #   - Conteudo: ALP/Java/conteudo-java.md
-          #  - Exemplos: ALP/Java/exemplos-java.md
-        #- JavaScript:
-         #   - Conteudo: ALP/JavaScript/conteudo-javascript.md
-          #  - Exemplos: ALP/JavaScript/exemplos-javascript.md
-        #- Kotlin:
-         #   - Conteudo: ALP/Kotlin/conteudo-kotlin.md
-          #  - Exemplos: ALP/Kotlin/exemplos-kotlin.md
-        #- Python:
-         #   - Conteudo: ALP/Python/conteudo-python.md
-          #  - Exemplos: ALP/Python/exemplos-python.md
-
-  #- EST - Estrutura de Dados:
-   # - Listas, Pilhas e Filas:
-    #    - Exercícios: ED/aula1-introducao.md
-    #- Árvores e Grafos:
-     #   - Exercícios: ED/index.md
