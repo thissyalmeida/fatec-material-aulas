@@ -4,12 +4,12 @@
 
 Na estrutura sequencial, as instruções são executadas uma após a outra, na ordem em que aparecem. É a forma mais direta de organizar um algoritmo.
 
-## Objetivos
+!!! abstract "Objetivos de aprendizagem"
 
-- organizar algoritmos com entrada, processamento e saída;
-- usar atribuições corretamente;
-- construir cálculos sequenciais;
-- simular a alteração de variáveis ao longo do programa.
+    - organizar algoritmos com entrada, processamento e saída;
+    - usar atribuições corretamente;
+    - construir cálculos sequenciais;
+    - simular a alteração de variáveis ao longo do programa.
 
 ## 4.1 Modelo Entrada–Processamento–Saída
 
@@ -51,27 +51,27 @@ int main(void) {
 }
 ```
 
-## 4.4 Exemplo resolvido: conversão de temperatura
+!!! example "4.4 Exemplo resolvido: conversão de temperatura"
 
-Fórmula: \(F = C \times 9/5 + 32\).
+    Fórmula: \(F = C \times 9/5 + 32\).
 
-```c
-#include <stdio.h>
+    ```c
+    #include <stdio.h>
 
-int main(void) {
-    double celsius, fahrenheit;
+    int main(void) {
+        double celsius, fahrenheit;
 
-    printf("Temperatura em Celsius: ");
-    if (scanf("%lf", &celsius) != 1) {
-        printf("Valor invalido.\n");
-        return 1;
+        printf("Temperatura em Celsius: ");
+        if (scanf("%lf", &celsius) != 1) {
+            printf("Valor invalido.\n");
+            return 1;
+        }
+
+        fahrenheit = celsius * 9.0 / 5.0 + 32.0;
+        printf("Fahrenheit: %.2f\n", fahrenheit);
+        return 0;
     }
-
-    fahrenheit = celsius * 9.0 / 5.0 + 32.0;
-    printf("Fahrenheit: %.2f\n", fahrenheit);
-    return 0;
-}
-```
+    ```
 
 ## 4.5 Teste de mesa
 
@@ -82,17 +82,17 @@ Para `a = 4`, `b = 3`, `c = a * b + 2`:
 | Inicialização | 4 | 3 | — |
 | `c = a * b + 2` | 4 | 3 | 14 |
 
-## Erros comuns
+!!! warning "Erros comuns: atenção a estes pontos"
 
-- calcular antes de ler os dados;
-- sobrescrever uma variável necessária mais adiante;
-- esquecer parênteses em fórmulas;
-- usar especificador de formato incompatível;
-- não verificar se `scanf()` conseguiu ler o valor.
+    - calcular antes de ler os dados;
+    - sobrescrever uma variável necessária mais adiante;
+    - esquecer parênteses em fórmulas;
+    - usar especificador de formato incompatível;
+    - não verificar se `scanf()` conseguiu ler o valor.
 
-## Prática guiada
+!!! tip "Prática guiada"
 
-Crie um programa que leia salário e percentual de reajuste e apresente o valor do reajuste e o novo salário. Teste com percentual zero e com um percentual positivo.
+    Crie um programa que leia salário e percentual de reajuste e apresente o valor do reajuste e o novo salário. Teste com percentual zero e com um percentual positivo.
 
 ## Exercícios
 
@@ -117,28 +117,28 @@ Crie um programa que leia salário e percentual de reajuste e apresente o valor 
 19. Crie testes para uma conversão de temperatura.
 20. Desenvolva um programa sequencial de sua escolha e documente as variáveis.
 
-## Gabarito comentado
+!!! success "Gabarito comentado"
 
-1. Execução das instruções em sequência.
-2. Entrada: dimensões; processamento: fórmula; saída: perímetro.
-3. Ler a, b, c; soma ← a+b+c; exibir soma.
-4. Ler notas; média ← soma/4; exibir.
-5. 24 unidades quadradas.
-6. 77 °F.
-7. minutos ← horas*60.
-8. total ← preço_unitário*5.
-9. O resultado pode ser indeterminado/incorreto; em C, ler variável não inicializada é um erro grave.
-10. Para detectar entrada inválida ou ausência de valor.
-11. Ler dois inteiros e exibir `a+b`, validando as leituras.
-12. `area = base * altura / 2.0`.
-13. reajuste ← salário*percentual/100; novo ← salário+reajuste.
-14. consumo ← distância/litros, validando litros diferentes de zero.
-15. Ler todos os valores, somar, dividir pela quantidade, exibir.
-16. Inicialmente x=5; y=7; depois x=21.
-17. Gorjeta ← conta*percentual/100; total ← conta+gorjeta.
-18. Divisão inteira pode truncar o resultado; use `9.0/5.0`.
-19. Zero, valor negativo se permitido, valores típicos e entrada inválida.
-20. Avaliar clareza, cálculo e validação.
+    1. Execução das instruções em sequência.
+    2. Entrada: dimensões; processamento: fórmula; saída: perímetro.
+    3. Ler a, b, c; soma ← a+b+c; exibir soma.
+    4. Ler notas; média ← soma/4; exibir.
+    5. 24 unidades quadradas.
+    6. 77 °F.
+    7. minutos ← horas*60.
+    8. total ← preço_unitário*5.
+    9. O resultado pode ser indeterminado/incorreto; em C, ler variável não inicializada é um erro grave.
+    10. Para detectar entrada inválida ou ausência de valor.
+    11. Ler dois inteiros e exibir `a+b`, validando as leituras.
+    12. `area = base * altura / 2.0`.
+    13. reajuste ← salário*percentual/100; novo ← salário+reajuste.
+    14. consumo ← distância/litros, validando litros diferentes de zero.
+    15. Ler todos os valores, somar, dividir pela quantidade, exibir.
+    16. Inicialmente x=5; y=7; depois x=21.
+    17. Gorjeta ← conta*percentual/100; total ← conta+gorjeta.
+    18. Divisão inteira pode truncar o resultado; use `9.0/5.0`.
+    19. Zero, valor negativo se permitido, valores típicos e entrada inválida.
+    20. Avaliar clareza, cálculo e validação.
 
 ## Resumo
 

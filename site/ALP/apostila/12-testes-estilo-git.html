@@ -729,17 +729,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#objetivos" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Objetivos
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#121-estrategia-de-testes" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -806,43 +795,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#erros-comuns" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Erros comuns
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#pratica-guiada" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Prática guiada
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#exercicios" class="md-nav__link">
     <span class="md-ellipsis">
       
         Exercícios
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#gabarito-comentado" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Gabarito comentado
       
     </span>
   </a>
@@ -925,17 +881,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#objetivos" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Objetivos
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#121-estrategia-de-testes" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1002,43 +947,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#erros-comuns" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Erros comuns
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#pratica-guiada" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Prática guiada
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#exercicios" class="md-nav__link">
     <span class="md-ellipsis">
       
         Exercícios
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#gabarito-comentado" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Gabarito comentado
       
     </span>
   </a>
@@ -1087,7 +999,8 @@
 <h1 id="12-testes-estilo-de-codigo-e-git">12. Testes, Estilo de Código e Git</h1>
 <h2 id="abertura">Abertura</h2>
 <p>Um programa não está pronto apenas porque compila. É necessário verificar resultados, testar limites, organizar o código e manter um histórico das alterações para poder colaborar e recuperar versões anteriores.</p>
-<h2 id="objetivos">Objetivos</h2>
+<div class="admonition abstract">
+<p class="admonition-title">Objetivos de aprendizagem</p>
 <ul>
 <li>distinguir testes de sintaxe, execução e lógica;</li>
 <li>planejar casos de teste, incluindo limites e entradas inválidas;</li>
@@ -1095,6 +1008,7 @@
 <li>aplicar estilo consistente;</li>
 <li>compreender repositório, commit, branch, push e pull.</li>
 </ul>
+</div>
 <h2 id="121-estrategia-de-testes">12.1 Estratégia de testes</h2>
 <p>Para cada requisito, defina entradas e resultado esperado antes de executar o programa.</p>
 <table>
@@ -1172,7 +1086,8 @@
     D --&gt; E[git push]</code></pre>
 <h2 id="126-mensagens-e-colaboracao">12.6 Mensagens e colaboração</h2>
 <p>Mensagens de commit devem descrever a mudança: <code>Corrige limite do vetor</code> é mais útil que <code>alterações</code>. Faça commits pequenos e coerentes. Não inclua senhas, chaves ou dados pessoais no repositório.</p>
-<h2 id="erros-comuns">Erros comuns</h2>
+<div class="admonition warning">
+<p class="admonition-title">Erros comuns: atenção a estes pontos</p>
 <ul>
 <li>testar apenas um caso;</li>
 <li>mudar o código sem repetir testes relacionados;</li>
@@ -1182,8 +1097,11 @@
 <li>incluir arquivos temporários ou segredos;</li>
 <li>usar Git sem entender em qual branch está trabalhando.</li>
 </ul>
-<h2 id="pratica-guiada">Prática guiada</h2>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Prática guiada</p>
 <p>Escolha um programa anterior, crie um conjunto de pelo menos seis testes, registre resultados esperados e observados, corrija um defeito e execute novamente os testes. Em seguida, registre as alterações em um repositório Git.</p>
+</div>
 <h2 id="exercicios">Exercícios</h2>
 <ol>
 <li>Diferencie compilação e teste.</li>
@@ -1207,7 +1125,8 @@
 <li>Compare resultado esperado e observado em um teste.</li>
 <li>Faça um plano de qualidade para um projeto simples em C com testes, estilo e Git.</li>
 </ol>
-<h2 id="gabarito-comentado">Gabarito comentado</h2>
+<div class="admonition success">
+<p class="admonition-title">Gabarito comentado</p>
 <ol>
 <li>Compilação verifica tradução/sintaxe e outros diagnósticos; testes verificam comportamento.</li>
 <li>Simulação manual das instruções e variáveis.</li>
@@ -1230,6 +1149,7 @@
 <li>A diferença revela se o comportamento atende ao requisito.</li>
 <li>Definir requisitos, casos de teste, estilo, revisão, commits e repetição dos testes.</li>
 </ol>
+</div>
 <h2 id="checklist-final">Checklist final</h2>
 <ul>
 <li>[ ] O programa compila sem erros.</li>

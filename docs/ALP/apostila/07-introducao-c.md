@@ -4,12 +4,12 @@
 
 Até aqui, algoritmos foram descritos independentemente de uma linguagem. Agora, vamos implementar essas ideias em C, uma linguagem compilada, estruturada e amplamente utilizada em sistemas e ensino de programação.
 
-## Objetivos
+!!! abstract "Objetivos de aprendizagem"
 
-- reconhecer a estrutura de um programa C;
-- compilar e executar um arquivo-fonte;
-- usar `main`, bibliotecas, instruções e comentários;
-- compreender erros de compilação e mensagens básicas.
+    - reconhecer a estrutura de um programa C;
+    - compilar e executar um arquivo-fonte;
+    - usar `main`, bibliotecas, instruções e comentários;
+    - compreender erros de compilação e mensagens básicas.
 
 ## 7.1 Estrutura mínima
 
@@ -83,18 +83,18 @@ O especificador `%d` é usado para exibir um `int`.
 
 A tabela é introdutória: conversões, arrays de caracteres e leitura de linhas exigem cuidados adicionais.
 
-## Erros comuns
+!!! warning "Erros comuns: atenção a estes pontos"
 
-- esquecer `;`;
-- omitir `#include <stdio.h>` ao usar funções de entrada/saída;
-- escrever `Printf` com maiúscula;
-- usar especificador incompatível com o tipo;
-- tentar executar código sem compilar;
-- ignorar avisos do compilador.
+    - esquecer `;`;
+    - omitir `#include <stdio.h>` ao usar funções de entrada/saída;
+    - escrever `Printf` com maiúscula;
+    - usar especificador incompatível com o tipo;
+    - tentar executar código sem compilar;
+    - ignorar avisos do compilador.
 
-## Prática guiada
+!!! tip "Prática guiada"
 
-Crie um programa que exiba seu nome, curso e uma mensagem. Depois, acrescente duas variáveis inteiras e mostre sua soma.
+    Crie um programa que exiba seu nome, curso e uma mensagem. Depois, acrescente duas variáveis inteiras e mostre sua soma.
 
 ## Exercícios
 
@@ -119,28 +119,28 @@ Crie um programa que exiba seu nome, curso e uma mensagem. Depois, acrescente du
 19. Diferencie código-fonte e executável.
 20. Documente os passos para compilar e executar seu primeiro programa.
 
-## Gabarito comentado
+!!! success "Gabarito comentado"
 
-1. Ponto de entrada convencional da execução.
-2. Inclui declarações da biblioteca padrão de entrada/saída.
-3. Para delimitar o fim da instrução.
-4. Código mínimo apresentado neste capítulo.
-5. `int a=...; int b=...; printf("%d", a+b);`.
-6. `%d`.
-7. Sintaxe viola regras da linguagem; lógica produz resultado errado apesar de compilar.
-8. `nota` e `Nota` são nomes diferentes.
-9. Inserir `;` no fim da instrução.
-10. Comentários devem esclarecer intenção, não repetir o óbvio.
-11. `double media;`.
-12. Ler ou definir número, calcular dobro e exibir ambos.
-13. Indica o status de encerramento ao ambiente.
-14. `precoUnitario`, `quantidade`, `valorTotal`.
-15. Avisos indicam possíveis problemas e devem ser analisados.
-16. `area = lado * lado`.
-17. O especificador não corresponde ao tipo esperado.
-18. Instruções completas em ordem.
-19. Fonte é texto C; executável é artefato gerado pelo processo de compilação/linkedição.
-20. Salvar, compilar, corrigir mensagens e executar.
+    1. Ponto de entrada convencional da execução.
+    2. Inclui declarações da biblioteca padrão de entrada/saída.
+    3. Para delimitar o fim da instrução.
+    4. Código mínimo apresentado neste capítulo.
+    5. `int a=...; int b=...; printf("%d", a+b);`.
+    6. `%d`.
+    7. Sintaxe viola regras da linguagem; lógica produz resultado errado apesar de compilar.
+    8. `nota` e `Nota` são nomes diferentes.
+    9. Inserir `;` no fim da instrução.
+    10. Comentários devem esclarecer intenção, não repetir o óbvio.
+    11. `double media;`.
+    12. Ler ou definir número, calcular dobro e exibir ambos.
+    13. Indica o status de encerramento ao ambiente.
+    14. `precoUnitario`, `quantidade`, `valorTotal`.
+    15. Avisos indicam possíveis problemas e devem ser analisados.
+    16. `area = lado * lado`.
+    17. O especificador não corresponde ao tipo esperado.
+    18. Instruções completas em ordem.
+    19. Fonte é texto C; executável é artefato gerado pelo processo de compilação/linkedição.
+    20. Salvar, compilar, corrigir mensagens e executar.
 
 ## Resumo e referências
 

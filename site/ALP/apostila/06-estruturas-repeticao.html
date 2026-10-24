@@ -563,17 +563,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#objetivos" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Objetivos
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#61-while" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -629,54 +618,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#exemplo-resolvido-media-de-n-notas" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Exemplo resolvido: média de N notas
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#erros-comuns" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Erros comuns
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#pratica-guiada" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Prática guiada
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#exercicios" class="md-nav__link">
     <span class="md-ellipsis">
       
         Exercícios
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#gabarito-comentado" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Gabarito comentado
       
     </span>
   </a>
@@ -927,17 +872,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#objetivos" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Objetivos
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#61-while" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -993,54 +927,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#exemplo-resolvido-media-de-n-notas" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Exemplo resolvido: média de N notas
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#erros-comuns" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Erros comuns
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#pratica-guiada" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Prática guiada
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#exercicios" class="md-nav__link">
     <span class="md-ellipsis">
       
         Exercícios
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#gabarito-comentado" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Gabarito comentado
       
     </span>
   </a>
@@ -1089,13 +979,15 @@
 <h1 id="6-estruturas-de-repeticao">6. Estruturas de Repetição</h1>
 <h2 id="abertura">Abertura</h2>
 <p>Repetir uma operação manualmente em código torna o programa longo e propenso a erros. Laços permitem executar um bloco enquanto uma condição for satisfeita ou por uma quantidade controlada de vezes.</p>
-<h2 id="objetivos">Objetivos</h2>
+<div class="admonition abstract">
+<p class="admonition-title">Objetivos de aprendizagem</p>
 <ul>
 <li>distinguir repetição controlada por condição e por contador;</li>
 <li>utilizar <code>while</code>, <code>do-while</code> e <code>for</code>;</li>
 <li>trabalhar com contadores e acumuladores;</li>
 <li>evitar laços infinitos e erros de limite.</li>
 </ul>
+</div>
 <h2 id="61-while">6.1 <code>while</code></h2>
 <p>A condição é verificada antes de cada execução. Se for falsa inicialmente, o bloco pode não executar nenhuma vez.</p>
 <div class="language-c highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kt">int</span><span class="w"> </span><span class="n">contador</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
@@ -1178,9 +1070,12 @@
     E --&gt; C
     C -- Não --&gt; F[/Exibir soma/]
     F --&gt; G([Fim])</code></pre>
-<h2 id="exemplo-resolvido-media-de-n-notas">Exemplo resolvido: média de N notas</h2>
+<div class="admonition example">
+<p class="admonition-title">Exemplo resolvido: média de N notas</p>
 <p>Leia a quantidade <code>n</code>, valide que seja positiva, acumule as notas em um laço e divida a soma por <code>n</code>. A média só pode ser calculada depois de todas as notas serem lidas.</p>
-<h2 id="erros-comuns">Erros comuns</h2>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Erros comuns: atenção a estes pontos</p>
 <ul>
 <li>esquecer de atualizar o contador;</li>
 <li>usar <code>&lt;</code> quando o enunciado exige incluir o limite;</li>
@@ -1189,8 +1084,11 @@
 <li>alterar a variável de controle em mais de um lugar;</li>
 <li>confundir <code>i++</code> com <code>soma++</code>.</li>
 </ul>
-<h2 id="pratica-guiada">Prática guiada</h2>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Prática guiada</p>
 <p>Leia números até que o usuário informe zero e calcule a soma dos números diferentes de zero. Defina se o zero final faz parte da soma (não faz) e teste entrada inicial zero.</p>
+</div>
 <h2 id="exercicios">Exercícios</h2>
 <ol>
 <li>Qual a diferença entre <code>while</code> e <code>do-while</code>?</li>
@@ -1214,7 +1112,8 @@
 <li>Crie um menu que continue até a opção sair.</li>
 <li>Desenvolva um algoritmo que calcule a soma de números pares até N.</li>
 </ol>
-<h2 id="gabarito-comentado">Gabarito comentado</h2>
+<div class="admonition success">
+<p class="admonition-title">Gabarito comentado</p>
 <ol>
 <li><code>while</code> testa antes; <code>do-while</code> testa depois e executa pelo menos uma vez.</li>
 <li>Quando o número de iterações ou a atualização é conhecida.</li>
@@ -1237,6 +1136,7 @@
 <li>Repetir leitura e processamento enquanto opção != sair.</li>
 <li>Somar <code>i</code> quando <code>i%2==0</code>, percorrendo o intervalo definido.</li>
 </ol>
+</div>
 <h2 id="resumo">Resumo</h2>
 <p>Todo laço precisa de <strong>inicialização</strong>, <strong>condição de continuidade</strong> e <strong>atualização</strong>.</p>
 <h2 id="glossario-e-referencias">Glossário e referências</h2>

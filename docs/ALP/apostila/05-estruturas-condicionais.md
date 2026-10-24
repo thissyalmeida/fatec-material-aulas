@@ -4,12 +4,12 @@
 
 Sistemas tomam decisões o tempo todo: aprovar uma compra, classificar uma nota, verificar uma senha ou determinar uma tarifa. Em algoritmos, decisões são representadas por condições.
 
-## Objetivos
+!!! abstract "Objetivos de aprendizagem"
 
-- construir condições relacionais e lógicas;
-- usar seleção simples, composta e encadeada;
-- compreender `if`, `else if`, `else` e `switch`;
-- testar os caminhos possíveis de uma decisão.
+    - construir condições relacionais e lógicas;
+    - usar seleção simples, composta e encadeada;
+    - compreender `if`, `else if`, `else` e `switch`;
+    - testar os caminhos possíveis de uma decisão.
 
 ## 5.1 Seleção simples e composta
 
@@ -72,34 +72,34 @@ int main(void) {
 
 Use `else if` para faixas ou critérios mutuamente exclusivos. `switch` é útil quando uma expressão integral ou caractere deve ser comparada a valores discretos. Em C, cada `case` normalmente termina com `break` para evitar a execução do próximo caso.
 
-## Exemplo: faixa de nota
+!!! example "Exemplo: faixa de nota"
 
-```c
-if (nota >= 9.0) {
-    printf("Excelente\n");
-} else if (nota >= 7.0) {
-    printf("Bom\n");
-} else if (nota >= 6.0) {
-    printf("Suficiente\n");
-} else {
-    printf("Insuficiente\n");
-}
-```
+    ```c
+    if (nota >= 9.0) {
+        printf("Excelente\n");
+    } else if (nota >= 7.0) {
+        printf("Bom\n");
+    } else if (nota >= 6.0) {
+        printf("Suficiente\n");
+    } else {
+        printf("Insuficiente\n");
+    }
+    ```
 
-A ordem das condições é importante: comece pela faixa mais alta quando os intervalos se sobrepõem.
+    A ordem das condições é importante: comece pela faixa mais alta quando os intervalos se sobrepõem.
 
-## Erros comuns
+!!! warning "Erros comuns: atenção a estes pontos"
 
-- confundir `=` com `==`;
-- esquecer limites em uma faixa;
-- criar intervalos que se sobrepõem ou deixam lacunas;
-- colocar `;` imediatamente após `if`;
-- esquecer `break` em `switch`;
-- não validar valores fora do domínio esperado.
+    - confundir `=` com `==`;
+    - esquecer limites em uma faixa;
+    - criar intervalos que se sobrepõem ou deixam lacunas;
+    - colocar `;` imediatamente após `if`;
+    - esquecer `break` em `switch`;
+    - não validar valores fora do domínio esperado.
 
-## Prática guiada
+!!! tip "Prática guiada"
 
-Leia uma temperatura e classifique-a como “fria” (abaixo de 15), “agradável” (de 15 até 25) ou “quente” (acima de 25). Defina explicitamente os limites e teste 14.9, 15, 25 e 25.1.
+    Leia uma temperatura e classifique-a como “fria” (abaixo de 15), “agradável” (de 15 até 25) ou “quente” (acima de 25). Defina explicitamente os limites e teste 14.9, 15, 25 e 25.1.
 
 ## Exercícios
 
@@ -124,28 +124,28 @@ Leia uma temperatura e classifique-a como “fria” (abaixo de 15), “agradáv
 19. Desenvolva calculadora com `switch` para `+`, `-`, `*`, `/`.
 20. Analise um conjunto de condições e indique lacunas ou sobreposições.
 
-## Gabarito comentado
+!!! success "Gabarito comentado"
 
-1. Escolher caminhos diferentes com base em uma condição.
-2. Se `n>0`, exibir positivo.
-3. Se `n%2==0`, par; caso contrário, ímpar.
-4. Se idade >= limite legal adotado no exercício, permitir; especificar o limite.
-5. Se nota>=6, aprovada; senão, não aprovada.
-6. `x>=10 && x<=20`.
-7. `&&` exige ambas; `||` exige ao menos uma.
-8. Testar `>0`, `<0`, senão zero.
-9. Comparar A e B, incluindo igualdade.
-10. Comparar os três, tratando empates.
-11. Aplicar regra claramente definida e testar elegibilidade.
-12. `switch` com casos 1 a 7 e `default` inválido.
-13. Usou atribuição; para comparação, `x == 10`.
-14. A primeira condição verdadeira encerra a cadeia.
-15. Definir intervalos completos, sem sobreposição.
-16. A é verdadeiro e B falso resulta verdadeiro; nos demais casos, falso.
-17. `temCadastro && senhaValida`.
-18. Incluir os valores imediatamente abaixo, iguais e acima dos limites.
-19. Validar operador e impedir divisão por zero.
-20. Verificar que todos os valores possíveis são cobertos uma única vez, conforme a regra.
+    1. Escolher caminhos diferentes com base em uma condição.
+    2. Se `n>0`, exibir positivo.
+    3. Se `n%2==0`, par; caso contrário, ímpar.
+    4. Se idade >= limite legal adotado no exercício, permitir; especificar o limite.
+    5. Se nota>=6, aprovada; senão, não aprovada.
+    6. `x>=10 && x<=20`.
+    7. `&&` exige ambas; `||` exige ao menos uma.
+    8. Testar `>0`, `<0`, senão zero.
+    9. Comparar A e B, incluindo igualdade.
+    10. Comparar os três, tratando empates.
+    11. Aplicar regra claramente definida e testar elegibilidade.
+    12. `switch` com casos 1 a 7 e `default` inválido.
+    13. Usou atribuição; para comparação, `x == 10`.
+    14. A primeira condição verdadeira encerra a cadeia.
+    15. Definir intervalos completos, sem sobreposição.
+    16. A é verdadeiro e B falso resulta verdadeiro; nos demais casos, falso.
+    17. `temCadastro && senhaValida`.
+    18. Incluir os valores imediatamente abaixo, iguais e acima dos limites.
+    19. Validar operador e impedir divisão por zero.
+    20. Verificar que todos os valores possíveis são cobertos uma única vez, conforme a regra.
 
 ## Resumo
 

@@ -703,17 +703,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#objetivos" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Objetivos
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#111-bit-e-byte" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -780,43 +769,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#erros-comuns" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Erros comuns
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#pratica-guiada" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Prática guiada
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#exercicios" class="md-nav__link">
     <span class="md-ellipsis">
       
         Exercícios
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#gabarito-comentado" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Gabarito comentado
       
     </span>
   </a>
@@ -916,17 +872,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#objetivos" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Objetivos
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#111-bit-e-byte" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -993,43 +938,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#erros-comuns" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Erros comuns
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#pratica-guiada" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Prática guiada
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#exercicios" class="md-nav__link">
     <span class="md-ellipsis">
       
         Exercícios
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#gabarito-comentado" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Gabarito comentado
       
     </span>
   </a>
@@ -1067,7 +979,8 @@
 <h1 id="11-memoria-e-sistema-binario">11. Memória e Sistema Binário</h1>
 <h2 id="abertura">Abertura</h2>
 <p>Computadores representam informações por estados físicos que podem ser modelados como bits. Compreender binário, bytes, endereços e representação de dados ajuda a entender limites de tipos, ponteiros e erros de memória.</p>
-<h2 id="objetivos">Objetivos</h2>
+<div class="admonition abstract">
+<p class="admonition-title">Objetivos de aprendizagem</p>
 <ul>
 <li>converter números inteiros positivos entre decimal e binário;</li>
 <li>reconhecer bit, byte e sistema hexadecimal;</li>
@@ -1075,6 +988,7 @@
 <li>relacionar tipos de dados a representações e limites;</li>
 <li>reconhecer riscos de acesso indevido à memória.</li>
 </ul>
+</div>
 <h2 id="111-bit-e-byte">11.1 Bit e byte</h2>
 <ul>
 <li><strong>Bit:</strong> unidade binária, com dois estados representados como 0 e 1.</li>
@@ -1130,7 +1044,8 @@
 <p>O exemplo pressupõe que <code>p</code> aponta para <code>idade</code>, que continua existindo durante o uso.</p>
 <h2 id="116-limites-e-representacao">11.6 Limites e representação</h2>
 <p>Tipos inteiros têm limites definidos pela implementação e pelo tipo escolhido. Consulte <code>&lt;limits.h&gt;</code> e use tipos de tamanho apropriado quando a tarefa exigir. Não assuma que <code>int</code> possui sempre o mesmo tamanho em todas as plataformas.</p>
-<h2 id="erros-comuns">Erros comuns</h2>
+<div class="admonition warning">
+<p class="admonition-title">Erros comuns: atenção a estes pontos</p>
 <ul>
 <li>ler bits da direita para a esquerda ao converter binário para decimal;</li>
 <li>confundir bit com byte;</li>
@@ -1139,8 +1054,11 @@
 <li>acessar memória depois que o objeto deixou de existir;</li>
 <li>escrever fora dos limites de um vetor.</li>
 </ul>
-<h2 id="pratica-guiada">Prática guiada</h2>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Prática guiada</p>
 <p>Converta 18 e 27 para binário e confirme os resultados convertendo-os de volta para decimal. Depois, explique em suas palavras o que significa o ponteiro <code>p</code> no exemplo.</p>
+</div>
 <h2 id="exercicios">Exercícios</h2>
 <ol>
 <li>Defina bit.</li>
@@ -1164,7 +1082,8 @@
 <li>Explique por que o tamanho de um tipo deve ser verificado quando importa.</li>
 <li>Descreva duas práticas para reduzir erros de memória em C.</li>
 </ol>
-<h2 id="gabarito-comentado">Gabarito comentado</h2>
+<div class="admonition success">
+<p class="admonition-title">Gabarito comentado</p>
 <ol>
 <li>Unidade binária representada por 0 ou 1.</li>
 <li>Byte é uma unidade de armazenamento composta por bits; em plataformas comuns, 8 bits.</li>
@@ -1187,6 +1106,7 @@
 <li>Tipos e plataformas podem diferir em tamanho e limites.</li>
 <li>Inicializar ponteiros, validar índices, respeitar o tempo de vida dos objetos e usar avisos do compilador.</li>
 </ol>
+</div>
 <h2 id="resumo-e-referencias">Resumo e referências</h2>
 <p>Binário representa valores por potências de dois; memória armazena objetos e ponteiros permitem referenciar endereços válidos.</p>
 <p>Referências: ISO C; cppreference.com; documentação do compilador utilizado.</p>

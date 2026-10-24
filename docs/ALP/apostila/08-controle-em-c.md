@@ -4,12 +4,12 @@
 
 As estruturas condicionais e de repetição permitem que um programa C tome decisões e processe conjuntos de dados. Este capítulo conecta as ideias dos capítulos anteriores à sintaxe da linguagem.
 
-## Objetivos
+!!! abstract "Objetivos de aprendizagem"
 
-- implementar `if`, `else if`, `else` e `switch`;
-- usar `while`, `do-while` e `for`;
-- combinar condições e laços;
-- validar entradas e testar limites.
+    - implementar `if`, `else if`, `else` e `switch`;
+    - usar `while`, `do-while` e `for`;
+    - combinar condições e laços;
+    - validar entradas e testar limites.
 
 ## 8.1 Condicionais
 
@@ -87,18 +87,18 @@ int main(void) {
 
 Para `for (i=1; i<=3; i++)`, o corpo executa com `i` igual a 1, 2 e 3. Depois da atualização para 4, a condição é falsa e o laço termina.
 
-## Erros comuns
+!!! warning "Erros comuns: atenção a estes pontos"
 
-- esquecer atualização do contador;
-- colocar `;` após `if (...)`;
-- esquecer `break` em `switch`;
-- testar apenas valores típicos e não os limites;
-- aceitar entrada inválida sem verificar retorno de `scanf`;
-- construir condições impossíveis, como `x < 0 && x > 10`.
+    - esquecer atualização do contador;
+    - colocar `;` após `if (...)`;
+    - esquecer `break` em `switch`;
+    - testar apenas valores típicos e não os limites;
+    - aceitar entrada inválida sem verificar retorno de `scanf`;
+    - construir condições impossíveis, como `x < 0 && x > 10`.
 
-## Prática guiada
+!!! tip "Prática guiada"
 
-Implemente um menu de calculadora com opções de soma, subtração, multiplicação e divisão. O programa deve repetir o menu até a opção sair e impedir divisão por zero.
+    Implemente um menu de calculadora com opções de soma, subtração, multiplicação e divisão. O programa deve repetir o menu até a opção sair e impedir divisão por zero.
 
 ## Exercícios
 
@@ -123,28 +123,28 @@ Implemente um menu de calculadora com opções de soma, subtração, multiplica�
 19. Explique a diferença entre `while` e `do-while`.
 20. Desenvolva um programa que leia números até zero e some somente os positivos.
 
-## Gabarito comentado
+!!! success "Gabarito comentado"
 
-1. `if (n%2==0)` par; senão ímpar.
-2. Organizar faixas sem lacunas ou sobreposições.
-3. Um `case` para cada opção e `default`.
-4. `for (int i=1; i<=20; i++)`.
-5. Iniciar em 10 e decrementar até 0.
-6. Somar todos os inteiros do intervalo; validar N.
-7. Contar quando `i%5==0`.
-8. Incrementar contador quando valor<0.
-9. Definir claramente sentinela, excluir sentinela da média e tratar quantidade zero.
-10. Repetir enquanto opção não for sair.
-11. Condição nunca se torna falsa ou estado não é atualizado.
-12. Inserir `break` quando não houver intenção de continuar ao próximo caso.
-13. `nota >= 0 && nota <= 10`.
-14. Multiplicar o número por 1 a 10.
-15. Inicializar com o primeiro valor e comparar os demais.
-16. `if (i%2 != 0)`.
-17. N=1 é válido; 0 e negativos devem ser rejeitados se a regra exigir N>=1.
-18. Tratar operador inválido e divisor zero.
-19. `while` testa antes; `do-while` executa pelo menos uma vez.
-20. Somar apenas quando valor>0 e encerrar ao ler zero.
+    1. `if (n%2==0)` par; senão ímpar.
+    2. Organizar faixas sem lacunas ou sobreposições.
+    3. Um `case` para cada opção e `default`.
+    4. `for (int i=1; i<=20; i++)`.
+    5. Iniciar em 10 e decrementar até 0.
+    6. Somar todos os inteiros do intervalo; validar N.
+    7. Contar quando `i%5==0`.
+    8. Incrementar contador quando valor<0.
+    9. Definir claramente sentinela, excluir sentinela da média e tratar quantidade zero.
+    10. Repetir enquanto opção não for sair.
+    11. Condição nunca se torna falsa ou estado não é atualizado.
+    12. Inserir `break` quando não houver intenção de continuar ao próximo caso.
+    13. `nota >= 0 && nota <= 10`.
+    14. Multiplicar o número por 1 a 10.
+    15. Inicializar com o primeiro valor e comparar os demais.
+    16. `if (i%2 != 0)`.
+    17. N=1 é válido; 0 e negativos devem ser rejeitados se a regra exigir N>=1.
+    18. Tratar operador inválido e divisor zero.
+    19. `while` testa antes; `do-while` executa pelo menos uma vez.
+    20. Somar apenas quando valor>0 e encerrar ao ler zero.
 
 ## Resumo e referências
 

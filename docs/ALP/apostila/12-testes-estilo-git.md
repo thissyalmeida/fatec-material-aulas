@@ -4,13 +4,13 @@
 
 Um programa não está pronto apenas porque compila. É necessário verificar resultados, testar limites, organizar o código e manter um histórico das alterações para poder colaborar e recuperar versões anteriores.
 
-## Objetivos
+!!! abstract "Objetivos de aprendizagem"
 
-- distinguir testes de sintaxe, execução e lógica;
-- planejar casos de teste, incluindo limites e entradas inválidas;
-- depurar com método;
-- aplicar estilo consistente;
-- compreender repositório, commit, branch, push e pull.
+    - distinguir testes de sintaxe, execução e lógica;
+    - planejar casos de teste, incluindo limites e entradas inválidas;
+    - depurar com método;
+    - aplicar estilo consistente;
+    - compreender repositório, commit, branch, push e pull.
 
 ## 12.1 Estratégia de testes
 
@@ -84,19 +84,19 @@ flowchart LR
 
 Mensagens de commit devem descrever a mudança: `Corrige limite do vetor` é mais útil que `alterações`. Faça commits pequenos e coerentes. Não inclua senhas, chaves ou dados pessoais no repositório.
 
-## Erros comuns
+!!! warning "Erros comuns: atenção a estes pontos"
 
-- testar apenas um caso;
-- mudar o código sem repetir testes relacionados;
-- fazer commit sem revisar alterações;
-- acreditar que `git add` já cria um commit;
-- esquecer de enviar commits ao remoto;
-- incluir arquivos temporários ou segredos;
-- usar Git sem entender em qual branch está trabalhando.
+    - testar apenas um caso;
+    - mudar o código sem repetir testes relacionados;
+    - fazer commit sem revisar alterações;
+    - acreditar que `git add` já cria um commit;
+    - esquecer de enviar commits ao remoto;
+    - incluir arquivos temporários ou segredos;
+    - usar Git sem entender em qual branch está trabalhando.
 
-## Prática guiada
+!!! tip "Prática guiada"
 
-Escolha um programa anterior, crie um conjunto de pelo menos seis testes, registre resultados esperados e observados, corrija um defeito e execute novamente os testes. Em seguida, registre as alterações em um repositório Git.
+    Escolha um programa anterior, crie um conjunto de pelo menos seis testes, registre resultados esperados e observados, corrija um defeito e execute novamente os testes. Em seguida, registre as alterações em um repositório Git.
 
 ## Exercícios
 
@@ -121,28 +121,28 @@ Escolha um programa anterior, crie um conjunto de pelo menos seis testes, regist
 19. Compare resultado esperado e observado em um teste.
 20. Faça um plano de qualidade para um projeto simples em C com testes, estilo e Git.
 
-## Gabarito comentado
+!!! success "Gabarito comentado"
 
-1. Compilação verifica tradução/sintaxe e outros diagnósticos; testes verificam comportamento.
-2. Simulação manual das instruções e variáveis.
-3. Operação normal, limite, divisão por zero e operador inválido.
-4. Erros frequentemente aparecem nas fronteiras dos intervalos.
-5. Reexecutar testes após mudanças para detectar defeitos introduzidos.
-6. Nomes significativos, indentação, funções coesas, comentários úteis.
-7. Ex.: `Valida entrada de notas`.
-8. Estado dos arquivos e relação com o repositório.
-9. `add` prepara; `commit` grava no histórico local.
-10. Envia commits locais ao remoto.
-11. Busca e integra mudanças remotas conforme a configuração.
-12. Linha de desenvolvimento separada.
-13. O histórico pode preservar segredos mesmo após apagar o arquivo.
-14. Notas típicas, limites, valores inválidos e quantidade zero.
-15. Verificar que o programa rejeita a quantidade inválida sem dividir por zero.
-16. Reproduzir, isolar a etapa, inspecionar valores, formular hipótese e testar correção.
-17. Facilitam revisão, entendimento e reversão.
-18. `git status`, `git add`, `git commit`, `git push`.
-19. A diferença revela se o comportamento atende ao requisito.
-20. Definir requisitos, casos de teste, estilo, revisão, commits e repetição dos testes.
+    1. Compilação verifica tradução/sintaxe e outros diagnósticos; testes verificam comportamento.
+    2. Simulação manual das instruções e variáveis.
+    3. Operação normal, limite, divisão por zero e operador inválido.
+    4. Erros frequentemente aparecem nas fronteiras dos intervalos.
+    5. Reexecutar testes após mudanças para detectar defeitos introduzidos.
+    6. Nomes significativos, indentação, funções coesas, comentários úteis.
+    7. Ex.: `Valida entrada de notas`.
+    8. Estado dos arquivos e relação com o repositório.
+    9. `add` prepara; `commit` grava no histórico local.
+    10. Envia commits locais ao remoto.
+    11. Busca e integra mudanças remotas conforme a configuração.
+    12. Linha de desenvolvimento separada.
+    13. O histórico pode preservar segredos mesmo após apagar o arquivo.
+    14. Notas típicas, limites, valores inválidos e quantidade zero.
+    15. Verificar que o programa rejeita a quantidade inválida sem dividir por zero.
+    16. Reproduzir, isolar a etapa, inspecionar valores, formular hipótese e testar correção.
+    17. Facilitam revisão, entendimento e reversão.
+    18. `git status`, `git add`, `git commit`, `git push`.
+    19. A diferença revela se o comportamento atende ao requisito.
+    20. Definir requisitos, casos de teste, estilo, revisão, commits e repetição dos testes.
 
 ## Checklist final
 

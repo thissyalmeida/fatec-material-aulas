@@ -4,9 +4,9 @@
 
 Imagine um sistema acadêmico que precisa calcular a média de uma turma. Antes de escrever código, é necessário entender quais dados serão fornecidos, quais operações serão realizadas e qual resultado deverá ser apresentado. Essa é a base do pensamento computacional.
 
-## Objetivos de aprendizagem
+!!! abstract "Objetivos de aprendizagem"
 
-Ao final, você deverá conseguir explicar a diferença entre dado e informação, reconhecer componentes de um sistema computacional e decompor problemas em entrada, processamento e saída.
+    Ao final, você deverá conseguir explicar a diferença entre dado e informação, reconhecer componentes de um sistema computacional e decompor problemas em entrada, processamento e saída.
 
 ## 1.1 Dado, informação e conhecimento
 
@@ -48,15 +48,15 @@ Considere o cálculo do custo de uma compra:
 
 A decomposição reduz a complexidade e torna a solução mais fácil de testar.
 
-## Exemplo comentado
+!!! example "Exemplo comentado"
 
-Problema: calcular a distância percorrida por um veículo em velocidade constante.
+    Problema: calcular a distância percorrida por um veículo em velocidade constante.
 
-- Entrada: velocidade média e tempo.
-- Processamento: `distancia = velocidade * tempo`.
-- Saída: distância calculada.
+    - Entrada: velocidade média e tempo.
+    - Processamento: `distancia = velocidade * tempo`.
+    - Saída: distância calculada.
 
-Atenção às unidades: se a velocidade estiver em km/h e o tempo em horas, a distância será expressa em quilômetros.
+    Atenção às unidades: se a velocidade estiver em km/h e o tempo em horas, a distância será expressa em quilômetros.
 
 ## 1.6 Pensamento computacional
 
@@ -65,16 +65,16 @@ Atenção às unidades: se a velocidade estiver em km/h e o tempo em horas, a di
 - **Abstração:** concentrar-se no que é relevante.
 - **Algoritmos:** definir uma sequência finita e ordenada de passos.
 
-## Erros comuns
+!!! warning "Erros comuns: atenção a estes pontos"
 
-- começar a programar sem compreender o enunciado;
-- confundir armazenamento permanente com memória RAM;
-- acreditar que compilar significa que o algoritmo está correto;
-- ignorar unidades e restrições dos dados.
+    - começar a programar sem compreender o enunciado;
+    - confundir armazenamento permanente com memória RAM;
+    - acreditar que compilar significa que o algoritmo está correto;
+    - ignorar unidades e restrições dos dados.
 
-## Prática guiada
+!!! tip "Prática guiada"
 
-Planeje um programa que calcule o valor final de um produto após um desconto percentual. Não escreva código ainda. Identifique entrada, processamento, saída e duas situações que precisam ser testadas.
+    Planeje um programa que calcule o valor final de um produto após um desconto percentual. Não escreva código ainda. Identifique entrada, processamento, saída e duas situações que precisam ser testadas.
 
 ## Exercícios
 
@@ -104,28 +104,28 @@ Planeje um programa que calcule o valor final de um produto após um desconto pe
 19. Compare uma solução manual com uma solução automatizada para organizar uma fila.
 20. Escolha um problema real e descreva suas entradas, processamento e saídas.
 
-## Gabarito comentado — respostas esperadas
+!!! success "Gabarito comentado — respostas esperadas"
 
-1. Dado é um registro bruto; informação é dado contextualizado.
-2. Exemplos: teclado e monitor; sistema operacional e editor.
-3. Executar instruções e coordenar operações do sistema.
-4. RAM é volátil e temporária; armazenamento mantém arquivos.
-5. Sequência finita e ordenada de passos para resolver um problema.
-6. Porque a compilação não garante a lógica correta.
-7. Entrada: temperatura em Celsius; processamento: `F = C * 9/5 + 32`; saída: Fahrenheit.
-8. Entrada: base e altura; processamento: `area = base * altura`; saída: área.
-9. Entrada: teclado, leitor de cartão; saída: tela, impressora de recibo.
-10. Permite focar em livros, usuários, empréstimos e regras relevantes.
-11. Preço original e percentual de desconto.
-12. Respostas variam; deve haver uma regularidade identificável.
-13. Entrada: distância e litros; processamento: distância/litros; saída: km/L.
-14. Recebe notas, calcula resultados e organiza-os em uma apresentação compreensível.
-15. Erro lógico ou dados de entrada inadequados.
-16. Testar desconto zero, desconto usual, limite permitido e dados inválidos.
-17. Separar identificação da turma, registro de presença, cálculo e relatório.
-18. Impede ou identifica valores que violam as regras do problema.
-19. A automação pode acelerar o processo, mas precisa de regras claras e tratamento de exceções.
-20. Resposta pessoal avaliada pela coerência entre entradas, processamento e saídas.
+    1. Dado é um registro bruto; informação é dado contextualizado.
+    2. Exemplos: teclado e monitor; sistema operacional e editor.
+    3. Executar instruções e coordenar operações do sistema.
+    4. RAM é volátil e temporária; armazenamento mantém arquivos.
+    5. Sequência finita e ordenada de passos para resolver um problema.
+    6. Porque a compilação não garante a lógica correta.
+    7. Entrada: temperatura em Celsius; processamento: `F = C * 9/5 + 32`; saída: Fahrenheit.
+    8. Entrada: base e altura; processamento: `area = base * altura`; saída: área.
+    9. Entrada: teclado, leitor de cartão; saída: tela, impressora de recibo.
+    10. Permite focar em livros, usuários, empréstimos e regras relevantes.
+    11. Preço original e percentual de desconto.
+    12. Respostas variam; deve haver uma regularidade identificável.
+    13. Entrada: distância e litros; processamento: distância/litros; saída: km/L.
+    14. Recebe notas, calcula resultados e organiza-os em uma apresentação compreensível.
+    15. Erro lógico ou dados de entrada inadequados.
+    16. Testar desconto zero, desconto usual, limite permitido e dados inválidos.
+    17. Separar identificação da turma, registro de presença, cálculo e relatório.
+    18. Impede ou identifica valores que violam as regras do problema.
+    19. A automação pode acelerar o processo, mas precisa de regras claras e tratamento de exceções.
+    20. Resposta pessoal avaliada pela coerência entre entradas, processamento e saídas.
 
 ## Resumo visual
 

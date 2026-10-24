@@ -4,13 +4,13 @@
 
 Quando precisamos armazenar várias notas, preços ou medições, criar uma variável separada para cada valor não é prático. Vetores e matrizes organizam coleções de elementos do mesmo tipo.
 
-## Objetivos
+!!! abstract "Objetivos de aprendizagem"
 
-- declarar e acessar vetores;
-- percorrer elementos com laços;
-- calcular soma, média, mínimo, máximo e realizar busca;
-- compreender matrizes e laços aninhados;
-- evitar acessos fora dos limites.
+    - declarar e acessar vetores;
+    - percorrer elementos com laços;
+    - calcular soma, média, mínimo, máximo e realizar busca;
+    - compreender matrizes e laços aninhados;
+    - evitar acessos fora dos limites.
 
 ## 10.1 Vetores em C
 
@@ -80,18 +80,18 @@ linha 0      1         2         3
 linha 1      4         5         6
 ```
 
-## Erros comuns
+!!! warning "Erros comuns: atenção a estes pontos"
 
-- começar o índice em 1 em C;
-- usar `i <= tamanho` em vez de `i < tamanho`;
-- esquecer de inicializar soma;
-- acessar posição sem valor inicializado;
-- confundir número de linhas com número de colunas;
-- calcular média dividindo por zero elementos.
+    - começar o índice em 1 em C;
+    - usar `i <= tamanho` em vez de `i < tamanho`;
+    - esquecer de inicializar soma;
+    - acessar posição sem valor inicializado;
+    - confundir número de linhas com número de colunas;
+    - calcular média dividindo por zero elementos.
 
-## Prática guiada
+!!! tip "Prática guiada"
 
-Leia cinco notas, armazene-as em um vetor, calcule a média e conte quantas notas estão acima da média. Teste notas iguais e notas distintas.
+    Leia cinco notas, armazene-as em um vetor, calcule a média e conte quantas notas estão acima da média. Teste notas iguais e notas distintas.
 
 ## Exercícios
 
@@ -116,28 +116,28 @@ Leia cinco notas, armazene-as em um vetor, calcule a média e conte quantas nota
 19. Planeje uma análise de notas com média, maior, menor e aprovados.
 20. Crie um programa que registre vendas diárias e calcule total e média.
 
-## Gabarito comentado
+!!! success "Gabarito comentado"
 
-1. Coleção indexada de elementos do mesmo tipo.
-2. O primeiro elemento ocupa o índice 0 por convenção da linguagem.
-3. `int dados[10];`.
-4. Usar laço de leitura e outro de exibição ou um único laço.
-5. Inicializar soma em zero e acumular todos os elementos.
-6. Somar seis notas e dividir por `6.0`.
-7. Inicializar ambos com o primeiro elemento e percorrer o restante.
-8. Incrementar contador quando elemento<0.
-9. Percorrer até encontrar; indicar ausência se terminar sem correspondência.
-10. Percorrer de `N-1` até `0`.
-11. Acesso fora dos limites tem comportamento indefinido.
-12. Somar elementos correspondentes em cada posição.
-13. Dois laços, um para linhas e outro para colunas.
-14. Reiniciar soma para cada linha.
-15. Somar `matriz[i][i]`.
-16. Verificar `matriz[i][j] % 2 == 0`.
-17. Comparar elementos nas mesmas posições e definir regra para tamanhos.
-18. Índices válidos são 0 a 9; usar `i<10`.
-19. Armazenar notas, calcular estatísticas e classificar segundo regra definida.
-20. Acumular vendas e dividir pela quantidade de dias registrada.
+    1. Coleção indexada de elementos do mesmo tipo.
+    2. O primeiro elemento ocupa o índice 0 por convenção da linguagem.
+    3. `int dados[10];`.
+    4. Usar laço de leitura e outro de exibição ou um único laço.
+    5. Inicializar soma em zero e acumular todos os elementos.
+    6. Somar seis notas e dividir por `6.0`.
+    7. Inicializar ambos com o primeiro elemento e percorrer o restante.
+    8. Incrementar contador quando elemento<0.
+    9. Percorrer até encontrar; indicar ausência se terminar sem correspondência.
+    10. Percorrer de `N-1` até `0`.
+    11. Acesso fora dos limites tem comportamento indefinido.
+    12. Somar elementos correspondentes em cada posição.
+    13. Dois laços, um para linhas e outro para colunas.
+    14. Reiniciar soma para cada linha.
+    15. Somar `matriz[i][i]`.
+    16. Verificar `matriz[i][j] % 2 == 0`.
+    17. Comparar elementos nas mesmas posições e definir regra para tamanhos.
+    18. Índices válidos são 0 a 9; usar `i<10`.
+    19. Armazenar notas, calcular estatísticas e classificar segundo regra definida.
+    20. Acumular vendas e dividir pela quantidade de dias registrada.
 
 ## Resumo e referências
 

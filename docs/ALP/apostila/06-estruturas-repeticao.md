@@ -4,12 +4,12 @@
 
 Repetir uma operação manualmente em código torna o programa longo e propenso a erros. Laços permitem executar um bloco enquanto uma condição for satisfeita ou por uma quantidade controlada de vezes.
 
-## Objetivos
+!!! abstract "Objetivos de aprendizagem"
 
-- distinguir repetição controlada por condição e por contador;
-- utilizar `while`, `do-while` e `for`;
-- trabalhar com contadores e acumuladores;
-- evitar laços infinitos e erros de limite.
+    - distinguir repetição controlada por condição e por contador;
+    - utilizar `while`, `do-while` e `for`;
+    - trabalhar com contadores e acumuladores;
+    - evitar laços infinitos e erros de limite.
 
 ## 6.1 `while`
 
@@ -76,22 +76,22 @@ flowchart TD
     F --> G([Fim])
 ```
 
-## Exemplo resolvido: média de N notas
+!!! example "Exemplo resolvido: média de N notas"
 
-Leia a quantidade `n`, valide que seja positiva, acumule as notas em um laço e divida a soma por `n`. A média só pode ser calculada depois de todas as notas serem lidas.
+    Leia a quantidade `n`, valide que seja positiva, acumule as notas em um laço e divida a soma por `n`. A média só pode ser calculada depois de todas as notas serem lidas.
 
-## Erros comuns
+!!! warning "Erros comuns: atenção a estes pontos"
 
-- esquecer de atualizar o contador;
-- usar `<` quando o enunciado exige incluir o limite;
-- iniciar o acumulador com valor diferente de zero sem justificativa;
-- dividir por zero quando `n` não é válido;
-- alterar a variável de controle em mais de um lugar;
-- confundir `i++` com `soma++`.
+    - esquecer de atualizar o contador;
+    - usar `<` quando o enunciado exige incluir o limite;
+    - iniciar o acumulador com valor diferente de zero sem justificativa;
+    - dividir por zero quando `n` não é válido;
+    - alterar a variável de controle em mais de um lugar;
+    - confundir `i++` com `soma++`.
 
-## Prática guiada
+!!! tip "Prática guiada"
 
-Leia números até que o usuário informe zero e calcule a soma dos números diferentes de zero. Defina se o zero final faz parte da soma (não faz) e teste entrada inicial zero.
+    Leia números até que o usuário informe zero e calcule a soma dos números diferentes de zero. Defina se o zero final faz parte da soma (não faz) e teste entrada inicial zero.
 
 ## Exercícios
 
@@ -116,28 +116,28 @@ Leia números até que o usuário informe zero e calcule a soma dos números dif
 19. Crie um menu que continue até a opção sair.
 20. Desenvolva um algoritmo que calcule a soma de números pares até N.
 
-## Gabarito comentado
+!!! success "Gabarito comentado"
 
-1. `while` testa antes; `do-while` testa depois e executa pelo menos uma vez.
-2. Quando o número de iterações ou a atualização é conhecida.
-3. `for (int i=1; i<=10; i++)`.
-4. `for (int i=2; i<=20; i+=2)`.
-5. 5050.
-6. 120.
-7. Inicializar contador em zero e incrementá-lo quando valor>0.
-8. Somar as cinco notas e dividir por cinco.
-9. Incrementar contador apenas para valores diferentes de zero.
-10. Multiplicar o número por 1 a 10.
-11. Soma final 6.
-12. A condição permanece verdadeira porque o estado não avança para encerrá-la.
-13. Atualizar o contador em cada iteração.
-14. Iniciar em 10 e decrementar até 0, inclusive.
-15. Validar `n>0`, somar n valores e dividir por n.
-16. Inicializar maior com o primeiro valor lido e comparar os demais.
-17. Existem 33 múltiplos positivos de 3 até 100.
-18. Ambos podem funcionar; `for` costuma tornar o controle mais compacto.
-19. Repetir leitura e processamento enquanto opção != sair.
-20. Somar `i` quando `i%2==0`, percorrendo o intervalo definido.
+    1. `while` testa antes; `do-while` testa depois e executa pelo menos uma vez.
+    2. Quando o número de iterações ou a atualização é conhecida.
+    3. `for (int i=1; i<=10; i++)`.
+    4. `for (int i=2; i<=20; i+=2)`.
+    5. 5050.
+    6. 120.
+    7. Inicializar contador em zero e incrementá-lo quando valor>0.
+    8. Somar as cinco notas e dividir por cinco.
+    9. Incrementar contador apenas para valores diferentes de zero.
+    10. Multiplicar o número por 1 a 10.
+    11. Soma final 6.
+    12. A condição permanece verdadeira porque o estado não avança para encerrá-la.
+    13. Atualizar o contador em cada iteração.
+    14. Iniciar em 10 e decrementar até 0, inclusive.
+    15. Validar `n>0`, somar n valores e dividir por n.
+    16. Inicializar maior com o primeiro valor lido e comparar os demais.
+    17. Existem 33 múltiplos positivos de 3 até 100.
+    18. Ambos podem funcionar; `for` costuma tornar o controle mais compacto.
+    19. Repetir leitura e processamento enquanto opção != sair.
+    20. Somar `i` quando `i%2==0`, percorrendo o intervalo definido.
 
 ## Resumo
 

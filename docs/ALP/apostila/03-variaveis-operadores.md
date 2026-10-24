@@ -4,12 +4,12 @@
 
 Programas precisam guardar dados, transformar valores e comparar resultados. Variáveis e operadores formam a base dessas operações.
 
-## Objetivos
+!!! abstract "Objetivos de aprendizagem"
 
-- declarar variáveis e atribuir valores;
-- reconhecer tipos de dados básicos;
-- usar operadores aritméticos, relacionais e lógicos;
-- compreender precedência e conversões simples.
+    - declarar variáveis e atribuir valores;
+    - reconhecer tipos de dados básicos;
+    - usar operadores aritméticos, relacionais e lógicos;
+    - compreender precedência e conversões simples.
 
 ## 3.1 Variáveis e constantes
 
@@ -56,22 +56,22 @@ Em C, `=` atribui um valor e `==` compara valores. Essa distinção é essencial
 
 Parênteses tornam a intenção explícita. Em geral, multiplicação e divisão são avaliadas antes de adição e subtração. Não dependa de suposições quando uma expressão puder ser escrita com parênteses.
 
-## Exemplo comentado
+!!! example "Exemplo comentado"
 
-```c
-#include <stdio.h>
+    ```c
+    #include <stdio.h>
 
-int main(void) {
-    int quantidade = 3;
-    float preco = 12.50f;
-    float total = quantidade * preco;
+    int main(void) {
+        int quantidade = 3;
+        float preco = 12.50f;
+        float total = quantidade * preco;
 
-    printf("Total: R$ %.2f\n", total);
-    return 0;
-}
-```
+        printf("Total: R$ %.2f\n", total);
+        return 0;
+    }
+    ```
 
-O programa multiplica a quantidade pelo preço unitário e exibe duas casas decimais.
+    O programa multiplica a quantidade pelo preço unitário e exibe duas casas decimais.
 
 ## Teste de mesa
 
@@ -83,17 +83,17 @@ O programa multiplica a quantidade pelo preço unitário e exibe duas casas deci
 | `7 / 2` (inteiros) | 3 |
 | `7.0 / 2` | 3.5 |
 
-## Erros comuns
+!!! warning "Erros comuns: atenção a estes pontos"
 
-- usar `=` no lugar de `==` em uma comparação;
-- dividir inteiros esperando resultado decimal;
-- usar variável sem inicializá-la;
-- atribuir valor incompatível com o tipo;
-- esquecer que `%` em C é aplicado a inteiros.
+    - usar `=` no lugar de `==` em uma comparação;
+    - dividir inteiros esperando resultado decimal;
+    - usar variável sem inicializá-la;
+    - atribuir valor incompatível com o tipo;
+    - esquecer que `%` em C é aplicado a inteiros.
 
-## Prática guiada
+!!! tip "Prática guiada"
 
-Leia o preço e a quantidade de um produto, calcule o total e um desconto de 10%. Exiba o total original, o desconto e o valor final. Defina nomes de variáveis que expressem o significado.
+    Leia o preço e a quantidade de um produto, calcule o total e um desconto de 10%. Exiba o total original, o desconto e o valor final. Defina nomes de variáveis que expressem o significado.
 
 ## Exercícios
 
@@ -118,28 +118,28 @@ Leia o preço e a quantidade de um produto, calcule o total e um desconto de 10%
 19. Escreva expressões para área e perímetro de um retângulo.
 20. Monte uma expressão para calcular o preço final após desconto percentual.
 
-## Gabarito comentado
+!!! success "Gabarito comentado"
 
-1. Nome associado a um valor armazenado.
-2. A variável pode mudar; a constante deve permanecer fixa.
-3. `int`, `float`/`double`, `char`, `int`.
-4. 17.
-5. 32.
-6. 2.
-7. `=` atribui; `==` compara.
-8. `(n1+n2+n3)/3.0`.
-9. `2*x + 5`.
-10. “A idade é maior ou igual a 18”.
-11. Ambas as condições precisam ser verdadeiras.
-12. `nota < 0 || nota > 10`.
-13. 2.
-14. Usar ao menos um operando real, como `10.0 / 4`.
-15. `const double TAXA = 0.08;`.
-16. R$ 29,00.
-17. `numero >= 1 && numero <= 100`.
-18. Atribuição foi usada no lugar da comparação; use `==` quando a intenção for comparar.
-19. `area=base*altura`; `perimetro=2*(base+altura)`.
-20. `final = preco - preco*desconto/100`.
+    1. Nome associado a um valor armazenado.
+    2. A variável pode mudar; a constante deve permanecer fixa.
+    3. `int`, `float`/`double`, `char`, `int`.
+    4. 17.
+    5. 32.
+    6. 2.
+    7. `=` atribui; `==` compara.
+    8. `(n1+n2+n3)/3.0`.
+    9. `2*x + 5`.
+    10. “A idade é maior ou igual a 18”.
+    11. Ambas as condições precisam ser verdadeiras.
+    12. `nota < 0 || nota > 10`.
+    13. 2.
+    14. Usar ao menos um operando real, como `10.0 / 4`.
+    15. `const double TAXA = 0.08;`.
+    16. R$ 29,00.
+    17. `numero >= 1 && numero <= 100`.
+    18. Atribuição foi usada no lugar da comparação; use `==` quando a intenção for comparar.
+    19. `area=base*altura`; `perimetro=2*(base+altura)`.
+    20. `final = preco - preco*desconto/100`.
 
 ## Resumo e glossário
 

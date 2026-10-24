@@ -4,13 +4,13 @@
 
 À medida que o programa cresce, concentrar toda a lógica em `main()` dificulta leitura, testes e manutenção. Funções permitem dividir o problema em unidades com responsabilidades claras.
 
-## Objetivos
+!!! abstract "Objetivos de aprendizagem"
 
-- declarar, definir e chamar funções;
-- diferenciar parâmetros e argumentos;
-- utilizar retorno e `void`;
-- compreender escopo e protótipos;
-- passar valores e, em situações específicas, endereços.
+    - declarar, definir e chamar funções;
+    - diferenciar parâmetros e argumentos;
+    - utilizar retorno e `void`;
+    - compreender escopo e protótipos;
+    - passar valores e, em situações específicas, endereços.
 
 ## 9.1 Conceitos
 
@@ -76,18 +76,18 @@ void duplicar(int *valor) {
 
 Uso: `duplicar(&numero);`. `&numero` fornece o endereço; `*valor` acessa o objeto apontado. O ponteiro deve ser válido ou `NULL`.
 
-## Erros comuns
+!!! warning "Erros comuns: atenção a estes pontos"
 
-- chamar função sem declaração visível;
-- declarar retorno diferente do valor retornado;
-- esquecer `return` em função que deve produzir resultado;
-- confundir parâmetro e argumento;
-- depender de variável global sem necessidade;
-- desreferenciar ponteiro inválido.
+    - chamar função sem declaração visível;
+    - declarar retorno diferente do valor retornado;
+    - esquecer `return` em função que deve produzir resultado;
+    - confundir parâmetro e argumento;
+    - depender de variável global sem necessidade;
+    - desreferenciar ponteiro inválido.
 
-## Prática guiada
+!!! tip "Prática guiada"
 
-Crie funções para somar, subtrair, multiplicar e dividir dois números. A função de divisão deve sinalizar divisor zero por uma estratégia explícita, como retornar um indicador de sucesso e preencher um parâmetro de saída.
+    Crie funções para somar, subtrair, multiplicar e dividir dois números. A função de divisão deve sinalizar divisor zero por uma estratégia explícita, como retornar um indicador de sucesso e preencher um parâmetro de saída.
 
 ## Exercícios
 
@@ -112,28 +112,28 @@ Crie funções para somar, subtrair, multiplicar e dividir dois números. A fun�
 19. Projete funções para um conversor de unidades.
 20. Teste uma função com valores comuns, limites e casos inválidos.
 
-## Gabarito comentado
+!!! success "Gabarito comentado"
 
-1. Dividir um sistema em componentes menores e coesos.
-2. Protótipo anuncia a interface; definição implementa o corpo.
-3. Parâmetro é declarado; argumento é fornecido na chamada.
-4. `int quadrado(int x) { return x*x; }`.
-5. Comparar os valores e retornar o maior.
-6. `void mensagem(void) { printf("Ola\n"); }`.
-7. `return c * 9.0/5.0 + 32.0;`.
-8. Encerra a função e, quando aplicável, devolve valor.
-9. Existe dentro do escopo em que foi declarada.
-10. Entradas e resultados podem ser testados isoladamente.
-11. Somar notas e dividir por `3.0`.
-12. Retornar `x%2==0`.
-13. `double calcular(double a, double b);`.
-14. Algum caminho não devolve o tipo esperado.
-15. Separar entrada, cálculo e apresentação, por exemplo.
-16. A função recebe uma cópia do valor.
-17. `&` obtém endereço; `*` declara/dereferencia ponteiro conforme o contexto.
-18. Retornar verdadeiro se `nota>=0 && nota<=10`.
-19. Separar conversão, validação e exibição.
-20. Usar testes normais, limites e valores que violem as regras.
+    1. Dividir um sistema em componentes menores e coesos.
+    2. Protótipo anuncia a interface; definição implementa o corpo.
+    3. Parâmetro é declarado; argumento é fornecido na chamada.
+    4. `int quadrado(int x) { return x*x; }`.
+    5. Comparar os valores e retornar o maior.
+    6. `void mensagem(void) { printf("Ola\n"); }`.
+    7. `return c * 9.0/5.0 + 32.0;`.
+    8. Encerra a função e, quando aplicável, devolve valor.
+    9. Existe dentro do escopo em que foi declarada.
+    10. Entradas e resultados podem ser testados isoladamente.
+    11. Somar notas e dividir por `3.0`.
+    12. Retornar `x%2==0`.
+    13. `double calcular(double a, double b);`.
+    14. Algum caminho não devolve o tipo esperado.
+    15. Separar entrada, cálculo e apresentação, por exemplo.
+    16. A função recebe uma cópia do valor.
+    17. `&` obtém endereço; `*` declara/dereferencia ponteiro conforme o contexto.
+    18. Retornar verdadeiro se `nota>=0 && nota<=10`.
+    19. Separar conversão, validação e exibição.
+    20. Usar testes normais, limites e valores que violem as regras.
 
 ## Resumo e referências
 

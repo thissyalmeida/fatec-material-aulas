@@ -4,12 +4,12 @@
 
 Um algoritmo é um plano de solução. Ele deve ser claro o suficiente para que outra pessoa consiga seguir seus passos e verificar o resultado.
 
-## Objetivos
+!!! abstract "Objetivos de aprendizagem"
 
-- definir algoritmo e suas propriedades;
-- representar soluções em linguagem natural, pseudocódigo e fluxograma;
-- identificar entrada, processamento e saída;
-- simular um algoritmo com teste de mesa.
+    - definir algoritmo e suas propriedades;
+    - representar soluções em linguagem natural, pseudocódigo e fluxograma;
+    - identificar entrada, processamento e saída;
+    - simular um algoritmo com teste de mesa.
 
 ## 2.1 Propriedades desejáveis
 
@@ -65,31 +65,31 @@ flowchart TD
 5. Teste casos comuns e limites.
 6. Só então traduza para uma linguagem.
 
-## Exemplo resolvido
+!!! example "Exemplo resolvido"
 
-Problema: calcular o total de uma compra de três produtos com preços informados.
+    Problema: calcular o total de uma compra de três produtos com preços informados.
 
-```text
-Início
-  Leia p1, p2, p3
-  total <- p1 + p2 + p3
-  Escreva total
-Fim
-```
+    ```text
+    Início
+      Leia p1, p2, p3
+      total <- p1 + p2 + p3
+      Escreva total
+    Fim
+    ```
 
-Teste: para 10, 12 e 8, o total esperado é 30.
+    Teste: para 10, 12 e 8, o total esperado é 30.
 
-## Erros comuns
+!!! warning "Erros comuns: atenção a estes pontos"
 
-- omitir uma entrada necessária;
-- usar uma variável antes de atribuir valor;
-- inverter a ordem das operações;
-- esquecer de mostrar o resultado;
-- desenhar setas sem indicar o fluxo claramente.
+    - omitir uma entrada necessária;
+    - usar uma variável antes de atribuir valor;
+    - inverter a ordem das operações;
+    - esquecer de mostrar o resultado;
+    - desenhar setas sem indicar o fluxo claramente.
 
-## Prática guiada
+!!! tip "Prática guiada"
 
-Desenvolva o algoritmo para converter minutos em horas e minutos restantes. Por exemplo, 135 minutos devem resultar em 2 horas e 15 minutos.
+    Desenvolva o algoritmo para converter minutos em horas e minutos restantes. Por exemplo, 135 minutos devem resultar em 2 horas e 15 minutos.
 
 ## Exercícios
 
@@ -114,28 +114,28 @@ Desenvolva o algoritmo para converter minutos em horas e minutos restantes. Por 
 19. Compare duas representações para o mesmo algoritmo.
 20. Escolha um problema cotidiano e entregue pseudocódigo e fluxograma.
 
-## Gabarito comentado
+!!! success "Gabarito comentado"
 
-1. Sequência finita de passos para resolver uma tarefa.
-2. Clareza, precisão, término e resultado coerente.
-3. Pseudocódigo é uma representação estruturada; código segue uma linguagem formal.
-4. Início → ler nome → exibir nome → fim.
-5. Ler A e B; soma ← A+B; exibir soma.
-6. Ler base e altura; área ← base*altura/2; exibir área.
-7. Entrada: valor e taxa; processamento: conversão; saída: valor convertido.
-8. `z = 4*3+2 = 14`.
-9. Ler três notas, somar, dividir por três, exibir.
-10. Ler km; metros ← km*1000; exibir metros.
-11. `perimetro <- 2 * (base + altura)`.
-12. Para mostrar a ordem e a direção de execução.
-13. Ler idade; próxima ← idade+1; exibir próxima.
-14. Inicialmente a=10; b=6; depois a=12.
-15. Solicitar credenciais, validar conforme as regras, informar resultado; em sistemas reais, seguir práticas seguras.
-16. total ← preço + preço*taxa/100.
-17. “Alguns” não define quantidade nem formato de saída.
-18. Valores iguais, valores distintos, limites e entradas inválidas.
-19. Resposta deve comparar clareza, concisão e facilidade de execução.
-20. Avaliar coerência e completude.
+    1. Sequência finita de passos para resolver uma tarefa.
+    2. Clareza, precisão, término e resultado coerente.
+    3. Pseudocódigo é uma representação estruturada; código segue uma linguagem formal.
+    4. Início → ler nome → exibir nome → fim.
+    5. Ler A e B; soma ← A+B; exibir soma.
+    6. Ler base e altura; área ← base*altura/2; exibir área.
+    7. Entrada: valor e taxa; processamento: conversão; saída: valor convertido.
+    8. `z = 4*3+2 = 14`.
+    9. Ler três notas, somar, dividir por três, exibir.
+    10. Ler km; metros ← km*1000; exibir metros.
+    11. `perimetro <- 2 * (base + altura)`.
+    12. Para mostrar a ordem e a direção de execução.
+    13. Ler idade; próxima ← idade+1; exibir próxima.
+    14. Inicialmente a=10; b=6; depois a=12.
+    15. Solicitar credenciais, validar conforme as regras, informar resultado; em sistemas reais, seguir práticas seguras.
+    16. total ← preço + preço*taxa/100.
+    17. “Alguns” não define quantidade nem formato de saída.
+    18. Valores iguais, valores distintos, limites e entradas inválidas.
+    19. Resposta deve comparar clareza, concisão e facilidade de execução.
+    20. Avaliar coerência e completude.
 
 ## Resumo
 

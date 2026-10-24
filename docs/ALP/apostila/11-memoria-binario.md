@@ -4,13 +4,13 @@
 
 Computadores representam informações por estados físicos que podem ser modelados como bits. Compreender binário, bytes, endereços e representação de dados ajuda a entender limites de tipos, ponteiros e erros de memória.
 
-## Objetivos
+!!! abstract "Objetivos de aprendizagem"
 
-- converter números inteiros positivos entre decimal e binário;
-- reconhecer bit, byte e sistema hexadecimal;
-- compreender memória e endereçamento em nível introdutório;
-- relacionar tipos de dados a representações e limites;
-- reconhecer riscos de acesso indevido à memória.
+    - converter números inteiros positivos entre decimal e binário;
+    - reconhecer bit, byte e sistema hexadecimal;
+    - compreender memória e endereçamento em nível introdutório;
+    - relacionar tipos de dados a representações e limites;
+    - reconhecer riscos de acesso indevido à memória.
 
 ## 11.1 Bit e byte
 
@@ -59,18 +59,18 @@ O exemplo pressupõe que `p` aponta para `idade`, que continua existindo durante
 
 Tipos inteiros têm limites definidos pela implementação e pelo tipo escolhido. Consulte `<limits.h>` e use tipos de tamanho apropriado quando a tarefa exigir. Não assuma que `int` possui sempre o mesmo tamanho em todas as plataformas.
 
-## Erros comuns
+!!! warning "Erros comuns: atenção a estes pontos"
 
-- ler bits da direita para a esquerda ao converter binário para decimal;
-- confundir bit com byte;
-- presumir tamanho fixo de todos os tipos;
-- usar ponteiro não inicializado;
-- acessar memória depois que o objeto deixou de existir;
-- escrever fora dos limites de um vetor.
+    - ler bits da direita para a esquerda ao converter binário para decimal;
+    - confundir bit com byte;
+    - presumir tamanho fixo de todos os tipos;
+    - usar ponteiro não inicializado;
+    - acessar memória depois que o objeto deixou de existir;
+    - escrever fora dos limites de um vetor.
 
-## Prática guiada
+!!! tip "Prática guiada"
 
-Converta 18 e 27 para binário e confirme os resultados convertendo-os de volta para decimal. Depois, explique em suas palavras o que significa o ponteiro `p` no exemplo.
+    Converta 18 e 27 para binário e confirme os resultados convertendo-os de volta para decimal. Depois, explique em suas palavras o que significa o ponteiro `p` no exemplo.
 
 ## Exercícios
 
@@ -95,28 +95,28 @@ Converta 18 e 27 para binário e confirme os resultados convertendo-os de volta 
 19. Explique por que o tamanho de um tipo deve ser verificado quando importa.
 20. Descreva duas práticas para reduzir erros de memória em C.
 
-## Gabarito comentado
+!!! success "Gabarito comentado"
 
-1. Unidade binária representada por 0 ou 1.
-2. Byte é uma unidade de armazenamento composta por bits; em plataformas comuns, 8 bits.
-3. `101₂`.
-4. `1100₂`.
-5. `10011₂`.
-6. 10.
-7. 15.
-8. 16.
-9. É compacto e cada dígito corresponde a quatro bits.
-10. 16 bits.
-11. `1×8 + 0×4 + 1×2 + 1×1 = 11`.
-12. Identificador/localizador de um objeto na memória durante a execução.
-13. Obtém o endereço de `idade`.
-14. Acessa o objeto apontado por `p`.
-15. O endereço pode ser inválido; o comportamento é indefinido.
-16. Pode corromper dados e causar comportamento indefinido.
-17. Depende da plataforma; consultar `INT_MIN` e `INT_MAX` em `<limits.h>`.
-18. `11111₂`, `1F₁₆`.
-19. Tipos e plataformas podem diferir em tamanho e limites.
-20. Inicializar ponteiros, validar índices, respeitar o tempo de vida dos objetos e usar avisos do compilador.
+    1. Unidade binária representada por 0 ou 1.
+    2. Byte é uma unidade de armazenamento composta por bits; em plataformas comuns, 8 bits.
+    3. `101₂`.
+    4. `1100₂`.
+    5. `10011₂`.
+    6. 10.
+    7. 15.
+    8. 16.
+    9. É compacto e cada dígito corresponde a quatro bits.
+    10. 16 bits.
+    11. `1×8 + 0×4 + 1×2 + 1×1 = 11`.
+    12. Identificador/localizador de um objeto na memória durante a execução.
+    13. Obtém o endereço de `idade`.
+    14. Acessa o objeto apontado por `p`.
+    15. O endereço pode ser inválido; o comportamento é indefinido.
+    16. Pode corromper dados e causar comportamento indefinido.
+    17. Depende da plataforma; consultar `INT_MIN` e `INT_MAX` em `<limits.h>`.
+    18. `11111₂`, `1F₁₆`.
+    19. Tipos e plataformas podem diferir em tamanho e limites.
+    20. Inicializar ponteiros, validar índices, respeitar o tempo de vida dos objetos e usar avisos do compilador.
 
 ## Resumo e referências
 

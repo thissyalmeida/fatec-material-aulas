@@ -591,17 +591,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#objetivos" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Objetivos
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#71-estrutura-minima" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -668,43 +657,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#erros-comuns" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Erros comuns
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#pratica-guiada" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Prática guiada
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#exercicios" class="md-nav__link">
     <span class="md-ellipsis">
       
         Exercícios
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#gabarito-comentado" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Gabarito comentado
       
     </span>
   </a>
@@ -916,17 +872,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#objetivos" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Objetivos
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#71-estrutura-minima" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -993,43 +938,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#erros-comuns" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Erros comuns
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#pratica-guiada" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Prática guiada
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#exercicios" class="md-nav__link">
     <span class="md-ellipsis">
       
         Exercícios
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#gabarito-comentado" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Gabarito comentado
       
     </span>
   </a>
@@ -1067,13 +979,15 @@
 <h1 id="7-introducao-a-linguagem-c">7. Introdução à Linguagem C</h1>
 <h2 id="abertura">Abertura</h2>
 <p>Até aqui, algoritmos foram descritos independentemente de uma linguagem. Agora, vamos implementar essas ideias em C, uma linguagem compilada, estruturada e amplamente utilizada em sistemas e ensino de programação.</p>
-<h2 id="objetivos">Objetivos</h2>
+<div class="admonition abstract">
+<p class="admonition-title">Objetivos de aprendizagem</p>
 <ul>
 <li>reconhecer a estrutura de um programa C;</li>
 <li>compilar e executar um arquivo-fonte;</li>
 <li>usar <code>main</code>, bibliotecas, instruções e comentários;</li>
 <li>compreender erros de compilação e mensagens básicas.</li>
 </ul>
+</div>
 <h2 id="71-estrutura-minima">7.1 Estrutura mínima</h2>
 <div class="language-c highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdio.h&gt;</span>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
@@ -1151,7 +1065,8 @@
 </tbody>
 </table>
 <p>A tabela é introdutória: conversões, arrays de caracteres e leitura de linhas exigem cuidados adicionais.</p>
-<h2 id="erros-comuns">Erros comuns</h2>
+<div class="admonition warning">
+<p class="admonition-title">Erros comuns: atenção a estes pontos</p>
 <ul>
 <li>esquecer <code>;</code>;</li>
 <li>omitir <code>#include &lt;stdio.h&gt;</code> ao usar funções de entrada/saída;</li>
@@ -1160,8 +1075,11 @@
 <li>tentar executar código sem compilar;</li>
 <li>ignorar avisos do compilador.</li>
 </ul>
-<h2 id="pratica-guiada">Prática guiada</h2>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Prática guiada</p>
 <p>Crie um programa que exiba seu nome, curso e uma mensagem. Depois, acrescente duas variáveis inteiras e mostre sua soma.</p>
+</div>
 <h2 id="exercicios">Exercícios</h2>
 <ol>
 <li>Qual é a função de <code>main</code>?</li>
@@ -1185,7 +1103,8 @@
 <li>Diferencie código-fonte e executável.</li>
 <li>Documente os passos para compilar e executar seu primeiro programa.</li>
 </ol>
-<h2 id="gabarito-comentado">Gabarito comentado</h2>
+<div class="admonition success">
+<p class="admonition-title">Gabarito comentado</p>
 <ol>
 <li>Ponto de entrada convencional da execução.</li>
 <li>Inclui declarações da biblioteca padrão de entrada/saída.</li>
@@ -1208,6 +1127,7 @@
 <li>Fonte é texto C; executável é artefato gerado pelo processo de compilação/linkedição.</li>
 <li>Salvar, compilar, corrigir mensagens e executar.</li>
 </ol>
+</div>
 <h2 id="resumo-e-referencias">Resumo e referências</h2>
 <p><strong>Fonte C → compilador → executável → execução e testes.</strong></p>
 <p>Referências: ISO C (padrões C11/C17); cppreference.com; documentação do compilador utilizado.</p>
