@@ -665,7 +665,8 @@ Tente resolver as questões sem consultar o gabarito. Nas questões de planejame
 
 <div class="gabarito-comentado" markdown="1">
 
-**Gabarito comentado**
+Gabraauhauhuahuahuhauhauhuahauhauhuahuah
+auhauhauhauahu
 
 
 </div>
