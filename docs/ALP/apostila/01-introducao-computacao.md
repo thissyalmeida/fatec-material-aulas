@@ -657,7 +657,7 @@ Tente resolver as questões sem consultar o gabarito. Nas questões de planejame
 
 <div class="questao-com-gabarito" markdown="1">
 
-**1. Explique, com suas palavras, a diferença entre dado, informação e conhecimento.**
+1. Explique, com suas palavras, a diferença entre dado, informação e conhecimento.
 
 <button class="botao-resposta"
         type="button"
@@ -669,20 +669,165 @@ Tente resolver as questões sem consultar o gabarito. Nas questões de planejame
 
 **Gabarito comentado**
 
-Dado é um valor isolado; informação é um dado contextualizado; conhecimento é a compreensão construída a partir da interpretação das informações.
+Dado é um registro; informação é um dado interpretado em contexto; conhecimento é a compreensão que permite interpretar a informação e orientar decisões.
 
 </div>
 </div>
-
+<div class="questao-com-gabarito" markdown="1">
 2. Uma tabela contém os valores `18`, `22` e `20`, sem indicar o que representam. Por que não é possível interpretá-los com segurança apenas com esses valores?
+<button class="botao-resposta"
+        type="button"
+        aria-expanded="false">
+    Ver Resposta
+</button>
+
+<div class="gabarito-comentado" hidden markdown="1">
+
+**Gabarito comentado**
+
+Falta contexto. Os números podem representar idades, notas, temperaturas ou outra medida. É necessário conhecer o significado dos valores e suas unidades.
+
+</div>
+</div>
+<div class="questao-com-gabarito" markdown="1">
 3. Cite três exemplos de hardware e três exemplos de software.
+<button class="botao-resposta"
+        type="button"
+        aria-expanded="false">
+    Ver Resposta
+</button>
+
+<div class="gabarito-comentado" hidden markdown="1">
+
+**Gabarito comentado**
+
+**3.** Exemplos de hardware: teclado, CPU e monitor. Exemplos de software: sistema operacional, navegador e editor de código. Outras respostas são válidas se estiverem classificadas corretamente.
+
+</div>
+</div>
+<div class="questao-com-gabarito" markdown="1">
 4. Explique a relação entre hardware e software.
+<button class="botao-resposta"
+        type="button"
+        aria-expanded="false">
+    Ver Resposta
+</button>
+
+<div class="gabarito-comentado" hidden markdown="1">
+
+**Gabarito comentado**
+
+**4.** Hardware são os componentes físicos e software são os programas e instruções que utilizam esses componentes para realizar tarefas.
+
+
+</div>
+</div>
+<div class="questao-com-gabarito" markdown="1">
 5. Qual é a função geral da CPU?
+<button class="botao-resposta"
+        type="button"
+        aria-expanded="false">
+    Ver Resposta
+</button>
+
+<div class="gabarito-comentado" hidden markdown="1">
+
+**Gabarito comentado**
+
+**5.** A CPU executa instruções e coordena operações do sistema computacional.
+
+
+
+</div>
+</div>
+<div class="questao-com-gabarito" markdown="1">
 6. Diferencie memória RAM e disco rigido.
+<button class="botao-resposta"
+        type="button"
+        aria-expanded="false">
+    Ver Resposta
+</button>
+
+<div class="gabarito-comentado" hidden markdown="1">
+
+**Gabarito comentado**
+
+**6.** A RAM mantém temporariamente dados e instruções em uso e é normalmente volátil. O armazenamento, como SSD ou HD, preserva arquivos mesmo quando o equipamento está desligado.
+
+
+
+</div>
+</div>
+<div class="questao-com-gabarito" markdown="1">
 7. Dê dois exemplos de dispositivos de entrada e dois de saída.
+<button class="botao-resposta"
+        type="button"
+        aria-expanded="false">
+    Ver Resposta
+</button>
+
+<div class="gabarito-comentado" hidden markdown="1">
+
+**Gabarito comentado**
+
+**7.** Entrada: teclado e câmera. Saída: monitor e impressora. Há outros exemplos válidos.
+
+
+
+</div>
+</div>
+<div class="questao-com-gabarito" markdown="1">
 8. O que é código-fonte?
+<button class="botao-resposta"
+        type="button"
+        aria-expanded="false">
+    Ver Resposta
+</button>
+
+<div class="gabarito-comentado" hidden markdown="1">
+
+**Gabarito comentado**
+
+**8.** É o texto de um programa escrito em uma linguagem de programação, seguindo suas regras.
+
+
+
+</div>
+</div>
+<div class="questao-com-gabarito" markdown="1">
 9. Qual é a função de um compilador em um ambiente de programação em C?
+<button class="botao-resposta"
+        type="button"
+        aria-expanded="false">
+    Ver Resposta
+</button>
+
+<div class="gabarito-comentado" hidden markdown="1">
+
+**Gabarito comentado**
+
+**9.** O compilador traduz o código-fonte para uma representação usada nas etapas de construção do programa. Em ambientes comuns de C, podem existir etapas de geração de arquivos-objeto e linkedição antes da execução.
+
+
+
+</div>
+</div>
+<div class="questao-com-gabarito" markdown="1">
 10. Explique por que um programa pode compilar e ainda assim estar incorreto.
+<button class="botao-resposta"
+        type="button"
+        aria-expanded="false">
+    Ver Resposta
+</button>
+
+<div class="gabarito-comentado" hidden markdown="1">
+
+**Gabarito comentado**
+
+**10.** A compilação não garante que a lógica esteja correta. Uma expressão válida pode implementar a fórmula errada ou não atender às regras do problema.
+
+</div>
+</div>
 
 ### Nível 2 — Aplicação
 
@@ -713,28 +858,6 @@ Dado é um valor isolado; informação é um dado contextualizado; conhecimento 
 
 !!! tip "Antes de consultar"
     Para questões abertas, compare sua resposta com os critérios apresentados. Uma formulação diferente pode estar correta se mantiver o conceito e justificar adequadamente a solução.
-
-### Nível 1 — Compreensão
-
-**1.** Dado é um registro; informação é um dado interpretado em contexto; conhecimento é a compreensão que permite interpretar a informação e orientar decisões.
-
-**2.** Falta contexto. Os números podem representar idades, notas, temperaturas ou outra medida. É necessário conhecer o significado dos valores e suas unidades.
-
-**3.** Exemplos de hardware: teclado, CPU e monitor. Exemplos de software: sistema operacional, navegador e editor de código. Outras respostas são válidas se estiverem classificadas corretamente.
-
-**4.** Hardware são os componentes físicos e software são os programas e instruções que utilizam esses componentes para realizar tarefas.
-
-**5.** A CPU executa instruções e coordena operações do sistema computacional.
-
-**6.** A RAM mantém temporariamente dados e instruções em uso e é normalmente volátil. O armazenamento, como SSD ou HD, preserva arquivos mesmo quando o equipamento está desligado.
-
-**7.** Entrada: teclado e câmera. Saída: monitor e impressora. Há outros exemplos válidos.
-
-**8.** É o texto de um programa escrito em uma linguagem de programação, seguindo suas regras.
-
-**9.** O compilador traduz o código-fonte para uma representação usada nas etapas de construção do programa. Em ambientes comuns de C, podem existir etapas de geração de arquivos-objeto e linkedição antes da execução.
-
-**10.** A compilação não garante que a lógica esteja correta. Uma expressão válida pode implementar a fórmula errada ou não atender às regras do problema.
 
 ### Nível 2 — Aplicação
 
