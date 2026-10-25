@@ -56,7 +56,8 @@ extra_javascript:
   - assets/javascripts/mermaid-init.js
   - assets/javascripts/conversor-binario.js
   - assets/javascripts/laboratorio-binario.js
-  - assets/javascripts/laboratorios-alp.js  
+  - assets/javascripts/laboratorios-alp.js
+  - assets/javascripts/laboratorios-capitulo-01.js  
 
 nav:
 - Apostila de ALP:
