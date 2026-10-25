@@ -56,4 +56,5 @@ function converterBinario() {
     }
 
     calculo.textContent = parcelas.join(" + ") + " = " + soma;
+window.converterBinario = converterBinario;
 }
