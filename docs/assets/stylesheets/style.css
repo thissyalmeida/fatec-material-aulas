@@ -4,6 +4,9 @@
   --alp-ink: #202124;
   --alp-muted: #6b7280;
   --alp-soft: rgba(239, 85, 82, .08);
+  --md-primary-fg-color: #B31010;
+  --md-primary-fg-color--light: #D32F2F;
+  --md-primary-fg-color--dark: #7F0000;
 }
 [data-md-color-scheme="default"] {
   --alp-panel: #ffffff;

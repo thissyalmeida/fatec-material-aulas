@@ -4,22 +4,21 @@ use_directory_urls: false
 
 theme:
   name: material
-  language: pt-BR
-
   palette:
+    # Modo Claro
     - scheme: default
-      primary: #B20000
-      accent: indigo
+      primary: custom
+      accent: red
       toggle:
-        icon: material/weather-night
-        name: Modo escuro
-
+        icon: material/brightness-7
+        name: Mudar para modo escuro
+    # Modo Escuro
     - scheme: slate
-      primary: #B20000
-      accent: indigo
+      primary: custom
+      accent: red
       toggle:
-        icon: material/weather-sunny
-        name: Modo claro
+        icon: material/brightness-4
+        name: Mudar para modo claro
 
   features:
     - navigation.tabs
