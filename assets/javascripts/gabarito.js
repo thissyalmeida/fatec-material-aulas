@@ -3,7 +3,10 @@ document.addEventListener("DOMContentLoaded", function () {
     botao.addEventListener("click", function () {
       const gabarito = botao.nextElementSibling;
 
-      if (!gabarito) return;
+      if (!gabarito ||
+          !gabarito.classList.contains("gabarito-comentado")) {
+        return;
+      }
 
       const visivel = gabarito.classList.toggle("visivel");
 
@@ -11,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
         ? "Ocultar Resposta"
         : "Ver Resposta";
 
-      botao.setAttribute("aria-expanded", visivel);
+      botao.setAttribute("aria-expanded", String(visivel));
     });
   });
 });
