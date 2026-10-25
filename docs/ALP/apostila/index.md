@@ -1,5 +1,3 @@
-# Apostila de Algoritmos e Lógica de Programação
-
 <div class="alp-hero" markdown>
 
 <span class="alp-eyebrow">FATEC · Desenvolvimento de Software Multiplataforma</span>
@@ -12,6 +10,7 @@ Aprenda a pensar algoritmicamente, representar soluções e desenvolver programa
 [Explorar os capítulos](#percurso-de-aprendizagem){ .md-button }
 
 </div>
+
 
 <div class="grid cards alp-feature-grid" markdown>
 
