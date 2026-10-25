@@ -16,7 +16,9 @@ document.addEventListener("DOMContentLoaded", async function () {
     });
 
     try {
-        await mermaid.run();
+        await mermaid.run({
+    querySelector: ".mermaid"
+});
     } catch (erro) {
         console.error("Erro ao renderizar diagramas Mermaid:", erro);
     }

@@ -1,12 +1,11 @@
-
 document.addEventListener("DOMContentLoaded", function () {
     document.querySelectorAll(".botao-resposta").forEach(function (botao) {
         botao.addEventListener("click", function () {
-            const gabarito = botao.nextElementSibling;
+            const container = botao.closest(".questao-com-gabarito");
+            const gabarito = container?.querySelector(".gabarito-comentado");
 
-            if (!gabarito ||
-                !gabarito.classList.contains("gabarito-comentado")) {
-                console.error("Bloco de gabarito não encontrado.");
+            if (!gabarito) {
+                console.error("Gabarito não encontrado no contêiner da questão.");
                 return;
             }
 

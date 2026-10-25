@@ -655,20 +655,21 @@ Tente resolver as questões sem consultar o gabarito. Nas questões de planejame
 
 ### Nível 1 — Compreensão
 
-1. Explique, com suas palavras, a diferença entre dado, informação e conhecimento.
+<div class="questao-com-gabarito" markdown="1">
 
-<button class="botao-resposta"
-        type="button"
-        aria-expanded="false">
-  Ver Resposta
+**1. Explique, com suas palavras, a diferença entre dado, informação e conhecimento.**
+
+<button class="botao-resposta" type="button" aria-expanded="false">
+Ver Resposta
 </button>
 
 <div class="gabarito-comentado" hidden markdown="1">
 
 **Gabarito comentado**
 
-A explicação da resposta fica aqui.
+Dado é um valor isolado; informação é um dado contextualizado; conhecimento é a compreensão construída a partir da interpretação das informações.
 
+</div>
 </div>
 
 2. Uma tabela contém os valores `18`, `22` e `20`, sem indicar o que representam. Por que não é possível interpretá-los com segurança apenas com esses valores?
