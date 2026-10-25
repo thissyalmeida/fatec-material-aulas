@@ -4,20 +4,7 @@ Tente resolver as questões sem consultar o gabarito. Nas questões de planejame
 
 <table border="1">
 <tr><td>Questão</td><td>Enunciado</td><td>Gabarito</td></tr>
-<tr><td>1</td><td>1. Explique, com suas palavras, a diferença entre dado, informação e conhecimento.</td><td><button class="botao-resposta"
-        type="button"
-        aria-expanded="false">
-    Ver Resposta
-</button>
-
-<div class="gabarito-comentado" hidden markdown="1">
-
-**Gabarito comentado**
-
-Dado é um registro; informação é um dado interpretado em contexto; conhecimento é a compreensão que permite interpretar a informação e orientar decisões.
-
-</div></td></tr>
-</table>
+<tr><td>1</td><td> Explique, com suas palavras, a diferença entre dado, informação e conhecimento.</td><td><button class="botao-resposta" type="button" aria-expanded="false"> Ver Resposta </button></td></tr></table>
 
 ### Nível 1 — Compreensão
 
