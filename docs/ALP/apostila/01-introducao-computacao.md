@@ -175,147 +175,22 @@ flowchart TD
       <p class="feedback-atividade" aria-live="polite"></p>
     </div>
 
-## 1.3 Componentes básicos
-
-- **CPU:** executa instruções e coordena operações.
-- **Memória RAM:** mantém temporariamente dados e instruções em uso.
-- **Armazenamento:** preserva arquivos mesmo após desligar o equipamento.
-- **Dispositivos de entrada:** teclado, mouse, câmera e sensores.
-- **Dispositivos de saída:** monitor, impressora e alto-falantes.
-
-## 1.4 Linguagens e compilação
-
-Uma linguagem de programação permite expressar instruções com regras definidas. Em C, o código-fonte é traduzido por um compilador para um formato executável ou objeto, conforme o ambiente. Erros de sintaxe são detectados durante a compilação; erros de lógica podem permitir a compilação e ainda produzir resultados incorretos.
-
-## 1.5 Decomposição de problemas
-
-Considere o cálculo do custo de uma compra:
-
-1. Entrada: quantidade de unidades e preço unitário.
-2. Processamento: `total = quantidade * preco`.
-3. Saída: valor total.
-
-A decomposição reduz a complexidade e torna a solução mais fácil de testar.
-
-!!! example "Exemplo comentado"
-
-    Problema: calcular a distância percorrida por um veículo em velocidade constante.
-
-    - Entrada: velocidade média e tempo.
-    - Processamento: `distancia = velocidade * tempo`.
-    - Saída: distância calculada.
-
-    Atenção às unidades: se a velocidade estiver em km/h e o tempo em horas, a distância será expressa em quilômetros.
-
-## 1.6 Pensamento computacional
-
-- **Decomposição:** dividir o problema em partes menores.
-- **Reconhecimento de padrões:** identificar semelhanças entre problemas.
-- **Abstração:** concentrar-se no que é relevante.
-- **Algoritmos:** definir uma sequência finita e ordenada de passos.
-
-!!! warning "Erros comuns: atenção a estes pontos"
-
-    - começar a programar sem compreender o enunciado;
-    - confundir armazenamento permanente com memória RAM;
-    - acreditar que compilar significa que o algoritmo está correto;
-    - ignorar unidades e restrições dos dados.
-
-!!! tip "Prática guiada"
-
-    Planeje um programa que calcule o valor final de um produto após um desconto percentual. Não escreva código ainda. Identifique entrada, processamento, saída e duas situações que precisam ser testadas.
-
-## Exercícios
-
-### Nível 1 — Compreensão
-1. Diferencie dado e informação.
-2. Dê dois exemplos de hardware e dois de software.
-3. Qual é a função geral da CPU?
-4. Explique a diferença entre RAM e armazenamento.
-5. O que é um algoritmo?
-6. Por que um programa compilado ainda pode estar errado?
-
-### Nível 2 — Aplicação
-7. Identifique entrada, processamento e saída de um conversor de Celsius para Fahrenheit.
-8. Faça a decomposição de um sistema que calcula a área de um retângulo.
-9. Cite os dispositivos de entrada e saída de um caixa eletrônico.
-10. Explique como a abstração ajuda a desenvolver um sistema de biblioteca.
-11. Para calcular o preço com desconto, quais dados são necessários?
-12. Apresente um exemplo de padrão reconhecível em tarefas cotidianas.
-
-### Nível 3 — Análise e projeto
-13. Planeje um algoritmo para calcular o consumo médio de combustível.
-14. Descreva como um sistema acadêmico transforma notas em um boletim.
-15. Um programa mostra uma média incorreta, mas compila. Que tipo de problema pode existir?
-16. Proponha testes para um cálculo de desconto.
-17. Decomponha o problema de registrar presença de estudantes.
-18. Explique por que a validação de dados faz parte de uma solução confiável.
-19. Compare uma solução manual com uma solução automatizada para organizar uma fila.
-20. Escolha um problema real e descreva suas entradas, processamento e saídas.
-
-!!! success "Gabarito comentado — respostas esperadas"
-
-    1. Dado é um registro bruto; informação é dado contextualizado.
-    2. Exemplos: teclado e monitor; sistema operacional e editor.
-    3. Executar instruções e coordenar operações do sistema.
-    4. RAM é volátil e temporária; armazenamento mantém arquivos.
-    5. Sequência finita e ordenada de passos para resolver um problema.
-    6. Porque a compilação não garante a lógica correta.
-    7. Entrada: temperatura em Celsius; processamento: `F = C * 9/5 + 32`; saída: Fahrenheit.
-    8. Entrada: base e altura; processamento: `area = base * altura`; saída: área.
-    9. Entrada: teclado, leitor de cartão; saída: tela, impressora de recibo.
-    10. Permite focar em livros, usuários, empréstimos e regras relevantes.
-    11. Preço original e percentual de desconto.
-    12. Respostas variam; deve haver uma regularidade identificável.
-    13. Entrada: distância e litros; processamento: distância/litros; saída: km/L.
-    14. Recebe notas, calcula resultados e organiza-os em uma apresentação compreensível.
-    15. Erro lógico ou dados de entrada inadequados.
-    16. Testar desconto zero, desconto usual, limite permitido e dados inválidos.
-    17. Separar identificação da turma, registro de presença, cálculo e relatório.
-    18. Impede ou identifica valores que violam as regras do problema.
-    19. A automação pode acelerar o processo, mas precisa de regras claras e tratamento de exceções.
-    20. Resposta pessoal avaliada pela coerência entre entradas, processamento e saídas.
-
-## Resumo visual
-
-**Problema → decomposição → algoritmo → implementação → testes → melhoria**
-
-## Glossário
-
-- **Compilador:** traduz código-fonte.
-- **CPU:** unidade central de processamento.
-- **RAM:** memória principal volátil.
-- **Abstração:** seleção dos detalhes relevantes.
-- **Decomposição:** divisão de um problema em partes menores.
-
-## Referências para estudo
-
-- Cormen, T. H. et al. *Introduction to Algorithms*. MIT Press.
-- Brookshear, J. G.; Brylow, D. *Computer Science: An Overview*. Pearson.
-- Documentação e materiais introdutórios de computação indicados pela disciplina.
-
-
-## 1.3 Componentes básicos de um sistema computacional
+## 1.5 Componentes básicos de um sistema computacional
 
 Para entender como um programa funciona, é útil conhecer alguns componentes do computador.
 
 ### CPU — Unidade Central de Processamento
 
-A **CPU** executa instruções e coordena operações do sistema. Ela participa de cálculos, comparações e movimentação de dados entre componentes.
-
-Uma analogia possível é a de uma cozinha: a CPU executa as etapas de uma receita, mas depende dos ingredientes, dos utensílios e das instruções disponíveis. A analogia ajuda a visualizar a relação entre componentes, mas não descreve literalmente o funcionamento eletrônico do processador.
+A **CPU** executa instruções e coordena operações do sistema. Ela participa de cálculos, comparações e movimentação de dados entre componentes. Uma analogia possível é a de uma cozinha: a CPU executa as etapas de uma receita, mas depende dos ingredientes, dos utensílios e das instruções disponíveis. A analogia ajuda a visualizar a relação entre componentes, mas não descreve literalmente o funcionamento eletrônico do processador.
 
 ### Memória RAM
 
-A **memória RAM** guarda temporariamente dados e instruções que estão sendo utilizados. Ela permite acesso rápido às informações necessárias aos programas em execução.
-
+A **memória RAM** guarda temporariamente dados e instruções que estão sendo utilizados. Ela permite acesso rápido às informações necessárias aos programas em execução. 
 A RAM é volátil: normalmente, seu conteúdo não é preservado quando o equipamento é desligado.
 
-### Armazenamento
+### Disco rígido
 
-O **armazenamento** — por exemplo, um SSD ou HD — mantém arquivos e programas mesmo quando o equipamento está desligado, desde que não haja falha ou exclusão dos dados.
-
-RAM e armazenamento cumprem funções diferentes. Ter mais armazenamento significa poder guardar mais dados; ter mais RAM pode ajudar a manter mais programas e dados de trabalho disponíveis ao mesmo tempo.
+Um SSD ou HD — mantém arquivos e programas mesmo quando o equipamento está desligado, desde que não haja falha ou exclusão dos dados. RAM e disco rígido cumprem funções diferentes. Ter mais armazenamento significa poder guardar mais dados; ter mais RAM pode ajudar a manter mais programas e dados de trabalho disponíveis ao mesmo tempo.
 
 ### Dispositivos de entrada
 
@@ -399,7 +274,7 @@ Esse é um modelo simplificado para fins didáticos. Na prática, o sistema oper
 !!! tip "Dica de estudo"
     Se você confundir RAM e armazenamento, lembre-se desta pergunta: “O que está sendo utilizado agora?” remete frequentemente à RAM; “O que precisa continuar guardado depois que eu desligar?” remete ao armazenamento.
 
-## 1.4 Linguagens de programação e compilação
+## 1.6 Linguagens de programação e compilação
 
 Um computador executa instruções representadas de acordo com sua arquitetura. As linguagens de programação permitem que pessoas expressem essas instruções por meio de regras e estruturas definidas.
 
@@ -489,11 +364,9 @@ Para calcular a área de um retângulo, a operação correta é `largura * altur
   <p class="feedback-atividade" aria-live="polite"></p>
 </div>
 
-## 1.5 Decomposição de problemas
+## 1.7 Decomposição de problemas
 
-Um problema complexo pode ficar mais fácil de resolver quando é dividido em etapas menores. Essa estratégia é chamada de **decomposição**.
-
-Uma forma inicial de organizar muitos problemas computacionais é identificar:
+Um problema complexo pode ficar mais fácil de resolver quando é dividido em etapas menores. Essa estratégia é chamada de **decomposição**. Uma forma inicial de organizar muitos problemas computacionais é identificar:
 
 - **Entrada:** quais dados serão fornecidos?
 - **Processamento:** quais cálculos ou regras serão aplicados?
@@ -612,6 +485,25 @@ Uma solução deve ser testada com mais de um conjunto de dados. Para o cálculo
 | R$ 50,00 | 100% | R$ 0,00 |
 
 Também é importante testar entradas inválidas, como preço negativo ou desconto maior que 100%, quando as regras do sistema não permitirem esses valores.
+
+## 1.6 Pensamento computacional
+
+- **Decomposição:** dividir o problema em partes menores.
+- **Reconhecimento de padrões:** identificar semelhanças entre problemas.
+- **Abstração:** concentrar-se no que é relevante.
+- **Algoritmos:** definir uma sequência finita e ordenada de passos.
+
+!!! warning "Erros comuns: atenção a estes pontos"
+
+    - começar a programar sem compreender o enunciado;
+    - confundir armazenamento permanente com memória RAM;
+    - acreditar que compilar significa que o algoritmo está correto;
+    - ignorar unidades e restrições dos dados.
+
+!!! tip "Prática guiada"
+
+    Planeje um programa que calcule o valor final de um produto após um desconto percentual. Não escreva código ainda. Identifique entrada, processamento, saída e duas situações que precisam ser testadas.
+
 
 ## 1.6 Pensamento computacional
 
@@ -768,7 +660,7 @@ Tente resolver as questões sem consultar o gabarito. Nas questões de planejame
 3. Cite três exemplos de hardware e três exemplos de software.
 4. Explique a relação entre hardware e software.
 5. Qual é a função geral da CPU?
-6. Diferencie memória RAM e armazenamento.
+6. Diferencie memória RAM e disco rigido.
 7. Dê dois exemplos de dispositivos de entrada e dois de saída.
 8. O que é código-fonte?
 9. Qual é a função de um compilador em um ambiente de programação em C?
@@ -880,21 +772,6 @@ flowchart TD
     H -- Sim --> J[Documentar e melhorar]
 ```
 
-### Checklist de aprendizagem
-
-Antes de avançar, confira se você consegue:
-
-- [ ] explicar a diferença entre dado, informação e conhecimento;
-- [ ] dar exemplos de hardware e software;
-- [ ] diferenciar CPU, RAM e armazenamento;
-- [ ] explicar a função geral de um compilador;
-- [ ] diferenciar erro de sintaxe e erro de lógica;
-- [ ] identificar entrada, processamento e saída em um problema;
-- [ ] explicar os quatro pilares do pensamento computacional;
-- [ ] planejar testes com resultados esperados.
-
-Se algum item ainda estiver difícil, retorne à seção correspondente e refaça a atividade antes de continuar.
-
 ## Glossário
 
 - **Abstração:** seleção dos detalhes relevantes para um problema.
@@ -911,13 +788,3 @@ Se algum item ainda estiver difícil, retorne à seção correspondente e refaç
 - **Memória RAM:** memória volátil utilizada para manter temporariamente dados e instruções em uso.
 - **Reconhecimento de padrões:** identificação de semelhanças e regularidades.
 - **Software:** programas, instruções e dados utilizados para realizar tarefas.
-
-## Referências para estudo
-
-- BROOKSHEAR, J. Glenn; BRYLOW, Dennis. *Computer Science: An Overview*. Pearson.
-- CORMEN, Thomas H. et al. *Introduction to Algorithms*. MIT Press.
-- KENYON, T. *The Computer Handbook*. Academic Press. Consulte a edição disponível na biblioteca.
-- Materiais e orientações de aula da disciplina de Algoritmos e Lógica de Programação.
-
-!!! note "Sobre as referências"
-    Verifique a edição e os dados bibliográficos das obras consultadas antes de elaborar uma lista formal de referências acadêmicas. Esta seção oferece indicações iniciais de estudo, não substitui a conferência bibliográfica.
