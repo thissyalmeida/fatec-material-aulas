@@ -63,8 +63,7 @@ Cada posição representa uma potência de 2:
       >
      <button
   type="button"
-  id="btn-converter-binario"
-  onclick="window.converterBinario()">
+  id="btn-converter-binario">
   Converter
 </button>
     </div>
