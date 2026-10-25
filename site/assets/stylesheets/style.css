@@ -1,6 +1,6 @@
 /* Componentes pedagógicos da apostila de ALP */
 :root {
-  --alp-red: #EF5552;
+  --alp-red: #B20000;
   --alp-ink: #202124;
   --alp-muted: #6b7280;
   --alp-soft: rgba(239, 85, 82, .08);
@@ -45,7 +45,7 @@
   padding: clamp(1.5rem, 5vw, 3.5rem);
   overflow: hidden;
   border: 1px solid #3a3a3a;
-  border-top: 5px solid #EF5552;
+  border-top: 5px solid #B20000;
   border-radius: 1rem;
   background: #202020;
   color: #ffffff;
@@ -68,7 +68,7 @@
 .alp-hero .alp-eyebrow {
   display: inline-block;
   margin-bottom: 0.8rem;
-  color: #EF5552;
+  color: #B20000
   font-size: 0.75rem;
   font-weight: 800;
   letter-spacing: 0.11em;
@@ -97,14 +97,14 @@
 }
 
 .alp-hero .md-button--primary {
-  background: #EF5552;
-  border-color: #EF5552;
+  background: #B20000
+  border-color: #B20000;
   color: #ffffff;
 }
 
 .alp-hero .md-button:not(.md-button--primary) {
-  border-color: #EF5552;
-  color: #EF5552;
+  border-color: #B20000;
+  color: #B20000;
 }
 
 .alp-hero .md-button:hover {
