@@ -231,3 +231,9 @@
 .botao-resposta:hover {
   opacity: 0.9;
 }
+
+.questoes{
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100pc;
+}
