@@ -2,7 +2,7 @@
 
 Tente resolver as questões sem consultar o gabarito. Nas questões de planejamento, explique seu raciocínio: o objetivo não é apenas chegar a uma resposta, mas aprender a justificar as escolhas.
 
-<div class="questoes">
+<div class="grid-container">
     <div>Questão</div>
     <div>Enunciado</div>
     <div>Gabarito</div>

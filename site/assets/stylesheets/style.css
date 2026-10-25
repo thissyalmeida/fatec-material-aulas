@@ -232,8 +232,9 @@
   opacity: 0.9;
 }
 
-.questoes{
-    display: grid;
-    grid-template-columns: 100px 100px 100px;
-    grid-template-rows: 100px 100pc;
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(25, auto); /* ou defina a altura desejada, ex: 50px */
+  gap: 10px; /* espaçamento opcional entre os itens */
 }
