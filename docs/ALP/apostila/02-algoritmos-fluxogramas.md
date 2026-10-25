@@ -39,11 +39,13 @@ Escreva media
 
 Símbolos usuais: oval para início/fim, paralelogramo para entrada/saída, retângulo para processamento, losango para decisão e setas para direção do fluxo.
 
+```mermaid
 flowchart TD
     A([Início]) --> B[/Ler nota1 e nota2/]
     B --> C["media = (nota1 + nota2) / 2"]
     C --> D[/Exibir media/]
     D --> E([Fim])
+```
 
 ## 2.5 Teste de mesa
 
