@@ -32,7 +32,7 @@ Aprenda a pensar algoritmicamente, representar soluções e desenvolver programa
 </div>
 
 !!! tip "Uma sugestão para estudar melhor"
-    Antes de olhar o gabarito, tente resolver a atividade e registre seu raciocínio. Depois, compare sua solução com a resposta esperada e explique por que ela funciona. Em programação, soluções diferentes podem estar corretas quando respeitam o problema e seus requisitos.
+    Leia cada conceito, acompanhe os exemplos sem pular as etapas e tente responder às perguntas antes de abrir as respostas. As atividades interativas servem para praticar: errar faz parte do processo. Leia o feedback e tente novamente.
 
 ## O que você vai aprender
 

@@ -1,26 +1,5 @@
 # 1. Introdução à Computação
 
-A Computação é uma área do conhecimento dedicada ao estudo e ao desenvolvimento de métodos, técnicas e tecnologias para a coleta, o processamento, o armazenamento e a análise de dados. Seu propósito é transformar dados em informações úteis, contribuindo para a produção de conhecimento e para a resolução de problemas em diferentes contextos da sociedade. Para isso, a Computação envolve a integração de três elementos fundamentais: hardware, que corresponde aos componentes físicos dos dispositivos computacionais; software, que compreende os programas e as instruções responsáveis por orientar o funcionamento desses dispositivos; e dados, que representam os elementos utilizados para produzir informações relevantes.
-
-Entre as diversas atividades da Computação, destaca-se o desenvolvimento de sistemas, que consiste na criação de soluções informatizadas para atender às necessidades específicas de pessoas, empresas e outras organizações. Essa atividade envolve diferentes etapas, como a identificação de um problema, o levantamento de requisitos, o planejamento da solução, a elaboração de algoritmos, a implementação de programas, a realização de testes e a manutenção do sistema ao longo de seu ciclo de vida.
-
-O principal objetivo do desenvolvimento de sistemas é construir soluções eficientes, confiáveis e funcionais, capazes de automatizar tarefas, otimizar processos, reduzir a ocorrência de erros e facilitar a tomada de decisões. Para alcançar esses resultados, é necessário compreender o problema a ser resolvido e definir procedimentos lógicos que orientem o processamento dos dados e a obtenção dos resultados esperados.
-
-Um exemplo prático é o desenvolvimento de um sistema para calcular a média das notas dos estudantes de uma turma. Nesse caso, o sistema recebe as notas como dados de entrada, realiza os cálculos necessários por meio de instruções previamente definidas e apresenta as médias como dados de saída. Se o sistema também permitir o cadastro de estudantes, o armazenamento das notas e a consulta aos resultados, ele contribuirá para automatizar e organizar o processo de acompanhamento do desempenho acadêmico.
-
-Esse exemplo demonstra como os conceitos fundamentais da Computação se relacionam com a programação e o desenvolvimento de sistemas. A partir da compreensão dos problemas e da definição de uma sequência lógica de instruções, é possível construir soluções computacionais capazes de transformar dados em resultados úteis. Essa compreensão constitui uma das bases para o estudo de Algoritmos e Lógica de Programação, disciplina que apresenta os princípios necessários para desenvolver o raciocínio lógico e estruturar soluções que possam ser implementadas em uma linguagem de programação.
-
-
-!!! abstract "Exemplo prático: Sistema Acadêmico"
-    Imagine um sistema acadêmico que precisa calcular a média dos estudantes de uma turma. O sistema deverá ser capax de identificar quem atingiu a média mínima e gerar um relatório. Fazer isso manualmente pode funcionar para poucas pessoas, mas fica demorado e sujeito a erros quando a quantidade de registros aumenta. Antes de escrever um programa, precisamos compreender o problema:
-
-      - **Quais dados serão fornecidos?** As notas de cada estudante.
-      - **O que precisa ser feito?** Calcular a média e comparar o resultado com a média mínima.
-      - **O que deve ser apresentado?** A média e uma indicação do resultado.
-      - **Como verificar se a solução funciona?** Testar com diferentes notas, inclusive valores inválidos.
-
-    Esse raciocínio é parte da resolução de problemas com computadores. Programar não é apenas escrever comandos em uma linguagem: é compreender uma situação, organizar uma solução e verificar se ela atende ao objetivo.
-
 !!! info "Objetivos de aprendizagem"
     Ao concluir este capítulo, você deverá ser capaz de:
 
@@ -32,9 +11,23 @@ Esse exemplo demonstra como os conceitos fundamentais da Computação se relacio
     - explicar os quatro pilares do pensamento computacional;
     - planejar e testar uma solução antes de implementá-la.
 
-!!! tip "Como estudar este capítulo"
-    Leia cada conceito, acompanhe os exemplos sem pular as etapas e tente responder às perguntas antes de abrir as respostas. As atividades interativas servem para praticar: errar faz parte do processo. Leia o feedback e tente novamente.
+A Computação é uma área do conhecimento dedicada ao estudo e ao desenvolvimento de métodos, técnicas e tecnologias para a coleta, o processamento, o armazenamento e a análise de dados. Seu propósito é transformar dados em informações úteis, contribuindo para a produção de conhecimento e para a resolução de problemas em diferentes contextos da sociedade. Para isso, a Computação envolve a integração de três elementos fundamentais: hardware, que corresponde aos componentes físicos dos dispositivos computacionais; software, que compreende os programas e as instruções responsáveis por orientar o funcionamento desses dispositivos; e dados, que representam os elementos utilizados para produzir informações relevantes.
 
+Entre as diversas atividades da Computação, destaca-se o desenvolvimento de sistemas, que consiste na criação de soluções informatizadas para atender às necessidades específicas de pessoas, empresas e outras organizações. Essa atividade envolve diferentes etapas, como a identificação de um problema, o levantamento de requisitos, o planejamento da solução, a elaboração de algoritmos, a implementação de programas, a realização de testes e a manutenção do sistema ao longo de seu ciclo de vida.
+
+O principal objetivo do desenvolvimento de sistemas é construir soluções eficientes, confiáveis e funcionais, capazes de automatizar tarefas, otimizar processos, reduzir a ocorrência de erros e facilitar a tomada de decisões. Para alcançar esses resultados, é necessário compreender o problema a ser resolvido e definir procedimentos lógicos que orientem o processamento dos dados e a obtenção dos resultados esperados.
+
+!!! abstract "Exemplo prático: Sistema Acadêmico"
+    Imagine um sistema acadêmico que precisa calcular a média dos estudantes de uma turma. O sistema deverá ser capax de identificar quem atingiu a média mínima e gerar um relatório. Fazer isso manualmente pode funcionar para poucas pessoas, mas fica demorado e sujeito a erros quando a quantidade de registros aumenta. Antes de escrever um programa, precisamos compreender o problema:
+
+      - **Quais dados serão fornecidos?** As notas de cada estudante.
+      - **O que precisa ser feito?** Calcular a média e comparar o resultado com a média mínima.
+      - **O que deve ser apresentado?** A média e uma indicação do resultado.
+      - **Como verificar se a solução funciona?** Testar com diferentes notas, inclusive valores inválidos.
+
+    Esse raciocínio é parte da resolução de problemas com computadores. Programar não é apenas escrever comandos em uma linguagem: é compreender uma situação, organizar uma solução e verificar se ela atende ao objetivo.
+
+Esse exemplo demonstra como os conceitos fundamentais da Computação se relacionam com a programação e o desenvolvimento de sistemas. A partir da compreensão dos problemas e da definição de uma sequência lógica de instruções, é possível construir soluções computacionais capazes de transformar dados em resultados úteis. Essa compreensão constitui uma das bases para o estudo de Algoritmos e Lógica de Programação, disciplina que apresenta os princípios necessários para desenvolver o raciocínio lógico e estruturar soluções que possam ser implementadas em uma linguagem de programação.
 
 ## 1.1 Dado, informação e conhecimento
 
