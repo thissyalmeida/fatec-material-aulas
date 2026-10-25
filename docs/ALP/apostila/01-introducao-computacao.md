@@ -659,8 +659,10 @@ Tente resolver as questões sem consultar o gabarito. Nas questões de planejame
 
 **1. Explique, com suas palavras, a diferença entre dado, informação e conhecimento.**
 
-<button class="botao-resposta" type="button" aria-expanded="false">
-Ver Resposta
+<button class="botao-resposta"
+        type="button"
+        aria-expanded="false">
+    Ver Resposta
 </button>
 
 <div class="gabarito-comentado" hidden markdown="1">

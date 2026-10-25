@@ -203,13 +203,31 @@
 }
 
 .gabarito-comentado {
-  display: none;
-  margin-top: 1rem;
-  padding: 1rem;
-  border-left: 4px solid #B31010;
-  border-radius: 4px;
+    margin-top: 1rem;
+    padding: 1rem;
+    border-left: 4px solid #B31010;
+    border-radius: 4px;
+    background-color: var(--md-code-bg-color);
+}
+
+.gabarito-comentado[hidden] {
+    display: none !important;
 }
 
 .gabarito-comentado.visivel {
   display: block;
+}
+
+.botao-resposta {
+  background-color: #B31010;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 0.6rem 1rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.botao-resposta:hover {
+  opacity: 0.9;
 }
