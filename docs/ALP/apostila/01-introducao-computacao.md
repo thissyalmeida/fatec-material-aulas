@@ -663,11 +663,11 @@ Tente resolver as questões sem consultar o gabarito. Nas questões de planejame
   Ver Resposta
 </button>
 
-<div class="gabarito-comentado" markdown="1">
+<div class="gabarito-comentado" hidden markdown="1">
 
-Gabraauhauhuahuahuhauhauhuahauhauhuahuah
-auhauhauhauahu
+**Gabarito comentado**
 
+A explicação da resposta fica aqui.
 
 </div>
 

@@ -1,20 +1,24 @@
+
 document.addEventListener("DOMContentLoaded", function () {
-  document.querySelectorAll(".botao-resposta").forEach(function (botao) {
-    botao.addEventListener("click", function () {
-      const gabarito = botao.nextElementSibling;
+    document.querySelectorAll(".botao-resposta").forEach(function (botao) {
+        botao.addEventListener("click", function () {
+            const gabarito = botao.nextElementSibling;
 
-      if (!gabarito ||
-          !gabarito.classList.contains("gabarito-comentado")) {
-        return;
-      }
+            if (!gabarito ||
+                !gabarito.classList.contains("gabarito-comentado")) {
+                console.error("Bloco de gabarito não encontrado.");
+                return;
+            }
 
-      const visivel = gabarito.classList.toggle("visivel");
+            gabarito.hidden = !gabarito.hidden;
 
-      botao.textContent = visivel
-        ? "Ocultar Resposta"
-        : "Ver Resposta";
+            const aberto = !gabarito.hidden;
 
-      botao.setAttribute("aria-expanded", String(visivel));
+            botao.textContent = aberto
+                ? "Ocultar Resposta"
+                : "Ver Resposta";
+
+            botao.setAttribute("aria-expanded", String(aberto));
+        });
     });
-  });
 });
