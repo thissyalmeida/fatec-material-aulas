@@ -126,19 +126,9 @@ flowchart TD
 
 <p class="texto"> O hardware oferece os recursos físicos. O software utiliza esses recursos para realizar tarefas. Um aplicativo não funciona sem uma plataforma computacional capaz de executá-lo; da mesma forma, um computador sem programas não realiza automaticamente a tarefa específica que o usuário deseja. </p>
 
-### Exemplo do cotidiano
+## 1.4 Funcionamento de um computador 
 
-Ao digitar uma mensagem em um celular:
-
-1. O teclado físico ou virtual recebe a interação do usuário.
-2. O aplicativo interpreta as teclas selecionadas.
-3. O processador executa as instruções do aplicativo e do sistema operacional.
-4. A tela apresenta o texto.
-5. Ao salvar ou enviar a mensagem, outros componentes e serviços podem participar do processo.
-
-Esse exemplo mostra que hardware e software não são concorrentes: eles trabalham em conjunto.
-
-### Diagrama: interação em um sistema computacional
+<p class="texto">  Um computador funciona recebendo dados, processando essas informações por meio de instruções lógicas e devolvendo um resultado. Esse ciclo básico é dividido em quatro etapas principais: entrada, processamento, armazenamento e saída. </p>
 
 ```mermaid
 flowchart TD
@@ -150,37 +140,40 @@ flowchart TD
     F --> A
 ```
 
-O diagrama representa um modelo simplificado. A comunicação real entre os componentes depende da arquitetura do equipamento, do sistema operacional e do programa utilizado.
+<p class="texto"> O diagrama representa um modelo simplificado. A comunicação real entre os componentes depende da arquitetura do equipamento, do sistema operacional e do programa utilizado. </p>
 
-!!! warning "Não confunda"
-    - **Hardware:** componentes físicos.
-    - **Software:** programas e instruções.
-    - **Arquivo:** conjunto de dados armazenado, como um documento ou uma imagem. O arquivo não é, por si só, o dispositivo físico que o guarda.
+!!! abstract "Exemplo do cotidiano: Enviar mensagem"
+    <p class="texto">Ao digitar uma mensagem em um celular:</p>
+    <ol>
+     <li>O teclado físico ou virtual recebe a interação do usuário.</li>
+     <li>O aplicativo interpreta as teclas selecionadas.</li>
+     <li>O processador executa as instruções do aplicativo e do sistema operacional.</li>
+     <li>A tela apresenta o texto.</li>
+     <li>Ao salvar ou enviar a mensagem, outros componentes e serviços podem participar do processo.</li>
+    <p class="texto">Esse exemplo mostra que hardware e software não são concorrentes: eles trabalham em conjunto.</p>
 
-### Verifique sua compreensão
-
-Classifique cada item como hardware ou software.
-
-<div class="atividade-interativa" id="atividade-hardware-software">
-  <p><strong>1. Memória RAM</strong></p>
-  <div class="opcoes-atividade">
-    <button type="button" data-correct="true">Hardware</button>
-    <button type="button" data-correct="false">Software</button>
-  </div>
-  <p class="feedback-atividade" aria-live="polite"></p>
-  <p><strong>2. Navegador de internet</strong></p>
-  <div class="opcoes-atividade">
-    <button type="button" data-correct="false">Hardware</button>
-    <button type="button" data-correct="true">Software</button>
-  </div>
-  <p class="feedback-atividade" aria-live="polite"></p>
-  <p><strong>3. SSD</strong></p>
-  <div class="opcoes-atividade">
-    <button type="button" data-correct="true">Hardware</button>
-    <button type="button" data-correct="false">Software</button>
-  </div>
-  <p class="feedback-atividade" aria-live="polite"></p>
-</div>
+!!! success "Atividade interativa: Classifique os exemplos"
+    Classifique cada item como hardware ou software.
+    <div class="atividade-interativa" id="atividade-hardware-software">
+      <p><strong>1. Memória RAM</strong></p>
+      <div class="opcoes-atividade">
+        <button type="button" data-correct="true" class="botao">Hardware</button>
+        <button type="button" data-correct="false" class="botao">Software</button>
+      </div>
+      <p class="feedback-atividade" aria-live="polite"></p>
+      <p><strong>2. Navegador de internet</strong></p>
+      <div class="opcoes-atividade">
+        <button type="button" data-correct="false" class="botao">Hardware</button>
+        <button type="button" data-correct="true" class="botao">Software</button>
+      </div>
+      <p class="feedback-atividade" aria-live="polite"></p>
+      <p><strong>3. SSD</strong></p>
+      <div class="opcoes-atividade">
+        <button type="button" data-correct="true" class="botao">Hardware</button>
+        <button type="button" data-correct="false" class="botao">Software</button>
+      </div>
+      <p class="feedback-atividade" aria-live="polite"></p>
+    </div>
 
 ## 1.3 Componentes básicos
 
