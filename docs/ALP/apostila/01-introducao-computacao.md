@@ -20,10 +20,10 @@
 !!! abstract "Exemplo prático: Sistema Acadêmico"
     <p class="texto">Imagine um sistema acadêmico que precisa calcular a média dos estudantes de uma turma. O sistema deverá ser capax de identificar quem atingiu a média mínima e gerar um relatório. Fazer isso manualmente pode funcionar para poucas pessoas, mas fica demorado e sujeito a erros quando a quantidade de registros aumenta. Antes de escrever um programa, precisamos compreender o problema:</p>
     <ul>
-      <li><b>Quais dados serão fornecidos?<b> As notas de cada estudante.</li>
-      - **O que precisa ser feito?** Calcular a média e comparar o resultado com a média mínima.
-      - **O que deve ser apresentado?** A média e uma indicação do resultado.
-      - **Como verificar se a solução funciona?** Testar com diferentes notas, inclusive valores inválidos.
+      <li><b>Quais dados serão fornecidos?</b> As notas de cada estudante.</li>
+      <li><b>O que precisa ser feito?</b> Calcular a média e comparar o resultado com a média mínima.</li>
+      <li><b>O que deve ser apresentado?</b> A média e uma indicação do resultado.</li>
+      <li><b>Como verificar se a solução funciona?</b> Testar com diferentes notas, inclusive valores inválidos.</li>
     </ul>
     <p class="texto"> Esse raciocínio é parte da resolução de problemas com computadores. Programar não é apenas escrever comandos em uma linguagem: é compreender uma situação, organizar uma solução e verificar se ela atende ao objetivo. </p>
 
