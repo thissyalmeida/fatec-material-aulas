@@ -112,14 +112,6 @@ A decisão depende tanto da informação quanto da regra utilizada. Em um sistem
 
 <p class="texto"><b>Hardware</b> é a parte física do sistema computacional, ou seja, os componentes que podemos tocar ou que fazem parte fisicamente do equipamento. São exemplos de hardware: processador, memória, unidade de armazenamento, câmera, microfone, sensores, teclado, mouse e monitor, entre outros. </p>
 
-```mermaid
-flowchart TD
-    A[Usuário] --> B[Entrada de dados]
-    B --> C[Programa / processamento]
-    C <--> D[Memória e armazenamento]
-    C --> E[Saída de resultados]
-```
-
 ## 1.3 Software
 
 <p class="texto"><b>Software</b> é o conjunto de programas, instruções e dados que orientam as operações realizadas pelo computador. Sistema operacional, compilador, navegador, aplicativos de mensagens e editor de código são exemplos de software. </p>
@@ -645,4 +637,3 @@ Antes de escrever código, complete o planejamento.
     <p>Também seria adequado testar entradas inválidas, conforme as regras definidas para o sistema.</p>
   </details>
 </div>
-
