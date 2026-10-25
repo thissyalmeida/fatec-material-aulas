@@ -80,39 +80,41 @@ A decisão depende tanto da informação quanto da regra utilizada. Em um sistem
 
     A informação não surge por mágica: ela é produzida pela organização e pelo processamento dos dados.
 
-### Atividade interativa: classifique os exemplos
-
-Lembre-se que **Dado** é o registro; **informação** é o dado contextualizado; **conhecimento** é a compreensão que ajuda a interpretar e agir. A fronteira entre informação e conhecimento depende do contexto e do uso que se faz deles. Com base nisso, leia cada situação e escolha a classificação mais adequada. Em seguida, confira o feedback.
-
-<div class="atividade-interativa" id="atividade-dado-info">
-  <p><strong>Situação 1.</strong> O registro de uma avaliação contém apenas o valor <code>7,5</code>, sem indicar a que se refere.</p>
-  <div class="opcoes-atividade">
-    <button type="button" data-correct="true" class="botao">Dado</button>
-    <button type="button" data-correct="false" class="botao">Informação</button>
-    <button type="button" data-correct="false" class="botao">Conhecimento</button>
-  </div>
-  <p class="feedback-atividade" aria-live="polite"></p>
-  <hr>
-  <p><strong>Situação 2.</strong> Um relatório informa que a média de uma estudante foi 8,0.</p>
-  <div class="opcoes-atividade">
-    <button type="button" data-correct="false" class="botao">Dado isolado</button>
-    <button type="button" data-correct="true" class="botao">Informação</button>
-    <button type="button" data-correct="false" class="botao">Conhecimento</button>
-  </div>
-  <p class="feedback-atividade" aria-live="polite"></p>
-  <hr>
-  <p><strong>Situação 3.</strong> Ao comparar a média 8,0 com a média mínima 6,0, o sistema conclui que o critério de nota foi atingido.</p>
-  <div class="opcoes-atividade">
-    <button type="button" data-correct="false" class="botao">Dado</button>
-    <button type="button" data-correct="false" class="botao">Informação</button>
-    <button type="button" data-correct="true" class="botao">Conhecimento </button>
-  </div>
-  <p class="feedback-atividade" aria-live="polite"></p>
+!!! success "Atividade interativa: Classifique os exemplos"
+    <p class=texto">Lembre-se que **Dado** é o registro; **informação** é o dado contextualizado; **conhecimento** é a compreensão que ajuda a interpretar e agir. A fronteira entre informação e conhecimento depende do contexto e do uso que se faz deles. Com base nisso, leia cada situação e escolha a classificação mais adequada. Em seguida, confira o feedback.</p>
+    <div class="atividade-interativa" id="atividade-dado-info">
+      <p><strong>Situação 1.</strong> O registro de uma avaliação contém apenas o valor <code>7,5</code>, sem indicar a que se refere.</p>
+      <div class="opcoes-atividade">
+        <button type="button" data-correct="true" class="botao">Dado</button>
+        <button type="button" data-correct="false" class="botao">Informação</button>
+        <button type="button" data-correct="false" class="botao">Conhecimento</button>
+      </div>
+    <p class="feedback-atividade" aria-live="polite"></p>
+    <hr>
+      <p><strong>Situação 2.</strong> Um relatório informa que a média de uma estudante foi 8,0.</p>
+      <div class="opcoes-atividade">
+        <button type="button" data-correct="false" class="botao">Dado isolado</button>
+        <button type="button" data-correct="true" class="botao">Informação</button>
+        <button type="button" data-correct="false" class="botao">Conhecimento</button>
+      </div>
+    <p class="feedback-atividade" aria-live="polite"></p>
+    <hr>
+      <p><strong>Situação 3.</strong> Ao comparar a média 8,0 com a média mínima 6,0, o sistema conclui que o critério de nota foi atingido.</p>
+      <div class="opcoes-atividade">
+        <button type="button" data-correct="false" class="botao">Dado</button>
+        <button type="button" data-correct="false" class="botao">Informação</button>
+        <button type="button" data-correct="true" class="botao">Conhecimento </button>
+      </div>
+    <p class="feedback-atividade" aria-live="polite"></p>
 </div>
     
 ## 1.2 Hardware e software
 
-**Hardware** é a parte física: processador, memória, armazenamento, teclado e monitor. **Software** é o conjunto de programas e instruções que orientam o hardware. Sistema operacional, compilador, navegador e editor de código são exemplos de software.
+<p class="texto">Um sistema computacional reúne componentes físicos e programas que trabalham em conjunto.</p>
+
+### Hardware
+
+**Hardware** é a parte física do sistema computacional, ou seja, os componentes que podemos tocar ou que fazem parte fisicamente do equipamento. São exemplos de hardware: processador, memória, unidade de armazenamento, câmera, microfone, sensores, teclado, mouse e monitor, entre outros. 
 
 ```mermaid
 flowchart TD
@@ -121,6 +123,80 @@ flowchart TD
     C <--> D[Memória e armazenamento]
     C --> E[Saída de resultados]
 ```
+
+
+### Software
+
+**Software** é o conjunto de programas e instruções que orientam o hardware. Sistema operacional, compilador, navegador e editor de código são exemplos de software.
+
+**Software** é o conjunto de programas, instruções e dados que orientam as operações realizadas pelo computador.
+
+Exemplos:
+
+- sistema operacional;
+- navegador de internet;
+- editor de código;
+- compilador;
+- sistema acadêmico;
+- aplicativo de mensagens.
+
+O hardware oferece os recursos físicos. O software utiliza esses recursos para realizar tarefas. Um aplicativo não funciona sem uma plataforma computacional capaz de executá-lo; da mesma forma, um computador sem programas não realiza automaticamente a tarefa específica que o usuário deseja.
+
+### Exemplo do cotidiano
+
+Ao digitar uma mensagem em um celular:
+
+1. O teclado físico ou virtual recebe a interação do usuário.
+2. O aplicativo interpreta as teclas selecionadas.
+3. O processador executa as instruções do aplicativo e do sistema operacional.
+4. A tela apresenta o texto.
+5. Ao salvar ou enviar a mensagem, outros componentes e serviços podem participar do processo.
+
+Esse exemplo mostra que hardware e software não são concorrentes: eles trabalham em conjunto.
+
+### Diagrama: interação em um sistema computacional
+
+```mermaid
+flowchart TD
+    A[Usuário] --> B[Entrada de dados]
+    B --> C[Programa em execução]
+    C <--> D[CPU e memória]
+    C <--> E[Armazenamento]
+    C --> F[Saída de resultados]
+    F --> A
+```
+
+O diagrama representa um modelo simplificado. A comunicação real entre os componentes depende da arquitetura do equipamento, do sistema operacional e do programa utilizado.
+
+!!! warning "Não confunda"
+    - **Hardware:** componentes físicos.
+    - **Software:** programas e instruções.
+    - **Arquivo:** conjunto de dados armazenado, como um documento ou uma imagem. O arquivo não é, por si só, o dispositivo físico que o guarda.
+
+### Verifique sua compreensão
+
+Classifique cada item como hardware ou software.
+
+<div class="atividade-interativa" id="atividade-hardware-software">
+  <p><strong>1. Memória RAM</strong></p>
+  <div class="opcoes-atividade">
+    <button type="button" data-correct="true">Hardware</button>
+    <button type="button" data-correct="false">Software</button>
+  </div>
+  <p class="feedback-atividade" aria-live="polite"></p>
+  <p><strong>2. Navegador de internet</strong></p>
+  <div class="opcoes-atividade">
+    <button type="button" data-correct="false">Hardware</button>
+    <button type="button" data-correct="true">Software</button>
+  </div>
+  <p class="feedback-atividade" aria-live="polite"></p>
+  <p><strong>3. SSD</strong></p>
+  <div class="opcoes-atividade">
+    <button type="button" data-correct="true">Hardware</button>
+    <button type="button" data-correct="false">Software</button>
+  </div>
+  <p class="feedback-atividade" aria-live="polite"></p>
+</div>
 
 ## 1.3 Componentes básicos
 
@@ -241,93 +317,6 @@ A decomposição reduz a complexidade e torna a solução mais fácil de testar.
 - Brookshear, J. G.; Brylow, D. *Computer Science: An Overview*. Pearson.
 - Documentação e materiais introdutórios de computação indicados pela disciplina.
 
-## 1.2 Hardware e software
-
-Um sistema computacional reúne componentes físicos e programas que trabalham em conjunto.
-
-### Hardware
-
-**Hardware** é a parte física do sistema computacional, ou seja, os componentes que podemos tocar ou que fazem parte fisicamente do equipamento.
-
-Exemplos:
-
-- teclado e mouse;
-- monitor;
-- processador;
-- memória RAM;
-- unidade de armazenamento SSD;
-- câmera, microfone e sensores.
-
-### Software
-
-**Software** é o conjunto de programas, instruções e dados que orientam as operações realizadas pelo computador.
-
-Exemplos:
-
-- sistema operacional;
-- navegador de internet;
-- editor de código;
-- compilador;
-- sistema acadêmico;
-- aplicativo de mensagens.
-
-O hardware oferece os recursos físicos. O software utiliza esses recursos para realizar tarefas. Um aplicativo não funciona sem uma plataforma computacional capaz de executá-lo; da mesma forma, um computador sem programas não realiza automaticamente a tarefa específica que o usuário deseja.
-
-### Exemplo do cotidiano
-
-Ao digitar uma mensagem em um celular:
-
-1. O teclado físico ou virtual recebe a interação do usuário.
-2. O aplicativo interpreta as teclas selecionadas.
-3. O processador executa as instruções do aplicativo e do sistema operacional.
-4. A tela apresenta o texto.
-5. Ao salvar ou enviar a mensagem, outros componentes e serviços podem participar do processo.
-
-Esse exemplo mostra que hardware e software não são concorrentes: eles trabalham em conjunto.
-
-### Diagrama: interação em um sistema computacional
-
-```mermaid
-flowchart TD
-    A[Usuário] --> B[Entrada de dados]
-    B --> C[Programa em execução]
-    C <--> D[CPU e memória]
-    C <--> E[Armazenamento]
-    C --> F[Saída de resultados]
-    F --> A
-```
-
-O diagrama representa um modelo simplificado. A comunicação real entre os componentes depende da arquitetura do equipamento, do sistema operacional e do programa utilizado.
-
-!!! warning "Não confunda"
-    - **Hardware:** componentes físicos.
-    - **Software:** programas e instruções.
-    - **Arquivo:** conjunto de dados armazenado, como um documento ou uma imagem. O arquivo não é, por si só, o dispositivo físico que o guarda.
-
-### Verifique sua compreensão
-
-Classifique cada item como hardware ou software.
-
-<div class="atividade-interativa" id="atividade-hardware-software">
-  <p><strong>1. Memória RAM</strong></p>
-  <div class="opcoes-atividade">
-    <button type="button" data-correct="true">Hardware</button>
-    <button type="button" data-correct="false">Software</button>
-  </div>
-  <p class="feedback-atividade" aria-live="polite"></p>
-  <p><strong>2. Navegador de internet</strong></p>
-  <div class="opcoes-atividade">
-    <button type="button" data-correct="false">Hardware</button>
-    <button type="button" data-correct="true">Software</button>
-  </div>
-  <p class="feedback-atividade" aria-live="polite"></p>
-  <p><strong>3. SSD</strong></p>
-  <div class="opcoes-atividade">
-    <button type="button" data-correct="true">Hardware</button>
-    <button type="button" data-correct="false">Software</button>
-  </div>
-  <p class="feedback-atividade" aria-live="polite"></p>
-</div>
 
 ## 1.3 Componentes básicos de um sistema computacional
 
