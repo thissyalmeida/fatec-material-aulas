@@ -1,4 +1,16 @@
 
+function iniciarConversorBinario() {
+    const botao = document.getElementById("btn-converter-binario");
+
+    if (!botao || botao.dataset.inicializado === "true") {
+        return;
+    }
+
+    botao.dataset.inicializado = "true";
+
+    botao.addEventListener("click", converterBinario);
+}
+
 function converterBinario() {
     const entrada = document.getElementById("numero-binario");
     const resultado = document.getElementById("resultado-decimal");
@@ -20,7 +32,7 @@ function converterBinario() {
     if (!/^[01]{1,8}$/.test(binario)) {
         resultado.textContent = "--";
         mensagem.textContent =
-            "Digite de 1 a 8 bits, usando apenas 0 e 1.";
+            "Digite de 1 a 8 bits, utilizando apenas 0 e 1.";
         return;
     }
 
@@ -56,5 +68,16 @@ function converterBinario() {
     }
 
     calculo.textContent = parcelas.join(" + ") + " = " + soma;
-window.converterBinario = converterBinario;
+}
+
+// Compatibilidade com a navegação do Material for MkDocs.
+if (typeof document$ !== "undefined") {
+    document$.subscribe(iniciarConversorBinario);
+} else if (document.readyState === "loading") {
+    document.addEventListener(
+        "DOMContentLoaded",
+        iniciarConversorBinario
+    );
+} else {
+    iniciarConversorBinario();
 }
