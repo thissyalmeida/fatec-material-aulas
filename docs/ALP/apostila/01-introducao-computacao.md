@@ -31,9 +31,87 @@ Esse exemplo demonstra como os conceitos fundamentais da Computação se relacio
 
 ## 1.1 Dado, informação e conhecimento
 
-- **Dado:** registro bruto, como `8.5`, `7.0` ou `6.0`.
-- **Informação:** dado interpretado em um contexto, como “a média do estudante foi 7,17”.
-- **Conhecimento:** entendimento que permite tomar decisões, por exemplo, identificar que o estudante atingiu a média mínima.
+Esses três termos estão relacionados, mas não significam a mesma coisa.
+
+### Dado
+
+Um **dado** é um registro bruto de um valor ou de uma observação. Isoladamente, ele pode não explicar o que representa.
+
+Exemplos:
+
+- `8.5`
+- `23`
+- `120`
+- `Aprovado`
+
+O valor `8.5`, por exemplo, poderia representar uma nota, uma temperatura ou uma medida. Sem contexto, não sabemos qual interpretação é adequada.
+
+### Informação
+
+Uma **informação** é obtida quando os dados são organizados e interpretados em um contexto.
+
+Observe:
+
+- Dados: `8.0`, `7.0` e `9.0`.
+- Contexto: notas de três avaliações de uma estudante.
+- Informação: a média aritmética das avaliações é `8.0`.
+
+O contexto permite entender o significado dos valores.
+
+### Conhecimento
+
+O **conhecimento** envolve interpretar informações e utilizá-las para compreender uma situação ou tomar uma decisão.
+
+Por exemplo:
+
+- Informação: a média da estudante é `8.0`.
+- Regra da disciplina: a média mínima para aprovação é `6.0`.
+- Conhecimento aplicado: como a média é superior à mínima, a estudante atingiu esse critério de aprovação.
+
+A decisão depende tanto da informação quanto da regra utilizada. Em um sistema real, outras regras institucionais também podem ser necessárias.
+
+!!! abstract "Exemplo resolvido: Sistema de Vendas"
+    Uma loja registra que vendeu `12` unidades de um produto cujo preço unitário é `R$ 15,00`.
+
+      1. **Dados de entrada:** quantidade igual a 12 e preço unitário igual a R$ 15,00.
+      2. **Processamento:** multiplicar a quantidade pelo preço unitário.
+      3. **Informação produzida:** o valor total da venda é R$ 180,00.
+      4. **Uso da informação:** a loja pode comparar as vendas de diferentes produtos ou períodos para planejar o estoque.
+
+    A informação não surge por mágica: ela é produzida pela organização e pelo processamento dos dados.
+
+### Atividade interativa: classifique os exemplos
+
+Leia cada situação e escolha a classificação mais adequada. Em seguida, confira o feedback.
+
+<div class="atividade-interativa" id="atividade-dado-info">
+  <p><strong>Situação 1.</strong> O registro de uma avaliação contém apenas o valor <code>7,5</code>, sem indicar a que se refere.</p>
+  <div class="opcoes-atividade">
+    <button type="button" data-correct="true">Dado</button>
+    <button type="button" data-correct="false">Informação</button>
+    <button type="button" data-correct="false">Conhecimento</button>
+  </div>
+  <p class="feedback-atividade" aria-live="polite"></p>
+  <hr>
+  <p><strong>Situação 2.</strong> Um relatório informa que a média de uma estudante foi 8,0.</p>
+  <div class="opcoes-atividade">
+    <button type="button" data-correct="false">Dado isolado</button>
+    <button type="button" data-correct="true">Informação</button>
+    <button type="button" data-correct="false">Dispositivo de entrada</button>
+  </div>
+  <p class="feedback-atividade" aria-live="polite"></p>
+  <hr>
+  <p><strong>Situação 3.</strong> Ao comparar a média 8,0 com a média mínima 6,0, o sistema conclui que o critério de nota foi atingido.</p>
+  <div class="opcoes-atividade">
+    <button type="button" data-correct="false">Dado</button>
+    <button type="button" data-correct="false">Hardware</button>
+    <button type="button" data-correct="true">Conhecimento aplicado</button>
+  </div>
+  <p class="feedback-atividade" aria-live="polite"></p>
+</div>
+
+!!! success "O que você deve lembrar"
+    **Dado** é o registro; **informação** é o dado contextualizado; **conhecimento** é a compreensão que ajuda a interpretar e agir. A fronteira entre informação e conhecimento depende do contexto e do uso que se faz deles.
 
 ## 1.2 Hardware e software
 
@@ -165,92 +243,6 @@ A decomposição reduz a complexidade e torna a solução mais fácil de testar.
 - Cormen, T. H. et al. *Introduction to Algorithms*. MIT Press.
 - Brookshear, J. G.; Brylow, D. *Computer Science: An Overview*. Pearson.
 - Documentação e materiais introdutórios de computação indicados pela disciplina.
-
-
-## 1.1 Dado, informação e conhecimento
-
-Esses três termos estão relacionados, mas não significam a mesma coisa.
-
-### Dado
-
-Um **dado** é um registro de um valor ou de uma observação. Isoladamente, ele pode não explicar o que representa.
-
-Exemplos:
-
-- `8.5`
-- `23`
-- `120`
-- `Aprovado`
-
-O valor `8.5`, por exemplo, poderia representar uma nota, uma temperatura ou uma medida. Sem contexto, não sabemos qual interpretação é adequada.
-
-### Informação
-
-Uma **informação** é obtida quando os dados são organizados e interpretados em um contexto.
-
-Observe:
-
-- Dados: `8.0`, `7.0` e `9.0`.
-- Contexto: notas de três avaliações de uma estudante.
-- Informação: a média aritmética das avaliações é `8.0`.
-
-O contexto permite entender o significado dos valores.
-
-### Conhecimento
-
-O **conhecimento** envolve interpretar informações e utilizá-las para compreender uma situação ou tomar uma decisão.
-
-Por exemplo:
-
-- Informação: a média da estudante é `8.0`.
-- Regra da disciplina: a média mínima para aprovação é `6.0`.
-- Conhecimento aplicado: como a média é superior à mínima, a estudante atingiu esse critério de aprovação.
-
-A decisão depende tanto da informação quanto da regra utilizada. Em um sistema real, outras regras institucionais também podem ser necessárias.
-
-### Exemplo resolvido
-
-Uma loja registra que vendeu `12` unidades de um produto cujo preço unitário é `R$ 15,00`.
-
-1. **Dados de entrada:** quantidade igual a 12 e preço unitário igual a R$ 15,00.
-2. **Processamento:** multiplicar a quantidade pelo preço unitário.
-3. **Informação produzida:** o valor total da venda é R$ 180,00.
-4. **Uso da informação:** a loja pode comparar as vendas de diferentes produtos ou períodos para planejar o estoque.
-
-A informação não surge por mágica: ela é produzida pela organização e pelo processamento dos dados.
-
-### Atividade interativa: classifique os exemplos
-
-Leia cada situação e escolha a classificação mais adequada. Em seguida, confira o feedback.
-
-<div class="atividade-interativa" id="atividade-dado-info">
-  <p><strong>Situação 1.</strong> O registro de uma avaliação contém apenas o valor <code>7,5</code>, sem indicar a que se refere.</p>
-  <div class="opcoes-atividade">
-    <button type="button" data-correct="true">Dado</button>
-    <button type="button" data-correct="false">Informação</button>
-    <button type="button" data-correct="false">Conhecimento</button>
-  </div>
-  <p class="feedback-atividade" aria-live="polite"></p>
-  <hr>
-  <p><strong>Situação 2.</strong> Um relatório informa que a média de uma estudante foi 8,0.</p>
-  <div class="opcoes-atividade">
-    <button type="button" data-correct="false">Dado isolado</button>
-    <button type="button" data-correct="true">Informação</button>
-    <button type="button" data-correct="false">Dispositivo de entrada</button>
-  </div>
-  <p class="feedback-atividade" aria-live="polite"></p>
-  <hr>
-  <p><strong>Situação 3.</strong> Ao comparar a média 8,0 com a média mínima 6,0, o sistema conclui que o critério de nota foi atingido.</p>
-  <div class="opcoes-atividade">
-    <button type="button" data-correct="false">Dado</button>
-    <button type="button" data-correct="false">Hardware</button>
-    <button type="button" data-correct="true">Conhecimento aplicado</button>
-  </div>
-  <p class="feedback-atividade" aria-live="polite"></p>
-</div>
-
-!!! success "O que você deve lembrar"
-    **Dado** é o registro; **informação** é o dado contextualizado; **conhecimento** é a compreensão que ajuda a interpretar e agir. A fronteira entre informação e conhecimento depende do contexto e do uso que se faz deles.
 
 ## 1.2 Hardware e software
 
