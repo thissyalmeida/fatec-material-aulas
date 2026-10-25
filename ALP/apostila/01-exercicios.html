@@ -908,38 +908,69 @@
 
 <h2 id="exercicios">Exercícios</h2>
 <p>Tente resolver as questões sem consultar o gabarito. Nas questões de planejamento, explique seu raciocínio: o objetivo não é apenas chegar a uma resposta, mas aprender a justificar as escolhas.</p>
-<div class="grid-container">
-    <div>Questão</div>    <div>Enunciado</div>    <div>Gabarito</div>
-    <div>1</div>    <div>Explique, com suas palavras, a diferença entre dado, informação e conhecimento.
-</div>    <div><button class="botao-resposta" type="button" aria-expanded="false"> Ver Resposta
-</button> <div class="gabarito-comentado" hidden markdown="1"> **Gabarito comentado** Dado é um registro; informação é um dado interpretado em contexto; conhecimento é a compreensão que permite interpretar a informação e orientar decisões. </div></div>
-    <div>2</div>    <div>Enunciado</div>    <div>Gabarito</div>
-    <div>3</div>    <div>Enunciado</div>    <div>Gabarito</div>
-    <div>4</div>    <div>Enunciado</div>    <div>Gabarito</div>
-    <div>5</div>    <div>Enunciado</div>    <div>Gabarito</div>
-    <div>6</div>    <div>Enunciado</div>    <div>Gabarito</div>
-    <div>7</div>    <div>Enunciado</div>    <div>Gabarito</div>
-    <div>8</div>    <div>Enunciado</div>    <div>Gabarito</div>
-    <div>9</div>    <div>Enunciado</div>    <div>Gabarito</div>
-    <div>10</div>    <div>Enunciado</div>    <div>Gabarito</div>
-    <div>11</div>    <div>Enunciado</div>    <div>Gabarito</div>
-    <div>12</div>    <div>Enunciado</div>    <div>Gabarito</div>
-    <div>13</div>    <div>Enunciado</div>    <div>Gabarito</div>
-    <div>14</div>    <div>Enunciado</div>    <div>Gabarito</div>
-    <div>15</div>    <div>Enunciado</div>    <div>Gabarito</div>
-    <div>16</div>    <div>Enunciado</div>    <div>Gabarito</div>
-    <div>17</div>    <div>Enunciado</div>    <div>Gabarito</div>
-    <div>18</div>    <div>Enunciado</div>    <div>Gabarito</div>
-    <div>19</div>    <div>Enunciado</div>    <div>Gabarito</div>
-    <div>20</div>    <div>Enunciado</div>    <div>Gabarito</div>
-    <div>21</div>    <div>Enunciado</div>    <div>Gabarito</div>
-    <div>22</div>    <div>Enunciado</div>    <div>Gabarito</div>
-    <div>23</div>    <div>Enunciado</div>    <div>Gabarito</div>
-    <div>24</div>    <div>Enunciado</div>    <div>Gabarito</div>
-    <div>25</div>    <div>Enunciado</div>    <div>Gabarito</div>
-</div>
+<table class="tabela-exercicios">
+  <thead>
+    <tr>
+      <th>Nº</th>
+      <th>Enunciado do exercício</th>
+      <th>Ação</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Explique, com suas palavras, a diferença entre dado, informação e conhecimento.</td>
+      <td>
+        <button class="botao-resposta"
+                type="button"
+                data-target="gabarito-1"
+                aria-expanded="false">
+          Ver Resposta
+        </button>
+      </td>
+    </tr>
+    <tr id="gabarito-1" class="linha-gabarito" hidden>
+      <td colspan="3">
+        <strong>Gabarito comentado</strong>
+        <p>Dado é um valor isolado; informação é um dado contextualizado; conhecimento é a compreensão construída a partir da interpretação das informações.</p>
+      </td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Cite três exemplos de hardware e três exemplos de software.</td>
+      <td>
+        <button class="botao-resposta"
+                type="button"
+                data-target="gabarito-2"
+                aria-expanded="false">
+          Ver Resposta
+        </button>
+      </td>
+    </tr>
+    <tr id="gabarito-2" class="linha-gabarito" hidden>
+      <td colspan="3">
+        <strong>Gabarito comentado</strong>
+        <p>Hardware: teclado, monitor e memória RAM. Software: sistema operacional, navegador e editor de texto.</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 <h3 id="nivel-1-compreensao">Nível 1 — Compreensão</h3>
+<div class="questao-com-gabarito">
+<ol>
+<li>Explique, com suas palavras, a diferença entre dado, informação e conhecimento.</li>
+</ol>
+<p><button class="botao-resposta"
+        type="button"
+        aria-expanded="false">
+    Ver Resposta
+</button></p>
+<div class="gabarito-comentado" hidden="hidden">
+<p><strong>Gabarito comentado</strong></p>
+<p>Dado é um registro; informação é um dado interpretado em contexto; conhecimento é a compreensão que permite interpretar a informação e orientar decisões.</p>
+</div>
+</div>
 <div class="questao-com-gabarito">
 <ol>
 <li>Uma tabela contém os valores <code>18</code>, <code>22</code> e <code>20</code>, sem indicar o que representam. Por que não é possível interpretá-los com segurança apenas com esses valores?
