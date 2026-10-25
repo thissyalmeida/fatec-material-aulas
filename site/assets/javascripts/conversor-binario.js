@@ -1,86 +1,59 @@
 
-(function () {
-    function iniciarConversorBinario() {
-        const formulario = document.getElementById(
-            "form-conversor-binario"
-        );
+function converterBinario() {
+    const entrada = document.getElementById("numero-binario");
+    const resultado = document.getElementById("resultado-decimal");
+    const tabela = document.getElementById("tabela-binario");
+    const calculo = document.getElementById("calculo-binario");
+    const mensagem = document.getElementById("mensagem-binario");
 
-        if (!formulario || formulario.dataset.inicializado === "true") {
-            return;
-        }
+    if (!entrada || !resultado || !tabela || !calculo || !mensagem) {
+        console.error("Elementos do conversor não encontrados.");
+        return;
+    }
 
-        formulario.dataset.inicializado = "true";
+    const binario = entrada.value.trim();
 
-        const entrada = document.getElementById("numero-binario");
-        const resultado = document.getElementById("resultado-decimal");
-        const tabela = document.getElementById("tabela-binario");
-        const calculo = document.getElementById("calculo-binario");
-        const mensagem = document.getElementById("mensagem-binario");
+    mensagem.textContent = "";
+    tabela.replaceChildren();
+    calculo.textContent = "--";
 
-        formulario.addEventListener("submit", function (evento) {
-            evento.preventDefault();
+    if (!/^[01]{1,8}$/.test(binario)) {
+        resultado.textContent = "--";
+        mensagem.textContent =
+            "Digite de 1 a 8 bits, usando apenas 0 e 1.";
+        return;
+    }
 
-            const binario = entrada.value.trim();
+    const decimal = parseInt(binario, 2);
+    resultado.textContent = decimal;
 
-            mensagem.textContent = "";
-            tabela.replaceChildren();
-            calculo.textContent = "--";
+    let soma = 0;
+    const parcelas = [];
 
-            if (!/^[01]{1,8}$/.test(binario)) {
-                resultado.textContent = "--";
-                mensagem.textContent =
-                    "Digite de 1 a 8 bits, utilizando apenas 0 e 1.";
-                entrada.focus();
-                return;
-            }
+    for (let i = 0; i < binario.length; i++) {
+        const bit = Number(binario[i]);
+        const posicao = binario.length - 1 - i;
+        const potencia = 2 ** posicao;
+        const produto = bit * potencia;
 
-            const decimal = parseInt(binario, 2);
-            resultado.textContent = decimal;
+        soma += produto;
+        parcelas.push(produto);
 
-            let soma = 0;
-            const fragmento = document.createDocumentFragment();
-            const parcelas = [];
+        const linha = document.createElement("tr");
 
-            for (let i = 0; i < binario.length; i++) {
-                const bit = Number(binario[i]);
-                const posicao = binario.length - 1 - i;
-                const potencia = 2 ** posicao;
-                const produto = bit * potencia;
-
-                soma += produto;
-                parcelas.push(produto);
-
-                const linha = document.createElement("tr");
-
-                [
-                    posicao,
-                    bit,
-                    `2^${posicao} = ${potencia}`,
-                    `${bit} × ${potencia} = ${produto}`
-                ].forEach(function (valor) {
-                    const celula = document.createElement("td");
-                    celula.textContent = valor;
-                    linha.appendChild(celula);
-                });
-
-                fragmento.appendChild(linha);
-            }
-
-            tabela.appendChild(fragmento);
-            calculo.textContent =
-                parcelas.join(" + ") + " = " + soma;
+        [
+            posicao,
+            bit,
+            `2^${posicao} = ${potencia}`,
+            `${bit} × ${potencia} = ${produto}`
+        ].forEach(function (valor) {
+            const celula = document.createElement("td");
+            celula.textContent = valor;
+            linha.appendChild(celula);
         });
+
+        tabela.appendChild(linha);
     }
 
-    // Compatibilidade com a navegação instantânea do Material.
-    if (typeof document$ !== "undefined") {
-        document$.subscribe(iniciarConversorBinario);
-    } else if (document.readyState === "loading") {
-        document.addEventListener(
-            "DOMContentLoaded",
-            iniciarConversorBinario
-        );
-    } else {
-        iniciarConversorBinario();
-    }
-})();
+    calculo.textContent = parcelas.join(" + ") + " = " + soma;
+}

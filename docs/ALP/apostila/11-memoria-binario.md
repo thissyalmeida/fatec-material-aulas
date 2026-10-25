@@ -49,7 +49,7 @@ Cada posição representa uma potência de 2:
     <strong>Converter</strong> para visualizar o resultado.
   </p>
 
-  <form id="form-conversor-binario">
+ <div id="form-conversor-binario">
     <label for="numero-binario">Número binário:</label>
     <div class="entrada-binaria">
       <input
@@ -64,7 +64,7 @@ Cada posição representa uma potência de 2:
      <button type="button" id="btn-converter-binario"  onclick="converterBinario()"> Converter </button>
     </div>
     <p id="mensagem-binario" role="status" aria-live="polite"></p>
-  </form>
+  </div>
 
   <div class="resultado-binario">
     <p><strong>Resultado em decimal:</strong></p>
