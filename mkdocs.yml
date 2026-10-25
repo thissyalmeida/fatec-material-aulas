@@ -8,14 +8,14 @@ theme:
 
   palette:
     - scheme: default
-      primary: red
+      primary: #B20000
       accent: indigo
       toggle:
         icon: material/weather-night
         name: Modo escuro
 
     - scheme: slate
-      primary: red
+      primary: #B20000
       accent: indigo
       toggle:
         icon: material/weather-sunny
