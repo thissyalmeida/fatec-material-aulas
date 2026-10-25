@@ -1,12 +1,12 @@
 
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", async function () {
     if (typeof mermaid === "undefined") {
         console.error("Mermaid não foi carregado.");
         return;
     }
 
     mermaid.initialize({
-        startOnLoad: true,
+        startOnLoad: false,
         securityLevel: "strict",
         theme: "default",
         flowchart: {
@@ -15,5 +15,9 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-    mermaid.run();
+    try {
+        await mermaid.run();
+    } catch (erro) {
+        console.error("Erro ao renderizar diagramas Mermaid:", erro);
+    }
 });
