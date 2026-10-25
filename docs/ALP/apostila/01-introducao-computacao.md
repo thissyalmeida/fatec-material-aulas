@@ -656,6 +656,20 @@ Tente resolver as questões sem consultar o gabarito. Nas questões de planejame
 ### Nível 1 — Compreensão
 
 1. Explique, com suas palavras, a diferença entre dado, informação e conhecimento.
+
+<button class="botao-resposta"
+        type="button"
+        aria-expanded="false">
+  Ver Resposta
+</button>
+
+<div class="gabarito-comentado" markdown="1">
+
+**Gabarito comentado**
+
+
+</div>
+
 2. Uma tabela contém os valores `18`, `22` e `20`, sem indicar o que representam. Por que não é possível interpretá-los com segurança apenas com esses valores?
 3. Cite três exemplos de hardware e três exemplos de software.
 4. Explique a relação entre hardware e software.
