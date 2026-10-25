@@ -1,0 +1,28 @@
+.lab-binario{--lab-red:#B31010;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:1rem;margin:1.25rem 0 2rem}
+.lab-binario *{box-sizing:border-box}
+.lab-binario .lab-card{min-width:0;padding:1.2rem;border:1px solid var(--md-default-fg-color--lightest,#ddd);border-top:4px solid var(--lab-red);border-radius:12px;background:var(--md-default-bg-color,#fff);box-shadow:0 3px 12px #0000000d}
+.lab-binario h3{margin-top:0}
+.lab-binario .lab-controls{display:flex;flex-wrap:wrap;gap:.6rem;align-items:end}
+.lab-binario label{display:block;width:100%;font-weight:600}
+.lab-binario input{flex:1 1 130px;min-width:0;padding:.65rem .75rem;border:1px solid #999;border-radius:7px;font:inherit;color:var(--md-default-fg-color,#222);background:var(--md-default-bg-color,#fff)}
+.lab-binario button{padding:.65rem .9rem;border:1px solid var(--lab-red);border-radius:7px;background:var(--lab-red);color:#fff;font:inherit;font-weight:600;cursor:pointer}
+.lab-binario button:hover{filter:brightness(.92)}
+.lab-binario button:focus-visible,.lab-binario input:focus-visible{outline:3px solid #d97777;outline-offset:2px}
+.lab-binario .lab-secondary{background:transparent;color:var(--lab-red)}
+.lab-binario .lab-text-button{margin-top:.6rem;padding:.2rem 0;border:0;background:transparent;color:var(--lab-red);text-decoration:underline}
+.lab-binario .lab-help{color:var(--md-default-fg-color--light,#666);font-size:.92rem}
+.lab-binario .lab-result{margin:1rem 0 .25rem;font-size:1.1rem}
+.lab-binario #lab-bin-result{color:var(--lab-red);font-size:1.7rem}
+.lab-binario .lab-message{min-height:1.4em;font-weight:600}
+.lab-binario .is-error{color:#b42318}
+.lab-binario .is-success{color:#16803c}
+.lab-binario .lab-table-wrap{width:100%;overflow-x:auto}
+.lab-binario .lab-table{width:100%;margin:.75rem 0;border-collapse:collapse;font-size:.9rem}
+.lab-binario .lab-table th,.lab-binario .lab-table td{padding:.5rem;border:1px solid var(--md-default-fg-color--lightest,#ddd);text-align:center}
+.lab-binario .lab-table thead{background:#B3101014}
+.lab-binario .lab-table tr.bit-one td:first-child{color:var(--lab-red);background:#B3101012;font-weight:800}
+.lab-binario .lab-equation{overflow-wrap:anywhere}
+.lab-binario .lab-challenge-number{margin:.75rem 0 1rem;padding:.8rem;border-radius:8px;background:#B3101012;color:var(--lab-red);text-align:center;font-size:clamp(1.8rem,6vw,2.5rem);font-weight:800;letter-spacing:.16em}
+.lab-binario .lab-score{margin-bottom:.25rem}
+.lab-binario .lab-explanation{margin-top:.75rem;padding:.75rem;border-left:3px solid var(--lab-red);background:var(--md-code-bg-color,#f6f6f6);overflow-wrap:anywhere}
+@media(max-width:480px){.lab-binario .lab-card{padding:.9rem}.lab-binario .lab-controls button{flex:1 1 100%}}
