@@ -1037,33 +1037,36 @@
   <h3>Conversor binário para decimal</h3>
 
   <p>
-    Digite um número binário de até 8 bits para visualizar
-    a conversão passo a passo.
+    Digite um número binário de até 8 bits e clique em
+    <strong>Converter</strong> para visualizar o resultado.
   </p>
 
-  <label for="numero-binario">Número binário:</label>
-  <input
-    type="text"
-    id="numero-binario"
-    value="1101"
-    maxlength="8"
-    inputmode="numeric"
-    placeholder="Ex.: 1101"
-    autocomplete="off"
-  >
+  <form id="form-conversor-binario">
+    <label for="numero-binario">Número binário:</label>
+
+    <div class="entrada-binaria">
+      <input
+        type="text"
+        id="numero-binario"
+        maxlength="8"
+        inputmode="numeric"
+        placeholder="Ex.: 1101"
+        autocomplete="off"
+        aria-describedby="mensagem-binario"
+      >
+
+      <button type="submit" id="btn-converter-binario">
+        Converter
+      </button>
+    </div>
+
+    <p id="mensagem-binario" role="status" aria-live="polite"></p>
+  </form>
 
   <div class="resultado-binario">
-    <p>Resultado em decimal:</p>
-    <output id="resultado-decimal" aria-live="polite">13</output>
+    <p><strong>Resultado em decimal:</strong></p>
+    <output id="resultado-decimal" aria-live="polite">--</output>
   </div>
-
-  <p id="mensagem-binario" role="status"></p>
-
-  <h4>Experimente outros números</h4>
-  <button type="button" data-binario="1010">1010</button>
-  <button type="button" data-binario="1111">1111</button>
-  <button type="button" data-binario="101101">101101</button>
-  <button type="button" data-binario="11111111">11111111</button>
 
   <h4>Entenda o cálculo</h4>
 
@@ -1078,13 +1081,15 @@
         </tr>
       </thead>
       <tbody id="tabela-binario">
-        <tr><td>0</td><td>1</td><td>2^0 = 1</td><td>1 × 1 = 1</td></tr>
+        <tr>
+          <td colspan="4">Digite um número e clique em Converter.</td>
+        </tr>
       </tbody>
     </table>
   </div>
 
   <p><strong>Soma dos resultados:</strong></p>
-  <p id="calculo-binario" aria-live="polite">8 + 4 + 0 + 1 = 13</p>
+  <p id="calculo-binario">--</p>
 </div>
 
 <h2 id="114-hexadecimal">11.4 Hexadecimal</h2>

@@ -153,3 +153,39 @@
     border: 1px solid var(--md-default-fg-color--lightest);
     text-align: center;
 }
+
+
+/* Campo e botão do conversor binário */
+.conversor-binario .entrada-binaria {
+    display: flex;
+    align-items: stretch;
+    gap: 0.5rem;
+    max-width: 480px;
+}
+
+.conversor-binario .entrada-binaria input {
+    flex: 1;
+    min-width: 0;
+    width: auto;
+    margin: 0;
+}
+
+.conversor-binario .entrada-binaria button {
+    flex-shrink: 0;
+    margin: 0;
+    align-self: stretch;
+}
+
+@media (max-width: 420px) {
+    .conversor-binario .entrada-binaria {
+        flex-wrap: wrap;
+    }
+
+    .conversor-binario .entrada-binaria input {
+        flex-basis: 100%;
+    }
+
+    .conversor-binario .entrada-binaria button {
+        min-height: 42px;
+    }
+}
