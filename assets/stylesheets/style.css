@@ -57,6 +57,9 @@
 }
 .botao{
     background-color: #B31010;
+    color:#f7f7f8;
+    width: 40px;
+    padding: 10px;
 }
 .md-typeset .alp-hero h1,
 .md-typeset .alp-hero h2,
