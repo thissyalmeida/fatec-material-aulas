@@ -1,0 +1,1372 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://thissyalmeida.github.io/fatec-material-aulas/ALP/apostila/01-exercicios.html">
+      
+      
+        <link rel="prev" href="01-introducao-computacao.html">
+      
+      
+        <link rel="next" href="02-algoritmos-fluxogramas.html">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>1. Lista de exercícios - Apostila - Algoritmos e Linguagem de Programação</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/style.css">
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/laboratorio-binario.css">
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/laboratorios-alp.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="red">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#exercicios" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Apostila - Algoritmos e Linguagem de Programação" class="md-header__button md-logo" aria-label="Apostila - Algoritmos e Linguagem de Programação" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Apostila - Algoritmos e Linguagem de Programação
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              1. Lista de exercícios
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="red"  aria-label="Mudar para modo escuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Mudar para modo escuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="red"  aria-label="Mudar para modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Mudar para modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="index.html" class="md-tabs__link">
+          
+  
+  
+  Apostila de ALP
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Apostila - Algoritmos e Linguagem de Programação" class="md-nav__button md-logo" aria-label="Apostila - Algoritmos e Linguagem de Programação" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Apostila - Algoritmos e Linguagem de Programação
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Apostila de ALP
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Apostila de ALP
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Página inicial
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="01-introducao-computacao.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. Introdução à Computação
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. Lista de exercícios
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="01-exercicios.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. Lista de exercícios
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#exercicios" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercícios
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Exercícios">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nivel-1-compreensao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Nível 1 — Compreensão
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nivel-2-aplicacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Nível 2 — Aplicação
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nivel-3-analise-e-projeto" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Nível 3 — Análise e projeto
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="02-algoritmos-fluxogramas.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. Algoritmos e Fluxogramas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="03-variaveis-operadores.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3. Variáveis e Operadores
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="04-estrutura-sequencial.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4. Estrutura Sequencial
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="05-estruturas-condicionais.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5. Estruturas Condicionais
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="06-estruturas-repeticao.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6. Estruturas de Repetição
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="07-introducao-c.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7. Introdução à Linguagem C
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="08-controle-em-c.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    8. Controle em C
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="09-funcoes.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    9. Funções
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="10-vetores-matrizes.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10. Vetores e Matrizes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="11-memoria-binario.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    11. Memória e Binário
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="12-testes-estilo-git.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    12. Testes, Estilo e Git
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#exercicios" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercícios
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Exercícios">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nivel-1-compreensao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Nível 1 — Compreensão
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nivel-2-aplicacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Nível 2 — Aplicação
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nivel-3-analise-e-projeto" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Nível 3 — Análise e projeto
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>1. Lista de exercícios</h1>
+
+<h2 id="exercicios">Exercícios</h2>
+<p>Tente resolver as questões sem consultar o gabarito. Nas questões de planejamento, explique seu raciocínio: o objetivo não é apenas chegar a uma resposta, mas aprender a justificar as escolhas.</p>
+<table border="1">
+<tr><td>Questão</td><td>Enunciado</td><td>Gabarito</td></tr>
+<tr><td>1</td><td>1. Explique, com suas palavras, a diferença entre dado, informação e conhecimento.</td><td><button class="botao-resposta"
+        type="button"
+        aria-expanded="false">
+    Ver Resposta
+</button>
+
+<div class="gabarito-comentado" hidden markdown="1">
+
+**Gabarito comentado**
+
+Dado é um registro; informação é um dado interpretado em contexto; conhecimento é a compreensão que permite interpretar a informação e orientar decisões.
+
+</div>
+</div></td></tr>
+</table>
+
+<h3 id="nivel-1-compreensao">Nível 1 — Compreensão</h3>
+<div class="questao-com-gabarito">
+<ol>
+<li>Explique, com suas palavras, a diferença entre dado, informação e conhecimento.</li>
+</ol>
+<p><button class="botao-resposta"
+        type="button"
+        aria-expanded="false">
+    Ver Resposta
+</button></p>
+<div class="gabarito-comentado" hidden="hidden">
+<p><strong>Gabarito comentado</strong></p>
+<p>Dado é um registro; informação é um dado interpretado em contexto; conhecimento é a compreensão que permite interpretar a informação e orientar decisões.</p>
+</div>
+</div>
+<div class="questao-com-gabarito">
+<ol>
+<li>Uma tabela contém os valores <code>18</code>, <code>22</code> e <code>20</code>, sem indicar o que representam. Por que não é possível interpretá-los com segurança apenas com esses valores?
+<button class="botao-resposta"
+        type="button"
+        aria-expanded="false">
+    Ver Resposta
+</button></li>
+</ol>
+<div class="gabarito-comentado" hidden="hidden">
+<p><strong>Gabarito comentado</strong></p>
+<p>Falta contexto. Os números podem representar idades, notas, temperaturas ou outra medida. É necessário conhecer o significado dos valores e suas unidades.</p>
+</div>
+</div>
+<div class="questao-com-gabarito">
+<ol>
+<li>Cite três exemplos de hardware e três exemplos de software.
+<button class="botao-resposta"
+        type="button"
+        aria-expanded="false">
+    Ver Resposta
+</button></li>
+</ol>
+<div class="gabarito-comentado" hidden="hidden">
+<p><strong>Gabarito comentado</strong></p>
+<p><strong>3.</strong> Exemplos de hardware: teclado, CPU e monitor. Exemplos de software: sistema operacional, navegador e editor de código. Outras respostas são válidas se estiverem classificadas corretamente.</p>
+</div>
+</div>
+<div class="questao-com-gabarito">
+<ol>
+<li>Explique a relação entre hardware e software.
+<button class="botao-resposta"
+        type="button"
+        aria-expanded="false">
+    Ver Resposta
+</button></li>
+</ol>
+<div class="gabarito-comentado" hidden="hidden">
+<p><strong>Gabarito comentado</strong></p>
+<p><strong>4.</strong> Hardware são os componentes físicos e software são os programas e instruções que utilizam esses componentes para realizar tarefas.</p>
+</div>
+</div>
+<div class="questao-com-gabarito">
+<ol>
+<li>Qual é a função geral da CPU?
+<button class="botao-resposta"
+        type="button"
+        aria-expanded="false">
+    Ver Resposta
+</button></li>
+</ol>
+<div class="gabarito-comentado" hidden="hidden">
+<p><strong>Gabarito comentado</strong></p>
+<p><strong>5.</strong> A CPU executa instruções e coordena operações do sistema computacional.</p>
+</div>
+</div>
+<div class="questao-com-gabarito">
+<ol>
+<li>Diferencie memória RAM e disco rigido.
+<button class="botao-resposta"
+        type="button"
+        aria-expanded="false">
+    Ver Resposta
+</button></li>
+</ol>
+<div class="gabarito-comentado" hidden="hidden">
+<p><strong>Gabarito comentado</strong></p>
+<p><strong>6.</strong> A RAM mantém temporariamente dados e instruções em uso e é normalmente volátil. O armazenamento, como SSD ou HD, preserva arquivos mesmo quando o equipamento está desligado.</p>
+</div>
+</div>
+<div class="questao-com-gabarito">
+<ol>
+<li>Dê dois exemplos de dispositivos de entrada e dois de saída.
+<button class="botao-resposta"
+        type="button"
+        aria-expanded="false">
+    Ver Resposta
+</button></li>
+</ol>
+<div class="gabarito-comentado" hidden="hidden">
+<p><strong>Gabarito comentado</strong></p>
+<p><strong>7.</strong> Entrada: teclado e câmera. Saída: monitor e impressora. Há outros exemplos válidos.</p>
+</div>
+</div>
+<div class="questao-com-gabarito">
+<ol>
+<li>O que é código-fonte?
+<button class="botao-resposta"
+        type="button"
+        aria-expanded="false">
+    Ver Resposta
+</button></li>
+</ol>
+<div class="gabarito-comentado" hidden="hidden">
+<p><strong>Gabarito comentado</strong></p>
+<p><strong>8.</strong> É o texto de um programa escrito em uma linguagem de programação, seguindo suas regras.</p>
+</div>
+</div>
+<div class="questao-com-gabarito">
+<ol>
+<li>Qual é a função de um compilador em um ambiente de programação em C?
+<button class="botao-resposta"
+        type="button"
+        aria-expanded="false">
+    Ver Resposta
+</button></li>
+</ol>
+<div class="gabarito-comentado" hidden="hidden">
+<p><strong>Gabarito comentado</strong></p>
+<p><strong>9.</strong> O compilador traduz o código-fonte para uma representação usada nas etapas de construção do programa. Em ambientes comuns de C, podem existir etapas de geração de arquivos-objeto e linkedição antes da execução.</p>
+</div>
+</div>
+<div class="questao-com-gabarito">
+<ol>
+<li>Explique por que um programa pode compilar e ainda assim estar incorreto.
+<button class="botao-resposta"
+        type="button"
+        aria-expanded="false">
+    Ver Resposta
+</button></li>
+</ol>
+<div class="gabarito-comentado" hidden="hidden">
+<p><strong>Gabarito comentado</strong></p>
+<p><strong>10.</strong> A compilação não garante que a lógica esteja correta. Uma expressão válida pode implementar a fórmula errada ou não atender às regras do problema.</p>
+</div>
+</div>
+<h3 id="nivel-2-aplicacao">Nível 2 — Aplicação</h3>
+<div class="questao-com-gabarito">
+<ol>
+<li>Um sistema recebe duas notas, calcula a média aritmética e apresenta o resultado. Identifique entrada, processamento e saída.
+<button class="botao-resposta"
+        type="button"
+        aria-expanded="false">
+    Ver Resposta
+</button></li>
+</ol>
+<div class="gabarito-comentado" hidden="hidden">
+<p><strong>Gabarito comentado</strong></p>
+<p><strong>11.</strong> Entrada: duas notas. Processamento: somar as notas e dividir por 2. Saída: média calculada.</p>
+</div>
+</div>
+<div class="questao-com-gabarito">
+<ol>
+<li>Um sistema precisa calcular a área de um retângulo. Identifique as entradas, a fórmula de processamento e a saída.
+<button class="botao-resposta"
+        type="button"
+        aria-expanded="false">
+    Ver Resposta
+</button></li>
+</ol>
+<div class="gabarito-comentado" hidden="hidden">
+<p><strong>Gabarito comentado</strong></p>
+<p><strong>12.</strong> Entrada: largura e altura. Processamento: <code>área = largura × altura</code>. Saída: valor da área, em unidades quadradas. As dimensões precisam estar em unidades compatíveis.</p>
+</div>
+</div>
+<div class="questao-com-gabarito">
+<ol>
+<li>Um caixa eletrônico permite inserir um cartão, digitar uma senha e imprimir um comprovante. Cite exemplos de entrada, processamento e saída.
+<button class="botao-resposta"
+        type="button"
+        aria-expanded="false">
+    Ver Resposta
+</button></li>
+</ol>
+<div class="gabarito-comentado" hidden="hidden">
+<p><strong>Gabarito comentado</strong></p>
+<p><strong>13.</strong> Entrada: cartão e senha digitada. Processamento: ler os dados, verificar autenticação e executar a operação solicitada conforme as regras. Saída: mensagens na tela e, quando solicitado, comprovante impresso. O exemplo é simplificado e não descreve todos os controles de segurança de um caixa eletrônico.</p>
+</div>
+</div>
+<div class="questao-com-gabarito">
+<ol>
+<li>Um veículo percorreu 240 km e consumiu 20 litros de combustível. Qual foi o consumo médio em km/L? Mostre o cálculo.
+<button class="botao-resposta"
+        type="button"
+        aria-expanded="false">
+    Ver Resposta
+</button></li>
+</ol>
+<div class="gabarito-comentado" hidden="hidden">
+<p><strong>Gabarito comentado</strong></p>
+<p><strong>14.</strong> Consumo médio = distância ÷ litros = <code>240 ÷ 20 = 12 km/L</code>.</p>
+</div>
+</div>
+<div class="questao-com-gabarito">
+<ol>
+<li>Uma compra tem preço original de R$ 150,00 e desconto de 20%. Calcule o valor do desconto e o preço final.
+<button class="botao-resposta"
+        type="button"
+        aria-expanded="false">
+    Ver Resposta
+</button></li>
+</ol>
+<div class="gabarito-comentado" hidden="hidden">
+<p><strong>Gabarito comentado</strong></p>
+<p><strong>15.</strong> Desconto = <code>150 × 20/100 = R$ 30,00</code>. Preço final = <code>150 − 30 = R$ 120,00</code>.</p>
+</div>
+</div>
+<div class="questao-com-gabarito">
+<ol>
+<li>Para calcular a área de um retângulo, quais características são relevantes? Cite também uma característica que pode ser ignorada nesse cálculo.
+<button class="botao-resposta"
+        type="button"
+        aria-expanded="false">
+    Ver Resposta
+</button></li>
+</ol>
+<div class="gabarito-comentado" hidden="hidden">
+<p><strong>Gabarito comentado</strong></p>
+<p><strong>16.</strong> Largura e altura são relevantes. A cor pode ser ignorada no cálculo geométrico da área, pois não altera a fórmula.</p>
+</div>
+</div>
+<div class="questao-com-gabarito">
+<ol>
+<li>Classifique cada situação como decomposição, reconhecimento de padrões, abstração ou algoritmo:<ul>
+<li>a) Dividir o desenvolvimento de um sistema em módulos.</li>
+<li>b) Perceber que vários problemas exigem calcular uma soma.</li>
+<li>c) Ignorar a cor de um objeto ao calcular seu volume.</li>
+<li>d) Definir uma sequência de passos para calcular uma média.
+<button class="botao-resposta"
+    type="button"
+    aria-expanded="false">
+Ver Resposta
+</button></li>
+</ul>
+</li>
+</ol>
+<div class="gabarito-comentado" hidden="hidden">
+<p><strong>Gabarito comentado</strong></p>
+<p><strong>17.</strong> a) Decomposição. b) Reconhecimento de padrões. c) Abstração. d) Algoritmo.</p>
+</div>
+</div>
+<div class="questao-com-gabarito">
+<ol>
+<li>Um programa calcula <code>largura + altura</code> para obter a área de um retângulo. O código compila, mas o resultado está errado. Identifique o tipo de problema e proponha a correção.
+<button class="botao-resposta"
+        type="button"
+        aria-expanded="false">
+    Ver Resposta
+</button></li>
+</ol>
+<div class="gabarito-comentado" hidden="hidden">
+<p><strong>Gabarito comentado</strong></p>
+<p><strong>18.</strong> É um erro de lógica. A área deve ser calculada por <code>largura * altura</code>, e não por <code>largura + altura</code>.</p>
+</div>
+</div>
+<h3 id="nivel-3-analise-e-projeto">Nível 3 — Análise e projeto</h3>
+<div class="questao-com-gabarito">
+<ol>
+<li>Planeje um algoritmo para calcular o consumo médio de combustível de um veículo. Indique entradas, processamento, saída e pelo menos dois testes.
+<button class="botao-resposta"
+        type="button"
+        aria-expanded="false">
+    Ver Resposta
+</button></li>
+</ol>
+<div class="gabarito-comentado" hidden="hidden">
+<p><strong>Gabarito comentado</strong></p>
+<p><strong>19.</strong> Uma solução possível:
+- Entrada: distância percorrida e quantidade de combustível consumida.
+- Processamento: <code>consumo = distância / litros</code>.
+- Saída: consumo em km/L.
+- Testes: 240 km e 20 L devem produzir 12 km/L; 100 km e 10 L devem produzir 10 km/L. Também é necessário definir como tratar zero ou valores negativos para litros e distância.</p>
+</div>
+</div>
+<div class="questao-com-gabarito">
+<ol>
+<li>Descreva como um sistema acadêmico pode transformar notas em um boletim. Identifique os dados necessários, as regras que precisam ser conhecidas e os resultados apresentados.
+<button class="botao-resposta"
+        type="button"
+        aria-expanded="false">
+    Ver Resposta
+</button></li>
+</ol>
+<div class="gabarito-comentado" hidden="hidden">
+<p><strong>Gabarito comentado</strong></p>
+<p><strong>20.</strong> A resposta deve mencionar as notas e a identificação do estudante, as regras de cálculo e os critérios acadêmicos aplicáveis, o cálculo dos resultados e a apresentação organizada do boletim. Não se deve presumir uma regra institucional sem consultá-la.</p>
+</div>
+</div>
+<div class="questao-com-gabarito">
+<ol>
+<li>Um programa calcula descontos incorretos para alguns produtos. Elabore um plano de investigação que considere dados de entrada, fórmula, limites e testes.
+<button class="botao-resposta"
+        type="button"
+        aria-expanded="false">
+    Ver Resposta
+</button></li>
+</ol>
+<div class="gabarito-comentado" hidden="hidden">
+<p><strong>Gabarito comentado</strong></p>
+<p><strong>21.</strong> Verificar se os dados de entrada são válidos, conferir a fórmula percentual, testar desconto zero e outros percentuais permitidos, testar limites e comparar os resultados com cálculos manuais conhecidos. A resposta deve distinguir erro de fórmula de problema nos dados.</p>
+</div>
+</div>
+<div class="questao-com-gabarito">
+<ol>
+<li>Planeje um sistema de registro de presença. Divida o problema em partes menores e indique quais dados seriam relevantes.
+<button class="botao-resposta"
+        type="button"
+        aria-expanded="false">
+    Ver Resposta
+</button></li>
+</ol>
+<div class="gabarito-comentado" hidden="hidden">
+<p><strong>Gabarito comentado</strong></p>
+<p><strong>22.</strong> Uma decomposição possível inclui identificar turma e estudante, registrar presença ou ausência, validar o registro, armazenar os dados e produzir um relatório. Dados relevantes incluem identificação do estudante, turma, data e situação de presença.</p>
+</div>
+</div>
+<div class="questao-com-gabarito">
+<ol>
+<li>Uma biblioteca deseja desenvolver um sistema de empréstimo de livros. Explique como aplicaria os quatro pilares do pensamento computacional ao planejamento.
+<button class="botao-resposta"
+        type="button"
+        aria-expanded="false">
+    Ver Resposta
+</button></li>
+</ol>
+<div class="gabarito-comentado" hidden="hidden">
+<p><strong>Gabarito comentado</strong></p>
+<p><strong>23.</strong> Decomposição: separar cadastro, busca, empréstimos e devoluções. Reconhecimento de padrões: identificar operações semelhantes entre empréstimos. Abstração: selecionar os dados necessários, como livro, usuário, prazo e situação. Algoritmos: definir os passos e regras para emprestar e devolver livros.</p>
+</div>
+</div>
+<div class="questao-com-gabarito">
+<ol>
+<li>Compare uma solução manual e uma automatizada para organizar uma fila de atendimento. Apresente uma vantagem, uma limitação e uma situação excepcional que ambas precisariam considerar.
+<button class="botao-resposta"
+        type="button"
+        aria-expanded="false">
+    Ver Resposta
+</button></li>
+</ol>
+<div class="gabarito-comentado" hidden="hidden">
+<p><strong>Gabarito comentado</strong></p>
+<p><strong>24.</strong> A solução manual pode ser simples e funcionar sem infraestrutura tecnológica, mas pode ser mais lenta e sujeita a inconsistências. A automatizada pode acelerar registros e consultas, mas depende de equipamentos, software e procedimentos confiáveis. Ambas devem considerar exceções, como prioridade de atendimento ou falha de registro. Outras comparações justificadas são válidas.</p>
+</div>
+</div>
+<div class="questao-com-gabarito">
+<ol>
+<li>Escolha um problema cotidiano que possa ser resolvido com apoio de um programa. Descreva seu objetivo, entradas, processamento, saídas, possíveis dados inválidos e dois testes.
+<button class="botao-resposta"
+        type="button"
+        aria-expanded="false">
+    Ver Resposta
+</button></li>
+</ol>
+<div class="gabarito-comentado" hidden="hidden">
+<p><strong>Gabarito comentado</strong></p>
+<p><strong>25.</strong> A resposta deve definir um problema concreto e coerente, indicar entradas, processamento e saídas, considerar pelo menos uma validação e apresentar dois testes com resultados esperados. Avalie se as etapas são compatíveis entre si.</p>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="https://unpkg.com/mermaid@11/dist/mermaid.min.js"></script>
+      
+        <script src="../../assets/javascripts/mermaid-init.js"></script>
+      
+        <script src="../../assets/javascripts/conversor-binario.js"></script>
+      
+        <script src="../../assets/javascripts/laboratorio-binario.js"></script>
+      
+        <script src="../../assets/javascripts/laboratorios-alp.js"></script>
+      
+        <script src="../../assets/javascripts/laboratorios-capitulo-01.js"></script>
+      
+        <script src="../../assets/javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="../../assets/javascripts/gabarito.js"></script>
+      
+    
+  </body>
+</html>
