@@ -19,10 +19,12 @@
 
 !!! abstract "Exemplo prático: Sistema Acadêmico"
     <p class="texto">Imagine um sistema acadêmico que precisa calcular a média dos estudantes de uma turma. O sistema deverá ser capax de identificar quem atingiu a média mínima e gerar um relatório. Fazer isso manualmente pode funcionar para poucas pessoas, mas fica demorado e sujeito a erros quando a quantidade de registros aumenta. Antes de escrever um programa, precisamos compreender o problema:</p>
-      - **Quais dados serão fornecidos?** As notas de cada estudante.
+    <ul>
+      <li><b>Quais dados serão fornecidos?<b> As notas de cada estudante.</li>
       - **O que precisa ser feito?** Calcular a média e comparar o resultado com a média mínima.
       - **O que deve ser apresentado?** A média e uma indicação do resultado.
       - **Como verificar se a solução funciona?** Testar com diferentes notas, inclusive valores inválidos.
+    </ul>
     <p class="texto"> Esse raciocínio é parte da resolução de problemas com computadores. Programar não é apenas escrever comandos em uma linguagem: é compreender uma situação, organizar uma solução e verificar se ela atende ao objetivo. </p>
 
 <p class="texto"> Esse exemplo demonstra como os conceitos fundamentais da Computação se relacionam com a programação e o desenvolvimento de sistemas. A partir da compreensão dos problemas e da definição de uma sequência lógica de instruções, é possível construir soluções computacionais capazes de transformar dados em resultados úteis. Essa compreensão constitui uma das bases para o estudo de Algoritmos e Lógica de Programação, disciplina que apresenta os princípios necessários para desenvolver o raciocínio lógico e estruturar soluções que possam ser implementadas em uma linguagem de programação. </p>
