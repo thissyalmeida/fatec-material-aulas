@@ -1,9 +1,13 @@
-/* Componentes pedagógicos da apostila de ALP */
 :root > * {
-  --md-primary-fg-color: #EF5552;
-  --md-primary-fg-color--light: #F47774;
-  --md-primary-fg-color--dark: #D94340;
+  --md-primary-fg-color: #B31010;
+  --md-primary-fg-color--light: #D94340;
+  --md-primary-fg-color--dark: #7F0000;
   --md-accent-fg-color: #D94340;
+
+  --alp-red: #B31010;
+  --alp-ink: #202020;
+  --alp-muted: #6b7280;
+  --alp-soft: rgba(179, 16, 16, 0.08);
 }
 [data-md-color-scheme="default"] {
   --alp-panel: #ffffff;
