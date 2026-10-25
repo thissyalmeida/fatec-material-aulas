@@ -1,23 +1,33 @@
+
 document.addEventListener("DOMContentLoaded", function () {
     document.querySelectorAll(".botao-resposta").forEach(function (botao) {
         botao.addEventListener("click", function () {
-            const container = botao.closest(".questao-com-gabarito");
-            const gabarito = container?.querySelector(".gabarito-comentado");
+            let elemento = botao.nextElementSibling;
 
-            if (!gabarito) {
-                console.error("Gabarito não encontrado no contêiner da questão.");
+            // Procura o bloco do gabarito nos elementos seguintes.
+            while (
+                elemento &&
+                !elemento.classList.contains("gabarito-comentado")
+            ) {
+                elemento = elemento.nextElementSibling;
+            }
+
+            if (!elemento) {
+                console.error("Gabarito comentado não encontrado.");
                 return;
             }
 
-            gabarito.hidden = !gabarito.hidden;
+            const abrir = elemento.hidden ||
+                getComputedStyle(elemento).display === "none";
 
-            const aberto = !gabarito.hidden;
+            elemento.hidden = !abrir;
+            elemento.style.display = abrir ? "block" : "none";
 
-            botao.textContent = aberto
+            botao.textContent = abrir
                 ? "Ocultar Resposta"
                 : "Ver Resposta";
 
-            botao.setAttribute("aria-expanded", String(aberto));
+            botao.setAttribute("aria-expanded", String(abrir));
         });
     });
 });
