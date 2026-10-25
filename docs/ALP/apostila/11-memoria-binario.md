@@ -18,6 +18,17 @@ Computadores representam informações por estados físicos que podem ser modela
 - **Byte:** unidade de armazenamento composta, nas plataformas C modernas comuns, por 8 bits; formalmente, C define byte como unidade de armazenamento de `sizeof(char)`, e `CHAR_BIT` informa quantos bits possui.
 - **Endereço:** identificador usado para localizar um objeto na memória durante a execução.
 
+## Laboratório: simulador de memória
+
+Modelo didático: cada célula representa 1 byte e cada endereço identifica uma célula. Não é uma simulação da memória física real.
+
+<div class="lab-alp" id="lab-memoria"><section class="lab-card"><h3>Explorador de endereços</h3>
+<label for="mem-size">Quantidade de células</label><select id="mem-size"><option value="8">8 bytes</option><option value="16">16 bytes</option><option value="24">24 bytes</option><option value="32">32 bytes</option></select>
+<label for="mem-base">Endereço inicial</label><input id="mem-base" type="number" min="0" value="1000">
+<p>Células: <strong id="mem-count">8</strong> · Capacidade: <strong id="mem-bits">64</strong> bits</p><p>Intervalo de endereços: <strong id="mem-range">1000 a 1007</strong></p>
+<div class="memory-grid" id="mem-grid"></div><p class="lab-muted">Clique em uma célula para consultar seu endereço. Os valores 0/1 são ilustrativos.</p><p id="mem-detail" class="lab-step" role="status">Selecione uma célula.</p></section></div>
+
+
 ## 11.2 Conversão decimal para binário
 
 Divida repetidamente o número por 2 e anote os restos. Leia os restos de baixo para cima.
@@ -30,6 +41,16 @@ Exemplo: 13 decimal.
 | 6 / 2 | 3 | 0 |
 | 3 / 2 | 1 | 1 |
 | 1 / 2 | 0 | 1 |
+
+## Laboratório: decimal para binário
+
+Para converter um inteiro decimal em binário, divida sucessivamente por 2 até o quociente ser 0. O número binário é formado pelos restos lidos de baixo para cima.
+
+<div class="lab-alp" id="lab-decimal-binario"><section class="lab-card">
+<h3>Conversor decimal → binário</h3><label for="decbin-input">Número decimal (0 a 255)</label><input id="decbin-input" type="number" min="0" max="255" step="1" value="13">
+<button type="button" id="decbin-go">Converter</button><p>Representação binária: <strong class="lab-big" id="decbin-output">1101</strong></p>
+<p class="lab-muted">Leia a coluna dos restos de baixo para cima.</p><div class="lab-table-wrap"><table><thead><tr><th>Dividendo</th><th>Operação</th><th>Quociente</th><th>Resto</th></tr></thead><tbody id="decbin-steps"></tbody></table></div><p class="lab-message" id="decbin-msg" role="status"></p></section></div>
+
 
 Logo, \(13_{10}=1101_2\).
 

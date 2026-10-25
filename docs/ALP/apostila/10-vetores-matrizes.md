@@ -93,6 +93,16 @@ linha 1      4         5         6
 
     Leia cinco notas, armazene-as em um vetor, calcule a média e conte quantas notas estão acima da média. Teste notas iguais e notas distintas.
 
+## Laboratório: visualizador do Bubble Sort
+
+O Bubble Sort compara elementos vizinhos e troca sua posição quando estão fora de ordem. Avance um passo por vez para observar cada comparação e troca.
+
+<div class="lab-alp" id="lab-bubble-sort"><section class="lab-card"><h3>Ordenação passo a passo</h3>
+<label for="sort-input">Vetor (2 a 8 inteiros separados por vírgula)</label><input id="sort-input" type="text" value="5, 2, 8, 1, 4">
+<button type="button" id="sort-start">Iniciar / reiniciar</button><button type="button" class="secondary" id="sort-next">Próximo passo</button><button type="button" class="secondary" id="sort-reset">Restaurar exemplo</button>
+<p id="sort-step" class="lab-muted">Passo 1</p><div id="sort-bars" class="sort-bars" aria-label="Visualização dos valores do vetor"></div><p id="sort-status" class="lab-message" role="status"></p></section></div>
+
+
 ## Exercícios
 
 1. O que é um vetor?

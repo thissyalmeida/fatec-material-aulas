@@ -83,6 +83,15 @@ int main(void) {
 }
 ```
 
+## Laboratório: lógica de programação
+
+Resolva desafios de estruturas condicionais e de repetição. Cada resposta correta vale um ponto nesta sessão.
+
+<div class="lab-alp" id="lab-logica"><section class="lab-card"><h3>Desafio de lógica</h3><p class="lab-muted">Para respostas textuais, não é necessário usar aspas.</p>
+<p id="logic-question" class="lab-step">Carregando desafio...</p><label for="logic-answer">Sua resposta</label><input id="logic-answer" type="text" autocomplete="off">
+<button type="button" id="logic-check">Conferir</button><button type="button" class="secondary" id="logic-next">Próximo desafio</button>
+<p id="logic-feedback" class="lab-message" role="status"></p><p>Pontuação: <strong id="logic-score">0</strong></p><p id="logic-why" class="lab-step" hidden></p></section></div>
+
 ## 8.5 Tabela de rastreamento
 
 Para `for (i=1; i<=3; i++)`, o corpo executa com `i` igual a 1, 2 e 3. Depois da atualização para 4, a condição é falsa e o laço termina.

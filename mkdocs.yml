@@ -49,12 +49,14 @@ markdown_extensions:
 extra_css:
   - assets/stylesheets/style.css
   - assets/stylesheets/laboratorio-binario.css
+  - assets/stylesheets/laboratorios-alp.css
 
 extra_javascript:
   - https://unpkg.com/mermaid@11/dist/mermaid.min.js
   - assets/javascripts/mermaid-init.js
   - assets/javascripts/conversor-binario.js
-  - assets/javascripts/laboratorio-binario.js  
+  - assets/javascripts/laboratorio-binario.js
+  - assets/javascripts/laboratorios-alp.js  
 
 nav:
 - Apostila de ALP:
