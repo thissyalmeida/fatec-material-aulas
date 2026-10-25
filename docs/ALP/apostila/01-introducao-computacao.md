@@ -108,13 +108,9 @@ A decisão depende tanto da informação quanto da regra utilizada. Em um sistem
     <p class="feedback-atividade" aria-live="polite"></p>
 </div>
     
-## 1.2 Hardware e software
+## 1.2 Hardware
 
-<p class="texto">Um sistema computacional reúne componentes físicos e programas que trabalham em conjunto.</p>
-
-### Hardware
-
-**Hardware** é a parte física do sistema computacional, ou seja, os componentes que podemos tocar ou que fazem parte fisicamente do equipamento. São exemplos de hardware: processador, memória, unidade de armazenamento, câmera, microfone, sensores, teclado, mouse e monitor, entre outros. 
+<p class="texto"><b>Hardware</b> é a parte física do sistema computacional, ou seja, os componentes que podemos tocar ou que fazem parte fisicamente do equipamento. São exemplos de hardware: processador, memória, unidade de armazenamento, câmera, microfone, sensores, teclado, mouse e monitor, entre outros. </p>
 
 ```mermaid
 flowchart TD
@@ -124,23 +120,11 @@ flowchart TD
     C --> E[Saída de resultados]
 ```
 
+## 1.3 Software
 
-### Software
+<p class="texto"><b>Software</b> é o conjunto de programas, instruções e dados que orientam as operações realizadas pelo computador. Sistema operacional, compilador, navegador, aplicativos de mensagens e editor de código são exemplos de software. </p>
 
-**Software** é o conjunto de programas e instruções que orientam o hardware. Sistema operacional, compilador, navegador e editor de código são exemplos de software.
-
-**Software** é o conjunto de programas, instruções e dados que orientam as operações realizadas pelo computador.
-
-Exemplos:
-
-- sistema operacional;
-- navegador de internet;
-- editor de código;
-- compilador;
-- sistema acadêmico;
-- aplicativo de mensagens.
-
-O hardware oferece os recursos físicos. O software utiliza esses recursos para realizar tarefas. Um aplicativo não funciona sem uma plataforma computacional capaz de executá-lo; da mesma forma, um computador sem programas não realiza automaticamente a tarefa específica que o usuário deseja.
+<p class="texto"> O hardware oferece os recursos físicos. O software utiliza esses recursos para realizar tarefas. Um aplicativo não funciona sem uma plataforma computacional capaz de executá-lo; da mesma forma, um computador sem programas não realiza automaticamente a tarefa específica que o usuário deseja. </p>
 
 ### Exemplo do cotidiano
 
