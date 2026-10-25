@@ -16,7 +16,6 @@ Tente resolver as questões sem consultar o gabarito. Nas questões de planejame
 
 Dado é um registro; informação é um dado interpretado em contexto; conhecimento é a compreensão que permite interpretar a informação e orientar decisões.
 
-</div>
 </div></td></tr>
 </table>
 
