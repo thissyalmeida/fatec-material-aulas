@@ -54,11 +54,6 @@ extra_javascript:
   - assets/javascripts/mermaid-init.js
   - assets/javascripts/conversor-binario.js
 
-
-extra_javascript:
-  - https://unpkg.com/mermaid@11/dist/mermaid.min.js
-  - javascripts/mermaid-init.js
-
 nav:
 - Apostila de ALP:
   - Página inicial: ALP/apostila/index.md
