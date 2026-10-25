@@ -61,11 +61,7 @@ Cada posição representa uma potência de 2:
         autocomplete="off"
         aria-describedby="mensagem-binario"
       >
-     <button
-  type="button"
-  id="btn-converter-binario">
-  Converter
-</button>
+     <button type="button" id="btn-converter-binario"> Converter </button>
     </div>
     <p id="mensagem-binario" role="status" aria-live="polite"></p>
   </div>
