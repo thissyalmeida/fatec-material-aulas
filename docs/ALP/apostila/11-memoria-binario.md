@@ -51,7 +51,6 @@ Cada posição representa uma potência de 2:
 
   <form id="form-conversor-binario">
     <label for="numero-binario">Número binário:</label>
-
     <div class="entrada-binaria">
       <input
         type="text"
@@ -62,12 +61,8 @@ Cada posição representa uma potência de 2:
         autocomplete="off"
         aria-describedby="mensagem-binario"
       >
-
-      <button type="submit" id="btn-converter-binario">
-        Converter
-      </button>
+     <button type="button" id="btn-converter-binario"  onclick="converterBinario()"> Converter </button>
     </div>
-
     <p id="mensagem-binario" role="status" aria-live="polite"></p>
   </form>
 
