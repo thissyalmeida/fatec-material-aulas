@@ -72,3 +72,84 @@
 }
 .md-typeset .alp-hero a.md-button:hover { opacity: .88; }
 .md-typeset .alp-hero a.md-button:focus-visible { outline: 3px solid #FFFFFF; outline-offset: 3px; }
+
+/* Conversor binário da apostila de ALP */
+.conversor-binario {
+    border: 1px solid var(--md-default-fg-color--lightest);
+    border-top: 5px solid #B31010;
+    border-radius: 10px;
+    padding: 1.25rem;
+    margin: 1.5rem 0;
+    background: var(--md-default-bg-color);
+}
+
+.conversor-binario h3 {
+    margin-top: 0;
+    color: #B31010;
+}
+
+.conversor-binario input {
+    display: block;
+    width: 100%;
+    max-width: 320px;
+    box-sizing: border-box;
+    padding: 0.7rem;
+    margin: 0.5rem 0 1rem;
+    border: 1px solid var(--md-default-fg-color--lightest);
+    border-radius: 6px;
+    font-family: monospace;
+    font-size: 1.1rem;
+}
+
+.conversor-binario button {
+    background: #B31010;
+    color: #fff;
+    border: 0;
+    border-radius: 6px;
+    padding: 0.55rem 0.85rem;
+    margin: 0.2rem;
+    cursor: pointer;
+}
+
+.conversor-binario button:hover {
+    filter: brightness(0.85);
+}
+
+.conversor-binario button:focus-visible,
+.conversor-binario input:focus-visible {
+    outline: 3px solid var(--md-accent-fg-color);
+    outline-offset: 3px;
+}
+
+.resultado-binario {
+    background: var(--md-code-bg-color);
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+.resultado-binario output {
+    color: #B31010;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#mensagem-binario {
+    color: #B31010;
+}
+
+.tabela-responsiva {
+    overflow-x: auto;
+}
+
+.conversor-binario table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.conversor-binario th,
+.conversor-binario td {
+    padding: 0.6rem;
+    border: 1px solid var(--md-default-fg-color--lightest);
+    text-align: center;
+}

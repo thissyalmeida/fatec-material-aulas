@@ -39,6 +39,62 @@ Cada posição representa uma potência de 2:
 
 \(1101_2 = 1\times 2^3 + 1\times 2^2 + 0\times 2^1 + 1\times 2^0 = 13\).
 
+
+<div class="conversor-binario">
+  <h3>Conversor binário para decimal</h3>
+
+  <p>
+    Digite um número binário de até 8 bits para visualizar
+    a conversão passo a passo.
+  </p>
+
+  <label for="numero-binario">Número binário:</label>
+  <input
+    type="text"
+    id="numero-binario"
+    value="1101"
+    maxlength="8"
+    inputmode="numeric"
+    placeholder="Ex.: 1101"
+    autocomplete="off"
+  >
+
+  <div class="resultado-binario">
+    <p>Resultado em decimal:</p>
+    <output id="resultado-decimal" aria-live="polite">13</output>
+  </div>
+
+  <p id="mensagem-binario" role="status"></p>
+
+  <h4>Experimente outros números</h4>
+  <button type="button" data-binario="1010">1010</button>
+  <button type="button" data-binario="1111">1111</button>
+  <button type="button" data-binario="101101">101101</button>
+  <button type="button" data-binario="11111111">11111111</button>
+
+  <h4>Entenda o cálculo</h4>
+
+  <div class="tabela-responsiva">
+    <table>
+      <thead>
+        <tr>
+          <th>Posição</th>
+          <th>Bit</th>
+          <th>Potência de 2</th>
+          <th>Multiplicação</th>
+        </tr>
+      </thead>
+      <tbody id="tabela-binario">
+        <tr><td>0</td><td>1</td><td>2^0 = 1</td><td>1 × 1 = 1</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p><strong>Soma dos resultados:</strong></p>
+  <p id="calculo-binario" aria-live="polite">8 + 4 + 0 + 1 = 13</p>
+</div>
+
+
 ## 11.4 Hexadecimal
 
 O sistema hexadecimal usa os símbolos 0–9 e A–F. Um dígito hexadecimal representa quatro bits, então dois dígitos hexadecimais correspondem a oito bits. É uma forma compacta de escrever sequências binárias.
