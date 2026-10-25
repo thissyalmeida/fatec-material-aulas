@@ -1,12 +1,48 @@
 # 1. Introdução à Computação
 
-## Abertura: de um problema a uma solução
+A computação é a ciência e a arte de coletar, processar, armazenar e analisar dados para gerar informações e conhecimento, estruturando-se em pilares fundamentais de hardware, software e dados. Dentre as atividades que mais se destacam, podemos citar o desenvolvimento de sistemas. Essa atividade dedica-se à criação de soluções informatizadas para atender às necessidades específicas de usuários ou organizações. Envolve a manipulação inteligente de dados para conceber, projetar, implementar e manter programas, softwares ou aplicações digitais. 
+
+O objetivo central do desenvolvimento de sistemas é criar soluções eficientes e funcionais que possam otimizar processos, melhorar o desempenho operacional e atender aos requisitos específicos do usuário final. 
+
+Um exemplo prático que ajuda a esclarecer o que é desenvolvimento de sistemas é a criação de uma ferramenta online que permite aos usuários calcular a média de uma turma. Aqui, trata-se de um sistema que integra informações em tempo real e facilita o processo de controle das notas de uma turma por meio da tecnologia.
+
+## Exemplo prático: Sistema Acadêmico
 
 Imagine um sistema acadêmico que precisa calcular a média de uma turma. Antes de escrever código, é necessário entender quais dados serão fornecidos, quais operações serão realizadas e qual resultado deverá ser apresentado. Essa é a base do pensamento computacional.
 
 !!! abstract "Objetivos de aprendizagem"
 
     Ao final, você deverá conseguir explicar a diferença entre dado e informação, reconhecer componentes de um sistema computacional e decompor problemas em entrada, processamento e saída.
+
+    # 1. Introdução à Computação
+
+## Abertura: de um problema a uma solução
+
+Imagine que a coordenação de um curso precise calcular a média dos estudantes, identificar quem atingiu a média mínima e gerar um relatório. Fazer isso manualmente pode funcionar para poucas pessoas, mas fica demorado e sujeito a erros quando a quantidade de registros aumenta.
+
+Antes de escrever um programa, precisamos compreender o problema:
+
+- **Quais dados serão fornecidos?** As notas de cada estudante.
+- **O que precisa ser feito?** Calcular a média e comparar o resultado com a média mínima.
+- **O que deve ser apresentado?** A média e uma indicação do resultado.
+- **Como verificar se a solução funciona?** Testar com diferentes notas, inclusive valores inválidos.
+
+Esse raciocínio é parte da resolução de problemas com computadores. Programar não é apenas escrever comandos em uma linguagem: é compreender uma situação, organizar uma solução e verificar se ela atende ao objetivo.
+
+!!! info "Objetivos de aprendizagem"
+    Ao concluir este capítulo, você deverá ser capaz de:
+
+    - diferenciar dado, informação e conhecimento;
+    - explicar a relação entre hardware e software;
+    - reconhecer os componentes básicos de um sistema computacional;
+    - descrever, em linhas gerais, como um programa em C é compilado;
+    - decompor um problema em entrada, processamento e saída;
+    - explicar os quatro pilares do pensamento computacional;
+    - planejar e testar uma solução antes de implementá-la.
+
+!!! tip "Como estudar este capítulo"
+    Leia cada conceito, acompanhe os exemplos sem pular as etapas e tente responder às perguntas antes de abrir as respostas. As atividades interativas servem para praticar: errar faz parte do processo. Leia o feedback e tente novamente.
+
 
 ## 1.1 Dado, informação e conhecimento
 
@@ -145,34 +181,6 @@ A decomposição reduz a complexidade e torna a solução mais fácil de testar.
 - Brookshear, J. G.; Brylow, D. *Computer Science: An Overview*. Pearson.
 - Documentação e materiais introdutórios de computação indicados pela disciplina.
 
-# 1. Introdução à Computação
-
-## Abertura: de um problema a uma solução
-
-Imagine que a coordenação de um curso precise calcular a média dos estudantes, identificar quem atingiu a média mínima e gerar um relatório. Fazer isso manualmente pode funcionar para poucas pessoas, mas fica demorado e sujeito a erros quando a quantidade de registros aumenta.
-
-Antes de escrever um programa, precisamos compreender o problema:
-
-- **Quais dados serão fornecidos?** As notas de cada estudante.
-- **O que precisa ser feito?** Calcular a média e comparar o resultado com a média mínima.
-- **O que deve ser apresentado?** A média e uma indicação do resultado.
-- **Como verificar se a solução funciona?** Testar com diferentes notas, inclusive valores inválidos.
-
-Esse raciocínio é parte da resolução de problemas com computadores. Programar não é apenas escrever comandos em uma linguagem: é compreender uma situação, organizar uma solução e verificar se ela atende ao objetivo.
-
-!!! info "Objetivos de aprendizagem"
-    Ao concluir este capítulo, você deverá ser capaz de:
-
-    - diferenciar dado, informação e conhecimento;
-    - explicar a relação entre hardware e software;
-    - reconhecer os componentes básicos de um sistema computacional;
-    - descrever, em linhas gerais, como um programa em C é compilado;
-    - decompor um problema em entrada, processamento e saída;
-    - explicar os quatro pilares do pensamento computacional;
-    - planejar e testar uma solução antes de implementá-la.
-
-!!! tip "Como estudar este capítulo"
-    Leia cada conceito, acompanhe os exemplos sem pular as etapas e tente responder às perguntas antes de abrir as respostas. As atividades interativas servem para praticar: errar faz parte do processo. Leia o feedback e tente novamente.
 
 ## 1.1 Dado, informação e conhecimento
 
