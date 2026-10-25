@@ -11,7 +11,7 @@
     - explicar os quatro pilares do pensamento computacional;
     - planejar e testar uma solução antes de implementá-la.
 
-A Computação é uma área do conhecimento dedicada ao estudo e ao desenvolvimento de métodos, técnicas e tecnologias para a coleta, o processamento, o armazenamento e a análise de dados. Seu propósito é transformar dados em informações úteis, contribuindo para a produção de conhecimento e para a resolução de problemas em diferentes contextos da sociedade. Para isso, a Computação envolve a integração de três elementos fundamentais: hardware, que corresponde aos componentes físicos dos dispositivos computacionais; software, que compreende os programas e as instruções responsáveis por orientar o funcionamento desses dispositivos; e dados, que representam os elementos utilizados para produzir informações relevantes.
+<p class="texto"> A Computação é uma área do conhecimento dedicada ao estudo e ao desenvolvimento de métodos, técnicas e tecnologias para a coleta, o processamento, o armazenamento e a análise de dados. Seu propósito é transformar dados em informações úteis, contribuindo para a produção de conhecimento e para a resolução de problemas em diferentes contextos da sociedade. Para isso, a Computação envolve a integração de três elementos fundamentais: hardware, que corresponde aos componentes físicos dos dispositivos computacionais; software, que compreende os programas e as instruções responsáveis por orientar o funcionamento desses dispositivos; e dados, que representam os elementos utilizados para produzir informações relevantes.</p>
 
 Entre as diversas atividades da Computação, destaca-se o desenvolvimento de sistemas, que consiste na criação de soluções informatizadas para atender às necessidades específicas de pessoas, empresas e outras organizações. Essa atividade envolve diferentes etapas, como a identificação de um problema, o levantamento de requisitos, o planejamento da solução, a elaboração de algoritmos, a implementação de programas, a realização de testes e a manutenção do sistema ao longo de seu ciclo de vida.
 
@@ -82,7 +82,7 @@ A decisão depende tanto da informação quanto da regra utilizada. Em um sistem
 
 ### Atividade interativa: classifique os exemplos
 
-Leia cada situação e escolha a classificação mais adequada. Em seguida, confira o feedback.
+Lembre-se que **Dado** é o registro; **informação** é o dado contextualizado; **conhecimento** é a compreensão que ajuda a interpretar e agir. A fronteira entre informação e conhecimento depende do contexto e do uso que se faz deles. Com base nisso, leia cada situação e escolha a classificação mais adequada. Em seguida, confira o feedback.
 
 <div class="atividade-interativa" id="atividade-dado-info">
   <p><strong>Situação 1.</strong> O registro de uma avaliação contém apenas o valor <code>7,5</code>, sem indicar a que se refere.</p>
@@ -109,10 +109,7 @@ Leia cada situação e escolha a classificação mais adequada. Em seguida, conf
   </div>
   <p class="feedback-atividade" aria-live="polite"></p>
 </div>
-
-!!! success "O que você deve lembrar"
-    **Dado** é o registro; **informação** é o dado contextualizado; **conhecimento** é a compreensão que ajuda a interpretar e agir. A fronteira entre informação e conhecimento depende do contexto e do uso que se faz deles.
-
+    
 ## 1.2 Hardware e software
 
 **Hardware** é a parte física: processador, memória, armazenamento, teclado e monitor. **Software** é o conjunto de programas e instruções que orientam o hardware. Sistema operacional, compilador, navegador e editor de código são exemplos de software.
