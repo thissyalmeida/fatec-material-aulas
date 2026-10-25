@@ -202,39 +202,44 @@
     text-align: justify;
 }
 
-.gabarito-comentado {
-    margin-top: 1rem;
-    padding: 1rem;
-    border-left: 4px solid #B31010;
-    border-radius: 4px;
-    background-color: var(--md-code-bg-color);
+
+.tabela-exercicios {
+    width: 100%;
+    border-collapse: collapse;
 }
 
-.gabarito-comentado[hidden] {
-    display: none !important;
+.tabela-exercicios th {
+    background-color: #B31010;
+    color: white;
+    text-align: left;
 }
 
-.gabarito-comentado.visivel {
-  display: block;
+.tabela-exercicios th,
+.tabela-exercicios td {
+    padding: 0.75rem;
+    border: 1px solid var(--md-default-fg-color--lightest);
+    vertical-align: top;
 }
 
 .botao-resposta {
-  background-color: #B31010;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  padding: 0.6rem 1rem;
-  cursor: pointer;
-  font-weight: bold;
+    background-color: #B31010;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 0.75rem;
+    cursor: pointer;
+    white-space: nowrap;
 }
 
 .botao-resposta:hover {
-  opacity: 0.9;
+    opacity: 0.9;
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(25, auto); /* ou defina a altura desejada, ex: 50px */
-  gap: 10px; /* espaçamento opcional entre os itens */
+.linha-gabarito td {
+    background-color: var(--md-code-bg-color);
+    border-left: 4px solid #B31010;
+}
+
+.linha-gabarito[hidden] {
+    display: none !important;
 }

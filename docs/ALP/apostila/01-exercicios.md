@@ -2,11 +2,54 @@
 
 Tente resolver as questões sem consultar o gabarito. Nas questões de planejamento, explique seu raciocínio: o objetivo não é apenas chegar a uma resposta, mas aprender a justificar as escolhas.
 
-<div class="grid-container">
-    <div>Questão</div>
-    <div>Enunciado</div>
-    <div>Gabarito</div>
-</div>
+
+<table class="tabela-exercicios">
+  <thead>
+    <tr>
+      <th>Nº</th>
+      <th>Enunciado do exercício</th>
+      <th>Ação</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Explique, com suas palavras, a diferença entre dado, informação e conhecimento.</td>
+      <td>
+        <button class="botao-resposta"
+                type="button"
+                data-target="gabarito-1"
+                aria-expanded="false">
+          Ver Resposta
+        </button>
+      </td>
+    </tr>
+    <tr id="gabarito-1" class="linha-gabarito" hidden>
+      <td colspan="3">
+        <strong>Gabarito comentado</strong>
+        <p>Dado é um valor isolado; informação é um dado contextualizado; conhecimento é a compreensão construída a partir da interpretação das informações.</p>
+      </td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Cite três exemplos de hardware e três exemplos de software.</td>
+      <td>
+        <button class="botao-resposta"
+                type="button"
+                data-target="gabarito-2"
+                aria-expanded="false">
+          Ver Resposta
+        </button>
+      </td>
+    </tr>
+    <tr id="gabarito-2" class="linha-gabarito" hidden>
+      <td colspan="3">
+        <strong>Gabarito comentado</strong>
+        <p>Hardware: teclado, monitor e memória RAM. Software: sistema operacional, navegador e editor de texto.</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 ### Nível 1 — Compreensão
 
