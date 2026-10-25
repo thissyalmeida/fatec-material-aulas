@@ -1,93 +1,87 @@
 
-document.addEventListener("DOMContentLoaded", function () {
+function iniciarConversorBinario() {
     const entrada = document.getElementById("numero-binario");
     const resultado = document.getElementById("resultado-decimal");
     const tabela = document.getElementById("tabela-binario");
     const calculo = document.getElementById("calculo-binario");
     const mensagem = document.getElementById("mensagem-binario");
 
-    // Verifica se o conversor está presente na página
     if (!entrada || !resultado || !tabela || !calculo || !mensagem) {
         return;
     }
 
-    function converterBinario() {
+    // Evita registrar os mesmos eventos mais de uma vez.
+    if (entrada.dataset.inicializado === "true") {
+        return;
+    }
+    entrada.dataset.inicializado = "true";
+
+    function converter() {
         const binario = entrada.value.trim();
 
-        // Limpa os resultados anteriores
-        tabela.innerHTML = "";
+        tabela.replaceChildren();
         calculo.textContent = "";
-        mensagem.textContent = "";
 
-        // Valida a entrada: somente 0 e 1, de 1 a 8 bits
         if (!/^[01]{1,8}$/.test(binario)) {
             resultado.textContent = "--";
             mensagem.textContent =
-                "Digite apenas 0 e 1, com no máximo 8 algarismos.";
+                "Digite de 1 a 8 bits, utilizando apenas 0 e 1.";
             return;
         }
 
-        // Converte o número binário para decimal
+        mensagem.textContent = "";
         const decimal = parseInt(binario, 2);
         resultado.textContent = decimal;
 
-        let soma = 0;
         const parcelas = [];
 
-        // Percorre os bits da direita para a esquerda
         for (let i = 0; i < binario.length; i++) {
-            const bit = Number(binario[binario.length - 1 - i]);
-            const potencia = i;
-            const valorPotencia = 2 ** potencia;
-            const produto = bit * valorPotencia;
+            const posicao = binario.length - 1 - i;
+            const bit = Number(binario[i]);
+            const potencia = 2 ** posicao;
+            const produto = bit * potencia;
 
-            soma += produto;
-            parcelas.unshift(produto);
+            parcelas.push(`${bit} × ${potencia}`);
 
-            // Cria uma linha da tabela
             const linha = document.createElement("tr");
 
-            const colunaPosicao = document.createElement("td");
-            colunaPosicao.textContent = potencia;
-
-            const colunaBit = document.createElement("td");
-            colunaBit.textContent = bit;
-
-            const colunaPotencia = document.createElement("td");
-            colunaPotencia.textContent =
-                `2^${potencia} = ${valorPotencia}`;
-
-            const colunaProduto = document.createElement("td");
-            colunaProduto.textContent =
-                `${bit} × ${valorPotencia} = ${produto}`;
-
-            linha.append(
-                colunaPosicao,
-                colunaBit,
-                colunaPotencia,
-                colunaProduto
-            );
+            [
+                posicao,
+                bit,
+                `2^${posicao} = ${potencia}`,
+                `${bit} × ${potencia} = ${produto}`
+            ].forEach(function (valor) {
+                const celula = document.createElement("td");
+                celula.textContent = valor;
+                linha.appendChild(celula);
+            });
 
             tabela.appendChild(linha);
         }
 
-        // Mostra a soma final
+        const soma = binario.split("").reduce(function (total, bit, i) {
+            return total + Number(bit) * 2 ** (binario.length - 1 - i);
+        }, 0);
+
         calculo.textContent =
             parcelas.join(" + ") + " = " + soma;
     }
 
-    // Atualiza os cálculos enquanto o aluno digita
-    entrada.addEventListener("input", converterBinario);
+    entrada.addEventListener("input", converter);
 
-    // Botões com exemplos prontos
     document.querySelectorAll("[data-binario]").forEach(function (botao) {
         botao.addEventListener("click", function () {
             entrada.value = botao.dataset.binario;
-            converterBinario();
+            converter();
         });
     });
 
-    // Apresenta um exemplo inicial
-    entrada.value = "1101";
-    converterBinario();
-});
+    converter();
+}
+
+// Inicialização tradicional e compatibilidade com navegação instantânea.
+if (typeof document$ !== "undefined") {
+    document$.subscribe(iniciarConversorBinario);
+} else {
+    document.addEventListener("DOMContentLoaded", iniciarConversorBinario);
+}
