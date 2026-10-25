@@ -2,9 +2,11 @@
 
 Tente resolver as questões sem consultar o gabarito. Nas questões de planejamento, explique seu raciocínio: o objetivo não é apenas chegar a uma resposta, mas aprender a justificar as escolhas.
 
-<table border="1">
-<tr><td>Questão</td><td>Enunciado</td><td>Gabarito</td></tr>
-<tr><td>1</td><td> Explique, com suas palavras, a diferença entre dado, informação e conhecimento.</td><td><button class="botao-resposta" type="button" aria-expanded="false"> Ver Resposta </button></td></tr></table>
+<div class="questoes">
+    <div>Questão</div>
+    <div>Enunciado</div>
+    <div>Gabarito</div>
+</div>
 
 ### Nível 1 — Compreensão
 
