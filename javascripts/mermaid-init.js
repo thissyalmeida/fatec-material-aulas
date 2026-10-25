@@ -1,5 +1,6 @@
+// Inicialização do Mermaid para os diagramas da apostila.
 document.addEventListener("DOMContentLoaded", function () {
-  if (typeof mermaid !== "undefined") {
-    mermaid.initialize({ startOnLoad: true, securityLevel: "strict", theme: "default" });
+  if (window.mermaid) {
+    window.mermaid.initialize({ startOnLoad: true, securityLevel: "strict", theme: "default" });
   }
 });

@@ -1,24 +1,30 @@
+/* Identidade visual da apostila de ALP — vermelho padrão #B31010 */
 :root > * {
   --md-primary-fg-color: #B31010;
   --md-primary-fg-color--light: #D94340;
   --md-primary-fg-color--dark: #7F0000;
-  --md-accent-fg-color: #D94340;
+  --md-accent-fg-color: #B31010;
+}
 
+:root {
   --alp-red: #B31010;
   --alp-ink: #202020;
   --alp-muted: #6b7280;
   --alp-soft: rgba(179, 16, 16, 0.08);
 }
+
 [data-md-color-scheme="default"] {
   --alp-panel: #ffffff;
   --alp-panel-alt: #f7f7f8;
-  --alp-border: rgba(31, 41, 55, .12);
+  --alp-border: rgba(31, 41, 55, 0.14);
 }
+
 [data-md-color-scheme="slate"] {
   --alp-panel: #202124;
   --alp-panel-alt: #292b30;
-  --alp-border: rgba(255, 255, 255, .13);
+  --alp-border: rgba(255, 255, 255, 0.16);
 }
+
 .md-typeset h1 { font-weight: 800; letter-spacing: -.035em; }
 .md-typeset h2 { margin-top: 2.2em; padding-bottom: .25em; border-bottom: 1px solid var(--alp-border); }
 .md-typeset h3 { font-weight: 700; }
@@ -40,46 +46,29 @@
 .md-typeset .admonition.success { border-left-color: #16a34a; }
 .md-typeset .admonition.success > .admonition-title { background-color: rgba(22,163,74,.10); }
 
-/* Banner vermelho — identidade visual da apostila */
+/* Banner principal: contraste alto nos dois modos */
 .md-typeset .alp-hero {
-  background: #B31010 !important;
+  background: #B31010;
   border: 1px solid #B31010;
   border-top: 5px solid #202020;
-  color: #FFFFFF !important;
+  border-radius: .75rem;
+  padding: 1.5rem;
+  color: #FFFFFF;
 }
-
-/* Título branco */
 .md-typeset .alp-hero h1,
 .md-typeset .alp-hero h2,
-.md-typeset .alp-hero h3 {
-  color: #FFFFFF !important;
-}
-
-/* Texto branco */
-.md-typeset .alp-hero p {
-  color: #FFFFFF !important;
-}
-
-/* Identificação do curso */
-.md-typeset .alp-hero .alp-eyebrow {
-  color: #FFFFFF !important;
-}
-
-/* Círculo decorativo */
-.md-typeset .alp-hero::before {
-  border-color: rgba(255, 255, 255, 0.20);
-}
-
-/* Botão principal */
+.md-typeset .alp-hero h3,
+.md-typeset .alp-hero p,
+.md-typeset .alp-hero .alp-eyebrow { color: #FFFFFF; }
 .md-typeset .alp-hero a.md-button--primary {
-  background: #202020 !important;
-  border-color: #202020 !important;
-  color: #FFFFFF !important;
+  background: #202020;
+  border-color: #202020;
+  color: #FFFFFF;
 }
-
-/* Botão secundário */
 .md-typeset .alp-hero a.md-button:not(.md-button--primary) {
-  background: transparent !important;
-  border-color: #FFFFFF !important;
-  color: #FFFFFF !important;
+  background: transparent;
+  border-color: #FFFFFF;
+  color: #FFFFFF;
 }
+.md-typeset .alp-hero a.md-button:hover { opacity: .88; }
+.md-typeset .alp-hero a.md-button:focus-visible { outline: 3px solid #FFFFFF; outline-offset: 3px; }
