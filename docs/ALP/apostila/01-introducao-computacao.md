@@ -107,6 +107,7 @@ A decisão depende tanto da informação quanto da regra utilizada. Em um sistem
       </div>
     <p class="feedback-atividade" aria-live="polite"></p>
 </div>
+
     
 ## 1.2 Hardware
 
@@ -629,4 +630,8 @@ Antes de escrever código, complete o planejamento.
     <p>Também seria adequado testar entradas inválidas, conforme as regras definidas para o sistema.</p>
   </details>
 </div>
+
+## Exercícios
+
+[Acesse os exercícios desta introdução.](01-exercicios.md)
 
