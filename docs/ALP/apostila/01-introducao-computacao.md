@@ -1,16 +1,5 @@
 # 1. Introdução à Computação
 
-!!! info "Objetivos de aprendizagem"
-    Ao concluir este capítulo, você deverá ser capaz de:
-
-    - diferenciar dado, informação e conhecimento;
-    - explicar a relação entre hardware e software;
-    - reconhecer os componentes básicos de um sistema computacional;
-    - descrever, em linhas gerais, como um programa em C é compilado;
-    - decompor um problema em entrada, processamento e saída;
-    - explicar os quatro pilares do pensamento computacional;
-    - planejar e testar uma solução antes de implementá-la.
-
 <p class="texto"> A Computação é uma área do conhecimento dedicada ao estudo e ao desenvolvimento de métodos, técnicas e tecnologias para a coleta, o processamento, o armazenamento e a análise de dados. Seu propósito é transformar dados em informações úteis, contribuindo para a produção de conhecimento e para a resolução de problemas em diferentes contextos da sociedade. Para isso, a Computação envolve a integração de três elementos fundamentais: hardware, que corresponde aos componentes físicos dos dispositivos computacionais; software, que compreende os programas e as instruções responsáveis por orientar o funcionamento desses dispositivos; e dados, que representam os elementos utilizados para produzir informações relevantes.</p>
 
 <p class="texto"> Entre as diversas atividades da Computação, destaca-se o desenvolvimento de sistemas, que consiste na criação de soluções informatizadas para atender às necessidades específicas de pessoas, empresas e outras organizações. Essa atividade envolve diferentes etapas, como a identificação de um problema, o levantamento de requisitos, o planejamento da solução, a elaboração de algoritmos, a implementação de programas, a realização de testes e a manutenção do sistema ao longo de seu ciclo de vida. </p>
