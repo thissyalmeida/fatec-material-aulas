@@ -116,21 +116,13 @@ A decisão depende tanto da informação quanto da regra utilizada. Em um sistem
 
 <p class="texto"><b>Software</b> é o conjunto de programas, instruções e dados que orientam as operações realizadas pelo computador. Sistema operacional, compilador, navegador, aplicativos de mensagens e editor de código são exemplos de software. </p>
 
-<p class="texto"> O hardware oferece os recursos físicos. O software utiliza esses recursos para realizar tarefas. Um aplicativo não funciona sem uma plataforma computacional capaz de executá-lo; da mesma forma, um computador sem programas não realiza automaticamente a tarefa específica que o usuário deseja. </p>
-
 ## 1.4 Funcionamento de um computador 
+
+<p class="texto"> O hardware oferece os recursos físicos. O software utiliza esses recursos para realizar tarefas. Um aplicativo não funciona sem uma plataforma computacional capaz de executá-lo; da mesma forma, um computador sem programas não realiza automaticamente a tarefa específica que o usuário deseja. </p>
 
 <p class="texto">  Um computador funciona recebendo dados, processando essas informações por meio de instruções lógicas e devolvendo um resultado. Esse ciclo básico é dividido em quatro etapas principais: entrada, processamento, armazenamento e saída. </p>
 
-```mermaid
-flowchart TD
-    A[Usuário] --> B[Entrada de dados]
-    B --> C[Programa em execução]
-    C <--> D[CPU e memória]
-    C <--> E[Armazenamento]
-    C --> F[Saída de resultados]
-    F --> A
-```
+<img src="../../assets/images/funcionamento.jpg">
 
 <p class="texto"> O diagrama representa um modelo simplificado. A comunicação real entre os componentes depende da arquitetura do equipamento, do sistema operacional e do programa utilizado. </p>
 
@@ -637,3 +629,4 @@ Antes de escrever código, complete o planejamento.
     <p>Também seria adequado testar entradas inválidas, conforme as regras definidas para o sistema.</p>
   </details>
 </div>
+
