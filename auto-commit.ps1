@@ -4,21 +4,26 @@
 
 .DESCRIPTION
     Monitora o diretório do repositório e aguarda alguns segundos sem novas
-    alterações antes de executar "git add --all" e "git commit". O script
-    nunca executa "git push".
+    alterações antes de executar "git add --all", "git commit" e "git push".
+    Use -NoPush para criar somente commits locais.
 
 .EXAMPLE
     .\auto-commit.ps1
 
 .EXAMPLE
     .\auto-commit.ps1 -DebounceSeconds 10
+
+.EXAMPLE
+    .\auto-commit.ps1 -NoPush
 #>
 [CmdletBinding()]
 param(
     [ValidateRange(1, 300)]
     [int]$DebounceSeconds = 5,
 
-    [string]$RepositoryPath
+    [string]$RepositoryPath,
+
+    [switch]$NoPush
 )
 
 $ErrorActionPreference = 'Stop'
@@ -30,6 +35,13 @@ $gitDirectory = Join-Path $RepositoryPath '.git'
 
 if (-not (Test-Path -LiteralPath $gitDirectory)) {
     throw "Nenhum repositório Git foi encontrado em '$RepositoryPath'."
+}
+
+if (-not $NoPush) {
+    $upstream = & git -C $RepositoryPath rev-parse --abbrev-ref --symbolic-full-name '@{upstream}' 2>$null
+    if ($LASTEXITCODE -ne 0) {
+        throw 'O ramo atual não possui um remoto de acompanhamento. Configure-o ou execute o script com -NoPush.'
+    }
 }
 
 function Invoke-AutoCommit {
@@ -62,6 +74,15 @@ function Invoke-AutoCommit {
     }
 
     Write-Host "[$timestamp] Commit automático criado." -ForegroundColor Green
+
+    if (-not $NoPush) {
+        & git -C $RepositoryPath push
+        if ($LASTEXITCODE -ne 0) {
+            throw 'O commit local foi criado, mas não foi possível enviá-lo ao remoto.'
+        }
+
+        Write-Host "[$timestamp] Alterações enviadas ao remoto ($upstream)." -ForegroundColor Green
+    }
 }
 
 $watcher = [System.IO.FileSystemWatcher]::new($RepositoryPath)
