@@ -26,14 +26,10 @@
     <p class="texto"> Um **dado** é um registro bruto de um valor ou de uma observação. Isoladamente, ele pode não explicar o que representa. Exemplos: `8.5`, `23`, `120` ou `Aprovado`. O valor `8.5`, por exemplo, poderia representar uma nota, uma temperatura ou uma medida. Sem contexto, não sabemos qual interpretação é adequada.</p>
 
 !!! example "INFORMAÇÃO"
-    Uma **informação** é obtida quando os dados são organizados e interpretados em um contexto.
-
-Observe:
-
-- Dados: `8.0`, `7.0` e `9.0`.
-- Contexto: notas de três avaliações de uma estudante.
-- Informação: a média aritmética das avaliações é `8.0`.
-
+    Uma **informação** é obtida quando os dados são organizados e interpretados em um contexto. Observe:
+    - Dados: `8.0`, `7.0` e `9.0`.
+    - Contexto: notas de três avaliações de uma estudante.
+    - Informação: a média aritmética das avaliações é `8.0`.
 O contexto permite entender o significado dos valores.
 
 ### Conhecimento
