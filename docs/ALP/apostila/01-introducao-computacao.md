@@ -24,12 +24,10 @@
 
 !!! example "DADO"
 Um **dado** é um registro bruto de um valor ou de uma observação. Isoladamente, ele pode não explicar o que representa. Exemplos:
-
 - `8.5`
 - `23`
 - `120`
 - `Aprovado`
-
 O valor `8.5`, por exemplo, poderia representar uma nota, uma temperatura ou uma medida. Sem contexto, não sabemos qual interpretação é adequada.
 
 ### Informação
