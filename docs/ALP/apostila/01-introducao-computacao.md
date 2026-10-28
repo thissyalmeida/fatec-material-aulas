@@ -30,7 +30,7 @@
     - Dados: `8.0`, `7.0` e `9.0`.
     - Contexto: notas de três avaliações de uma estudante.
     - Informação: a média aritmética das avaliações é `8.0`.
-O contexto permite entender o significado dos valores.
+    O contexto permite entender o significado dos valores.
 
 ### Conhecimento
 
