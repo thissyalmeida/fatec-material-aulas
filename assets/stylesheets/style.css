@@ -39,6 +39,7 @@
 .md-typeset .admonition.abstract > .admonition-title { background-color: rgba(100,116,139,.10); }
 .md-typeset .admonition.example { border-color: var(--alp-red); }
 .md-typeset .admonition.example > .admonition-title { background-color: var(--alp-soft); }
+.md-typeset .admonition.example > .admonition-title::before { background-color: var(--alp-red); }
 .md-typeset .admonition.warning { border-left-color: #d97706; }
 .md-typeset .admonition.warning > .admonition-title { background-color: rgba(217,119,6,.10); }
 .md-typeset .admonition.tip { border-left-color: #0d9488; }
