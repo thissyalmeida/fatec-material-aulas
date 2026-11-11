@@ -1,0 +1,1416 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://thissyalmeida.github.io/fatec-material-aulas/ALP/apostila/03-linguagem-de-programacao.html">
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>03 linguagem de programacao - Apostila - Algoritmos e Linguagem de Programação</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/style.css">
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/laboratorio-binario.css">
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/laboratorios-alp.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="red">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#16-linguagens-de-programacao-e-compilacao" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Apostila - Algoritmos e Linguagem de Programação" class="md-header__button md-logo" aria-label="Apostila - Algoritmos e Linguagem de Programação" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Apostila - Algoritmos e Linguagem de Programação
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              03 linguagem de programacao
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="red"  aria-label="Mudar para modo escuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Mudar para modo escuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="red"  aria-label="Mudar para modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Mudar para modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="index.html" class="md-tabs__link">
+          
+  
+  
+  Apostila de ALP
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Apostila - Algoritmos e Linguagem de Programação" class="md-nav__button md-logo" aria-label="Apostila - Algoritmos e Linguagem de Programação" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Apostila - Algoritmos e Linguagem de Programação
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Apostila de ALP
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Apostila de ALP
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Página inicial
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="01-introducao-computacao.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. Introdução à Computação
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="01-exercicios.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. Lista de exercícios
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="02-algoritmos-fluxogramas.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. Algoritmos e Fluxogramas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="03-variaveis-operadores.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3. Variáveis e Operadores
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="04-estrutura-sequencial.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4. Estrutura Sequencial
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="05-estruturas-condicionais.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5. Estruturas Condicionais
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="06-estruturas-repeticao.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6. Estruturas de Repetição
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="07-introducao-c.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7. Introdução à Linguagem C
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="08-controle-em-c.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    8. Controle em C
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="09-funcoes.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    9. Funções
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="10-vetores-matrizes.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10. Vetores e Matrizes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="11-memoria-binario.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    11. Memória e Binário
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="12-testes-estilo-git.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    12. Testes, Estilo e Git
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#16-linguagens-de-programacao-e-compilacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.6 Linguagens de programação e compilação
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.6 Linguagens de programação e compilação">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#codigo-fonte" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Código-fonte
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#compilador" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Compilador
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tipos-de-problemas-em-um-programa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tipos de problemas em um programa
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#atividade-interativa-identifique-o-problema" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Atividade interativa: identifique o problema
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#17-decomposicao-de-problemas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.7 Decomposição de problemas
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.7 Decomposição de problemas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exemplo-resolvido-1-calcular-o-total-de-uma-compra" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exemplo resolvido 1: calcular o total de uma compra
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exemplo-resolvido-2-calcular-a-distancia-percorrida" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exemplo resolvido 2: calcular a distância percorrida
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exemplo-resolvido-3-aplicar-um-desconto" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exemplo resolvido 3: aplicar um desconto
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#laboratorio-interativo-decomponha-um-problema" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Laboratório interativo: decomponha um problema
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#testar-antes-de-programar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Testar antes de programar
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#16-pensamento-computacional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.6 Pensamento computacional
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#16-pensamento-computacional_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.6 Pensamento computacional
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.6 Pensamento computacional">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-decomposicao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Decomposição
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-reconhecimento-de-padroes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Reconhecimento de padrões
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-abstracao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Abstração
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-algoritmos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Algoritmos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#os-quatro-pilares-trabalhando-juntos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Os quatro pilares trabalhando juntos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#atividade-interativa-qual-pilar-esta-sendo-utilizado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Atividade interativa: qual pilar está sendo utilizado?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#erros-comuns-atencao-a-estes-pontos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Erros comuns: atenção a estes pontos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pratica-guiada-planeje-uma-solucao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prática guiada: planeje uma solução
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Prática guiada: planeje uma solução">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#desafio-preco-com-desconto" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Desafio — preço com desconto
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>03 linguagem de programacao</h1>
+
+<h2 id="16-linguagens-de-programacao-e-compilacao">1.6 Linguagens de programação e compilação</h2>
+<p>Um computador executa instruções representadas de acordo com sua arquitetura. As linguagens de programação permitem que pessoas expressem essas instruções por meio de regras e estruturas definidas.</p>
+<h3 id="codigo-fonte">Código-fonte</h3>
+<p>O <strong>código-fonte</strong> é o texto escrito pelo programador em uma linguagem de programação, como C. Ele deve respeitar as regras da linguagem.</p>
+<p>Exemplo em C:</p>
+<div class="language-c highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdio.h&gt;</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">"Olá, mundo!</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="p">}</span>
+</span></code></pre></div>
+<p>Esse programa apresenta a mensagem <code>Olá, mundo!</code> e termina indicando que a execução foi concluída normalmente.</p>
+<h3 id="compilador">Compilador</h3>
+<p>Um <strong>compilador</strong> é um programa que traduz o código-fonte para uma representação que pode ser processada nas etapas seguintes de construção do programa. Em ambientes comuns de C, o processo pode gerar arquivos-objeto e, depois, um executável por meio da ligação (<em>linkedição</em>).</p>
+<p>O fluxo simplificado é:</p>
+<pre class="mermaid"><code>flowchart LR
+    A[Código-fonte em C] --&gt; B[Compilação]
+    B --&gt; C[Arquivo-objeto]
+    C --&gt; D[Linkedição]
+    D --&gt; E[Executável]
+    E --&gt; F[Execução]</code></pre>
+<p>As etapas exatas variam conforme o compilador e o ambiente de desenvolvimento. Alguns ambientes escondem parte delas do usuário.</p>
+<h3 id="tipos-de-problemas-em-um-programa">Tipos de problemas em um programa</h3>
+<p>É importante distinguir problemas diferentes.</p>
+<p><strong>Erro de sintaxe:</strong> ocorre quando o código não respeita as regras gramaticais da linguagem.</p>
+<div class="language-c highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdio.h&gt;</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">"Olá, mundo!</span><span class="se">\n</span><span class="s">"</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="p">}</span>
+</span></code></pre></div>
+<p>Nesse exemplo, falta fechar a chamada de <code>printf</code> com <code>);</code>. O compilador normalmente informa um erro, embora a mensagem possa apontar para a linha em que o problema foi percebido, e não exatamente onde começou.</p>
+<p><strong>Erro de lógica:</strong> o programa pode compilar e executar, mas produzir um resultado diferente do esperado.</p>
+<div class="language-c highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kt">int</span><span class="w"> </span><span class="n">largura</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="kt">int</span><span class="w"> </span><span class="n">altura</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">3</span><span class="p">;</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="kt">int</span><span class="w"> </span><span class="n">area</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">largura</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">altura</span><span class="p">;</span><span class="w"> </span><span class="cm">/* incorreto para calcular a área */</span>
+</span></code></pre></div>
+<p>Para calcular a área de um retângulo, a operação correta é <code>largura * altura</code>. A soma é uma expressão válida em C, mas não representa a fórmula desejada.</p>
+<p><strong>Problema nos dados de entrada:</strong> mesmo com uma fórmula correta, valores inadequados podem levar a resultados sem sentido. Um cálculo de preço, por exemplo, pode precisar rejeitar quantidades negativas ou descontos fora dos limites definidos pelo problema.</p>
+<div class="admonition warning">
+<p class="admonition-title">Compilar não significa provar que o programa está correto</p>
+<p>A compilação verifica aspectos do código e pode encontrar diversos problemas, mas não garante que o algoritmo atenda ao objetivo. Por isso, é necessário testar o programa com valores variados e conferir os resultados esperados.</p>
+</div>
+<h3 id="atividade-interativa-identifique-o-problema">Atividade interativa: identifique o problema</h3>
+<div class="atividade-interativa" id="atividade-erros">
+  <p><strong>Situação 1.</strong> O programa não compila porque falta um ponto e vírgula após uma instrução.</p>
+  <div class="opcoes-atividade">
+    <button type="button" data-correct="true">Erro de sintaxe</button>
+    <button type="button" data-correct="false">Erro de lógica</button>
+    <button type="button" data-correct="false">Dispositivo de saída</button>
+  </div>
+  <p class="feedback-atividade" aria-live="polite"></p>
+  <hr>
+  <p><strong>Situação 2.</strong> O programa compila, mas calcula a área de um retângulo somando a largura e a altura.</p>
+  <div class="opcoes-atividade">
+    <button type="button" data-correct="false">Erro de sintaxe</button>
+    <button type="button" data-correct="true">Erro de lógica</button>
+    <button type="button" data-correct="false">Erro de hardware</button>
+  </div>
+  <p class="feedback-atividade" aria-live="polite"></p>
+</div>
+
+<h2 id="17-decomposicao-de-problemas">1.7 Decomposição de problemas</h2>
+<p>Um problema complexo pode ficar mais fácil de resolver quando é dividido em etapas menores. Essa estratégia é chamada de <strong>decomposição</strong>. Uma forma inicial de organizar muitos problemas computacionais é identificar:</p>
+<ul>
+<li><strong>Entrada:</strong> quais dados serão fornecidos?</li>
+<li><strong>Processamento:</strong> quais cálculos ou regras serão aplicados?</li>
+<li><strong>Saída:</strong> quais resultados deverão ser apresentados?</li>
+</ul>
+<p>Esse modelo é uma ferramenta de planejamento. Alguns sistemas também precisam armazenar dados, interagir com outros sistemas, validar informações e tratar situações excepcionais.</p>
+<h3 id="exemplo-resolvido-1-calcular-o-total-de-uma-compra">Exemplo resolvido 1: calcular o total de uma compra</h3>
+<p><strong>Problema:</strong> calcular o valor de uma compra sabendo a quantidade de unidades e o preço de cada unidade.</p>
+<p><strong>Etapa 1 — Entrada</strong></p>
+<ul>
+<li>quantidade de unidades;</li>
+<li>preço unitário.</li>
+</ul>
+<p><strong>Etapa 2 — Processamento</strong></p>
+<p>Multiplicar a quantidade pelo preço unitário:</p>
+<div class="arithmatex">\[
+\text{total} = \text{quantidade} \times \text{preço unitário}
+\]</div>
+<p><strong>Etapa 3 — Saída</strong></p>
+<p>Apresentar o valor total da compra.</p>
+<p><strong>Teste com valores conhecidos</strong></p>
+<p>Se a quantidade for 4 e o preço unitário for R$ 7,50:</p>
+<div class="arithmatex">\[
+\text{total} = 4 \times 7{,}50 = 30{,}00
+\]</div>
+<p>O resultado esperado é R$ 30,00.</p>
+<h3 id="exemplo-resolvido-2-calcular-a-distancia-percorrida">Exemplo resolvido 2: calcular a distância percorrida</h3>
+<p>Um veículo mantém velocidade média constante de 60 km/h durante 2 horas. A distância pode ser calculada por:</p>
+<div class="arithmatex">\[
+\text{distância} = \text{velocidade} \times \text{tempo}
+\]</div>
+<p>Substituindo os valores:</p>
+<div class="arithmatex">\[
+\text{distância} = 60 \times 2 = 120\text{ km}
+\]</div>
+<ul>
+<li><strong>Entrada:</strong> velocidade média e tempo.</li>
+<li><strong>Processamento:</strong> multiplicar velocidade por tempo.</li>
+<li><strong>Saída:</strong> distância calculada.</li>
+</ul>
+<p><strong>Atenção às unidades:</strong> se a velocidade estiver em km/h, o tempo deve estar em horas para que o resultado seja expresso em quilômetros.</p>
+<h3 id="exemplo-resolvido-3-aplicar-um-desconto">Exemplo resolvido 3: aplicar um desconto</h3>
+<p>Uma loja precisa calcular o preço final de um produto após um desconto percentual.</p>
+<ul>
+<li><strong>Entrada:</strong> preço original e percentual de desconto.</li>
+<li><strong>Processamento:</strong> calcular o desconto e subtraí-lo do preço original.</li>
+<li><strong>Saída:</strong> preço final.</li>
+</ul>
+<p>As fórmulas são:</p>
+<div class="arithmatex">\[
+\text{valor do desconto} = \text{preço original} \times \frac{\text{percentual}}{100}
+\]</div>
+<div class="arithmatex">\[
+\text{preço final} = \text{preço original} - \text{valor do desconto}
+\]</div>
+<p>Se o preço original for R$ 200,00 e o desconto for 10%:</p>
+<div class="arithmatex">\[
+\text{desconto} = 200 \times \frac{10}{100} = 20
+\]</div>
+<div class="arithmatex">\[
+\text{preço final} = 200 - 20 = 180
+\]</div>
+<p>O preço final será R$ 180,00. Antes de implementar a solução, também precisamos decidir quais entradas são válidas, como um preço não negativo e um percentual entre 0 e 100, caso essas sejam as regras do problema.</p>
+<h3 id="laboratorio-interativo-decomponha-um-problema">Laboratório interativo: decomponha um problema</h3>
+<p>Escolha um problema e observe suas entradas, seu processamento e suas saídas.</p>
+<div class="atividade-interativa" id="laboratorio-decomposicao">
+  <label for="problema-decomposicao">Problema</label>
+  <select id="problema-decomposicao">
+    <option value="compra">Calcular o total de uma compra</option>
+    <option value="retangulo">Calcular a área de um retângulo</option>
+    <option value="combustivel">Calcular o consumo médio de combustível</option>
+  </select>
+  <div class="resultado-decomposicao" id="resultado-decomposicao" aria-live="polite">
+    <p><strong>Entrada:</strong> quantidade e preço unitário.</p>
+    <p><strong>Processamento:</strong> quantidade × preço unitário.</p>
+    <p><strong>Saída:</strong> valor total da compra.</p>
+  </div>
+</div>
+
+<h3 id="testar-antes-de-programar">Testar antes de programar</h3>
+<p>Uma solução deve ser testada com mais de um conjunto de dados. Para o cálculo do desconto, por exemplo, podemos considerar:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Preço original</th>
+<th style="text-align: right;">Desconto</th>
+<th style="text-align: right;">Resultado esperado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">R$ 100,00</td>
+<td style="text-align: right;">0%</td>
+<td style="text-align: right;">R$ 100,00</td>
+</tr>
+<tr>
+<td style="text-align: right;">R$ 100,00</td>
+<td style="text-align: right;">10%</td>
+<td style="text-align: right;">R$ 90,00</td>
+</tr>
+<tr>
+<td style="text-align: right;">R$ 200,00</td>
+<td style="text-align: right;">25%</td>
+<td style="text-align: right;">R$ 150,00</td>
+</tr>
+<tr>
+<td style="text-align: right;">R$ 50,00</td>
+<td style="text-align: right;">100%</td>
+<td style="text-align: right;">R$ 0,00</td>
+</tr>
+</tbody>
+</table>
+<p>Também é importante testar entradas inválidas, como preço negativo ou desconto maior que 100%, quando as regras do sistema não permitirem esses valores.</p>
+<h2 id="16-pensamento-computacional">1.6 Pensamento computacional</h2>
+<ul>
+<li><strong>Decomposição:</strong> dividir o problema em partes menores.</li>
+<li><strong>Reconhecimento de padrões:</strong> identificar semelhanças entre problemas.</li>
+<li><strong>Abstração:</strong> concentrar-se no que é relevante.</li>
+<li><strong>Algoritmos:</strong> definir uma sequência finita e ordenada de passos.</li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Erros comuns: atenção a estes pontos</p>
+<ul>
+<li>começar a programar sem compreender o enunciado;</li>
+<li>confundir armazenamento permanente com memória RAM;</li>
+<li>acreditar que compilar significa que o algoritmo está correto;</li>
+<li>ignorar unidades e restrições dos dados.</li>
+</ul>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Prática guiada</p>
+<p>Planeje um programa que calcule o valor final de um produto após um desconto percentual. Não escreva código ainda. Identifique entrada, processamento, saída e duas situações que precisam ser testadas.</p>
+</div>
+<h2 id="16-pensamento-computacional_1">1.6 Pensamento computacional</h2>
+<p><strong>Pensamento computacional</strong> é uma abordagem para formular e resolver problemas de forma organizada, utilizando estratégias que também podem ser expressas por algoritmos e executadas por computadores. Ele pode ser aplicado à programação, mas também a situações cotidianas.</p>
+<p>Quatro pilares frequentemente utilizados para explicar essa abordagem são decomposição, reconhecimento de padrões, abstração e algoritmos.</p>
+<h3 id="1-decomposicao">1. Decomposição</h3>
+<p>Consiste em dividir um problema maior em partes menores que possam ser compreendidas e resolvidas.</p>
+<p><strong>Exemplo:</strong> para desenvolver um sistema de biblioteca, podemos separar o problema em cadastro de livros, cadastro de usuários, empréstimos, devoluções e relatórios.</p>
+<h3 id="2-reconhecimento-de-padroes">2. Reconhecimento de padrões</h3>
+<p>Consiste em identificar semelhanças ou regularidades entre problemas ou situações.</p>
+<p><strong>Exemplo:</strong> calcular o total de uma compra de vários produtos e calcular o custo de várias passagens envolvem multiplicações e somas semelhantes. Reconhecer essa estrutura ajuda a reaproveitar estratégias.</p>
+<h3 id="3-abstracao">3. Abstração</h3>
+<p>Consiste em selecionar os detalhes relevantes para o problema e deixar de lado os que não influenciam a solução naquele momento.</p>
+<p><strong>Exemplo:</strong> para calcular a área de um retângulo, precisamos de sua largura e altura. A cor do retângulo não interfere nesse cálculo e pode ser ignorada.</p>
+<p>A abstração não significa que os detalhes descartados nunca sejam importantes. Eles podem ser necessários para outro objetivo.</p>
+<h3 id="4-algoritmos">4. Algoritmos</h3>
+<p>Um <strong>algoritmo</strong> é uma sequência finita e ordenada de passos para realizar uma tarefa ou resolver um problema. Os passos precisam ser suficientemente claros para que possam ser executados e verificados.</p>
+<p>Exemplo de algoritmo cotidiano para preparar uma bebida:</p>
+<ol>
+<li>Separar os ingredientes e utensílios.</li>
+<li>Colocar a quantidade definida de água no recipiente.</li>
+<li>Aquecer a água.</li>
+<li>Misturar os ingredientes conforme as instruções.</li>
+<li>Servir a bebida.</li>
+</ol>
+<p>Em programação, o algoritmo precisa ser adaptado às regras do problema e representado de forma adequada, por exemplo, em pseudocódigo, fluxograma ou linguagem de programação.</p>
+<h3 id="os-quatro-pilares-trabalhando-juntos">Os quatro pilares trabalhando juntos</h3>
+<p>Considere o problema de calcular as médias de uma turma:</p>
+<ol>
+<li><strong>Decomposição:</strong> separar a leitura das notas, o cálculo da média, a verificação do critério e a apresentação do resultado.</li>
+<li><strong>Reconhecimento de padrões:</strong> perceber que a mesma operação de cálculo será repetida para cada estudante.</li>
+<li><strong>Abstração:</strong> concentrar-se nas notas e nas regras de média, sem considerar informações irrelevantes para esse cálculo.</li>
+<li><strong>Algoritmo:</strong> organizar os passos em uma sequência que possa ser executada.</li>
+</ol>
+<p>Os pilares se complementam. Não precisam ser aplicados como etapas rígidas e isoladas: durante a resolução, podemos voltar a uma etapa anterior e melhorar nossa compreensão do problema.</p>
+<h3 id="atividade-interativa-qual-pilar-esta-sendo-utilizado">Atividade interativa: qual pilar está sendo utilizado?</h3>
+<div class="atividade-interativa" id="atividade-pilares">
+  <p><strong>Situação 1.</strong> Separar um sistema escolar em cadastro, notas, frequência e relatórios.</p>
+  <div class="opcoes-atividade">
+    <button type="button" data-correct="true">Decomposição</button>
+    <button type="button" data-correct="false">Abstração</button>
+    <button type="button" data-correct="false">Reconhecimento de padrões</button>
+    <button type="button" data-correct="false">Algoritmos</button>
+  </div>
+  <p class="feedback-atividade" aria-live="polite"></p>
+  <hr>
+  <p><strong>Situação 2.</strong> Ignorar a cor de um retângulo ao calcular sua área.</p>
+  <div class="opcoes-atividade">
+    <button type="button" data-correct="false">Decomposição</button>
+    <button type="button" data-correct="true">Abstração</button>
+    <button type="button" data-correct="false">Reconhecimento de padrões</button>
+    <button type="button" data-correct="false">Algoritmos</button>
+  </div>
+  <p class="feedback-atividade" aria-live="polite"></p>
+  <hr>
+  <p><strong>Situação 3.</strong> Perceber que diferentes cálculos de preço final utilizam operações semelhantes.</p>
+  <div class="opcoes-atividade">
+    <button type="button" data-correct="false">Decomposição</button>
+    <button type="button" data-correct="false">Abstração</button>
+    <button type="button" data-correct="true">Reconhecimento de padrões</button>
+    <button type="button" data-correct="false">Algoritmos</button>
+  </div>
+  <p class="feedback-atividade" aria-live="polite"></p>
+  <hr>
+  <p><strong>Situação 4.</strong> Organizar instruções finitas e ordenadas para calcular uma média.</p>
+  <div class="opcoes-atividade">
+    <button type="button" data-correct="false">Decomposição</button>
+    <button type="button" data-correct="false">Abstração</button>
+    <button type="button" data-correct="false">Reconhecimento de padrões</button>
+    <button type="button" data-correct="true">Algoritmos</button>
+  </div>
+  <p class="feedback-atividade" aria-live="polite"></p>
+</div>
+
+<h2 id="erros-comuns-atencao-a-estes-pontos">Erros comuns: atenção a estes pontos</h2>
+<div class="admonition warning">
+<p class="admonition-title">Começar a programar antes de entender o problema</p>
+<p><strong>Por que atrapalha:</strong> você pode produzir um código que executa, mas não resolve a necessidade real.</p>
+<p><strong>Como evitar:</strong> escreva o objetivo, as entradas, as regras de processamento e as saídas antes de escolher os comandos.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Confundir memória RAM com armazenamento</p>
+<p><strong>Por que atrapalha:</strong> os componentes têm funções diferentes.</p>
+<p><strong>Como evitar:</strong> lembre-se de que a RAM mantém temporariamente dados em uso, enquanto SSDs e HDs são utilizados para preservar arquivos.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Acreditar que compilar garante a correção</p>
+<p><strong>Por que atrapalha:</strong> um programa pode ser sintaticamente válido e produzir resultados incorretos.</p>
+<p><strong>Como evitar:</strong> teste valores simples cujo resultado você consegue calcular manualmente e compare a saída com o resultado esperado.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Ignorar unidades e limites</p>
+<p><strong>Por que atrapalha:</strong> misturar horas e minutos, por exemplo, pode levar a cálculos incorretos; entradas fora das regras também podem gerar resultados inválidos.</p>
+<p><strong>Como evitar:</strong> registre as unidades, defina os limites aceitos e teste casos comuns e casos extremos.</p>
+</div>
+<h2 id="pratica-guiada-planeje-uma-solucao">Prática guiada: planeje uma solução</h2>
+<h3 id="desafio-preco-com-desconto">Desafio — preço com desconto</h3>
+<p>Uma loja quer um programa que receba o preço original de um produto e o percentual de desconto e apresente o preço final.</p>
+<p>Antes de escrever código, complete o planejamento.</p>
+<div class="atividade-interativa" id="pratica-desconto">
+  <label for="entrada-desconto">Quais são os dados de entrada?</label>
+  <textarea id="entrada-desconto" rows="2" placeholder="Ex.: preço original e percentual de desconto"></textarea>
+  <label for="processamento-desconto">Qual processamento deve ser realizado?</label>
+  <textarea id="processamento-desconto" rows="2" placeholder="Descreva os cálculos necessários"></textarea>
+  <label for="saida-desconto">Qual é a saída esperada?</label>
+  <textarea id="saida-desconto" rows="2" placeholder="O que o programa deve apresentar?"></textarea>
+  <label for="testes-desconto">Indique dois testes para verificar a solução.</label>
+  <textarea id="testes-desconto" rows="3" placeholder="Informe os valores de entrada e os resultados esperados"></textarea>
+  <details>
+    <summary>Mostrar uma possível resposta</summary>
+    <p><strong>Entrada:</strong> preço original e percentual de desconto.</p>
+    <p><strong>Processamento:</strong> calcular o desconto multiplicando o preço pelo percentual dividido por 100; subtrair o desconto do preço original.</p>
+    <p><strong>Saída:</strong> preço final após o desconto.</p>
+    <p><strong>Teste 1:</strong> preço de R$ 100,00 e desconto de 10%; resultado esperado R$ 90,00.</p>
+    <p><strong>Teste 2:</strong> preço de R$ 80,00 e desconto de 0%; resultado esperado R$ 80,00.</p>
+    <p>Também seria adequado testar entradas inválidas, conforme as regras definidas para o sistema.</p>
+  </details>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="https://unpkg.com/mermaid@11/dist/mermaid.min.js"></script>
+      
+        <script src="../../assets/javascripts/mermaid-init.js"></script>
+      
+        <script src="../../assets/javascripts/conversor-binario.js"></script>
+      
+        <script src="../../assets/javascripts/laboratorio-binario.js"></script>
+      
+        <script src="../../assets/javascripts/laboratorios-alp.js"></script>
+      
+        <script src="../../assets/javascripts/laboratorios-capitulo-01.js"></script>
+      
+        <script src="../../assets/javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="../../assets/javascripts/gabarito.js"></script>
+      
+    
+  </body>
+</html>
