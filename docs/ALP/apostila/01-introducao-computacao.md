@@ -33,7 +33,6 @@
     O contexto permite entender o significado dos valores.
 
 !!! example "CONHECIMENTO"
-
   O **conhecimento** envolve interpretar informações e utilizá-las para compreender uma situação ou tomar uma decisão. Por exemplo:
   - Informação: a média da estudante é `8.0`.
   - Regra da disciplina: a média mínima para aprovação é `6.0`.
