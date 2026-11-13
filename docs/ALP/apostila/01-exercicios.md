@@ -388,3 +388,31 @@ Tente resolver as questões sem consultar o gabarito. Nas questões de planejame
     </tr>
   </tbody>
 </table>
+
+!!! success "Atividade interativa: Classifique os exemplos"
+    <p class="texto">Lembre-se que **Dado** é o registro; **informação** é o dado contextualizado; **conhecimento** é a compreensão que ajuda a interpretar e agir. A fronteira entre informação e conhecimento depende do contexto e do uso que se faz deles. Com base nisso, leia cada situação e escolha a classificação mais adequada. Em seguida, confira o feedback.</p>
+    <div class="atividade-interativa" id="atividade-dado-info">
+      <p><strong>Situação 1.</strong> O registro de uma avaliação contém apenas o valor <code>7,5</code>, sem indicar a que se refere.</p>
+      <div class="opcoes-atividade">
+        <button type="button" data-correct="true" class="botao">Dado</button>
+        <button type="button" data-correct="false" class="botao">Informação</button>
+        <button type="button" data-correct="false" class="botao">Conhecimento</button>
+      </div>
+    <p class="feedback-atividade" aria-live="polite"></p>
+    <hr>
+      <p><strong>Situação 2.</strong> Um relatório informa que a média de uma estudante foi 8,0.</p>
+      <div class="opcoes-atividade">
+        <button type="button" data-correct="false" class="botao">Dado isolado</button>
+        <button type="button" data-correct="true" class="botao">Informação</button>
+        <button type="button" data-correct="false" class="botao">Conhecimento</button>
+      </div>
+    <p class="feedback-atividade" aria-live="polite"></p>
+    <hr>
+      <p><strong>Situação 3.</strong> Ao comparar a média 8,0 com a média mínima 6,0, o sistema conclui que o critério de nota foi atingido.</p>
+      <div class="opcoes-atividade">
+        <button type="button" data-correct="false" class="botao">Dado</button>
+        <button type="button" data-correct="false" class="botao">Informação</button>
+        <button type="button" data-correct="true" class="botao">Conhecimento </button>
+      </div>
+    <p class="feedback-atividade" aria-live="polite"></p>
+</div>
