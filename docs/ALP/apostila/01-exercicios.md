@@ -416,3 +416,27 @@ Tente resolver as questões sem consultar o gabarito. Nas questões de planejame
       </div>
     <p class="feedback-atividade" aria-live="polite"></p>
 </div>
+
+
+!!! success "Atividade interativa: Classifique os exemplos"
+    Classifique cada item como hardware ou software.
+    <div class="atividade-interativa" id="atividade-hardware-software">
+      <p><strong>1. Memória RAM</strong></p>
+      <div class="opcoes-atividade">
+        <button type="button" data-correct="true" class="botao">Hardware</button>
+        <button type="button" data-correct="false" class="botao">Software</button>
+      </div>
+      <p class="feedback-atividade" aria-live="polite"></p>
+      <p><strong>2. Navegador de internet</strong></p>
+      <div class="opcoes-atividade">
+        <button type="button" data-correct="false" class="botao">Hardware</button>
+        <button type="button" data-correct="true" class="botao">Software</button>
+      </div>
+      <p class="feedback-atividade" aria-live="polite"></p>
+      <p><strong>3. SSD</strong></p>
+      <div class="opcoes-atividade">
+        <button type="button" data-correct="true" class="botao">Hardware</button>
+        <button type="button" data-correct="false" class="botao">Software</button>
+      </div>
+      <p class="feedback-atividade" aria-live="polite"></p>
+    </div>
