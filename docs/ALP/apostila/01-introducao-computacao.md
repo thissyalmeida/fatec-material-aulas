@@ -107,7 +107,7 @@
 - alto-falantes;
 - projetor.
 
-<p class="texto">Um mesmo equipamento pode desempenhar mais de uma função. Uma tela sensível ao toque, por exemplo, pode apresentar informações e receber interações do usuário.
+<p class="texto">Um mesmo equipamento pode desempenhar mais de uma função. Uma tela sensível ao toque, por exemplo, pode apresentar informações e receber interações do usuário.</p>
 
 ### Quadro comparativo
 
@@ -128,7 +128,7 @@ Ao abrir um documento salvo no computador:
 3. O programa que abre o documento utiliza a CPU e a RAM para processar e manter os dados necessários.
 4. O monitor apresenta o conteúdo ao usuário.
 
-Esse é um modelo simplificado para fins didáticos. Na prática, o sistema operacional e outros componentes participam dessas etapas.
+<p class="texto">Esse é um modelo simplificado para fins didáticos. Na prática, o sistema operacional e outros componentes participam dessas etapas.</p>
 
 !!! tip "Dica de estudo"
     Se você confundir RAM e armazenamento, lembre-se desta pergunta: “O que está sendo utilizado agora?” remete frequentemente à RAM; “O que precisa continuar guardado depois que eu desligar?” remete ao armazenamento.
