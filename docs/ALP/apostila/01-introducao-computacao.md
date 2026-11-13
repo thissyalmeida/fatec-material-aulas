@@ -39,7 +39,7 @@
     - Conhecimento aplicado: como a média é superior à mínima, a estudante atingiu esse critério de aprovação.
     A decisão depende tanto da informação quanto da regra utilizada. Em um sistema real, outras regras institucionais também podem ser necessárias.</p>
 
- <p class="texto">Com base nos conceitos vistos, suponha que uma loja registra que vendeu '12' unidades de um produto cujo preço unitário é 'R$ 15.00'. Nesse exemplo,  nós temos podemos classificar a quantidade igual a 12 e o preço unitário a R$ 15,00 como dados de entrada. Para o processamento, será necessário multiplicar a quantidade pelo preço unitário. A informação produzida será o valor total da venda, sendo este igual a R$ 180,00. </p>
+ <p class="texto">Com base nos conceitos vistos, suponha que uma loja registra que vendeu '12' unidades de um produto cujo preço unitário é 'R$ 15.00'. Nesse exemplo,  nós temos podemos classificar a quantidade igual a 12 e o preço unitário a R$ 15,00 como dados de entrada. Para o processamento, será necessário multiplicar a quantidade pelo preço unitário. A informação produzida será o valor total da venda, sendo este igual a R$ 180,00. O conhecimento </p>
 
 !!! abstract "Exemplo resolvido: Sistema de Vendas"
     Uma loja registra que vendeu `12` unidades de um produto cujo preço unitário é `R$ 15,00`.
