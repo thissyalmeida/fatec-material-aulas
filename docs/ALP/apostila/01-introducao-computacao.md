@@ -135,10 +135,6 @@ Ao abrir um documento salvo no computador:
 
 Esse é um modelo simplificado para fins didáticos. Na prática, o sistema operacional e outros componentes participam dessas etapas.
 
-### Atividade: associe o componente à função
-
-
-
 !!! tip "Dica de estudo"
     Se você confundir RAM e armazenamento, lembre-se desta pergunta: “O que está sendo utilizado agora?” remete frequentemente à RAM; “O que precisa continuar guardado depois que eu desligar?” remete ao armazenamento.
 
