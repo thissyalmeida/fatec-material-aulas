@@ -32,17 +32,15 @@
     - Informação: a média aritmética das avaliações é `8.0`.
     O contexto permite entender o significado dos valores.
 
-### Conhecimento
+!!! example "CONHECIMENTO"
 
-O **conhecimento** envolve interpretar informações e utilizá-las para compreender uma situação ou tomar uma decisão.
+  O **conhecimento** envolve interpretar informações e utilizá-las para compreender uma situação ou tomar uma decisão. Por exemplo:
+  - Informação: a média da estudante é `8.0`.
+  - Regra da disciplina: a média mínima para aprovação é `6.0`.
+  - Conhecimento aplicado: como a média é superior à mínima, a estudante atingiu esse critério de aprovação.
+  A decisão depende tanto da informação quanto da regra utilizada. Em um sistema real, outras regras institucionais também podem ser necessárias.
 
-Por exemplo:
 
-- Informação: a média da estudante é `8.0`.
-- Regra da disciplina: a média mínima para aprovação é `6.0`.
-- Conhecimento aplicado: como a média é superior à mínima, a estudante atingiu esse critério de aprovação.
-
-A decisão depende tanto da informação quanto da regra utilizada. Em um sistema real, outras regras institucionais também podem ser necessárias.
 
 !!! abstract "Exemplo resolvido: Sistema de Vendas"
     Uma loja registra que vendeu `12` unidades de um produto cujo preço unitário é `R$ 15,00`.
