@@ -43,10 +43,6 @@
 
 !!! abstract "Exemplo resolvido: Sistema de Vendas"
     Uma loja registra que vendeu `12` unidades de um produto cujo preço unitário é `R$ 15,00`.
-
-      1. **Dados de entrada:** quantidade igual a 12 e preço unitário igual a R$ 15,00.
-      2. **Processamento:** multiplicar a quantidade pelo preço unitário.
-      3. **Informação produzida:** o valor total da venda é R$ 180,00.
       4. **Uso da informação:** a loja pode comparar as vendas de diferentes produtos ou períodos para planejar o estoque.
 
     A informação não surge por mágica: ela é produzida pela organização e pelo processamento dos dados.
