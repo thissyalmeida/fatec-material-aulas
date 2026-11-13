@@ -26,18 +26,18 @@
     <p class="texto"> Um **dado** é um registro bruto de um valor ou de uma observação. Isoladamente, ele pode não explicar o que representa. Exemplos: `8.5`, `23`, `120` ou `Aprovado`. O valor `8.5`, por exemplo, poderia representar uma nota, uma temperatura ou uma medida. Sem contexto, não sabemos qual interpretação é adequada.</p>
 
 !!! example "INFORMAÇÃO"
-    Uma **informação** é obtida quando os dados são organizados e interpretados em um contexto. Observe:
+     <p class="texto">Uma **informação** é obtida quando os dados são organizados e interpretados em um contexto. Observe:
     - Dados: `8.0`, `7.0` e `9.0`.
     - Contexto: notas de três avaliações de uma estudante.
     - Informação: a média aritmética das avaliações é `8.0`.
-    O contexto permite entender o significado dos valores.
+    O contexto permite entender o significado dos valores.</p>
 
 !!! example "CONHECIMENTO"
-    O **conhecimento** envolve interpretar informações e utilizá-las para compreender uma situação ou tomar uma decisão. Por exemplo:
+     <p class="texto">O **conhecimento** envolve interpretar informações e utilizá-las para compreender uma situação ou tomar uma decisão. Por exemplo:
     - Informação: a média da estudante é `8.0`.
     - Regra da disciplina: a média mínima para aprovação é `6.0`.
     - Conhecimento aplicado: como a média é superior à mínima, a estudante atingiu esse critério de aprovação.
-    A decisão depende tanto da informação quanto da regra utilizada. Em um sistema real, outras regras institucionais também podem ser necessárias.
+    A decisão depende tanto da informação quanto da regra utilizada. Em um sistema real, outras regras institucionais também podem ser necessárias.</p>
 
 Com base nos conceitos vistos, suponha que uma loja registra que vendeu '12' unidades de um produto cujo preço unitário é 'R$ 15.00'. Nesse exemplo,  nós temos podemos classificar a quantidade igual a 12 e o preço unitário a R$ 15,00 como dados de entrada.
 
