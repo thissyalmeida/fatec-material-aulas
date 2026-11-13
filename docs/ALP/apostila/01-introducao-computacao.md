@@ -73,11 +73,11 @@
 
 ## 1.5 Componentes básicos de um sistema computacional
 
-Para entender como um programa funciona, é útil conhecer alguns componentes do computador.
+<p class="texto">Para entender como um programa funciona, é útil conhecer alguns componentes do computador.</p>
 
 ### CPU — Unidade Central de Processamento
 
-A **CPU** executa instruções e coordena operações do sistema. Ela participa de cálculos, comparações e movimentação de dados entre componentes. Uma analogia possível é a de uma cozinha: a CPU executa as etapas de uma receita, mas depende dos ingredientes, dos utensílios e das instruções disponíveis. A analogia ajuda a visualizar a relação entre componentes, mas não descreve literalmente o funcionamento eletrônico do processador.
+<p class="texto">A **CPU** executa instruções e coordena operações do sistema. Ela participa de cálculos, comparações e movimentação de dados entre componentes. Uma analogia possível é a de uma cozinha: a CPU executa as etapas de uma receita, mas depende dos ingredientes, dos utensílios e das instruções disponíveis. A analogia ajuda a visualizar a relação entre componentes, mas não descreve literalmente o funcionamento eletrônico do processador.</p>
 
 ### Memória RAM
 
