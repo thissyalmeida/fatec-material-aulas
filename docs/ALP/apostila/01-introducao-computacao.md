@@ -40,7 +40,7 @@
   - Conhecimento aplicado: como a média é superior à mínima, a estudante atingiu esse critério de aprovação.
   A decisão depende tanto da informação quanto da regra utilizada. Em um sistema real, outras regras institucionais também podem ser necessárias.
 
-Com base nos conceitos vistos, 
+Com base nos conceitos vistos, suponha que uma loja registra que vendeu 12 unidades de um produto cujo pre
 
 !!! abstract "Exemplo resolvido: Sistema de Vendas"
     Uma loja registra que vendeu `12` unidades de um produto cujo preço unitário é `R$ 15,00`.
