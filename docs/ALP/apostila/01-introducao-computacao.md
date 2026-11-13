@@ -39,13 +39,13 @@
     - Conhecimento aplicado: como a média é superior à mínima, a estudante atingiu esse critério de aprovação.
     A decisão depende tanto da informação quanto da regra utilizada. Em um sistema real, outras regras institucionais também podem ser necessárias.</p>
 
- <p class="texto">Com base nos conceitos vistos, suponha que uma loja registra que vendeu '12' unidades de um produto cujo preço unitário é 'R$ 15.00'. Nesse exemplo,  nós temos podemos classificar a quantidade igual a 12 e o preço unitário a R$ 15,00 como dados de entrada. Para o processamento, será necessário multiplicar a quantidade pelo preço unitário. A informação produzida será o valor total da venda, sendo este igual a R$ 180,00. O conhecimento gerado pode estar </p>
+ <p class="texto">Com base nos conceitos vistos, suponha que uma loja registra que vendeu '12' unidades de um produto cujo preço unitário é 'R$ 15.00'. Nesse exemplo,  nós temos podemos classificar a quantidade igual a 12 e o preço unitário a R$ 15,00 como dados de entrada. Para o processamento, será necessário multiplicar a quantidade pelo preço unitário. A informação produzida será o valor total da venda, sendo este igual a R$ 180,00. O conhecimento gerado pode estar associado a loja comparar as vendas de diferentes produtos ou períodos para planejar o estoque. A informação não surge por mágica: ela é produzida pela organização e pelo processamento dos dados.</p>
 
 !!! abstract "Exemplo resolvido: Sistema de Vendas"
     Uma loja registra que vendeu `12` unidades de um produto cujo preço unitário é `R$ 15,00`.
       4. **Uso da informação:** a loja pode comparar as vendas de diferentes produtos ou períodos para planejar o estoque.
 
-    A informação não surge por mágica: ela é produzida pela organização e pelo processamento dos dados.
+    
 
 !!! success "Atividade interativa: Classifique os exemplos"
     <p class=texto">Lembre-se que **Dado** é o registro; **informação** é o dado contextualizado; **conhecimento** é a compreensão que ajuda a interpretar e agir. A fronteira entre informação e conhecimento depende do contexto e do uso que se faz deles. Com base nisso, leia cada situação e escolha a classificação mais adequada. Em seguida, confira o feedback.</p>
