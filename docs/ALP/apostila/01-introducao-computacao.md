@@ -137,35 +137,7 @@ Esse é um modelo simplificado para fins didáticos. Na prática, o sistema oper
 
 ### Atividade: associe o componente à função
 
-<div class="atividade-interativa" id="atividade-componentes">
-  <p>Escolha o componente correspondente a cada descrição.</p>
-  <label for="comp1">1. Mantém temporariamente dados utilizados pelos programas.</label>
-  <select id="comp1">
-    <option value="">Selecione...</option>
-    <option value="cpu">CPU</option>
-    <option value="ram">Memória RAM</option>
-    <option value="ssd">Armazenamento SSD</option>
-    <option value="monitor">Monitor</option>
-  </select>
-  <label for="comp2">2. Preserva arquivos mesmo após desligar o computador.</label>
-  <select id="comp2">
-    <option value="">Selecione...</option>
-    <option value="cpu">CPU</option>
-    <option value="ram">Memória RAM</option>
-    <option value="ssd">Armazenamento SSD</option>
-    <option value="monitor">Monitor</option>
-  </select>
-  <label for="comp3">3. Executa instruções e realiza operações.</label>
-  <select id="comp3">
-    <option value="">Selecione...</option>
-    <option value="cpu">CPU</option>
-    <option value="ram">Memória RAM</option>
-    <option value="ssd">Armazenamento SSD</option>
-    <option value="monitor">Monitor</option>
-  </select>
-  <button type="button" id="corrigir-componentes">Conferir respostas</button>
-  <p class="feedback-atividade" id="feedback-componentes" aria-live="polite"></p>
-</div>
+
 
 !!! tip "Dica de estudo"
     Se você confundir RAM e armazenamento, lembre-se desta pergunta: “O que está sendo utilizado agora?” remete frequentemente à RAM; “O que precisa continuar guardado depois que eu desligar?” remete ao armazenamento.
