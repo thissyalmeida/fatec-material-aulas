@@ -81,7 +81,7 @@
 
 ### Memória RAM
 
-A **memória RAM** guarda temporariamente dados e instruções que estão sendo utilizados. Ela permite acesso rápido às informações necessárias aos programas em execução. 
+<p class="texto">A **memória RAM** guarda temporariamente dados e instruções que estão sendo utilizados. Ela permite acesso rápido às informações necessárias aos programas em execução. 
 A RAM é volátil: normalmente, seu conteúdo não é preservado quando o equipamento é desligado.
 
 ### Disco rígido
