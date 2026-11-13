@@ -89,7 +89,7 @@
 
 ### Dispositivos de entrada
 
-<p class="texto">São os recursos utilizados para enviar dados ou comandos ao computador. Exemplos:
+<p class="texto">São os recursos utilizados para enviar dados ou comandos ao computador. Exemplos:</p>
 
 - teclado;
 - mouse;
@@ -100,9 +100,7 @@
 
 ### Dispositivos de saída
 
-São os recursos que apresentam resultados do processamento.
-
-Exemplos:
+<p class="texto">São os recursos que apresentam resultados do processamento. Exemplos:</p>
 
 - monitor;
 - impressora;
