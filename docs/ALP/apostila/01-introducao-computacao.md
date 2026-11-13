@@ -72,7 +72,7 @@
 
 ## 1.5 Componentes básicos de um sistema computacional
 
-<p class="texto">Para entender como um programa funciona, é útil conhecer alguns componentes do computador.</p>
+<p class="texto"> Para entender como um programa funciona, é útil conhecer alguns componentes do computador.</p>
 
 ### CPU — Unidade Central de Processamento
 
