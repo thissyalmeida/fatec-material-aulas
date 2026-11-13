@@ -146,4 +146,3 @@ Esse é um modelo simplificado para fins didáticos. Na prática, o sistema oper
 ## Exercícios
 
 [Acesse os exercícios desta introdução.](01-exercicios.md)
-
