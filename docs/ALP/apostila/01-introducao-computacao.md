@@ -107,7 +107,7 @@
 - alto-falantes;
 - projetor.
 
-Um mesmo equipamento pode desempenhar mais de uma função. Uma tela sensível ao toque, por exemplo, pode apresentar informações e receber interações do usuário.
+<p class="texto">Um mesmo equipamento pode desempenhar mais de uma função. Uma tela sensível ao toque, por exemplo, pode apresentar informações e receber interações do usuário.
 
 ### Quadro comparativo
 
