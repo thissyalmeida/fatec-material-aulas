@@ -33,8 +33,8 @@
     O contexto permite entender o significado dos valores.
 
 !!! example "CONHECIMENTO"
-  O **conhecimento** envolve interpretar informações e utilizá-las para compreender uma situação ou tomar uma decisão. Por exemplo:
-  - Informação: a média da estudante é `8.0`.
+    O **conhecimento** envolve interpretar informações e utilizá-las para compreender uma situação ou tomar uma decisão. Por exemplo:
+    - Informação: a média da estudante é `8.0`.
   - Regra da disciplina: a média mínima para aprovação é `6.0`.
   - Conhecimento aplicado: como a média é superior à mínima, a estudante atingiu esse critério de aprovação.
   A decisão depende tanto da informação quanto da regra utilizada. Em um sistema real, outras regras institucionais também podem ser necessárias.
