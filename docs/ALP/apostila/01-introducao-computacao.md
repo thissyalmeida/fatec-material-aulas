@@ -70,7 +70,6 @@
     <p class="texto">Esse exemplo mostra que hardware e software não são concorrentes: eles trabalham em conjunto.</p>
 
 
-
 ## 1.5 Componentes básicos de um sistema computacional
 
 <p class="texto">Para entender como um programa funciona, é útil conhecer alguns componentes do computador.</p>
