@@ -81,12 +81,11 @@
 
 ### Memória RAM
 
-<p class="texto">A **memória RAM** guarda temporariamente dados e instruções que estão sendo utilizados. Ela permite acesso rápido às informações necessárias aos programas em execução. 
-A RAM é volátil: normalmente, seu conteúdo não é preservado quando o equipamento é desligado.
+<p class="texto">A **memória RAM** guarda temporariamente dados e instruções que estão sendo utilizados. Ela permite acesso rápido às informações necessárias aos programas em execução. A RAM é volátil: normalmente, seu conteúdo não é preservado quando o equipamento é desligado. </p>
 
 ### Disco rígido
 
-Um SSD ou HD — mantém arquivos e programas mesmo quando o equipamento está desligado, desde que não haja falha ou exclusão dos dados. RAM e disco rígido cumprem funções diferentes. Ter mais armazenamento significa poder guardar mais dados; ter mais RAM pode ajudar a manter mais programas e dados de trabalho disponíveis ao mesmo tempo.
+<p class="texto">Um SSD ou HD — mantém arquivos e programas mesmo quando o equipamento está desligado, desde que não haja falha ou exclusão dos dados. RAM e disco rígido cumprem funções diferentes. Ter mais armazenamento significa poder guardar mais dados; ter mais RAM pode ajudar a manter mais programas e dados de trabalho disponíveis ao mesmo tempo.</p>
 
 ### Dispositivos de entrada
 
