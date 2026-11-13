@@ -55,7 +55,7 @@
 
 <p class="texto">  Um computador funciona recebendo dados, processando essas informações por meio de instruções lógicas e devolvendo um resultado. Esse ciclo básico é dividido em quatro etapas principais: entrada, processamento, armazenamento e saída. </p>
 
-<img src="../../assets/images/funcionamento.jpg">
+<center><img src="../../assets/images/funcionamento.jpg"></center>
 
 <p class="texto"> O diagrama representa um modelo simplificado. A comunicação real entre os componentes depende da arquitetura do equipamento, do sistema operacional e do programa utilizado. </p>
 
