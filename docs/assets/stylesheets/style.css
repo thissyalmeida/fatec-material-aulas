@@ -245,5 +245,7 @@
     display: none !important;
 }
 
+img{
 display: block;
     margin: 0 auto;
+}
