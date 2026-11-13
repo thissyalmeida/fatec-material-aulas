@@ -40,35 +40,6 @@
     A decisão depende tanto da informação quanto da regra utilizada. Em um sistema real, outras regras institucionais também podem ser necessárias.</p>
 
  <p class="texto">Com base nos conceitos vistos, suponha que uma loja registra que vendeu '12' unidades de um produto cujo preço unitário é 'R$ 15.00'. Nesse exemplo,  nós temos podemos classificar a quantidade igual a 12 e o preço unitário a R$ 15,00 como dados de entrada. Para o processamento, será necessário multiplicar a quantidade pelo preço unitário. A informação produzida será o valor total da venda, sendo este igual a R$ 180,00. O conhecimento gerado pode estar associado a loja comparar as vendas de diferentes produtos ou períodos para planejar o estoque. A informação não surge por mágica: ela é produzida pela organização e pelo processamento dos dados.</p>
-
-!!! success "Atividade interativa: Classifique os exemplos"
-    <p class="texto">Lembre-se que **Dado** é o registro; **informação** é o dado contextualizado; **conhecimento** é a compreensão que ajuda a interpretar e agir. A fronteira entre informação e conhecimento depende do contexto e do uso que se faz deles. Com base nisso, leia cada situação e escolha a classificação mais adequada. Em seguida, confira o feedback.</p>
-    <div class="atividade-interativa" id="atividade-dado-info">
-      <p><strong>Situação 1.</strong> O registro de uma avaliação contém apenas o valor <code>7,5</code>, sem indicar a que se refere.</p>
-      <div class="opcoes-atividade">
-        <button type="button" data-correct="true" class="botao">Dado</button>
-        <button type="button" data-correct="false" class="botao">Informação</button>
-        <button type="button" data-correct="false" class="botao">Conhecimento</button>
-      </div>
-    <p class="feedback-atividade" aria-live="polite"></p>
-    <hr>
-      <p><strong>Situação 2.</strong> Um relatório informa que a média de uma estudante foi 8,0.</p>
-      <div class="opcoes-atividade">
-        <button type="button" data-correct="false" class="botao">Dado isolado</button>
-        <button type="button" data-correct="true" class="botao">Informação</button>
-        <button type="button" data-correct="false" class="botao">Conhecimento</button>
-      </div>
-    <p class="feedback-atividade" aria-live="polite"></p>
-    <hr>
-      <p><strong>Situação 3.</strong> Ao comparar a média 8,0 com a média mínima 6,0, o sistema conclui que o critério de nota foi atingido.</p>
-      <div class="opcoes-atividade">
-        <button type="button" data-correct="false" class="botao">Dado</button>
-        <button type="button" data-correct="false" class="botao">Informação</button>
-        <button type="button" data-correct="true" class="botao">Conhecimento </button>
-      </div>
-    <p class="feedback-atividade" aria-live="polite"></p>
-</div>
-
     
 ## 1.2 Hardware
 
