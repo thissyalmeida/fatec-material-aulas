@@ -89,9 +89,7 @@
 
 ### Dispositivos de entrada
 
-São os recursos utilizados para enviar dados ou comandos ao computador.
-
-Exemplos:
+<p class="texto">São os recursos utilizados para enviar dados ou comandos ao computador. Exemplos:
 
 - teclado;
 - mouse;
