@@ -69,28 +69,7 @@
      <li>Ao salvar ou enviar a mensagem, outros componentes e serviços podem participar do processo.</li>
     <p class="texto">Esse exemplo mostra que hardware e software não são concorrentes: eles trabalham em conjunto.</p>
 
-!!! success "Atividade interativa: Classifique os exemplos"
-    Classifique cada item como hardware ou software.
-    <div class="atividade-interativa" id="atividade-hardware-software">
-      <p><strong>1. Memória RAM</strong></p>
-      <div class="opcoes-atividade">
-        <button type="button" data-correct="true" class="botao">Hardware</button>
-        <button type="button" data-correct="false" class="botao">Software</button>
-      </div>
-      <p class="feedback-atividade" aria-live="polite"></p>
-      <p><strong>2. Navegador de internet</strong></p>
-      <div class="opcoes-atividade">
-        <button type="button" data-correct="false" class="botao">Hardware</button>
-        <button type="button" data-correct="true" class="botao">Software</button>
-      </div>
-      <p class="feedback-atividade" aria-live="polite"></p>
-      <p><strong>3. SSD</strong></p>
-      <div class="opcoes-atividade">
-        <button type="button" data-correct="true" class="botao">Hardware</button>
-        <button type="button" data-correct="false" class="botao">Software</button>
-      </div>
-      <p class="feedback-atividade" aria-live="polite"></p>
-    </div>
+
 
 ## 1.5 Componentes básicos de um sistema computacional
 
